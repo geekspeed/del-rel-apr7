@@ -1,0 +1,100 @@
+﻿<header class="header">
+    <span class="header-logout arlo-cp" id="settings_Logout" ng-controller="FooterCtrl" ng-click="gotoLogout()">{{'personal_info_logout' | i18n}}</span>
+</header>
+<div style="position: absolute; top:60px; bottom: 60px; width: 100%;">
+<div class="settings-container" ng-init="init()" ng-controller="SettingsCtrl">
+    <div class="settings-header1">
+        {{'settings_label_title' | i18n}}
+    </div>
+    <div class="settings-container-list" scroll-position>
+    <div id="settings_{{baseStation.deviceId}}" ng-repeat="baseStation in getBaseStations() track by baseStation.deviceId">
+        <div class="settings-group settings-padding-left arlo-pre" ng-class="{'arlo-gray': baseStation.properties && baseStation.properties['connectionState'] && baseStation.properties['connectionState'] != 'available'}">
+            {{'base_station_settings_label_title' | i18n}}: {{baseStation.deviceName}}
+            <span ng-if="baseStation.properties && baseStation.properties['connectionState'] && baseStation.properties['connectionState'] != 'available'">({{'status_label_offline' | i18n}})</span>
+        </div>
+
+        <!--<div style="position: relative;"
+             ng-hide="!baseStation.properties || !baseStation.properties['connectionState'] || baseStation.properties['connectionState'] != 'available'">
+            <button class="settings-item" ui-sref="settings.schedule({deviceId:baseStation.deviceId})">
+                <span class="settings-mode">&gt;</span>
+                <span class="left-button-text">{{'base_station_settings_label_schedule' | i18n}}</span>
+            </button>
+            <div style="position: absolute; right: 30px; top: 2px;"
+                 class="settings-schedule-{{baseStation.scheduleOn ? 'on': 'off'}}"
+                 ng-click="toggleScheduleOn(baseStation); $event.stopPropagation();">
+                <div></div>
+            </div>
+        </div>-->
+        <a ng-if="isOwnerBS(baseStation)" class="settings-item" ui-sref="settings.modes({deviceId:baseStation.deviceId})"
+                ng-hide="!baseStation || !baseStation.properties || !baseStation.properties['connectionState'] || (baseStation.properties['connectionState'] != 'available')"
+                ng-class="{'modal-arrowicon-rules': baseStation.properties['connectionState'] == 'available'}">
+            <span class="settings-mode-text">{{'base_station_settings_label_modes' | i18n}}</span>
+            <span class="settings-mode-value arlo-pre">
+                {{baseStation.activeMode.name}}
+            </span>
+        </a>
+        <a ng-if="isOwnerBS(baseStation)" ui-sref="settings.rules({deviceId:baseStation.deviceId})" class="settings-item"
+                ng-hide="!baseStation || !baseStation.properties || !baseStation.properties['connectionState'] || (baseStation.properties['connectionState'] != 'available')"
+                ng-class="{'modal-arrowicon-rules': baseStation.properties['connectionState'] == 'available'}">
+            <span class="left-button-text">{{'base_station_settings_label_rules' | i18n}}</span>
+        </a>
+        <a ng-if="isOwnerBS(baseStation)" ui-sref="settings.baseStation({baseStationId:baseStation.deviceId})" class="settings-item" id="settings_{{baseStation.deviceId}}">
+            <span class="left-button-text">{{'base_station_settings_label_settings' | i18n}}</span>
+            <div ng-if="alertBS(baseStation)" class="settings-alert" title="Update is available"></div>
+        </a>
+    </div>
+
+    <h4 class="settings-group settings-padding-left">{{'account_settings_label_title' | i18n}}</h4>
+    <a ng-if="onLoad && !hasServicePlan()" class="settings-item" ui-sref="gettingStarted">
+        <span>{{'login_activity_new_system_setup' | i18n}}</span>
+    </a>
+    <a ng-if="onLoad && hasServicePlan()" class="settings-item" id="settings_Subscription" ui-sref="settings.subscription">
+        <span class="settings-mode-text">{{'account_settings_label_subscription' | i18n}}</span>
+        <span class="settings-mode-value" id="settings_planName">
+            {{getServicePlan().planName}}
+        </span>
+    </a>
+    <a ui-sref="settings.personalInfo" class="settings-item" id="settings_PersonalInformation">
+        <span class="left-button-text">{{'account_settings_label_personal' | i18n}}</span>
+        <div ng-if="alertEmail()" class="settings-alert" title="Email not confirmed"></div>
+    </a>
+    <a ng-if="onLoad && hasServicePlan()" ui-sref="settings.friends" class="settings-item" id="settings_Friends">
+        <span class="settings-mode-text">
+            {{'account_settings_label_friends' | i18n}}
+            <div ng-if="alertFriends()" class="settings-alert" title="Friend invitation expired"></div>
+        </span>
+        <span class="settings-mode-value" ng-bind="getFriendsCount()"></span>
+    </a>
+    <h4 class="settings-group settings-padding-left">{{'system_settings_label_title' | i18n}}</h4>
+    <a ng-hide="!canSetPreferences()" class="settings-item" ui-sref="settings.preferences">
+        <span>{{'system_settings_label_preferences' | i18n}}</span>
+    </a>
+
+    <a class="settings-item" ui-sref="settings.cameraOrder">
+        <span>{{'system_settings_label_camera_order' | i18n}}</span>
+    </a>
+
+    <a class="settings-item" ui-sref="settings.help">
+        <span>Help</span>
+    </a>
+
+    <a class="settings-item" ui-sref="settings.about" id="settings_About">
+        <span>{{'system_settings_label_about' | i18n}}</span>
+    </a>
+
+    <h4 class="settings-group settings-padding-left" ng-hide="!hasOwnCameras()">{{'camera_settings_label_title' | i18n}}</h4>
+    <a class="settings-item" ng-click="gotoCamera(camera)"
+            ng-repeat="camera in getCameras() | filter:isOwnCamera"
+            ng-class="{'arlo-gray arlo-cd': camera.properties && camera.properties['connectionState']=='unavailable',
+            'arlo-cp': camera.properties && camera.properties['connectionState']!='unavailable',
+            'is-disable arlo-cd': camera.properties && !camera.properties['connectionState']}">
+        <span class="arlo-pre">{{camera.deviceName}}</span>
+        <div ng-if="alertCamera(camera)" class="settings-alert" title="{{'camera_state_battery_level_critical' | i18n}}"></div>
+        <span class="arlo-gray" ng-if="camera.properties && !camera.properties['connectionState']">({{'status_label_getting_status' | i18n }})</span>
+        <span ng-if="camera.properties && camera.properties['connectionState'] && camera.properties['connectionState'] == 'unavailable'">({{'status_label_offline' | i18n}})</span>
+    </a>
+    </div>
+</div>
+<div ui-view class="settings-panel-right"></div>
+</div>
+<div ng-include="'partials/footerView.html'" ng-controller="FooterCtrl" ng-init="init('settings')"></div>

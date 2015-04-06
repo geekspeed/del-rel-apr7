@@ -1,0 +1,119 @@
+﻿<div ng-init="init()">
+    <div ng-show="loading || isBillingInProgress() || isUpdateInProgress()" class="billing-loading" ng-class="{'arlo-pf': isBillingInProgress()}" ng-include="'partials/loadingView.html'"></div>
+    <div class="settings-header" id="settingsSubscription_titleSubscription">
+        {{'subscription_label_title' | i18n}}
+    </div>
+    <div class="settings-container-list">
+    <div class="settings-panel">
+        <div class="settings-list-title" id="settingsSubscription_titleServiceLevel">{{'subscription_label_service_level_title' | i18n}}</div>
+        <div class="settings-list">
+            <div class="settings-items-wrapper">
+                <div class="settings-list-item">
+                    <!-- todo: the following reference to planName is for compatibility in testing, should be removed later -->
+                    <span class="list-item-cell" id="settingsSubscription_servicePlanName">{{servicePlan ? (servicePlan.groupName || servicePlan.planName) : ('status_label_loading' | i18n)}}</span>
+                    <div class="settings-subscription-value list-item-cell" id="settingsSubscription_planAmount">{{planAmount}}</div>
+                </div>
+                <div ng-if="storageServicePlan" class="settings-list-item">
+                    <!-- todo: the following reference to planName is for compatibility in testing, should be removed later -->
+                    <span class="list-item-cell">{{ (storageServicePlan.groupName || storageServicePlan.planName) }}</span>
+                    <div class="settings-subscription-value list-item-cell" id="settingsSubscription_storagePlanAmount">{{storagePlanAmount}}</div>
+                </div>
+                <div class="settings-list-item" ng-if="(servicePlan && servicePlan.planId != freePlanId) || storageServicePlan">
+                    <span class="list-item-cell">{{ billingInfo.autoRenew ? ('activity_label_next_bill' | i18n) : ('subscription_label_expires' | i18n) }}</span>
+                    <div class="list-item-cell settings-subscription-value">{{servicePlan.expiryDate || storageServicePlan.expiryDate ? ((servicePlan.expiryDate || storageServicePlan.expiryDate) | toUTC | date : 'shortDate') : ''}}                    </div>
+                </div>
+                <div class="settings-list-item" ng-if="(servicePlan && servicePlan.planId != freePlanId) || storageServicePlan">
+                    <span class="list-item-cell">{{'activity_label_auto_renew' | i18n}}</span>
+                    <div class="settings-subscription-value list-item-cell">
+                        <input type="checkbox" id="settingsSubscription_checkboxRenew" ng-model="billingInfo.autoRenew" ng-change="changeRenew()"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin: 10px auto; display: table;">
+            <button type="button" id="settingsSubscription_ChangeServiceCancel" style="margin-right: 20px;" class="button-delete" ng-if="servicePlan.planId!=freePlanId || storageServicePlan" ng-click="cancelService()">{{'change_service_activity_cancel_service' | i18n}}</button>
+            <button type="button" id="settingsSubscription_ChangeService" ui-sref="settings.plans">{{'subscription_activity_change_service' | i18n}}</button>
+        </div>
+        <div ng-if="!isFreePlan">
+            <div class="settings-list-title">{{'subscription_label_payment_method_title' | i18n}}</div>
+            <div class="settings-list">
+                <div class="settings-items-wrapper">
+                    <div class="settings-list-item">
+                        <span class="list-item-cell">{{billingInfo ? 'xxxx-xxxxx-xxxxx-' + billingInfo.creditCard.cardNumber : ('status_label_loading' | i18n)}}</span>
+                        <span class="list-item-cell settings-mode" ui-sref="settings.billingInformation">{{'subscription_activity_update_payment_method' | i18n}}</span>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div ng-if="notAccount">
+        <div class="settings-list-title">{{'subscription_label_cloud_storage_title' | i18n}}</div>
+        <div class="settings-list">
+            <div ng-if="!storageQuota" class="settings-list-loading">
+                {{'status_label_loading' | i18n}}
+            </div>
+            <div class="settings-items-wrapper">
+                <div ng-if="storageQuota" class="settings-list-item">
+                    <div style="display: table; margin: 0 auto; width: 100%;" class="list-item-cell">
+                        <div style="display: table-cell; width: 20%; text-align: right; white-space: nowrap;">{{storageQuota.usedStorage}}</div>
+                        <div style="display: table-cell; width: 55%; padding: 0 15px; vertical-align: middle;">
+                            <div style="border: solid 1px #aaa;">
+                                <div ng-style="{width: (storageQuota.percentageUsed > 100 ? 100 : storageQuota.percentageUsed) + '%'}" style="background-color: #06a94e; height: 12px;"></div>
+                            </div>
+                        </div>
+                        <div style="display: table-cell; width: 20%; text-align: left; white-space: nowrap;" id="settingsSubscription_allocatedStorage">{{storageQuota.allocatedStorage}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" style="margin: 5px auto; display: block;" ng-disabled="recycleBinEmpty()" ng-click="recycleBinEmpty() || deleteAllFiles()">{{'subscription_activity_delete_all_unlocked_files' | i18n}}</button>
+        <div style="text-align: center; font-weight: bold;">{{'subscription_label_delete_all_unlocked_files_note' | i18n}}</div>
+
+        <div class="settings-list-title">{{'subscription_label_cameras_title' | i18n}}</div>
+        <div class="settings-list">
+            <div class="settings-list-item subscribe-listitem-device" style="display: block">
+                <div class="list-item-cell subscription-camera-on" ng-repeat="cam in cameras | limitTo:servicePlan.maxCameras" style="float: right"></div>
+                <div class="list-item-cell subscription-camera-off" ng-repeat="cam in offCameras track by $index" style="float: right"></div>
+            </div>
+            <div class="settings-items-wrapper">
+                <div></div>
+                <div class="settings-list-item">
+                    <span class="list-item-cell">{{'subscription_label_cameras_supported' | i18n}}</span>
+                    <div class="list-item-cell settings-subscription-value" ng-bind="servicePlan.maxCameras" id="settingsSubscription_supportedCameras"></div>
+                </div>
+                <div class="settings-list-item">
+                    <span class="list-item-cell">{{'subscription_label_cameras_connected' | i18n}}</span>
+                    <div class="list-item-cell settings-subscription-value" ng-bind="cameras.length" id="settingsSubscription_connectedCameras"></div>
+                </div>
+                <div class="settings-list-item">
+                    <span class="list-item-cell">{{'subscription_label_cameras_online_retailers' | i18n}}</span>
+                    <a href="http://arlo.com/addon?utm_source=app_desktop" target="_blank" class="list-item-cell settings-mode" style="text-decoration: none">{{'subscription_activity_buy_more_cameras' | i18n}}</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-list-title">{{'subscription_label_base_stations_title' | i18n}}</div>
+        <div class="settings-list">
+            <div class="settings-list-item subscribe-listitem-device" style="display: block">
+                <div class="subscription-bs-on" ng-repeat="cam in baseStations | limitTo:servicePlan.maxBaseStations" style="float: right"></div>
+                <div class="subscription-bs-off" ng-repeat="cam in offBaseStations track by $index"></div>
+            </div>
+            <div class="settings-items-wrapper">
+                <div></div>
+                <div class="settings-list-item">
+                    <span class="list-item-cell">{{'subscription_label_base_stations_supported' | i18n}}</span>
+                    <div class="list-item-cell settings-subscription-value" ng-bind="servicePlan.maxBaseStations" id="settingsSubscription_supportedBasestations"></div>
+                </div>
+                <div class="settings-list-item">
+                    <span class="list-item-cell">{{'subscription_label_base_stations_connected' | i18n}}</span>
+                    <div class="list-item-cell settings-subscription-value" ng-bind="baseStations.length" id="settingsSubscription_connectedBasestations"></div>
+                </div>
+                <div class="settings-list-item arlo-cp" ui-sref="claimBaseStation" ng-if="baseStations.length < servicePlan.maxBaseStations">
+                    <span class="list-item-cell">{{'subscription_label_add_base_station' | i18n}}</span>
+                    <span class="list-item-cell settings-mode settings-mode-icon" style="width: 100%">&#160;</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>

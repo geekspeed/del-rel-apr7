@@ -1,0 +1,2322 @@
+﻿[
+  {
+    "key": "activity_back",
+    "value": "НАЗАД"
+  },
+  {
+    "key": "label_required_fields",
+    "value": "Все поля являются обязательными для заполнения, если только они не помечены как 'необязательные'"
+  },
+  {
+    "key": "activity_continue",
+    "value": "ПРОДОЛЖИТЬ"
+  },
+  {
+    "key": "activity_done",
+    "value": "ГОТОВО"
+  },
+  {
+    "key": "activity_submit",
+    "value": "ОТПРАВИТЬ"
+  },
+  {
+    "key": "activity_cancel",
+    "value": "ОТМЕНА"
+  },
+  {
+    "key": "label_optional",
+    "value": "необязательно"
+  },
+  {
+    "key": "label_optional_mark",
+    "value": "(опционально)"
+  },
+  {
+    "key": "label_required_mark",
+    "value": "(обязательно)"
+  },
+  {
+    "key": "status_label_offline",
+    "value": "Отключен"
+  },
+  {
+    "key": "status_label_getting_status",
+    "value": "Получение состояния..."
+  },
+  {
+    "key": "status_label_loading",
+    "value": "Загрузка..."
+  },
+  {
+    "key": "status_label_please_wait",
+    "value": "Подождите..."
+  },
+  {
+    "key": "status_label_registering_new_user",
+    "value": "Регистрация нового пользователя..."
+  },
+  {
+    "key": "status_label_is_required",
+    "value": "требуется"
+  },
+  {
+    "key": "status_label_busy",
+    "value": "Занято"
+  },
+  {
+    "key": "navigation_label_mode",
+    "value": "Режим"
+  },
+  {
+    "key": "navigation_label_cameras",
+    "value": "Камеры"
+  },
+  {
+    "key": "navigation_label_library",
+    "value": "Библиотека"
+  },
+  {
+    "key": "navigation_label_settings",
+    "value": "Настройки"
+  },
+  {
+    "key": "activity_first",
+    "value": "ПЕРВЫЙ"
+  },
+  {
+    "key": "activity_today",
+    "value": "СЕГОДНЯ"
+  },
+  {
+    "key": "activity_select",
+    "value": "Выбрать"
+  },
+  {
+    "key": "activity_close",
+    "value": "ЗАКРЫТЬ"
+  },
+  {
+    "key": "activity_yes",
+    "value": "ДА"
+  },
+  {
+    "key": "activity_no",
+    "value": "НЕТ"
+  },
+  {
+    "key": "activity_save",
+    "value": "СОХРАНИТЬ"
+  },
+  {
+    "key": "activity_restore",
+    "value": "Восстановить"
+  },
+  {
+    "key": "activity_select_all",
+    "value": "Выбрать все"
+  },
+  {
+    "key": "activity_deselect_all",
+    "value": "Отменить выбор всех"
+  },
+  {
+    "key": "activity_delete_mode",
+    "value": "УДАЛИТЬ РЕЖИМ"
+  },
+  {
+    "key": "activity_delete_rule",
+    "value": "УДАЛИТЬ ПРАВИЛО"
+  },
+  {
+    "key": "activity_add",
+    "value": "Добавить"
+  },
+  {
+    "key": "activity_edit",
+    "value": "Редактировать"
+  },
+  {
+    "key": "status_app_upgrade_available",
+    "value": "Доступна новая версия Arlo.  Выполните обновление для получения доступа к учетной записи."
+  },
+  {
+    "key": "status_credit_card_requires_upgrade",
+    "value": "Истекает срок действия кредитной карты. Обновите ее сейчас для того, чтобы продолжить использование служб."
+  },
+  {
+    "key": "status_confirm_email",
+    "value": "Подтвердите адрес эл. почты для получения уведомлений о движении"
+  },
+  {
+    "key": "default_mode_armed",
+    "value": "Обнаружение всех движений включено"
+  },
+  {
+    "key": "default_mode_disarmed",
+    "value": "Обнаружение всех движений выключено"
+  },
+  {
+    "key": "default_rule_name",
+    "value": "Запись с камеры {cameraName} при движении"
+  },
+  {
+    "key": "info_registration_base_station_vgn",
+    "value": "Базовая станция будет назначена вашей учетной записи. Убедитесь, что вы подключены к той же локальной сети (LAN), что и базовая станция, чтобы мы могли обнаружить эту базовую станцию."
+  },
+  {
+    "key": "info_registration_base_station_time_zone",
+    "value": "Выберите часовой пояс в соответствии с местоположением базовой станции."
+  },
+  {
+    "key": "info_registration_account_password",
+    "value": "Пароль должен состоять по меньшей мере из 6 символов и содержать как минимум одну заглавную букву, одну строчную букву и одну цифру.  Разрешено также использование следующих символов: !@#$%^&*()"
+  },
+  {
+    "key": "info_registration_account_phone_number",
+    "value": "Если вы когда-нибудь попросите позвонить вам, мы будем связываться с вами по этому номеру.  Он также может помочь в поиске вашей учетной записи при обращении в службу поддержки пользователей.  Но, конечно, указывать его необязательно."
+  },
+  {
+    "key": "info_settings_renew_subscription",
+    "value": "Выберите это при необходимости автоматического продления подписки."
+  },
+  {
+    "key": "info_settings_manage_storage",
+    "value": "Мы автоматически удалим файлы (кроме избранных) по истечении 7 дней для эффективного использования вашего облачного хранилища."
+  },
+  {
+    "key": "info_settings_storage_full_notification",
+    "value": "Выберите это, если вы хотите получать уведомления об использовании 80 % облачного хранилища."
+  },
+  {
+    "key": "info_settings_invert_image",
+    "value": "При необходимости камеру можно закрепить нижней стороной вверх, а затем выбрать данный параметр для поворота изображения."
+  },
+  {
+    "key": "info_settings_position_mode",
+    "value": "Используйте это при размещении камеры.  Мы ограничиваем задержку, чтобы обеспечить просмотр с камеры в режиме, приближенном к реальному времени."
+  },
+  {
+    "key": "info_settings_motion_detection_test",
+    "value": "Используйте это при размещении камеры.  Вместо записи видео при обнаружении движения будет мигать индикатор состояния."
+  },
+  {
+    "key": "info_base_station_rules",
+    "value": "Установите правила, чтобы настроить способ записи видео. Дополнительно можно настроить отправку видеозаписей по эл. почте себе или другим пользователям."
+  },
+  {
+    "key": "error_no_internet_connection",
+    "value": "Отсутствует соединение с Интернетом. Проверьте соединение."
+  },
+  {
+    "key": "error_service_unavailable",
+    "value": "В настоящий момент система Arlo недоступна. Мы выполним резервное копирование и вернемся к работе через {time}."
+  },
+  {
+    "key": "error_setup_requires_wifi",
+    "value": "Не удалось настроить учетную запись, так как невозможно обнаружить вашу базовую станцию.\n\nУбедитесь в том, что питание базовой станции включено и она подключена к Интернету, а также в том, что устройство подключено к той же WiFi-сети, что и базовая станция."
+  },
+  {
+    "key": "error_http_500",
+    "value": "В настоящий момент система Arlo недоступна.  Повторите попытку позже."
+  },
+  {
+    "key": "error_http_501",
+    "value": "В настоящий момент система Arlo недоступна.  Повторите попытку позже."
+  },
+  {
+    "key": "error_http_502",
+    "value": "В настоящий момент система Arlo недоступна.  Повторите попытку позже."
+  },
+  {
+    "key": "error_http_503",
+    "value": "В настоящий момент система Arlo недоступна.  Повторите попытку позже."
+  },
+  {
+    "key": "base_station_error_4000",
+    "value": "Не удалось обнаружить ни одной камеры, зарегистрированной на базовой станции.  Синхронизируйте камеру."
+  },
+  {
+    "key": "base_station_error_4003",
+    "value": "Настройки недоступны, поскольку камера отключена от сети."
+  },
+  {
+    "key": "base_station_error_4006",
+    "value": "Камера в настоящее время используется.  Дождитесь завершения выполняемого действия для продолжения работы.  Для выполнения этого действия можно также отключить питание камеры и включить его снова."
+  },
+  {
+    "key": "base_station_error_4009",
+    "value": "Используемые камеры удалить невозможно.  Чтобы удалить эту камеру, сначала переведите ее в автономный режим."
+  },
+  {
+    "key": "base_station_error_4011",
+    "value": "Потоковая передача может выполняться одновременно только с 4 камер. Перед тем как запустить потоковую передачу с этой камеры, остановите потоковую передачу с другой камеры."
+  },
+  {
+    "key": "base_station_error_4013",
+    "value": "Перезагрузка не допускается, если какая-либо камера занята."
+  },
+  {
+    "key": "base_station_error_4014",
+    "value": "Эта функция не поддерживается устройством."
+  },
+  {
+    "key": "base_station_error_4015",
+    "value": "Камера начинает отправку уведомлений о движении. Повторите попытку."
+  },
+  {
+    "key": "base_station_error_4016",
+    "value": "Потоковая передача с камеры не может выполняться, поскольку она отключена от сети."
+  },
+  {
+    "key": "base_station_error_4017",
+    "value": "Камера не может сделать моментальный снимок, поскольку она отключена от сети."
+  },
+  {
+    "key": "login_label_username",
+    "value": "Эл. почта"
+  },
+  {
+    "key": "login_label_password",
+    "value": "Пароль"
+  },
+  {
+    "key": "login_activity_login",
+    "value": "Вход в систему"
+  },
+  {
+    "key": "login_label_remember_me",
+    "value": "Запомнить меня"
+  },
+  {
+    "key": "login_activity_username_password_help",
+    "value": "Справка о пароле"
+  },
+  {
+    "key": "login_logout_conf_dialog_message",
+    "value": "Выйти из системы?"
+  },
+  {
+    "key": "login_activity_new_system_setup",
+    "value": "Настройка новой системы"
+  },
+  {
+    "key": "login_error_validation_username",
+    "value": "Неверное имя пользователя или пароль."
+  },
+  {
+    "key": "login_activity_create_account",
+    "value": "Создание учетной записи"
+  },
+  {
+    "key": "password_help_label_username_help",
+    "value": "Введите свой ??адрес эл. почты, и мы вышлем вам ссылку для восстановления пароля."
+  },
+  {
+    "key": "password_help_label_username",
+    "value": "Эл. почта"
+  },
+  {
+    "key": "password_help_label_email_sent",
+    "value": "Ссылка для восстановления пароля была вам отправлена ??по эл. почте."
+  },
+  {
+    "key": "password_help_error_validation_input_username",
+    "value": "Новым идентификатором пользователя должен быть действительный адрес эл. почты"
+  },
+  {
+    "key": "password_help_error_username_not_found",
+    "value": "Указанный вами адрес эл. почты не используется ни в одной из учетных записей. Проверьте правильность ввода адреса эл. почты или попробуйте ввести другой адрес эл. почты."
+  },
+  {
+    "key": "getting_started_label_title",
+    "value": "Начало работы"
+  },
+  {
+    "key": "getting_started_label_help",
+    "value": "Подключение вашей системы к Интернету"
+  },
+  {
+    "key": "system_setup_label_title",
+    "value": "Настройка системы"
+  },
+  {
+    "key": "system_setup_label_select_serial_number",
+    "value": "Выберите серийный номер базовой станции"
+  },
+  {
+    "key": "system_setup_label_serial_number",
+    "value": "Серийный номер"
+  },
+  {
+    "key": "system_setup_activity_serial_number_info",
+    "value": "Если серийный номер не определяется автоматически, можно посмотреть его на задней панели базовой станции."
+  },
+  {
+    "key": "system_setup_label_time_zone",
+    "value": "Выберите часовой пояс, соответствующий месту установки базовой станции."
+  },
+  {
+    "key": "system_setup_activity_time_zone_info",
+    "value": "Серийный номер базовой станции (выберите свою основную базовую станцию, остальные можно зарегистрировать позже):"
+  },
+  {
+    "key": "account_setup_label_title",
+    "value": "Настройка учетной записи"
+  },
+  {
+    "key": "account_setup_label_username",
+    "value": "Эл. почта"
+  },
+  {
+    "key": "account_setup_label_password",
+    "value": "Пароль"
+  },
+  {
+    "key": "account_setup_label_reenter_password",
+    "value": "Введите пароль еще раз"
+  },
+  {
+    "key": "account_setup_label_security_question",
+    "value": "Контрольный вопрос"
+  },
+  {
+    "key": "account_setup_label_security_answer",
+    "value": "Ответ"
+  },
+  {
+    "key": "account_setup_label_phone_number",
+    "value": "Телефон"
+  },
+  {
+    "key": "account_setup_activity_password_info",
+    "value": "Пароли должны содержать не менее 6 символов и НЕ должны содержать следующих символов: /, \\, |, <, >, : (двоеточие), ; (точка с запятой) и символ апострофа \"'\"."
+  },
+  {
+    "key": "account_setup_activity_phone_number_info",
+    "value": "В будущем, если вы запросите вызов из нашего отдела технической поддержки, мы будем использовать этот номер телефона."
+  },
+  {
+    "key": "account_setup_label_accept_tos",
+    "value": "Я принимаю условия предоставления услуг"
+  },
+  {
+    "key": "account_setup_label_accept_privacy_policy",
+    "value": "Я принимаю условия политики конфиденциальности"
+  },
+  {
+    "key": "error_validation_username",
+    "value": "Используйте действительный адрес эл. почты.  Убедитесь, что в нем присутствует символ \"@\" и имя домена (например, @gmail.com)."
+  },
+  {
+    "key": "error_validation_password",
+    "value": "Введите новый пароль.  Пароль должен содержать не менее 6 символов, включая 1 заглавную букву, 1 строчную букву и 1 цифру. Он может также содержать любые из следующих символов: ! @ # $ % ^ & * ( )"
+  },
+  {
+    "key": "error_validation_security_answer",
+    "value": "Введите ответ на контрольный вопрос."
+  },
+  {
+    "key": "error_validation_password_mismatch",
+    "value": "Эти пароли не совпадают. Повторите ввод паролей."
+  },
+  {
+    "key": "sync_cameras_label_title",
+    "value": "Синхронизация камер"
+  },
+  {
+    "key": "sync_cameras_label_help",
+    "value": "Синхронизируйте свои камеры"
+  },
+  {
+    "key": "service_selection_label_title",
+    "value": "Выбор сервиса"
+  },
+  {
+    "key": "service_selection_label_elite",
+    "value": "Elite"
+  },
+  {
+    "key": "service_selection_label_elite_storage",
+    "value": "3 ГБ облачного хранилища для видеозаписей"
+  },
+  {
+    "key": "service_selection_label_elite_push_notifications",
+    "value": "Push-уведомления"
+  },
+  {
+    "key": "service_selection_label_elite_cameras",
+    "value": "До 20 камер"
+  },
+  {
+    "key": "service_selection_label_premier",
+    "value": "Premier"
+  },
+  {
+    "key": "service_selection_label_premier_storage",
+    "value": "1 ГБ облачного хранилища для видеозаписей"
+  },
+  {
+    "key": "service_selection_label_premier_push_notifications",
+    "value": "Push-уведомления"
+  },
+  {
+    "key": "service_selection_label_premier_cameras",
+    "value": "До 10 камер"
+  },
+  {
+    "key": "service_selection_label_base_level",
+    "value": "БЕСПЛАТНО"
+  },
+  {
+    "key": "service_selection_label_base_level_storage",
+    "value": "200 МБ облачного хранилища для видеозаписей"
+  },
+  {
+    "key": "service_selection_label_base_level_cameras",
+    "value": "До 5 камер"
+  },
+  {
+    "key": "service_selection_activity_base_level",
+    "value": "входит в состав вашей системы"
+  },
+  {
+    "key": "payment_method_label_title",
+    "value": "Способ оплаты"
+  },
+  {
+    "key": "payment_method_label_credit_card",
+    "value": "Кредитная карта"
+  },
+  {
+    "key": "payment_method_label_card_number",
+    "value": "Номер карты"
+  },
+  {
+    "key": "payment_method_label_card_expiration",
+    "value": "ММ/ГГГГ"
+  },
+  {
+    "key": "payment_method_label_security_code",
+    "value": "Код безопасности (3 или 4 цифры на обратной стороне)"
+  },
+  {
+    "key": "payment_method_label_billing",
+    "value": "Выставление счета"
+  },
+  {
+    "key": "payment_method_label_billing_first_name",
+    "value": "Имя"
+  },
+  {
+    "key": "payment_method_label_billing_last_name",
+    "value": "Фамилия"
+  },
+  {
+    "key": "payment_method_label_billing_company_name",
+    "value": "Название компании (необязательно)"
+  },
+  {
+    "key": "payment_method_label_billing_company_name_short",
+    "value": "Название компании"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_1",
+    "value": "Адрес 1"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_2",
+    "value": "Адрес 2 (необязательно)"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_2_short",
+    "value": "Адрес 2"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_3",
+    "value": "Номер квартиры (необязательно)"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_3_short",
+    "value": "Номер квартиры"
+  },
+  {
+    "key": "payment_method_label_billing_city",
+    "value": "Город"
+  },
+  {
+    "key": "payment_method_label_billing_state",
+    "value": "Область"
+  },
+  {
+    "key": "payment_method_label_billing_zip_code",
+    "value": "Почтовый индекс"
+  },
+  {
+    "key": "payment_method_label_billing_country",
+    "value": "Страна"
+  },
+  {
+    "key": "payment_method_label_billing_vat",
+    "value": "НДС (необязательно)"
+  },
+  {
+    "key": "payment_method_label_renew_service_plan",
+    "value": "Автоматически продлить мой план обслуживания"
+  },
+  {
+    "key": "error_validation_card_number_unsupported",
+    "value": "В данный момент мы работаем только с картами Visa и Mastercard."
+  },
+  {
+    "key": "error_validation_card_number",
+    "value": "Проверьте номер вашей кредитной карты, срок действия и код безопасности."
+  },
+  {
+    "key": "error_validation_expiration",
+    "value": "Проверьте номер вашей кредитной карты, срок действия и код безопасности."
+  },
+  {
+    "key": "error_validation_security_code",
+    "value": "Проверьте номер вашей кредитной карты, срок действия и код безопасности."
+  },
+  {
+    "key": "error_validation_billing_first_name",
+    "value": "Информация вашей кредитной карты не соответствует данным, имеющимся в вашем банке.  Введите имя держателя карты и адрес выставления счета, которые связаны с кредитной картой."
+  },
+  {
+    "key": "error_validation_billing_last_name",
+    "value": "Информация вашей кредитной карты не соответствует данным, имеющимся в вашем банке.  Введите имя держателя карты и адрес выставления счета, которые связаны с кредитной картой."
+  },
+  {
+    "key": "error_validation_billing_company_name",
+    "value": "Необходимо ввести название компании"
+  },
+  {
+    "key": "error_validation_billing_street_address_1",
+    "value": "Информация вашей кредитной карты не соответствует данным, имеющимся в вашем банке.  Введите имя держателя карты и адрес выставления счета, которые связаны с кредитной картой."
+  },
+  {
+    "key": "error_validation_billing_street_address_2",
+    "value": "Информация вашей кредитной карты не соответствует данным, имеющимся в вашем банке.  Введите имя держателя карты и адрес выставления счета, которые связаны с кредитной картой."
+  },
+  {
+    "key": "error_validation_billing_street_address_3",
+    "value": "Информация вашей кредитной карты не соответствует данным, имеющимся в вашем банке.  Введите имя держателя карты и адрес выставления счета, которые связаны с кредитной картой."
+  },
+  {
+    "key": "error_validation_billing_city",
+    "value": "Информация вашей кредитной карты не соответствует данным, имеющимся в вашем банке.  Введите имя держателя карты и адрес выставления счета, которые связаны с кредитной картой."
+  },
+  {
+    "key": "error_validation_billing_state",
+    "value": "Необходимо указать область/регион"
+  },
+  {
+    "key": "error_validation_billing_zip_code",
+    "value": "Должен быть указан верный почтовый индекс"
+  },
+  {
+    "key": "error_validation_billing_country",
+    "value": "Необходимо указать страну"
+  },
+  {
+    "key": "error_validation_billing_vat",
+    "value": "Введенный номер плательщика НДС не распознан.  Введите действительный номер плательщика НДС."
+  },
+  {
+    "key": "camera_state_offline",
+    "value": "Камера не в сети."
+  },
+  {
+    "key": "camera_state_gateway_offline",
+    "value": "Базовая станция не подключена к Интернету. \n\nУбедитесь, что она включена и подключена к роутеру."
+  },
+  {
+    "key": "camera_state_battery_level_critical",
+    "value": "Необходимо заменить батареи."
+  },
+  {
+    "key": "camera_player_plugin_not_installed",
+    "value": "Требуется более новая версия Adobe Flash Player. Загрузите последнюю версию <a href='http://get.adobe.com/flashplayer/'>здесь</a> и установите ее."
+  },
+  {
+    "key": "camera_state_new",
+    "value": "Потоковая передача с новой камеры"
+  },
+  {
+    "key": "library_activity_filter",
+    "value": "Фильтр"
+  },
+  {
+    "key": "filter_label_types",
+    "value": "Показать эти типы:"
+  },
+  {
+    "key": "filter_label_all",
+    "value": "Все"
+  },
+  {
+    "key": "filter_label_favorites",
+    "value": "Избранное"
+  },
+  {
+    "key": "filter_label_non_favorites",
+    "value": "Не относящиеся к избранным"
+  },
+  {
+    "key": "filter_label_cameras",
+    "value": "Показать файлы из камер:"
+  },
+  {
+    "key": "select_bar_label_favorite",
+    "value": "Избранное"
+  },
+  {
+    "key": "select_bar_label_share",
+    "value": "Открыть общий доступ"
+  },
+  {
+    "key": "select_bar_label_download",
+    "value": "Загрузить"
+  },
+  {
+    "key": "select_bar_label_delete",
+    "value": "Удалить"
+  },
+  {
+    "key": "share_email_link",
+    "value": "Отправить ссылку по эл. почте"
+  },
+  {
+    "key": "share_email_subject",
+    "value": "Видео с камеры Arlo."
+  },
+  {
+    "key": "share_email_body",
+    "value": "Здравствуйте !\n\n\n\nВы можете посмотреть видео с моей камеры Arlo.  Для этого нужно просто перейти по ссылке.  ПРИМЕЧАНИЕ. Ссылка действительна в течение {24 hours}.\n\n\n\n{link} {thumbnail}\n\n\n\nПриятного просмотра!\n\n\n\n{first name}"
+  },
+  {
+    "key": "share_copy_link",
+    "value": "Копировать ссылку"
+  },
+  {
+    "key": "settings_label_title",
+    "value": "Настройки"
+  },
+  {
+    "key": "base_station_settings_label_schedule",
+    "value": "Расписание"
+  },
+  {
+    "key": "base_station_settings_label_modes",
+    "value": "Режимы"
+  },
+  {
+    "key": "base_station_settings_label_rules",
+    "value": "Правила"
+  },
+  {
+    "key": "base_station_settings_label_rule",
+    "value": "Правило"
+  },
+  {
+    "key": "base_station_settings_label_settings",
+    "value": "Параметры базовой станции"
+  },
+  {
+    "key": "account_settings_label_title",
+    "value": "Настройки учетной записи"
+  },
+  {
+    "key": "account_settings_label_subscription",
+    "value": "Подписка"
+  },
+  {
+    "key": "account_settings_label_personal",
+    "value": "Личные сведения"
+  },
+  {
+    "key": "account_settings_label_friends",
+    "value": "Друзья"
+  },
+  {
+    "key": "system_settings_label_title",
+    "value": "Параметры системы"
+  },
+  {
+    "key": "system_settings_label_preferences",
+    "value": "Настройки"
+  },
+  {
+    "key": "system_settings_label_camera_order",
+    "value": "Порядок камер"
+  },
+  {
+    "key": "system_settings_label_about",
+    "value": "Информация"
+  },
+  {
+    "key": "base_station_schedule_label_title",
+    "value": "Расписание"
+  },
+  {
+    "key": "base_station_schedule_label_start_time",
+    "value": "Время начала"
+  },
+  {
+    "key": "base_station_schedule_label_stop_time",
+    "value": "Время окончания"
+  },
+  {
+    "key": "base_station_modes_label_title",
+    "value": "Режимы"
+  },
+  {
+    "key": "add_mode_label_title",
+    "value": "Определение режима"
+  },
+  {
+    "key": "add_mode_label_title_new",
+    "value": "Новый режим"
+  },
+  {
+    "key": "add_mode_activity_modes",
+    "value": "Режимы"
+  },
+  {
+    "key": "add_mode_label_name",
+    "value": "Новый режим"
+  },
+  {
+    "key": "add_mode_label_mode_name",
+    "value": "Имя"
+  },
+  {
+    "key": "add_mode_placeholder_mode_name",
+    "value": "имя режима"
+  },
+  {
+    "key": "add_mode_label_select_rules",
+    "value": "Выберите правила для этого режима"
+  },
+  {
+    "key": "add_mode_label_add_rule",
+    "value": "Добавить правило"
+  },
+  {
+    "key": "add_rule_label_title",
+    "value": "Новое правило"
+  },
+  {
+    "key": "base_station_rules_label_title",
+    "value": "Правила"
+  },
+  {
+    "key": "rule_label_title",
+    "value": "Определение правила"
+  },
+  {
+    "key": "rule_label_name",
+    "value": "Имя правила"
+  },
+  {
+    "key": "rule_label_rule_name",
+    "value": "Имя"
+  },
+  {
+    "key": "rule_label_rule_placeholder",
+    "value": "правило"
+  },
+  {
+    "key": "rule_label_trigger_title",
+    "value": "ЕСЛИ произошло следующее:"
+  },
+  {
+    "key": "rule_label_motion_detected",
+    "value": "Обнаружено движение"
+  },
+  {
+    "key": "rule_label_trigger_on",
+    "value": "Вкл"
+  },
+  {
+    "key": "rule_label_trigger_sensitivity",
+    "value": "Чувствительность — начало"
+  },
+  {
+    "key": "rule_label_action_title",
+    "value": "ТОГДА выполнить следующее:"
+  },
+  {
+    "key": "rule_label_action_record_video",
+    "value": "Записать видео"
+  },
+  {
+    "key": "rule_label_action_take_snapshot",
+    "value": "Сделать моментальный снимок"
+  },
+  {
+    "key": "rule_label_action_on",
+    "value": "Вкл. {cameraName}"
+  },
+  {
+    "key": "rule_label_action_sensitivity",
+    "value": "Чувствительность — конец"
+  },
+  {
+    "key": "rule_label_action_in_hot_zone",
+    "value": "В этой зоне датчика"
+  },
+  {
+    "key": "rule_label_email_action_title",
+    "value": "И сделать следующее:"
+  },
+  {
+    "key": "rule_label_send_email_alert",
+    "value": "Отправить уведомление по эл. почте"
+  },
+  {
+    "key": "rule_label_send_email_list",
+    "value": "В этот список"
+  },
+  {
+    "key": "rule_label_sensitivity_fewer_videos",
+    "value": "Меньше видео"
+  },
+  {
+    "key": "rule_label_sensitivity_more_videos",
+    "value": "Больше видео"
+  },
+  {
+    "key": "rule_label_recording_time_shorter_videos",
+    "value": "10 сек."
+  },
+  {
+    "key": "rule_label_recording_time_longer_videos",
+    "value": "120 сек."
+  },
+  {
+    "key": "rule_label_recording_time_unit_seconds",
+    "value": "{timeInSeconds} сек."
+  },
+  {
+    "key": "rule_label_select_camera",
+    "value": "Выбор камеры..."
+  },
+  {
+    "key": "rule_trigger_label_title",
+    "value": "Запуск"
+  },
+  {
+    "key": "rule_trigger_label_motion_trigger",
+    "value": "Обнаружено движение на"
+  },
+  {
+    "key": "rule_label_action_record_video_on",
+    "value": "Запись видео на"
+  },
+  {
+    "key": "email_alert_list_label_title",
+    "value": "Отправить уведомление по эл. почте"
+  },
+  {
+    "key": "push_notification_label_title",
+    "value": "Отправить Push-уведомление"
+  },
+  {
+    "key": "base_station_settings_label_title",
+    "value": "Базовая станция"
+  },
+  {
+    "key": "base_station_settings_label_name",
+    "value": "Имя"
+  },
+  {
+    "key": "base_station_settings_label_placeholder",
+    "value": "базовая станция"
+  },
+  {
+    "key": "base_station_settings_label_time_zone",
+    "value": "Часовой пояс"
+  },
+  {
+    "key": "base_station_settings_label_auto_update_firmware",
+    "value": "Автообновление микрокода"
+  },
+  {
+    "key": "base_station_settings_label_fw_version",
+    "value": "Версия микрокода"
+  },
+  {
+    "key": "base_station_settings_label_hw_version",
+    "value": "Версия оборудования"
+  },
+  {
+    "key": "base_station_settings_label_xcloud_id",
+    "value": "xCloudID"
+  },
+  {
+    "key": "base_station_settings_label_auto_select_channel",
+    "value": "Автовыбор канала"
+  },
+  {
+    "key": "base_station_settings_label_channel",
+    "value": "Канал"
+  },
+  {
+    "key": "base_station_settings_activity_restart",
+    "value": "ПЕРЕЗАПУСК"
+  },
+  {
+    "key": "base_station_settings_activity_deactivate",
+    "value": "ДЕАКТИВИРОВАТЬ"
+  },
+  {
+    "key": "base_station_settings_confirm_restart",
+    "value": "Действительно перезапустить базовую станцию: {baseStationName}?"
+  },
+  {
+    "key": "base_station_settings_confirm_deactivate",
+    "value": "Действительно деактивировать базовую станцию: {baseStationName}?"
+  },
+  {
+    "key": "base_station_settings_channel_info",
+    "value": "Для первой базовой станции следует выбрать тот же канал, что и у WiFi-роутера.  Дополнительные базовые станции, устанавливаемые в одном помещении/здании, должны находиться на расстоянии не менее 6 метров друг от друга и должны быть настроены на разные каналы."
+  },
+  {
+    "key": "base_station_settings_message_rebooting",
+    "value": "Выполняется перезагрузка базовой станции..."
+  },
+  {
+    "key": "manual_fw_update_label_title",
+    "value": "Версия микрокода"
+  },
+  {
+    "key": "manual_fw_update_confirm_update",
+    "value": "Действительно выполнить обновление до {fwVersion}?"
+  },
+  {
+    "key": "subscription_label_title",
+    "value": "Подписка"
+  },
+  {
+    "key": "subscription_label_service_level_title",
+    "value": "Уровень обслуживания"
+  },
+  {
+    "key": "subscription_label_expires",
+    "value": "Срок действия истекает"
+  },
+  {
+    "key": "subscription_activity_change_service",
+    "value": "ИЗМЕНИТЬ ПЛАН ОБСЛУЖИВАНИЯ"
+  },
+  {
+    "key": "change_service_activity_change_service",
+    "value": "ИЗМЕНИТЬ ПЛАН ОБСЛУЖИВАНИЯ"
+  },
+  {
+    "key": "change_service_activity_renew_service",
+    "value": "Обновить план обслуживания"
+  },
+  {
+    "key": "change_service_activity_cancel_service",
+    "value": "ОТМЕНИТЬ ПЛАН ОБСЛУЖИВАНИЯ"
+  },
+  {
+    "key": "change_service_activity_cancel",
+    "value": "ОТМЕНА"
+  },
+  {
+    "key": "change_service_activity_dont_cancel",
+    "value": "НЕ ОТМЕНЯТЬ"
+  },
+  {
+    "key": "subscription_label_payment_method_title",
+    "value": "Способ оплаты"
+  },
+  {
+    "key": "subscription_activity_update_payment_method",
+    "value": "Обновить"
+  },
+  {
+    "key": "subscription_label_cloud_storage_title",
+    "value": "Облачное хранилище"
+  },
+  {
+    "key": "subscription_activity_buy_more_cloud_storage",
+    "value": "Купить дополнительный объем облачного хранилища"
+  },
+  {
+    "key": "subscription_activity_delete_all_unlocked_files",
+    "value": "УДАЛИТЬ ВСЕ ФАЙЛЫ"
+  },
+  {
+    "key": "subscription_label_delete_all_unlocked_files_note",
+    "value": "ПРИМЕЧАНИЕ. 'Избранное' не будет удалено"
+  },
+  {
+    "key": "subscription_label_recycle_bin",
+    "value": "Корзина"
+  },
+  {
+    "key": "subscription_label_cameras_title",
+    "value": "Камеры"
+  },
+  {
+    "key": "subscription_label_cameras_supported",
+    "value": "Поддерживается"
+  },
+  {
+    "key": "subscription_label_cameras_connected",
+    "value": "Подключено"
+  },
+  {
+    "key": "subscription_label_cameras_online_retailers",
+    "value": "Розничные продавцы"
+  },
+  {
+    "key": "subscription_activity_buy_more_cameras",
+    "value": "Купить еще..."
+  },
+  {
+    "key": "subscription_label_base_stations_title",
+    "value": "Базовые станции"
+  },
+  {
+    "key": "subscription_label_base_stations_supported",
+    "value": "Поддерживается"
+  },
+  {
+    "key": "subscription_label_base_stations_connected",
+    "value": "Подключено"
+  },
+  {
+    "key": "subscription_label_base_stations_online_retailers",
+    "value": "Розничные продавцы"
+  },
+  {
+    "key": "subscription_activity_buy_more_base_stations",
+    "value": "Купить еще..."
+  },
+  {
+    "key": "subscription_label_add_base_station",
+    "value": "Добавить базовую станцию"
+  },
+  {
+    "key": "buy_cloud_storage_label_title",
+    "value": "Облачное хранилище"
+  },
+  {
+    "key": "buy_cloud_storage_label_no_extra_cloud_storage",
+    "value": "Нет дополнительного объема облачного хранилища"
+  },
+  {
+    "key": "label_current_plan",
+    "value": "Текущий план обслуживания"
+  },
+  {
+    "key": "buy_cloud_storage_activity_purchase_storage",
+    "value": "КУПИТЬ ОБЪЕМ ХРАНИЛИЩА"
+  },
+  {
+    "key": "add_base_station_activity_add_base_station",
+    "value": "ДОБАВИТЬ БАЗОВУЮ СТАНЦИЮ"
+  },
+  {
+    "key": "recycle_bin_label_title",
+    "value": "Корзина"
+  },
+  {
+    "key": "personal_info_email_confirmed",
+    "value": "Подтверждено"
+  },
+  {
+    "key": "personal_info_email_not_confirmed",
+    "value": "Не подтверждено"
+  },
+  {
+    "key": "personal_info_label_username",
+    "value": "Эл. почта"
+  },
+  {
+    "key": "personal_info_label_retype_username",
+    "value": "Введите адрес эл. почты еще раз"
+  },
+  {
+    "key": "personal_info_label_password",
+    "value": "Пароль"
+  },
+  {
+    "key": "personal_info_label_retype_password",
+    "value": "Повторите ввод пароля"
+  },
+  {
+    "key": "personal_info_label_remember_me",
+    "value": "Запомнить меня"
+  },
+  {
+    "key": "personal_info_label_first_name",
+    "value": "Имя"
+  },
+  {
+    "key": "personal_info_label_last_name",
+    "value": "Фамилия"
+  },
+  {
+    "key": "personal_info_autologin",
+    "value": "Автоматический вход в систему"
+  },
+  {
+    "key": "personal_info_logout",
+    "value": "Выход из системы"
+  },
+  {
+    "key": "personal_info_placeholder_username",
+    "value": "эл. почта"
+  },
+  {
+    "key": "personal_info_placeholder_username_verify",
+    "value": "подтвердить адрес эл. почты"
+  },
+  {
+    "key": "personal_info_placeholder_password",
+    "value": "пароль"
+  },
+  {
+    "key": "personal_info_placeholder_password_verify",
+    "value": "подтвердить пароль"
+  },
+  {
+    "key": "personal_info_placeholder_first_name",
+    "value": "имя"
+  },
+  {
+    "key": "personal_info_placeholder_last_name",
+    "value": "фамилия"
+  },
+  {
+    "key": "friends_label_title",
+    "value": "Друзья"
+  },
+  {
+    "key": "friends_label_pending",
+    "value": "Отложено"
+  },
+  {
+    "key": "friends_label_accepted",
+    "value": "Принято"
+  },
+  {
+    "key": "friends_label_expired",
+    "value": "Срок истек"
+  },
+  {
+    "key": "edit_friends_label_first_name",
+    "value": "Имя"
+  },
+  {
+    "key": "edit_friends_label_last_name",
+    "value": "Фамилия"
+  },
+  {
+    "key": "edit_friends_label_email",
+    "value": "Эл. почта"
+  },
+  {
+    "key": "edit_friends_activity_send_invite",
+    "value": "ОТПРАВИТЬ ПРИГЛАШЕНИЕ"
+  },
+  {
+    "key": "edit_friends_activity_resend_invite",
+    "value": "ПОВТОРНО ОТПРАВИТЬ ПРИГЛАШЕНИЕ"
+  },
+  {
+    "key": "edit_friends_label_camera_access",
+    "value": "Просмотр изображений с камеры и связанных изображений"
+  },
+  {
+    "key": "edit_friends_label_camera_adjust_settings",
+    "value": "Предоставление административных прав"
+  },
+  {
+    "key": "edit_friends_label_camera_adjust_settings_help",
+    "value": "Разрешить другу изменять параметры"
+  },
+  {
+    "key": "edit_friends_activity_delete_friend",
+    "value": "УДАЛИТЬ ИЗ ДРУЗЕЙ"
+  },
+  {
+    "key": "prefs_label_title",
+    "value": "Настройки"
+  },
+  {
+    "key": "prefs_label_storage_title",
+    "value": "Устройство хранения"
+  },
+  {
+    "key": "prefs_label_manage_storage",
+    "value": "Управление хранилищем"
+  },
+  {
+    "key": "prefs_activity_manage_storage_info",
+    "value": "Незаблокированные файлы, созданные более 30 дней назад, будут автоматически удаляться."
+  },
+  {
+    "key": "prefs_label_if_storage_full",
+    "value": "Если хранилище заполнено,"
+  },
+  {
+    "key": "prefs_label_delete_oldest_files",
+    "value": "удалять старые файлы, чтобы освободить место"
+  },
+  {
+    "key": "prefs_label_do_not_record",
+    "value": "не выполнять новых записей"
+  },
+  {
+    "key": "prefs_label_storage_full_notification",
+    "value": "Оповещение о заполнении хранилища"
+  },
+  {
+    "key": "prefs_label_low_battery_notification",
+    "value": "Оповещение о низком уровне заряда"
+  },
+  {
+    "key": "camera_order_label_title",
+    "value": "Порядок камер"
+  },
+  {
+    "key": "camera_order_confirm_delete_camera",
+    "value": "Камера '{cameraName}' будет удалена из системы.  Чтобы добавить ее обратно, нажмите кнопку 'sync'."
+  },
+  {
+    "key": "about_label_title",
+    "value": "Информация"
+  },
+  {
+    "key": "about_label_version",
+    "value": "Версия"
+  },
+  {
+    "key": "about_label_released",
+    "value": "Выпущено"
+  },
+  {
+    "key": "about_review_terms_of_service",
+    "value": "Ознакомьтесь с условиями предоставления услуг"
+  },
+  {
+    "key": "about_review_privacy_policy",
+    "value": "Ознакомьтесь с политикой конфиденциальности"
+  },
+  {
+    "key": "camera_settings_label_title",
+    "value": "Параметры камер"
+  },
+  {
+    "key": "camera_settings_label_camera_name",
+    "value": "Имя"
+  },
+  {
+    "key": "camera_settings_label_camera_placeholder",
+    "value": "камера"
+  },
+  {
+    "key": "camera_settings_label_adjust_settings_title",
+    "value": "Настройка параметров"
+  },
+  {
+    "key": "camera_settings_label_power_management_title",
+    "value": "Управление питанием"
+  },
+  {
+    "key": "camera_settings_label_pan_zoom_title",
+    "value": "Панорамирование и масштабирование"
+  },
+  {
+    "key": "camera_settings_label_invert_image",
+    "value": "Перевернуть изображение"
+  },
+  {
+    "key": "camera_settings_label_motion_detection_test",
+    "value": "Тест датчика движения"
+  },
+  {
+    "key": "camera_settings_label_position_mode",
+    "value": "Режим позиционирования"
+  },
+  {
+    "key": "camera_settings_label_best_video",
+    "value": "Наилучшее качество видео"
+  },
+  {
+    "key": "camera_settings_label_optimized",
+    "value": "Оптимизированное"
+  },
+  {
+    "key": "camera_settings_label_best_battery_life",
+    "value": "Наибольшее время работы от аккумулятора"
+  },
+  {
+    "key": "camera_settings_label_invert_image_description",
+    "value": "Использовать для поворота вида из камеры"
+  },
+  {
+    "key": "camera_settings_label_position_mode_description",
+    "value": "Использовать при ориентации камеры"
+  },
+  {
+    "key": "camera_settings_label_motion_detection_test_description",
+    "value": "Индикатор будет мигать при обнаружении движения"
+  },
+  {
+    "key": "camera_settings_label_best_video_description",
+    "value": "Может сократить время работы от аккумулятора"
+  },
+  {
+    "key": "camera_settings_label_optimized_description",
+    "value": "Балансировка качества видео и времени работы от аккумулятора"
+  },
+  {
+    "key": "camera_settings_label_best_battery_life_description",
+    "value": "Может снизить качество видео"
+  },
+  {
+    "key": "change_service_label_title",
+    "value": "Изменить план обслуживания"
+  },
+  {
+    "key": "change_service_activity_learn_more",
+    "value": "Подробнее"
+  },
+  {
+    "key": "change_service_activity_purchase_plan",
+    "value": "КУПИТЬ ПЛАН ОБСЛУЖИВАНИЯ"
+  },
+  {
+    "key": "confirm_purchase_title",
+    "value": "Подтверждение покупки"
+  },
+  {
+    "key": "confirm_purchase_label_charge_info",
+    "value": "Стоимость вашей покупки {servicePlanName} в {sellingEntity} складывается из следующих составляющих:"
+  },
+  {
+    "key": "confirm_purchase_label_price",
+    "value": "Цена: {amount}"
+  },
+  {
+    "key": "confirm_purchase_label_prorated_credit",
+    "value": "Пропорционально разделенный кредит: {amount}"
+  },
+  {
+    "key": "confirm_purhcase_label_discount",
+    "value": "Скидка: {amount}"
+  },
+  {
+    "key": "confirm_purchase_label_taxes",
+    "value": "Налоги: {amount}"
+  },
+  {
+    "key": "confirm_purchase_label_total",
+    "value": "ИТОГО: {amount}"
+  },
+  {
+    "key": "aria_directpost_error_4006",
+    "value": "Данный способ оплаты не поддерживается. В настоящее время мы принимаем только карты Mastercard и Visa."
+  },
+  {
+    "key": "aria_directpost_error_4007",
+    "value": "Укажите имя держателя карты."
+  },
+  {
+    "key": "aria_directpost_error_4008",
+    "value": "Недопустимая дата истечения срока действия"
+  },
+  {
+    "key": "aria_directpost_error_4009",
+    "value": "Недействительный номер кредитной карты"
+  },
+  {
+    "key": "aria_directpost_error_6005",
+    "value": "В запросе отсутствует информация."
+  },
+  {
+    "key": "aria_directpost_error_6006",
+    "value": "В запросе отсутствует информация."
+  },
+  {
+    "key": "aria_directpost_error_6007",
+    "value": "Введите номер CVV.  (CVV представляет собой трехзначный номер, указанный на обратной стороне кредитной карты и используемый компаниями, работающими с кредитными картами, для снижения рисков мошенничества.)"
+  },
+  {
+    "key": "aria_directpost_error_6008",
+    "value": "Данный адрес не соответствует адресу в файле.  Проверьте адрес или попробуйте указать использованный ранее адрес."
+  },
+  {
+    "key": "aria_directpost_error_6009",
+    "value": "Произошел сбой.  Повторите попытку."
+  },
+  {
+    "key": "aria_directpost_error_6010",
+    "value": "Произошел сбой.  Повторите попытку."
+  },
+  {
+    "key": "aria_directpost_error_6011",
+    "value": "Данный адрес не соответствует адресу в файле.  Проверьте адрес или попробуйте указать использованный ранее адрес."
+  },
+  {
+    "key": "aria_directpost_error_6012",
+    "value": "Введите номер CVV.  (CVV представляет собой трехзначный номер, указанный на обратной стороне кредитной карты и используемый компаниями, работающими с кредитными картами, для снижения рисков мошенничества.)"
+  },
+  {
+    "key": "aria_directpost_error_6013",
+    "value": "Введите номер CVV.  (CVV представляет собой трехзначный номер, указанный на обратной стороне кредитной карты и используемый компаниями, работающими с кредитными картами, для снижения рисков мошенничества.)"
+  },
+  {
+    "key": "aria_directpost_error_6014",
+    "value": "Введите номер CVV.  (CVV представляет собой трехзначный номер, указанный на обратной стороне кредитной карты и используемый компаниями, работающими с кредитными картами, для снижения рисков мошенничества.)"
+  },
+  {
+    "key": "aria_directpost_error_6015",
+    "value": "Информация вашей кредитной карты не соответствует данным, имеющимся в вашем банке.  Введите имя держателя карты и адрес выставления счета, которые связаны с кредитной картой."
+  },
+  {
+    "key": "aria_directpost_error_6017",
+    "value": "Данный адрес не соответствует адресу в файле.  Проверьте адрес или попробуйте указать использованный ранее адрес."
+  },
+  {
+    "key": "aria_directpost_error_6018",
+    "value": "Произошел сбой.  Повторите попытку."
+  },
+  {
+    "key": "aria_directpost_error_6019",
+    "value": "Почтовый индекс не соответствует сохраненным данным. Повторите ввод почтового индекса."
+  },
+  {
+    "key": "aria_directpost_error_6020",
+    "value": "Почтовый индекс не соответствует сохраненным данным. Повторите ввод почтового индекса."
+  },
+  {
+    "key": "aria_directpost_error_6021",
+    "value": "Область/регион не соответствуют сохраненным данным.  Повторите ввод области/региона."
+  },
+  {
+    "key": "aria_directpost_error_6022",
+    "value": "В запросе отсутствует информация."
+  },
+  {
+    "key": "aria_directpost_error_6023",
+    "value": "Укажите информацию о карте Mastercard или Visa."
+  },
+  {
+    "key": "marketing_how_to_sync_camera_header",
+    "value": "Способ синхронизации камеры"
+  },
+  {
+    "key": "marketing_how_to_sync_camera_content",
+    "value": "o Вставьте батареи в камеру. Соблюдайте полярность, руководствуясь соответствующими указателями\n\no Нажмите кнопку 'sync' на камере и базовой станции\n\no Индикатор на передней панели камеры будет мигать с большой частотой в течение 10 секунд для подтверждения синхронизации, затем погаснет\n\no Индикатор на базовой станции под значком камеры загорится зеленым"
+  },
+  {
+    "key": "status_brightness_config_success",
+    "value": "Уровень яркости сохранен"
+  },
+  {
+    "key": "label_do",
+    "value": "СДЕЛАТЬ"
+  },
+  {
+    "key": "label_when",
+    "value": "КОГДА"
+  },
+  {
+    "key": "activity_label_update_now",
+    "value": "ОБНОВИТЬ СЕЙЧАС"
+  },
+  {
+    "key": "activity_label_update",
+    "value": "ОБНОВИТЬ"
+  },
+  {
+    "key": "activity_label_dont_update",
+    "value": "НЕ ОБНОВЛЯТЬ"
+  },
+  {
+    "key": "status_base_station_firmware_update_available",
+    "value": "Доступно обновление для базовой станции '{baseStationName}'. Выполнить обновление сейчас?"
+  },
+  {
+    "key": "activity_always_remind_me",
+    "value": "Всегда напоминать"
+  },
+  {
+    "key": "status_app_required_update",
+    "value": "Для продолжения требуется обновить приложение Arlo."
+  },
+  {
+    "key": "status_app_update",
+    "value": "Доступна новая версия приложения Arlo."
+  },
+  {
+    "key": "label_motion_detection_test_description",
+    "value": "Камера {cameraName} работает в режиме теста датчика движения.\n\nИндикатор на камере будет мигать при обнаружении движения."
+  },
+  {
+    "key": "label_send_email_confirmation_to",
+    "value": "Отправить подтверждение по эл. почте на адрес {emailAddress}?"
+  },
+  {
+    "key": "label_subscriptions",
+    "value": "Подписки"
+  },
+  {
+    "key": "error_unexpected",
+    "value": "Возникла непредвиденная ошибка. Повторите попытку."
+  },
+  {
+    "key": "label_confirm_delete_rule",
+    "value": "Действительно удалить правило {ruleName}?"
+  },
+  {
+    "key": "library_label_confirm_delete_media",
+    "value": "Действительно удалить выбранные файлы?"
+  },
+  {
+    "key": "rule_label_select_motion_device",
+    "value": "Выберите датчик движения"
+  },
+  {
+    "key": "rule_label_select_recording_device",
+    "value": "Выберите устройство записи"
+  },
+  {
+    "key": "alert_arlo1",
+    "value": "Система Arlo обнаружила движение на камере {cameraName}."
+  },
+  {
+    "key": "alert_arlo2",
+    "value": "Система Arlo обнаружила движение на камере {cameraName}. Нажмите здесь, чтобы просмотреть запись."
+  },
+  {
+    "key": "educate_label_library_select",
+    "value": "Чтобы посмотреть другие возможные операции с вашими записями, нажмите кнопку 'Выбор' в правой верхней части экрана."
+  },
+  {
+    "key": "educate_label_dont_show_again",
+    "value": "Больше не отображать это сообщение"
+  },
+  {
+    "key": "educate_label_base_station_modes_rules",
+    "value": "Используйте правила для настройки и управления обнаружением движения, записями и уведомлениями. Объединяйте в группы одно или несколько правил с использованием режимов.\n\nМожно выбрать или запланировать режимы, чтобы определить, какие правила будут включены."
+  },
+  {
+    "key": "activity_ok",
+    "value": "ОК"
+  },
+  {
+    "key": "error_unsupported_mp4_playback",
+    "value": "Ваш браузер не поддерживает видео HTML5 в формате MP4 с использованием кодека H.264. Используйте другой браузер или загрузите видео."
+  },
+  {
+    "key": "activity_delete",
+    "value": "УДАЛИТЬ"
+  },
+  {
+    "key": "activity_download_and_delete",
+    "value": "ЗАГРУЗИТЬ И УДАЛИТЬ"
+  },
+  {
+    "key": "recycle_bin_label_empty",
+    "value": "В корзине нет записей"
+  },
+  {
+    "key": "edit_friends_label_admin_rights",
+    "value": "Предоставленные административные права"
+  },
+  {
+    "key": "edit_friends_label_no_admin_rights",
+    "value": "Права администратора не предоставлены"
+  },
+  {
+    "key": "error_username_exists",
+    "value": "Учетная запись с этим адресом эл. почты уже существует. Чтобы выполнить настройку, введите пароль или создайте новую учетную запись."
+  },
+  {
+    "key": "ios_alert_arlo1",
+    "value": "Обнаружено движение в %@."
+  },
+  {
+    "key": "ios_alert_arlo2",
+    "value": "Обнаружено движение в %@. Нажмите здесь, чтобы просмотреть запись."
+  },
+  {
+    "key": "marketing_label_warning_basic_friend_usage",
+    "value": "В рамках базового плана обслуживания ваш друг может выполнять просмотр с вашей камеры только в течение 30 дней. Чтобы разрешить доступ по истечении 30-дневного периода, выполните обновление прямо сейчас"
+  },
+  {
+    "key": "marketing_label_enable_friend_feature",
+    "value": "Выполните обновление сейчас для активации этой функции"
+  },
+  {
+    "key": "marketing_label_upgrade_now",
+    "value": "Обновить сейчас"
+  },
+  {
+    "key": "rule_label_default_value",
+    "value": "Обнаружение движения на камере"
+  },
+  {
+    "key": "error_cannot_share_selection",
+    "value": "Общий доступ к выбранным вами медиафайлам невозможен. Выберите другой набор записей и снимков."
+  },
+  {
+    "key": "base_station_settings_confirm_restart_busy",
+    "value": "В данный момент ваши камеры заняты. Действительно перезапустить базовую станцию: {baseStationName}?"
+  },
+  {
+    "key": "label_confirm_delete_unlocked_files",
+    "value": "Действительно удалить все записи и снимки, не относящиеся к избранным?\n\nПРЕДУПРЕЖДЕНИЕ. Файлы будут перемещены в корзину и автоматически удалены через 7 дней."
+  },
+  {
+    "key": "password_help_label_reset_password",
+    "value": "Сбросить пароль"
+  },
+  {
+    "key": "activity_send",
+    "value": "ОТПРАВИТЬ"
+  },
+  {
+    "key": "activity_reset",
+    "value": "СБРОС"
+  },
+  {
+    "key": "status_device_update_available",
+    "value": "Доступно обновление"
+  },
+  {
+    "key": "status_offline_alternate",
+    "value": "Отключен"
+  },
+  {
+    "key": "status_upgrading_alternate",
+    "value": "Выполняется обновление..."
+  },
+  {
+    "key": "status_busy_alternate",
+    "value": "Занято"
+  },
+  {
+    "key": "status_signing_in",
+    "value": "Вход в систему..."
+  },
+  {
+    "key": "status_label_getting_status_short",
+    "value": "Получение информации о состоянии"
+  },
+  {
+    "key": "status_label_getting_status_alternate",
+    "value": "Получение состояния..."
+  },
+  {
+    "key": "activity_label_auto_renew",
+    "value": "Автоматическое продление"
+  },
+  {
+    "key": "activity_label_next_bill",
+    "value": "Следующий счет"
+  },
+  {
+    "key": "placeholder_password",
+    "value": "пароль"
+  },
+  {
+    "key": "placeholder_verify_password",
+    "value": "подтвердить пароль"
+  },
+  {
+    "key": "activity_label_edit_filter",
+    "value": "Изменить фильтр"
+  },
+  {
+    "key": "status_base_station_added",
+    "value": "Базовая станция добавлена"
+  },
+  {
+    "key": "subscription_status_no_credit_card",
+    "value": "В файле нет кредитной карты"
+  },
+  {
+    "key": "activity_update_app_ios",
+    "value": "ПЕРЕЙДИТЕ В APP STORE"
+  },
+  {
+    "key": "activity_update_app_android",
+    "value": "ПЕРЕЙДИТЕ В PLAY STORE"
+  },
+  {
+    "key": "activity_update_app_kindle",
+    "value": "ПЕРЕЙДИТЕ В APPSTORE"
+  },
+  {
+    "key": "activity_upate_later",
+    "value": "ОБНОВИТЬ ПОЗЖЕ"
+  },
+  {
+    "key": "status_getting_information",
+    "value": "Получение информации"
+  },
+  {
+    "key": "library_activity_reset_filter_alternate",
+    "value": " Сброс"
+  },
+  {
+    "key": "camera_status_upgrading",
+    "value": "Камера обновляется..."
+  },
+  {
+    "key": "status_base_station_update_available",
+    "value": "Доступно обновление"
+  },
+  {
+    "key": "status_getting_user_info",
+    "value": "Получение информации о пользователе..."
+  },
+  {
+    "key": "status_getting_device_info",
+    "value": "Получение информации об устройстве..."
+  },
+  {
+    "key": "edit_friends_label_add_friend",
+    "value": "Добавить друга"
+  },
+  {
+    "key": "confirm_base_station_settings_update",
+    "value": "The upgrade process can take up to five minutes. Make sure your device is uninterrupted during the upgrade process. Do you want to upgrade your {baseStationName} to {version}?"
+  },
+  {
+    "key": "title_accept_tos",
+    "value": "Принимаю условия предоставления услуг"
+  },
+  {
+    "key": "title_accept_policy",
+    "value": "Принимаю условия политики конфиденциальности"
+  },
+  {
+    "key": "activity_agree",
+    "value": "СОГЛАСЕН"
+  },
+  {
+    "key": "activity_disagree",
+    "value": "НЕ СОГЛАСЕН"
+  },
+  {
+    "key": "label_versions",
+    "value": "Версии"
+  },
+  {
+    "key": "label_hardware",
+    "value": "Оборудование"
+  },
+  {
+    "key": "label_firmware",
+    "value": "Микрокод"
+  },
+  {
+    "key": "error_claim_no_base_station",
+    "value": "В данный момент невозможно добавить дополнительные базовые станции, поскольку не удалось обнаружить вашу базовую станцию.\n\nУбедитесь в том, что питание базовой станции включено и она подключена к Интернету, а также в том, что устройство подключено к той же WiFi-сети, что и базовая станция."
+  },
+  {
+    "key": "status_account_exist",
+    "value": "Учетная запись Arlo с этим адресом эл. почты уже существует. Хотите войти в систему с использованием этой учетной записи?"
+  },
+  {
+    "key": "activity_go_to_login",
+    "value": "ПЕРЕЙДИТЕ НА СТРАНИЦУ ВХОДА"
+  },
+  {
+    "key": "payment_method_label_security_code_short",
+    "value": "Код безопасности"
+  },
+  {
+    "key": "prefs_label_notifications_title",
+    "value": "Оповещения"
+  },
+  {
+    "key": "account_setup_label_security_question",
+    "value": "Вопрос"
+  },
+  {
+    "key": "account_setup_label_security_question_placeholder",
+    "value": "вопрос"
+  },
+  {
+    "key": "account_setup_label_security_custom_question\"",
+    "value": "Пользовательский вопрос"
+  },
+  {
+    "key": "account_setup_label_security_custom_question_placeholder",
+    "value": "Пользовательский вопрос"
+  },
+  {
+    "key": "prefs_label_push_notification_title",
+    "value": "push-уведомление"
+  },
+  {
+    "key": "status_label_active",
+    "value": "Активный"
+  },
+  {
+    "key": "status_label_active",
+    "value": "Неактивно"
+  },
+  {
+    "key": "about_review_ffmpeg_license",
+    "value": "Лицензия FFmpeg"
+  },
+  {
+    "key": "title_release_notes",
+    "value": "Примечания"
+  },
+  {
+    "key": "info_cannot_delete_last_scheduled_mode",
+    "value": "Этот режим не может быть удален. Требуется не менее одного активного режима в расписании."
+  },
+  {
+    "key": "base_station_settings_confirm_update_busy",
+    "value": "В данный момент ваши камеры заняты. Процесс обновления может занять до пяти минут. Запрещается прерывать работу устройства в процессе обновления. Обновить {baseStationName} до версии {Version}?"
+  },
+  {
+    "key": "base_station_settings_confirm_update",
+    "value": "Процесс обновления может занять до пяти минут. Запрещается прерывать работу устройства в процессе обновления. Обновить {baseStationName} до версии {Version}?"
+  },
+  {
+    "key": "title_friend",
+    "value": "Друг"
+  },
+  {
+    "key": "error_unable_to_play_camera",
+    "value": "Не удается воспроизвести. Повторите попытку."
+  },
+  {
+    "key": "status_updating",
+    "value": "Обновление..."
+  },
+  {
+    "key": "error_compose_email_failed",
+    "value": "Не удалось создать адрес эл. почты. Повторите попытку."
+  },
+  {
+    "key": "error_cannot_process_billing_information",
+    "value": "Не удалось обработать информацию вашей кредитной карты. Повторите попытку."
+  },
+  {
+    "key": "status_getting_media_info",
+    "value": "Получение информации о медиафайлах..."
+  },
+  {
+    "key": "label_data_not_available",
+    "value": "--"
+  },
+  {
+    "key": "label_credit_card_display",
+    "value": "xxxx-xxxx-xxxx-{last4Digits}"
+  },
+  {
+    "key": "error_media_not_available",
+    "value": "Медиафайл недоступен."
+  },
+  {
+    "key": "status_timeout_no_response",
+    "value": "Отсутствие ответа в течение %d сек."
+  },
+  {
+    "key": "error_unable_to_apply_changes_lost_connection",
+    "value": "Изменения не были применены вследствие потери подключения к Интернету."
+  },
+  {
+    "key": "status_enabling_auto_update",
+    "value": "Включение автоматического обновления..."
+  },
+  {
+    "key": "status_disabling_auto_update",
+    "value": "Выключение автоматического обновления..."
+  },
+  {
+    "key": "error_apply_auto_udpate",
+    "value": "The automatic update could not be set {error}. Please try again."
+  },
+  {
+    "key": "status_apply_time_zone",
+    "value": "Настройка часового пояса..."
+  },
+  {
+    "key": "error_apply_time_zone",
+    "value": "Настройка часового пояса не была применена {error}. Повторите попытку."
+  },
+  {
+    "key": "status_apply_flicker_frequency",
+    "value": "Настройка частоты мерцания..."
+  },
+  {
+    "key": "error_apply_flicker_frequency",
+    "value": "Настройка частоты мерцания не была применена {error}. Повторите попытку."
+  },
+  {
+    "key": "status_apply_mode",
+    "value": "Настройка активного режима..."
+  },
+  {
+    "key": "error_apply_mode",
+    "value": "Настройка режима не была применена {error}. Повторите попытку."
+  },
+  {
+    "key": "status_adding_mode",
+    "value": "Добавление режима..."
+  },
+  {
+    "key": "error_adding_mode",
+    "value": "Добавить режим не удалось {error}. Повторите попытку."
+  },
+  {
+    "key": "status_updating_mode",
+    "value": "Обновление режима..."
+  },
+  {
+    "key": "error_updating_mode",
+    "value": "Обновить режим не удалось {error}. Повторите попытку."
+  },
+  {
+    "key": "status_deleting_mode",
+    "value": "Удаление режима..."
+  },
+  {
+    "key": "error_deleting_mode",
+    "value": "Удалить режим не удалось {error}. Повторите попытку."
+  },
+  {
+    "key": "status_adding_rule",
+    "value": "Добавления правила..."
+  },
+  {
+    "key": "error_adding_rule",
+    "value": "Добавить правило не удалось {error}. Повторите попытку."
+  },
+  {
+    "key": "status_update_rule",
+    "value": "Обновление правила..."
+  },
+  {
+    "key": "error_update_rule",
+    "value": "Обновить правило не удалось {error}. Повторите попытку."
+  },
+  {
+    "key": "status_deleting_rule",
+    "value": "Удаление правила..."
+  },
+  {
+    "key": "error_deleting_rule",
+    "value": "Удалить правило не удалось {error}. Повторите попытку."
+  },
+  {
+    "key": "status_label_on",
+    "value": "вкл."
+  },
+  {
+    "key": "status_label_off",
+    "value": "выкл."
+  },
+  {
+    "key": "status_apply_schedule_on",
+    "value": "Настройка расписания вкл..."
+  },
+  {
+    "key": "status_apply_schedule_off",
+    "value": "Setting schedule off..."
+  },
+  {
+    "key": "error_apply_schedule_on_off",
+    "value": "The schedule could not be set {error}. Please try again."
+  },
+  {
+    "key": "error_apply_schedule",
+    "value": "Настройка расписания не была применена {error}. Повторите попытку."
+  },
+  {
+    "key": "status_updating_schedule",
+    "value": "Обновление расписания..."
+  },
+  {
+    "key": "error_updating_schedule",
+    "value": "Обновить расписание не удалось {error}. Повторите попытку."
+  },
+  {
+    "key": "status_apply_position_mode",
+    "value": "Включение режима позиционирования..."
+  },
+  {
+    "key": "error_apply_position_mode",
+    "value": "Запустить режим позиционирования не удалось {error}. Повторите попытку."
+  },
+  {
+    "key": "status_apply_motion_sensitivity",
+    "value": "Применение чувствительности датчика движения..."
+  },
+  {
+    "key": "error_apply_motion_sensitivity",
+    "value": "Чувствительность датчика движения не была применена {error}. Повторите попытку."
+  },
+  {
+    "key": "header_label_choose_mode_manually",
+    "value": "ВЫБРАТЬ ВРУЧНУЮ"
+  },
+  {
+    "key": "activity_label_purchase_cameras",
+    "value": "КУПИТЬ КАМЕРЫ"
+  },
+  {
+    "key": "label_none",
+    "value": "Нет"
+  },
+  {
+    "key": "label_current_service_level",
+    "value": "Текущий уровень обслуживания"
+  },
+  {
+    "key": "notify_cannot_delete_active_mode",
+    "value": "Этот режим не может быть удален, поскольку он активен. Чтобы удалить этот режим, выберите другой режим и повторите попытку."
+  },
+  {
+    "key": "notify_device_removed_successfully",
+    "value": "Устройство удалено из вашей учетной записи."
+  },
+  {
+    "key": "confirm_delete_camera",
+    "value": "Удалить камеру?"
+  },
+  {
+    "key": "confirm_remove_friend",
+    "value": "Действительно удалить пользователя из друзей?"
+  },
+  {
+    "key": "info_select_shareable_cameras",
+    "value": "Выберите хотя бы одну камеру для предоставления общего доступа для этого друга."
+  },
+  {
+    "key": "header_label_cameras",
+    "value": "КАМЕРЫ"
+  },
+  {
+    "key": "confirm_restore_selected_files",
+    "value": "Восстановить выбранные файлы?"
+  },
+  {
+    "key": "status_account_max_modes",
+    "value": "Достигнуто максимально допустимое количество режимов для вашего уровня обслуживания."
+  },
+  {
+    "key": "label_add_email",
+    "value": "Добавить адрес эл. почты"
+  },
+  {
+    "key": "label_action",
+    "value": "Действие"
+  },
+  {
+    "key": "header_select_camera",
+    "value": "Выбор камеры"
+  },
+  {
+    "key": "error_mode_name_exists",
+    "value": "The name for your mode already exists. Please use a different mode name."
+  },
+  {
+    "key": "error_rule_name_exists",
+    "value": "Это имя правила уже существует. Используйте другое имя правила."
+  },
+  {
+    "key": "error_rule_email_exists",
+    "value": "Этот адрес эл. почты уже добавлен в правило."
+  },
+  {
+    "key": "status_label_free",
+    "value": "Бесплатно"
+  },
+  {
+    "key": "status_label_error",
+    "value": "Ошибка"
+  },
+  {
+    "key": "confirm_delete_non_favorites",
+    "value": "Удалить выбранные файлы? Избранные файлы не будут удалены."
+  },
+  {
+    "key": "confirm_share_no_access",
+    "value": "Открыть общий доступ к выбранным файлам? Общий доступ к файлам с камер, владельцем которых вы не являетесь, не будет открыт."
+  },
+  {
+    "key": "confirm_download_no_access",
+    "value": "Загрузить выбранные файлы? Файлы с камер, владельцем которых вы не являетесь, не будут загружены."
+  },
+  {
+    "key": "status_account_exist",
+    "value": "Учетная запись Arlo с этим адресом эл. почты уже существует. Хотите войти в систему с использованием этой учетной записи?"
+  },
+  {
+    "key": "activity_go_to_login",
+    "value": "ПЕРЕЙДИТЕ НА СТРАНИЦУ ВХОДА"
+  },
+  {
+    "key": "info_schedule_zoom_in",
+    "value": "Увеличьте масштаб для просмотра сведений расписания."
+  },
+  {
+    "key": "info_schedule_zoom_out",
+    "value": "Уменьшите масштаб для просмотра расписания на весь день."
+  },
+  {
+    "key": "info_schedule_tap_and_hold",
+    "value": "Коснитесь и удерживайте для добавления режима в расписание."
+  },
+  {
+    "key": "info_schedule_tap",
+    "value": "Коснитесь для изменения режима."
+  },
+  {
+    "key": "info_schedule_rotate_landscape",
+    "value": "Поверните для просмотра представления недели."
+  },
+  {
+    "key": "info_schedule_rotate_portrait",
+    "value": "Поверните для просмотра представления дня."
+  },
+  {
+    "key": "bs_settings_label_flicker_adjustment",
+    "value": "Регулировка мерцания"
+  },
+  {
+    "key": "info_flicker_adjustment",
+    "value": "Если вы заметили мерцание видеоизображения, попробуйте отрегулировать скорость затвора камеры в соответствии с частотой вашей местной сети электропитания переменного тока: 50 или 60 Гц."
+  },
+  {
+    "key": "label_frequency_auto",
+    "value": "Автоматически ({frequency})"
+  },
+  {
+    "key": "label_frequency_60",
+    "value": "60 Гц"
+  },
+  {
+    "key": "label_frequency_50",
+    "value": "50 Гц"
+  },
+  {
+    "key": "label_frequency_auto",
+    "value": "Авто"
+  },
+  {
+    "key": "help_settings",
+    "value": "Справка"
+  },
+  {
+    "key": "help_label_support",
+    "value": "Поддержка"
+  },
+  {
+    "key": "help_label_community",
+    "value": "Сообщество"
+  },
+  {
+    "key": "status_label_disabled",
+    "value": "Отключено"
+  },
+  {
+    "key": "label_no_updates_available",
+    "value": "Нет доступных обновлений."
+  },
+  {
+    "key": "error_login_internet_connection",
+    "value": "При вашей попытке входа в систему возникли неполадки вследствие проблем с подключением к Интернету. Повторить попытку?"
+  },
+  {
+    "key": "title_add_base_station",
+    "value": "Добавить базовую станцию"
+  },
+  {
+    "key": "title_add",
+    "value": "Добавить"
+  },
+  {
+    "key": "title_edit",
+    "value": "Редактировать"
+  },
+  {
+    "key": "title_see_another_camera_here",
+    "value": "Другую камеру см. здесь"
+  },
+  {
+    "key": "title_active_rules",
+    "value": "АКТИВНЫЕ ПРАВИЛА"
+  },
+  {
+    "key": "label_no_active_rules",
+    "value": "Для этого режима нет активных правил."
+  },
+  {
+    "key": "setup_sync_cameras_1",
+    "value": "Нажмите кнопку синхронизации на стороне базовой станции . Подождите, пока статус синхронизации мигать светодиод зеленого цвета."
+  },
+  {
+    "key": "setup_sync_cameras_2",
+    "value": "Нажмите кнопку синхронизации на верхней части камеры ."
+  },
+  {
+    "key": "setup_sync_cameras_3",
+    "value": "Синий светодиод на камере будет мигать в течение десяти секунд, чтобы подтвердить . ПРИМЕЧАНИЕ : Не снимайте батарею во время этого процесса."
+  },
+  {
+    "key": "setup_base_station_1",
+    "value": "Подключите базовую станцию ​​к маршрутизатору"
+  },
+  {
+    "key": "setup_base_station_2",
+    "value": "Подключите его"
+  },
+  {
+    "key": "setup_base_station_3",
+    "value": "Включите его"
+  },
+  {
+    "key": "mobile_setup_complete_title",
+    "value": "Завершение установки"
+  },
+  {
+    "key": "mobile_setup_complete_info",
+    "value": "Поздравляем! Ваше Арло камеры теперь установка и готов для просмотра .\nАрло умно, чтобы автоматически сохранить все видео он записывает на свой счет облачного хранения . Узнайте больше, чтобы узнать , как долго ваш облачных хранилищ учетных записей Каждое видео , сколько камер Вы можете подключить и то, что подписка на варианты у вас есть ."
+  },
+  {
+    "key": "activity_learn_more",
+    "value": "Узнать Больше"
+  },
+  {
+    "key": "activity_skip_to_cameras",
+    "value": "Перейти к камерам"
+  },
+  {
+    "key": "mobile_subscription_info",
+    "value": "Арло умно, чтобы автоматически сохранить все видео он записывает на свой счет облачного хранения . Нажмите здесь, чтобы узнать, как долго ваши облачные хранилища учетных записей для каждого видео , сколько камер Вы можете подключить и то, что подписка на варианты у вас есть ."
+  },
+  {
+    "value": "Credit Card information is not valid",
+    "key": "card_error"
+  },
+  {
+    "value": "Payment method is not updated",
+    "key": "billing_timeout_error"
+  },
+  {
+    "key": "timezone_error",
+    "value": "Please check time zone settings for the base station!"
+  }
+]

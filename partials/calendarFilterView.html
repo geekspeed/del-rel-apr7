@@ -1,0 +1,26 @@
+﻿<div class="arlo-fs17 modal-header arlo-b">Filter</div>
+<!--<div class="wrapper calendar-filter-wrap">-->
+    <div class="modal-body" ng-init="init()">
+        <div class="calendar-filter-title arlo-b" style="margin-top: 0;">{{'filter_label_types' | i18n}}</div>
+        <div class="calendar-filter-types">
+            <a id="calendarFilter_{{favorite.value}}" ng-click="favoritesChanged(favorite)"
+                    ng-class="{'pressed': favorite.value == favorites.value,
+                    'arlo-cp': favorite.value != favorites.value}"
+                    ng-repeat="favorite in favoritesOptions">
+                {{favorite.text | i18n}}
+            </a>
+        </div>
+        <div class="calendar-filter-title arlo-b">{{'filter_label_cameras' | i18n}}</div>
+        <div class="calendar-filter-cameras">
+            <div class="calendar-filter-camera arlo-cp arlo-pre" ng-repeat="camera in getCameras() track by camera.deviceId"
+                 ng-class="{'selected' :isCameraSelected(camera.deviceId)}"
+                 ng-click="camerasSelectionChanged(camera)">
+                {{camera.deviceName}}
+            </div>
+        </div>
+    </div>
+<!--</div>-->
+<div class="modal-footer" style="margin-top: 0;">
+    <button id="calendarFilter_cancel" class="button-fixed button-cancel" ng-click="$dismiss()" style="margin-right:15px;">{{'activity_cancel' | i18n}}</button>
+    <button id="calendarFilter_apply" class="button-fixed" ng-click="done();$close();">APPLY</button>
+</div>

@@ -1,0 +1,57 @@
+<div ng-init="init()">
+    <div ng-show="loading || isLoading()" class="billing-loading" ng-include="'partials/loadingView.html'"></div>
+    <div class="settings-header">
+        <span class="settings-back" ui-sref="settings.modes({deviceId:baseStationId})">{{'activity_cancel' | i18n}}</span>
+        <span class="settings-done" ng-click="!isModeValid(mode) || done()" ng-disabled="!isModeValid(mode) || !isChanged()">{{'activity_save' | i18n}}</span>
+        <span ng-if="deviceName(baseStationId)">{{deviceName(baseStationId) + ': ' + getMode().name}}</span>
+    </div>
+    <div class="settings-container-list">
+    <div ng-hide="!getMode()" class="settings-panel">
+        <div class="settings-list">
+            <div class="settings-list-item-edit">
+                <label style="white-space: nowrap;">Name: </label>
+
+                <div class="settings-list-item-wrap">
+                    <form name="modeNameForm">
+                        <input type="text" ng-model="getMode().name" name="name" required
+                               ng-minlength="1"
+                               ng-maxlength="32">
+                        <div class="error" ng-show="modeNameForm.$dirty && modeNameForm.$invalid">
+                            <div ng-show="modeNameForm.name.$error.required">
+                                Name is required.
+                            </div>
+                            <div ng-show="modeNameForm.name.$error.pattern">
+                                Please provide a valid Name.
+                            </div>
+                            <div ng-show="modeNameForm.name.$error.minlength">
+                                Name is required to be at least 1 characters.
+                            </div>
+                            <div ng-show="modeNameForm.name.$error.maxlength">
+                                Name cannot be longer than 32 characters.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="settings-list-title">{{'add_mode_label_select_rules' | i18n}}</div>
+            <div class="settings-list" ng-if="getAvailableRules()">
+            <div ng-click="toggleSelectRule(rule)" class="rule-item arlo-cp edit-setting-item" ng-class="{'settings-alerts-selected': isRuleSelected(rule)}"
+                 ng-repeat="rule in getAvailableRules()">
+                <div class="rule-title arlo-pre">{{rule.name}}</div>
+                <div>
+                    <div class="rule-email" ng-class="{'rule-email-active': isRuleAction(rule, 'email')}"></div>
+                    <div class="rule-record rule-record-active"></div>
+                    <div class="rule-motion"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <button ng-show="editMode" class="button-delete settings-delete"
+                ng-click="deleteMode()">{{'activity_delete_mode' | i18n}}
+        </button>
+    </div>
+    </div>
+</div>

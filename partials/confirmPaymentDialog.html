@@ -1,0 +1,14 @@
+﻿<div tabindex="-1" role="dialog" class="modal fade" ng-class="{in: animate}" ng-style="{'z-index': 1050 + index*10, display: 'block'}" ng-click="close($event)">
+    <div class="modal-dialog" ng-class="{'modal-sm': size == 'sm', 'modal-lg': size == 'lg'}">
+        <div class="modal-content">
+            <div ng-transclude style="padding:  20px 20px 0 20px;"></div>
+            <div class="modal-footer">
+                <button class="button-fixed button-cancel" style="margin-right:15px;"
+                        ng-click="$parent.$close('cancel');" id="buttonCancel">{{'activity_cancel' | i18n}}
+                </button>
+                <button class="button-fixed" ng-click="$parent.$close('ok');" id="buttonPurchase">Purchase</button>
+            </div>
+        </div>
+    </div>
+</div>
+

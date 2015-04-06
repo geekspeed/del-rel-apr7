@@ -1,0 +1,88 @@
+﻿<div class="login-body" ng-class="{'resettingPassword' : resettingPassword()}">
+    <div class="login-body-inner">
+        <section class="login-form" ng-init="init()" ng-controller="LoginCtrl" ng-hide="resettingPassword()">
+            <div class="login-logo"></div>
+            <form name="loginForm" autocomplete="off" auto-fill-fix novalidate ng-submit="attemptLogin()">
+                <input type="email" ng-model="userId" id="userId" name="userId" placeholder="{{'login_label_username' | i18n}}" required value="" />
+
+                <input type="password" ng-model="password" id="password" name="password" placeholder="{{'login_label_password' | i18n}}" />
+                <div ng-show="loginError" class="error" style="margin-bottom: 10px;">{{loginError}}</div>
+
+                <input type="checkbox" ng-model="rememberMe" name="rememberMe" id="rememberMe">
+                <label for="rememberMe" class="login-remember" data-i18n="login_label_remember_me"></label>
+
+                <br />
+                <button ng-disabled="inProgress" type="submit" id="loginButton" ng-bind="'login_activity_login' | i18n"></button>
+
+                <a class="arlo-link password-help" ui-sref="passwordHelp" ng-bind="'login_activity_username_password_help' | i18n"></a>
+                <div ng-if="notAccount">
+                <button type="button" id="login_systemSetup" class="button-new" ng-hide="isFriendUser()" ng-click="systemSetup()" ng-bind="'login_activity_new_system_setup' | i18n"></button>
+                <button type="button" id="login_createAccount" class="button-new" ng-show="isFriendUser()" ng-click="createAccount()" ng-bind="'login_activity_create_account' | i18n"></button>
+
+                <a class="arlo-link support-link" target="_blank" href="http://support.arlo.com/?utm_source=app_desktop">Support</a>
+                </div>
+            </form>
+        </section>
+
+        <section class="login-form" ng-show="resettingPassword()">
+            <div class="login-logo"></div>
+            <form name="resetPasswordForm" autocomplete="off">
+                <h4>Reset lost password</h4>
+                    <div>
+                        <label>New Password:</label>
+                        <input type="password" placeholder="New password" name="newPassword"
+                               ng-model="newPassword" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*()]*$/"
+                               ng-minlength=6
+                               ng-maxlength=128
+                               required
+                               empty>
+                        <div class="error"
+                             ng-show="resetPasswordForm.newPassword.$dirty && resetPasswordForm.newPassword.$invalid">
+
+                            <small ng-show="resetPasswordForm.newPassword.$error.required">
+                                Password is required.
+                            </small>
+                            <small ng-show="resetPasswordForm.newPassword.$error.pattern">
+                                Password must be at least 6 characters including 1 uppercase letter, 1 lowercase letter, 1 number. The supported special characters are !@#$%^&*().
+                            </small>
+
+                            <small ng-show="resetPasswordForm.newPassword.$error.minlength">
+                                Password is required to be at least 6 characters.
+                            </small>
+                            <small ng-show="resetPasswordForm.newPassword.$error.maxlength">
+                                Password cannot be longer than 128 characters.
+                            </small>
+
+                        </div>
+                    </div>
+
+                    <div style="padding-top: 10px;">
+                        <label>Confirm Password:</label>
+                        <input type="password" placeholder="confirm password" name="confirmPassword" ng-model="newPasswordVerify"
+                               ng-minlength=6 ng-maxlength=128  data-password-verify="newPassword" empty>
+                        <div class="error"
+                             ng-show="resetPasswordForm.confirmPassword.$dirty && resetPasswordForm.confirmPassword.$error.newPasswordVerify">
+                            <small class="error"
+                                   ng-show="resetPasswordForm.confirmPassword.$error.newPasswordVerify">
+                                {{'error_validation_password_mismatch' | i18n}}
+                            </small>
+                        </div>
+                    </div>
+
+                <footer>
+                    <div style="text-align: right; padding-top: 10px">
+                        <button type="button" id="login_resetPassword" style="width: 48%;margin-right: 2%;" ng-click="resetPassword()"
+                                ng-disabled="resetPasswordForm.$invalid">{{'activity_submit' | i18n}}
+                        </button>
+
+                        <button type="button" id="login_gotoLogin" style="width: 48%;" class="button-cancel" ng-click="gotoLogin()" >{{'activity_cancel' | i18n}}
+                        </button>
+                    </div>
+                </footer>
+
+            </form>
+
+
+        </section>
+    </div>
+</div>

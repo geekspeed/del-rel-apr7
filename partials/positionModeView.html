@@ -1,0 +1,32 @@
+<div ng-init="init()">
+    <div class="settings-header">
+        <span class="settings-back" ng-click="stopPlay(deviceId)">{{'activity_back' | i18n}}</span>
+        {{'camera_settings_label_position_mode' | i18n}}
+    </div>
+
+    <div class="settings-panel">
+        <div class="settings-list">
+            <div class="camera" style="width: 100%;">
+                    <div class="cameras-player" ng-class="{'cameras-player-played': uiStates[deviceId].play}">
+                        <img camera-thumbnail ng-src="{{getCamera().presignedLastImageUrl}}" style="z-index: 1;"/>
+                        <camera id='{{deviceId}}'>
+                        </camera>
+                        <div ng-show="getCamera().properties.connectionState == 'batteryCritical'" class="arlo-red camera-critical">
+                            {{'camera_state_battery_level_critical' | i18n}}
+                        </div>
+                        <div ng-show="uiStates[deviceId].loading" class="camera-loading">
+                            <div class="camera-loading-pad"></div>
+                            <div class="camera-loading-text">{{'status_label_please_wait' | i18n}}</div></div>
+                        <div ng-if="startErrors[deviceId]" class="camera-offline arlo-cp" ng-click="clearStartError(deviceId)">
+                            <span class="alert-close"></span>
+                            <div class="camera-offline-table">
+                                <div>
+                                    <span class="arlo-red" ng-bind-html="startErrors[deviceId]"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" lang="en" ng-app="arloApp">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="title" content="Arlo Web Portal|Smart Home Security|NETGEAR"/>
+    <meta name="description" content="View and record live HD videos from anywhere. Get motion alerts and clips, schedule smart home rules, and share cameras with friends and family. "/>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+
+	<!-- Release information -->
+	<meta name="Version" content="BUILD"/>
+    <meta name="Released" content="BUILD_DATE"/>
+	
+    <link rel="icon" type="image/x-icon" href="favicon32x32.ico?v=VERSION" sizes="32x32">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=VERSION" sizes="16x16">
+
+    <!-- Use the .min version of bootstrap files in production -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap_min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/inputs.css?v=VERSION"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=VERSION"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css?v=VERSION"/>
+    <link rel="stylesheet" type="text/css" href="css/recording.css?v=VERSION"/>
+    <link rel="stylesheet" type="text/css" href="css/images.css?v=VERSION"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css?v=VERSION"/>
+    <link rel="stylesheet" type="text/css" href="css/calendar.css?v=VERSION"/>
+
+    <title>Arlo Web Portal|Smart Home Security|NETGEAR</title>
+
+    <script src="lib/modernizr-latest.js"></script>
+    <script type="text/javascript" src="flowplayer/flowplayer-3.2.13.js"></script>
+    <script type="text/javascript">
+        _DEBUG_ = true;
+        ga = function () {};
+    </script>
+</head>
+
+<body body-events>
+
+<div ui-view class="ui-view2"></div>
+<div ng-include="'partials/alertView.html'" style="position: fixed;z-index: 1;"></div>
+
+<!-- In production use min versions -->
+<!-- angular stuff -->
+<script src="lib/date.js"></script>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-animate.js"></script>
+<!--<script src="lib/angular/angular-resource.js"></script>-->
+
+<!-- other libraries -->
+<script src="lib/ui-bootstrap-tpls-0.11.0.js"></script>
+<script src="lib/angular-ui-router.js"></script>
+<script src="lib/underscore.js"></script>
+<script src="lib/sortable.js"></script>
+<script src="lib/localize.js"></script>
+<script src="lib/screenfull.js"></script>
+<script src="lib/zeroclipboard.min.js"></script>
+
+<script type="text/javascript">
+    if(!window["EventSource"]) {
+        document.write('<script src="lib\/EventSource.js"><\/script>');
+    }
+</script>
+
+<!-- client app -->
+<script src="js/partials.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/service_calendar.js"></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/directives.js"></script>
+<div style="visibility: hidden; height: 0px; overflow: hidden;">
+    <object data="flowplayer/flowplayer.commercial-3.2.18.swf" type="application/x-shockwave-flash"></object>
+    <object data="flowplayer/flowplayer.securestreaming-3.2.9.swf" type="application/x-shockwave-flash"></object>
+    <object data="flowplayer/flowplayer.controls-3.2.16.swf" type="application/x-shockwave-flash"></object>
+    <object data="flowplayer/flowplayer.rtmp-3.2.13.swf" type="application/x-shockwave-flash"></object>
+</div>
+</body>
+</html>
+

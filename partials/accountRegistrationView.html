@@ -1,0 +1,283 @@
+﻿<div class="setup-steps">
+    <div style="padding: 10px 0;" class="arlo-fs17">
+        <span class="setup-back" id="accountRegistration_back" ng-click="goBack()">{{'activity_back' | i18n}}</span>
+        <span class="arlo-b" id="accountRegistration_title">{{'account_setup_label_title' | i18n}}</span>
+    </div>
+    <div style="background-color: #e5e4e2;">
+        <div class="setup-progress" style="width: 40%;"></div>
+    </div>
+</div>
+<div ng-if="checkingEmail" class="billing-loading" ng-include="'partials/loadingView.html'"></div>
+<div ng-if="loading" class="billing-loading">
+    <div class="billing-box"></div>
+    <div style="position: fixed; top:0; left:0; right: 0; bottom: 0;">
+        <div style="height: 25%; background: 0; position: relative;"></div>
+        <div class="billing-board">
+
+            <img src="/img2/logo_0@2x.png">
+
+            <div style="padding-top: 20px;padding-bottom: 5px; white-space: nowrap;">{{'status_label_registering_new_user' | i18n}}</div>
+        </div>
+    </div>
+</div>
+<div class="setup-container">
+<section class="setup-body" ng-init="init()" style="overflow: auto; overflow-x: hidden">
+<section class="register-form">
+<form name="accountRegistrationForm" auto-fill-fix ng-submit="continue()">
+<div ng-show="registerError && !accountRegistrationForm.$dirty" class="error">{{registerError}}</div>
+<div class="clear"></div>
+<div class="register-line">{{'account_setup_label_username' | i18n}}
+    <input type="email" id="userId" name="userId" value="{{userId}}" required placeholder="{{'account_setup_label_username' | i18n}}"
+           ng-model="userId"
+           ng-minlength=6
+           ng-maxlength=128
+           data-email-arlo
+           no-space
+           ng-blur="accountRegistrationForm.userId.$valid && checkEmail()">
+
+    <div class="clear"></div>
+    <div class="error"
+         ng-show="accountRegistrationForm.userId.$dirty && accountRegistrationForm.userId.$invalid">
+
+        <small ng-show="accountRegistrationForm.userId.$error.required">
+            Email is required.
+        </small>
+        <small ng-show="accountRegistrationForm.userId.$error.email || accountRegistrationForm.userId.$error.emailArlo">
+            Please provide a valid email address.
+        </small>
+
+        <small ng-show="accountRegistrationForm.userId.$error.minlength">
+            Email is required to be at least 6 characters.
+        </small>
+        <small ng-show="accountRegistrationForm.userId.$error.maxlength">
+            Email cannot be longer than 128 characters.
+        </small>
+        <small ng-show="accountRegistrationForm.userId.$error.used">
+            That email address is taken. If you have forgotten your password, you can reset it. Otherwise, please select
+            a different email address.
+        </small>
+    </div>
+
+</div>
+<div class="clear"></div>
+<div class="register-line">
+    <span class="settings-info register-info" popover="{{'info_registration_account_password' | i18n}}" popover-placement="top" popover-trigger="mouseenter" popover-append-to-body="true"></span>
+    {{'account_setup_label_password' | i18n}}
+    <input type="password" placeholder="{{'account_setup_label_password' | i18n}}" name="password"
+           ng-class="{'ng-invalid': pwdError}"
+           ng-model="password" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*()]*$/"
+           ng-minlength=6
+           ng-maxlength=128
+           required
+           empty
+           ng-blur="accountRegistrationForm.password.$valid && checkEmail()"
+           ng-change="pwdError=0">
+
+    <div class="clear"></div>
+    <div class="error"
+         ng-show="accountRegistrationForm.password.$dirty && accountRegistrationForm.password.$invalid">
+
+        <small ng-show="accountRegistrationForm.password.$error.required">
+            Password is required.
+        </small>
+        <small ng-show="accountRegistrationForm.password.$error.pattern">
+            {{'info_registration_account_password' | i18n}}
+        </small>
+
+        <small ng-show="accountRegistrationForm.password.$error.minlength">
+            Password is required to be at least 6 characters.
+        </small>
+        <small ng-show="accountRegistrationForm.password.$error.maxlength">
+            Password cannot be longer than 128 characters.
+        </small>
+
+    </div>
+    <div class="error" ng-show="ssoAccount && !accountRegistrationForm.password.$invalid && pwdError">{{pwdError}}</div>
+</div>
+<div class="clear"></div>
+<div class="register-line" ng-if="!ssoAccount">
+    {{'account_setup_label_reenter_password' | i18n}}
+    <input type="password" placeholder="{{'account_setup_label_reenter_password' | i18n}}" name="confirmPassword"
+           ng-model="newPasswordVerify"
+           ng-minlength=6 ng-maxlength=128 data-password-verify="password" required empty>
+
+    <div class="clear"></div>
+    <div class="error"
+         ng-show="accountRegistrationForm.confirmPassword.$dirty && accountRegistrationForm.confirmPassword.$error.newPasswordVerify">
+        <small ng-show="accountRegistrationForm.confirmPassword.$error.required">
+            Confirm Password is required.
+        </small>
+        <small
+                ng-show="accountRegistrationForm.confirmPassword.$error.newPasswordVerify">
+            {{'error_validation_password_mismatch' | i18n}}
+        </small>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="register-line">
+    {{'personal_info_label_first_name' | i18n}}
+    <input type="text" value="{{firstName}}" name="firstName" placeholder="{{'personal_info_label_first_name' | i18n}}"
+           ng-model="firstName"
+           ng-minlength=1
+           ng-maxlength=64
+           no-space
+           required>
+
+    <div class="clear"></div>
+    <div class="error"
+         ng-show="accountRegistrationForm.firstName.$dirty && accountRegistrationForm.firstName.$invalid">
+        <small ng-show="accountRegistrationForm.firstName.$error.required">
+            First Name is required.
+        </small>
+        <small
+                ng-show="accountRegistrationForm.firstName.$error.minlength">
+            Your first name is required to be at least 1 characters.
+        </small>
+        <small
+                ng-show="accountRegistrationForm.firstName.$error.maxlength">
+            Your first name cannot be longer than 64 characters.
+        </small>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="register-line">
+    {{'personal_info_label_last_name' | i18n}}
+    <input type="text" ng-model="lastName" name="lastName" placeholder="{{'personal_info_label_last_name' | i18n}}"
+           ng-model="lastName"
+           ng-minlength=1
+           ng-maxlength=64
+           no-space
+           required>
+
+    <div class="clear"></div>
+    <div class="error"
+         ng-show="accountRegistrationForm.lastName.$dirty && accountRegistrationForm.lastName.$invalid">
+        <small ng-show="accountRegistrationForm.lastName.$error.required">
+            Last Name is required.
+        </small>
+        <small
+                ng-show="accountRegistrationForm.lastName.$error.minlength">
+            Your last name is required to be at least 1 characters.
+        </small>
+        <small
+                ng-show="accountRegistrationForm.lastName.$error.maxlength">
+            Your last name cannot be longer than 64 characters.
+        </small>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="register-line">
+    {{'account_setup_label_security_question' | i18n}}&#160;
+    <select ng-model="secretQuestion" name="accountRegistration_secretQuestion" id="accountRegistration_secretQuestion" ng-class="{'arlo-lgray': !secretQuestion}" required>
+        <option ng-repeat="question in secretQuestions" value="{{question}}" class="arlo-black">{{question}}</option>
+    </select>
+
+</div>
+<div class="clear"></div>
+<div class="register-line" ng-if="secretQuestion==secretQuestions[secretQuestions.length - 1]">
+    <input type="text" id="ownSecretQuestion" name="ownSecretQuestion"
+           placeholder="Own Secret Question"
+           ng-model="$parent.ownSecretQuestion"
+           ng-minlength="1"
+           ng-maxlength="128" required>
+    <div class="clear"></div>
+    <div class="error"
+         ng-show="accountRegistrationForm.ownSecretQuestion.$dirty && accountRegistrationForm.ownSecretQuestion.$invalid">
+        <div ng-show="accountRegistrationForm.ownSecretQuestion.$error.minlength">
+            Own Secret Question required to be at least 1 characters.
+        </div>
+
+        <div ng-show="accountRegistrationForm.ownSecretQuestion.$error.maxlength">
+            Own Secret Question cannot be longer than 128 characters.
+        </div>
+    </div>
+    </div>
+<div class="clear"></div>
+<div class="register-line">
+    {{'account_setup_label_security_answer' | i18n}}
+    <input type="text" id="secretAnswer" name="secretAnswer"
+           placeholder="{{'account_setup_label_security_answer' | i18n}}"
+           ng-model="secretAnswer"
+           ng-minlength=1
+           ng-maxlength=128 no-space required>
+
+    <div class="clear"></div>
+    <div class="error"
+         ng-show="accountRegistrationForm.secretAnswer.$dirty && accountRegistrationForm.secretAnswer.$invalid">
+        <div ng-show="accountRegistrationForm.secretAnswer.$error.minlength">
+            Answer to secret question required to be at least 1 characters.
+        </div>
+
+        <div ng-show="accountRegistrationForm.secretAnswer.$error.maxlength">
+            Answer to secret question cannot be longer than 128 characters.
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="register-line">
+    <span class="settings-info register-info" popover="{{'info_registration_account_phone_number' | i18n}}" popover-placement="top" popover-trigger="mouseenter" popover-append-to-body="true"></span>
+    {{'account_setup_label_phone_number' | i18n}}
+    <input type="text" ng-model="billingInfo.phone" name="phone" placeholder="{{'account_setup_label_phone_number' | i18n}} {{'label_optional_mark' | i18n}}"
+           ng-minlength=7
+           ng-maxlength=15
+           ng-pattern="/^[\d()-]{7,15}$/">
+
+    <div class="error"
+         ng-show="billingInformationForm.phone.$dirty && billingInformationForm.phone.$invalid">
+
+        <small class="error"
+               ng-show="billingInformationForm.phone.$error.minlength">
+            Phone number is required to be at least 7 digits.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.phone.$error.maxlength">
+            Phone number cannot be longer than 15 digits.
+        </small>
+        <div ng-show="billingInformationForm.phone.$error.pattern">
+            Phone number should contain only digits or '(', ')', '-' characters.
+        </div>
+    </div>
+
+</div>
+
+<div class="clear"></div>
+<required-tip></required-tip>
+<div class="clear"></div>
+</form>
+<!-- ng-disabled="accountRegistrationForm.$invalid" -->
+<div>
+
+    <div class="register-terms">
+        <input id="agreeTosCheckbox" style="width: auto; box-shadow: none;" ng-model="agreeTos" type="checkbox" required>
+        <label for="agreeTosCheckbox">
+            I accept the <span class="register-link" ng-click="displayTos()" id="accountRegistration_agreeTosLink">Terms of Service</span>
+        </label>
+    </div>
+    <div class="clear"></div>
+    <div ng-show="!agreeTos && agreeTosError " class="error">You must agree to the terms of service</div>
+    <div class="clear"></div>
+
+    <div class="register-terms">
+        <input id="agreePrivacyCheckbox" style="width: auto; box-shadow: none;" ng-model="agreePrivacy" type="checkbox" required>
+        <label for="agreePrivacyCheckbox">
+            I accept the <span class="register-link" ng-click="displayPrivacy()" id="accountRegistration_agreePrivacyLink">Privacy Policy</span>
+        </label>
+    </div>
+    <div class="clear"></div>
+    <div ng-show="!agreePrivacy && agreePrivacyError " class="error">You must agree to the privacy policy.</div>
+    <div class="clear"></div>
+
+
+    <section class="buttons-bottom" style="margin-right: 0">
+        <button class="button-fixed button-cancel" id="accountRegistration_Cancel" style="margin-right:15px;"
+                ui-sref="login">{{'activity_cancel' | i18n}}
+        </button>
+        <button type="submit" class="button-fixed" id="accountRegistration_Continue"
+                ng-disabled="accountRegistrationForm.$invalid || !agreeTos || !agreePrivacy || checkingEmail || pwdError"
+                ng-click="continue()">{{'activity_continue' | i18n}}
+        </button>
+    </section>
+</div>
+</section>
+</section>
+</div>

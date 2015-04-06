@@ -1,0 +1,64 @@
+﻿<div class="setup-steps">
+    <div style="padding: 10px 0;" class="arlo-fs17">
+        <!--<span class="setup-back" ui-sref="syncHardware">{{'activity_back' | i18n}}</span>-->
+        <span class="arlo-b" id="selectServicePlan_title">{{'service_selection_label_title' | i18n}}</span>
+    </div>
+    <div style="background-color: #e5e4e2;">
+        <div class="setup-progress" style="width: 60%;"></div>
+    </div>
+</div>
+
+<div ng-if="loading || isBillingInProgress()" class="subscription-loading">
+    <div class="subscription-loading-pad"></div>
+    <div class="subscription-loading-top">
+        <div style="height: 25%; background: 0; position: relative;"></div>
+        <div class="billing-board">
+
+            <img src="/img2/logo_0@2x.png">
+
+            <div style="padding-top: 20px;padding-bottom: 5px; white-space: nowrap;">{{loadingMessage}}...</div>
+            <div>{{'status_label_please_wait' | i18n}}</div>
+        </div>
+    </div>
+</div>
+
+<div ng-init="init()" style="overflow-y: auto; height: 100%; padding-top: 70px; text-align: center;">
+<div offers>
+
+</div>
+    <!--
+    <div ng-repeat="serviceClass in serviceClasses"
+         class="plan-block"
+         ng-class="{'plan-block-premier': serviceClass[0].planName.indexOf('Premier') != -1, 'plan-block-elite': serviceClass[0].planName.indexOf('Elite') != -1}">
+        <div class="plan-title">{{serviceClass[0].groupName}}</div>
+        <div style="padding: 10px;">
+        <div class="plan-label">
+            {{serviceClass[0].maxStorage | storageSize}} Cloud DVR
+        </div>
+        <div class="plan-label">Push Notifications</div>
+        <div class="plan-label">Up to {{serviceClass[0].numCamerasSupported}} Cameras</div>
+        <div class="plan-buttons">
+            <div ng-repeat="monthClass in serviceClass" style="display: table-cell">
+                <button type="button" ng-disabled="isCurrentPlan(monthClass)" ng-click="select(monthClass)" id="{{monthClass.planId}}">
+                    <span ng-if="!isCurrentPlan(monthClass)" style="font-size: 22px;">{{monthClass.amount}}</span>
+                    {{ isCurrentPlan(monthClass) ? 'Current' : (monthClass.term == 1 ? ' / month' : (monthClass.term == 12 ? ' / year':''))}}
+                </button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="plan-block-basic">
+        <div class="plan-title">{{freePlan.planName}}</div>
+        <div style="padding: 10px;">
+        <div class="plan-label">{{freePlan.maxStorage | storageSize }} Cloud DVR</div>
+        <div class="plan-label">Up to {{freePlan.numCamerasSupported}} Cameras</div>
+        <div class="plan-label">&nbsp;</div>
+        <div style="text-align: center;">
+            <button type="button" ui-sref="syncHardware" id='freePlan'>included with your system</button>
+        </div>
+        </div>
+    </div>
+    -->
+</div>
+
+</div>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Welcome to Arlo</title>
+        <style type="text/css">
+                body{
+                    background:#EEEEEE;
+                    padding:45px 5%;
+                    margin:0;
+                    position:relative;
+                    display:block;
+                    font-family:Arial, Tahoma, sans-serif;
+                    cursor:default;
+                    line-height:normal;
+                }
+                a,img{
+                    outline:none;
+                    border:none;
+                }
+                .fixed-table-layout{
+                    display:table;
+                    table-layout:fixed;
+                }
+                .super{
+                    margin:auto;
+                    height:100%;
+                    position:relative;
+                    display:table;
+                }
+                .main{
+                    background:#ffffff;
+                    padding:50px 45px 60px;
+                    -ms-border-radius:10px 10px 0 0;
+                    -moz-border-radius:10px 10px 0 0;
+                    -webkit-border-radius:10px 10px 0 0;
+                    -khtml-border-radius:10px 10px 0 0;
+                    -o-border-radius:10px 10px 0 0;
+                    -icab-border-radius:10px 10px 0 0;
+                    border-radius:10px 10px 0 0;
+                    position:relative;
+                }
+                .social-links{
+                    padding:30px 45px;
+                    background:#ffffff;
+                    margin-top:1px;
+                    -ms-border-radius: 0 0 10px 10px;
+                    -moz-border-radius: 0 0 10px 10px;
+                    -webkit-border-radius: 0 0 10px 10px;
+                    -khtml-border-radius: 0 0 10px 10px;
+                    -o-border-radius: 0 0 10px 10px;
+                    -icab-border-radius: 0 0 10px 10px;
+                    border-radius: 0 0 10px 10px;
+                    position:relative;
+                    display:block;
+                }
+                .footer{
+                    padding:40px 25px 0;
+                }
+                .row{
+                    position:relative;
+                    text-align:left;
+                }
+                .row.top-logo-row{
+                    margin-bottom:45px;
+                }
+                .top-logo {
+                    background-image: url("https://arlocommon.vz.netgear.com/img2/email/top_arlo_logo.png");
+                    background-repeat: no-repeat;
+                    width: 200px;
+                    height: 60px;
+                    margin: auto;
+                }
+                .bot-logo {
+                     background-image: url("https://arlocommon.vz.netgear.com/img2/email/bot_arlo_logo.png");
+                     background-repeat: no-repeat;
+                     width: 120px;
+                     height: 40px;
+                     margin: auto;
+                 }
+                .row.top-logo-row,.row.bot-logo-row,.row.social-links-row,.row.site-link-row{
+                    text-align:center;
+                    width:100%;
+                }
+
+                .social-links-wrapper{
+                    display:inline-block;
+                    margin:auto;
+                    text-align:center;
+                    position:relative;
+                    padding:20px 0;
+                    width:160px;
+                }
+                    .social-links-wrapper .item{
+                        position:relative;
+                        width:40px;
+                        height:40px;
+                        float:left;
+                        display:inline-block;
+                        overflow:hidden;
+                    }
+                        .social-links-wrapper .item a{
+                            background-image: url("https://arlocommon.vz.netgear.com/img2/email/social_media_sprite.png");
+                            background-position: left top;
+                            background-repeat: no-repeat;
+                            width: 40px;
+                            height: 40px;
+                            margin: auto;
+                            position:relative;
+                            display: block;
+                        }
+                        .social-links-wrapper .item.twitter a{
+                            background-position: -40px top;
+                        }
+                        .social-links-wrapper .item.facebook a{
+                            background-position: -80px top;
+                        }
+                        .social-links-wrapper .item.googleplus a{
+                            background-position: -160px top;
+                        }
+
+                .store-links{
+                    width:100%;
+                    display:block;
+                    position:relative;
+                    text-align:center;
+                }
+                    .store-links>span{
+                        display:table;
+                        margin:20px auto;
+                        height:40px;
+                        position:relative;
+                        width:290px;
+                    }
+                        .store-links a{
+                            display:block;
+                            margin-left:20px;
+                            float:left;
+                            position:relative;
+                        }
+                        .store-links a:first-child{
+                            margin-right:20px;
+                            margin-left:0px;
+                        }
+                        .store-links a.app-store {
+                            background-image: url("https://arlocommon.vz.netgear.com/img2/email/app_store_badge.png");
+                            background-repeat: no-repeat;
+                            width: 135px;
+                            height: 40px;
+                            display: block;
+                        }
+                        .store-links a.google-play {
+                            background-image: url("https://arlocommon.vz.netgear.com/img2/email/google-play-bage.png");
+                            background-repeat: no-repeat;
+                            width: 115px;
+                            height: 40px;
+                            display: block;
+                        }
+
+                        .header-title-row h1{
+                            color:#06a94e;
+                            font-size:31px;
+                            font-weight:normal;
+                        }
+                .row p{
+                    color:#4d4d4d;
+                    font-size:16px;
+                    line-height:24px;
+                    margin:0;
+                    padding:0;
+                }
+                .footer p{
+                    font-size:14px;
+                    line-height:26px;
+                    color:#8a8a8a;
+                }
+                .row a{
+                    color:#06a94e;
+                    text-decoration:underline;
+                    word-break:break-all;
+                    white-space:normal;
+                }
+            </style>
+    </head>
+
+    <body>
+        <div class="super">
+            <div class="main">
+                <div class="row top-logo-row">
+                    <div class="top-logo"></div>
+                </div>
+                <div class="row header-title-row"><h1>[TITLE]</h1></div>
+                <div class="row main-content-row">[CONTENT]
+                </div>
+            </div>
+            <div class="social-links">
+                <div class="row bot-logo-row">
+                    <div class="bot-logo"></div>
+                </div>
+                <div class="row social-links-row">
+                    <div class="social-links-wrapper">
+                        <div class="item facebook"><a href="https://www.facebook.com/arlosmarthome"></a></div>
+                        <div class="item twitter"><a href="https://twitter.com/ArloSmartHome"></a></div>
+                        <div class="item googleplus"><a href="https://plus.google.com/115313369540109414161"></a></div>
+                        <div class="item youtube"><a href="https://www.youtube.com/user/ArloSmartHome "></a></div>
+                    </div>
+                </div>
+                <div class="row site-link-row">
+                    <a href="arlo.com">arlo.com</a>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="row">
+                    <p>You are receiving this email because you have signed up to receive communications from NETGEAR. If you no longer wish to receive this email, please change the notification settings in your Arlo app.</p>
+                    <p>NETGEAR Inc.</p>
+                    <p>ARLO is a registered trademark of NETGEAR, Inc. and/or its subsidiaries in the United States and/or other countries. Other brand names mentioned herein are for identification purposes only and may be trademarks of their respective holder(s). Information is subject to change without notice.</p>
+                    <br>
+                    <p>©2015 NETGEAR, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

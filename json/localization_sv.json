@@ -1,0 +1,2326 @@
+﻿[
+  {
+    "key": "activity_back",
+    "value": "TILLBAKA"
+  },
+  {
+    "key": "label_required_fields",
+    "value": "Alla fält måste fyllas i om de inte är markerade med 'valfritt'"
+  },
+  {
+    "key": "activity_continue",
+    "value": "FORTSÄTT"
+  },
+  {
+    "key": "activity_done",
+    "value": "KLAR"
+  },
+  {
+    "key": "activity_submit",
+    "value": "SKICKA"
+  },
+  {
+    "key": "activity_cancel",
+    "value": "SÄG UPP"
+  },
+  {
+    "key": "label_optional",
+    "value": "valfri"
+  },
+  {
+    "key": "label_optional_mark",
+    "value": "(valfri)"
+  },
+  {
+    "key": "label_required_mark",
+    "value": "(krävs)"
+  },
+  {
+    "key": "status_label_offline",
+    "value": "Offline"
+  },
+  {
+    "key": "status_label_getting_status",
+    "value": "Hämtar status..."
+  },
+  {
+    "key": "status_label_loading",
+    "value": "Läser in..."
+  },
+  {
+    "key": "status_label_please_wait",
+    "value": "Vänta..."
+  },
+  {
+    "key": "status_label_registering_new_user",
+    "value": "Registrerar ny användare..."
+  },
+  {
+    "key": "status_label_is_required",
+    "value": "krävs"
+  },
+  {
+    "key": "status_label_busy",
+    "value": "Upptagen"
+  },
+  {
+    "key": "navigation_label_mode",
+    "value": "Läge"
+  },
+  {
+    "key": "navigation_label_cameras",
+    "value": "Kameror"
+  },
+  {
+    "key": "navigation_label_library",
+    "value": "Bibliotek"
+  },
+  {
+    "key": "navigation_label_settings",
+    "value": "Inställningar"
+  },
+  {
+    "key": "activity_first",
+    "value": "FÖRST"
+  },
+  {
+    "key": "activity_today",
+    "value": "IDAG"
+  },
+  {
+    "key": "activity_select",
+    "value": "Välj"
+  },
+  {
+    "key": "activity_close",
+    "value": "STÄNG"
+  },
+  {
+    "key": "activity_yes",
+    "value": "JA"
+  },
+  {
+    "key": "activity_no",
+    "value": "NEJ"
+  },
+  {
+    "key": "activity_save",
+    "value": "SPARA"
+  },
+  {
+    "key": "activity_restore",
+    "value": "Återställ"
+  },
+  {
+    "key": "activity_select_all",
+    "value": "Välj alla"
+  },
+  {
+    "key": "activity_deselect_all",
+    "value": "Avmarkera alla"
+  },
+  {
+    "key": "activity_delete_mode",
+    "value": "TA BORT LÄGE"
+  },
+  {
+    "key": "activity_delete_rule",
+    "value": "TA BORT REGEL"
+  },
+  {
+    "key": "activity_add",
+    "value": "Lägg till"
+  },
+  {
+    "key": "activity_edit",
+    "value": "Redigera"
+  },
+  {
+    "key": "status_app_upgrade_available",
+    "value": "Det finns en ny version av Arlo.  Uppgradera nu för att öppna kontot."
+  },
+  {
+    "key": "status_credit_card_requires_upgrade",
+    "value": "Giltighetstiden för ditt kreditkort går snart ut. Uppdatera nu om du vill fortsätta att använda tjänsten utan avbrott."
+  },
+  {
+    "key": "status_confirm_email",
+    "value": "Bekräfta e-postadressen om du vill få avisering för rörelse"
+  },
+  {
+    "key": "default_mode_armed",
+    "value": "All rörelse på"
+  },
+  {
+    "key": "default_mode_disarmed",
+    "value": "All rörelse av"
+  },
+  {
+    "key": "default_rule_name",
+    "value": "Spela in {cameraName} vid rörelse"
+  },
+  {
+    "key": "info_registration_base_station_vgn",
+    "value": "Basstationen tilldelas till ditt konto. Se till att du är ansluten till samma LAN som basstationen, så att vi kan identifiera basstationen."
+  },
+  {
+    "key": "info_registration_base_station_time_zone",
+    "value": "Välj den tidszon som gäller där basstationen finns."
+  },
+  {
+    "key": "info_registration_account_password",
+    "value": "Lösenordet måste vara minst sex tecken långt samt innehålla en versal, en gemen och en siffra.  Följande tecken går också att använda: !@#$%^&*()"
+  },
+  {
+    "key": "info_registration_account_phone_number",
+    "value": "Om du vid något tillfälle vill att vi ringer upp dig använder vi det här numret.  Vi kan också använda det för att hitta ditt konto om du ringer vår kundtjänst.  Det är förstås upp till dig om du vill ange något nummer."
+  },
+  {
+    "key": "info_settings_renew_subscription",
+    "value": "Välj det här om du vill att prenumerationen ska förnyas automatiskt."
+  },
+  {
+    "key": "info_settings_manage_storage",
+    "value": "Vi tar automatiskt bort dina filer (alltså de filer som du inte angett som favoriter) efter sju dagar – därmed optimeras molnlagringen."
+  },
+  {
+    "key": "info_settings_storage_full_notification",
+    "value": "Välj det här om du vill få ett meddelande när du nått 80 % av gränsen för hur mycket du får lagra i molnet."
+  },
+  {
+    "key": "info_settings_invert_image",
+    "value": "Du kan montera kameran upp och ned vid behov. Välj då det här alternativet för att invertera bilden."
+  },
+  {
+    "key": "info_settings_position_mode",
+    "value": "Använd det här när du placerar kameran.  Vi begränsar fördröjningen så att du i nästintill realtid kan följa vad som registreras i kameran."
+  },
+  {
+    "key": "info_settings_motion_detection_test",
+    "value": "Använd det här när du placerar kameran.  När en rörelse upptäcks blinkar statuslampan (i stället för att en videoinspelning inleds)."
+  },
+  {
+    "key": "info_base_station_rules",
+    "value": "Ange egna regler för hur videoupptagningen ska ske. Du kan också skicka inspelningarna till dig själv eller någon annan."
+  },
+  {
+    "key": "error_no_internet_connection",
+    "value": "Du är inte ansluten till internet. Kontrollera anslutningen."
+  },
+  {
+    "key": "error_service_unavailable",
+    "value": "Arlo är inte tillgängligt just nu. Om {time} ska det fungera igen."
+  },
+  {
+    "key": "error_setup_requires_wifi",
+    "value": "Vi kan inte skapa ett konto åt dig just nu, eftersom vi inte kan identifiera din basstation.\n\nSe till att basstationen är på samt ansluten till internet. Se också till att enheten är ansluten till samma WiFi-nätverk som basstationen."
+  },
+  {
+    "key": "error_http_500",
+    "value": "Arlo är inte tillgängligt just nu.  Försök igen senare."
+  },
+  {
+    "key": "error_http_501",
+    "value": "Arlo är inte tillgängligt just nu.  Försök igen senare."
+  },
+  {
+    "key": "error_http_502",
+    "value": "Arlo är inte tillgängligt just nu.  Försök igen senare."
+  },
+  {
+    "key": "error_http_503",
+    "value": "Arlo är inte tillgängligt just nu.  Försök igen senare."
+  },
+  {
+    "key": "base_station_error_4000",
+    "value": "Vi kunde inte hitta någon kamera för basstationen.  Synkronisera kameran."
+  },
+  {
+    "key": "base_station_error_4003",
+    "value": "Inställningen går inte att använda eftersom kameran är offline."
+  },
+  {
+    "key": "base_station_error_4006",
+    "value": "Kameran används för närvarande.  Vänta tills den pågående åtgärden har slutförts. Sedan kan du fortsätta.  Du kan också slå av kameran och slå på den igen – därefter kan du utföra den här åtgärden."
+  },
+  {
+    "key": "base_station_error_4009",
+    "value": "Du kan inte ta bort en kamera som används.  Om du vill ta bort kameran måste du koppla från den först."
+  },
+  {
+    "key": "base_station_error_4011",
+    "value": "Du kan strömma högst fyra kameror samtidigt. Stoppa någon av de pågående kameraströmmarna innan du påbörjar den här kameraströmmen."
+  },
+  {
+    "key": "base_station_error_4013",
+    "value": "Du kan inte starta om när en kamera är upptagen."
+  },
+  {
+    "key": "base_station_error_4014",
+    "value": "Den här funktionen stöds inte av enheten."
+  },
+  {
+    "key": "base_station_error_4015",
+    "value": "En avisering för rörelse inleds i kameran. Försök igen."
+  },
+  {
+    "key": "base_station_error_4016",
+    "value": "Det går inte att strömma kameran: den är offline."
+  },
+  {
+    "key": "base_station_error_4017",
+    "value": "Du kan inte ta en snapshot med kameran: den är offline."
+  },
+  {
+    "key": "login_label_username",
+    "value": "E-post"
+  },
+  {
+    "key": "login_label_password",
+    "value": "Lösenord"
+  },
+  {
+    "key": "login_activity_login",
+    "value": "Logga in"
+  },
+  {
+    "key": "login_label_remember_me",
+    "value": "Kom ihåg mig"
+  },
+  {
+    "key": "login_activity_username_password_help",
+    "value": "Hjälp med lösenordet"
+  },
+  {
+    "key": "login_logout_conf_dialog_message",
+    "value": "Är du säker på att du vill logga ut?"
+  },
+  {
+    "key": "login_activity_new_system_setup",
+    "value": "Konfigurera ett nytt system"
+  },
+  {
+    "key": "login_error_validation_username",
+    "value": "Användarnamnet eller lösenordet är ogiltigt."
+  },
+  {
+    "key": "login_activity_create_account",
+    "value": "Skapa konto"
+  },
+  {
+    "key": "password_help_label_username_help",
+    "value": "Ange din e-postadress, så skickar vi dig en länk för återställning av lösenordet."
+  },
+  {
+    "key": "password_help_label_username",
+    "value": "E-post"
+  },
+  {
+    "key": "password_help_label_email_sent",
+    "value": "Vi har nu skickat dig en länk för återställning av lösenordet."
+  },
+  {
+    "key": "password_help_error_validation_input_username",
+    "value": "Ditt nya användar-ID måste vara en giltig e-postadress"
+  },
+  {
+    "key": "password_help_error_username_not_found",
+    "value": "Den e-postadress du angett används inte i något konto. Kontrollera att du angett rätt e-postadress. Alternativt kan du prova med en annan e-postadress."
+  },
+  {
+    "key": "getting_started_label_title",
+    "value": "Komma igång"
+  },
+  {
+    "key": "getting_started_label_help",
+    "value": "Anslut systemet till internet"
+  },
+  {
+    "key": "system_setup_label_title",
+    "value": "Systemkonfiguration"
+  },
+  {
+    "key": "system_setup_label_select_serial_number",
+    "value": "Välj basstationens serienummer"
+  },
+  {
+    "key": "system_setup_label_serial_number",
+    "value": "Serienummer"
+  },
+  {
+    "key": "system_setup_activity_serial_number_info",
+    "value": "Om serienumret inte identifieras automatiskt kan du se efter på baksidan av basstationen: där står numret."
+  },
+  {
+    "key": "system_setup_label_time_zone",
+    "value": "Välj den tidszon som gäller där basstationen har installerats."
+  },
+  {
+    "key": "system_setup_activity_time_zone_info",
+    "value": "Basstationens serienummer (välj den primära basstationen – du kan registrera fler senare):"
+  },
+  {
+    "key": "account_setup_label_title",
+    "value": "Skapa konto"
+  },
+  {
+    "key": "account_setup_label_username",
+    "value": "E-post"
+  },
+  {
+    "key": "account_setup_label_password",
+    "value": "Lösenord"
+  },
+  {
+    "key": "account_setup_label_reenter_password",
+    "value": "Skriv in lösenordet igen"
+  },
+  {
+    "key": "account_setup_label_security_question",
+    "value": "Säkerhetsfråga"
+  },
+  {
+    "key": "account_setup_label_security_answer",
+    "value": "Svara"
+  },
+  {
+    "key": "account_setup_label_phone_number",
+    "value": "Telefonnummer"
+  },
+  {
+    "key": "account_setup_activity_password_info",
+    "value": "Lösenorden måste vara minst sex tecken långa. De får INTE innehålla följande tecken: /, \\, |, <, >, : (kolon), ; (semikolon) samt apostroftecknet \"'\"."
+  },
+  {
+    "key": "account_setup_activity_phone_number_info",
+    "value": "Om du någon gång begär att personalen på vår tekniska support kontaktar dig per telefon ringer vi dig på det här numret."
+  },
+  {
+    "key": "account_setup_label_accept_tos",
+    "value": "Jag godkänner villkoren för tjänsten"
+  },
+  {
+    "key": "account_setup_label_accept_privacy_policy",
+    "value": "Jag godkänner sekretesspolicyn"
+  },
+  {
+    "key": "error_validation_username",
+    "value": "Använd en giltig e-postadress.  Ange även \"@\" och domänen (t.ex. @gmail.com)."
+  },
+  {
+    "key": "error_validation_password",
+    "value": "Ange ett nytt lösenord.  Lösenordet måste vara minst sex tecken långt samt innehålla en versal, en gemen och en siffra. Du får använda följande symboler om du vill: ! @ # $ % ^ & * ( )"
+  },
+  {
+    "key": "error_validation_security_answer",
+    "value": "Ange ett svar på säkerhetsfrågan."
+  },
+  {
+    "key": "error_validation_password_mismatch",
+    "value": "Lösenorden matchar inte. Skriv in lösenorden igen."
+  },
+  {
+    "key": "sync_cameras_label_title",
+    "value": "Synkronisera kameror"
+  },
+  {
+    "key": "sync_cameras_label_help",
+    "value": "Synkronisera kamerorna"
+  },
+  {
+    "key": "service_selection_label_title",
+    "value": "Val av tjänst"
+  },
+  {
+    "key": "service_selection_label_elite",
+    "value": "Elite"
+  },
+  {
+    "key": "service_selection_label_elite_storage",
+    "value": "3 GB moln-DVR"
+  },
+  {
+    "key": "service_selection_label_elite_push_notifications",
+    "value": "Push-meddelanden"
+  },
+  {
+    "key": "service_selection_label_elite_cameras",
+    "value": "Upp till 20 kameror"
+  },
+  {
+    "key": "service_selection_label_premier",
+    "value": "Premier"
+  },
+  {
+    "key": "service_selection_label_premier_storage",
+    "value": "1 GB moln-DVR"
+  },
+  {
+    "key": "service_selection_label_premier_push_notifications",
+    "value": "Push-meddelanden"
+  },
+  {
+    "key": "service_selection_label_premier_cameras",
+    "value": "Upp till 10 kameror"
+  },
+  {
+    "key": "service_selection_label_base_level",
+    "value": "GRATIS"
+  },
+  {
+    "key": "service_selection_label_base_level_storage",
+    "value": "200 MB moln-DVR"
+  },
+  {
+    "key": "service_selection_label_base_level_cameras",
+    "value": "Upp till 5 kameror"
+  },
+  {
+    "key": "service_selection_activity_base_level",
+    "value": "ingår i systemet"
+  },
+  {
+    "key": "payment_method_label_title",
+    "value": "Betalningsmetod"
+  },
+  {
+    "key": "payment_method_label_credit_card",
+    "value": "Kreditkort"
+  },
+  {
+    "key": "payment_method_label_card_number",
+    "value": "Kortnummer"
+  },
+  {
+    "key": "payment_method_label_card_expiration",
+    "value": "MM/ÅÅÅÅ"
+  },
+  {
+    "key": "payment_method_label_security_code",
+    "value": "Säkerhetskod (tre eller fyra siffror på kortets baksida)"
+  },
+  {
+    "key": "payment_method_label_billing",
+    "value": "Debitering"
+  },
+  {
+    "key": "payment_method_label_billing_first_name",
+    "value": "Förnamn"
+  },
+  {
+    "key": "payment_method_label_billing_last_name",
+    "value": "Efternamn"
+  },
+  {
+    "key": "payment_method_label_billing_company_name",
+    "value": "Företagets namn (valfritt)"
+  },
+  {
+    "key": "payment_method_label_billing_company_name_short",
+    "value": "Företagsnamn"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_1",
+    "value": "Gatuadress 1"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_2",
+    "value": "Gatuadress 2 (valfritt)"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_2_short",
+    "value": "Gatuadress 2"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_3",
+    "value": "Lägenhet eller byggnad (valfritt)"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_3_short",
+    "value": "Lägenhet eller byggnad"
+  },
+  {
+    "key": "payment_method_label_billing_city",
+    "value": "Ort"
+  },
+  {
+    "key": "payment_method_label_billing_state",
+    "value": "Status"
+  },
+  {
+    "key": "payment_method_label_billing_zip_code",
+    "value": "Postnummer"
+  },
+  {
+    "key": "payment_method_label_billing_country",
+    "value": "Land"
+  },
+  {
+    "key": "payment_method_label_billing_vat",
+    "value": "Moms (valfritt)"
+  },
+  {
+    "key": "payment_method_label_renew_service_plan",
+    "value": "Förnya abonnemanget automatiskt"
+  },
+  {
+    "key": "error_validation_card_number_unsupported",
+    "value": "För tillfället kan vi ta emot betalning endast via Visa och Mastercard."
+  },
+  {
+    "key": "error_validation_card_number",
+    "value": "Kontrollera numret, utgångsdatumet och säkerhetskoden för kreditkortet."
+  },
+  {
+    "key": "error_validation_expiration",
+    "value": "Kontrollera numret, utgångsdatumet och säkerhetskoden för kreditkortet."
+  },
+  {
+    "key": "error_validation_security_code",
+    "value": "Kontrollera numret, utgångsdatumet och säkerhetskoden för kreditkortet."
+  },
+  {
+    "key": "error_validation_billing_first_name",
+    "value": "Kreditkortsinformationen stämmer inte med bankens upplysningar.  Ange namn och faktureringsadress för kreditkortets innehavare."
+  },
+  {
+    "key": "error_validation_billing_last_name",
+    "value": "Kreditkortsinformationen stämmer inte med bankens upplysningar.  Ange namn och faktureringsadress för kreditkortets innehavare."
+  },
+  {
+    "key": "error_validation_billing_company_name",
+    "value": "Du måste ange företagets namn"
+  },
+  {
+    "key": "error_validation_billing_street_address_1",
+    "value": "Kreditkortsinformationen stämmer inte med bankens upplysningar.  Ange namn och faktureringsadress för kreditkortets innehavare."
+  },
+  {
+    "key": "error_validation_billing_street_address_2",
+    "value": "Kreditkortsinformationen stämmer inte med bankens upplysningar.  Ange namn och faktureringsadress för kreditkortets innehavare."
+  },
+  {
+    "key": "error_validation_billing_street_address_3",
+    "value": "Kreditkortsinformationen stämmer inte med bankens upplysningar.  Ange namn och faktureringsadress för kreditkortets innehavare."
+  },
+  {
+    "key": "error_validation_billing_city",
+    "value": "Kreditkortsinformationen stämmer inte med bankens upplysningar.  Ange namn och faktureringsadress för kreditkortets innehavare."
+  },
+  {
+    "key": "error_validation_billing_state",
+    "value": "Du måste ange delstat/provins eller motsvarande"
+  },
+  {
+    "key": "error_validation_billing_zip_code",
+    "value": "Du måste ange postnumret på rätt sätt"
+  },
+  {
+    "key": "error_validation_billing_country",
+    "value": "Du måste ange land"
+  },
+  {
+    "key": "error_validation_billing_vat",
+    "value": "Vi kan inte verifiera det momsnummer du angett.  Ange ett giltigt momsnummer."
+  },
+  {
+    "key": "camera_state_offline",
+    "value": "Kameran är offline."
+  },
+  {
+    "key": "camera_state_gateway_offline",
+    "value": "Basstationen är inte ansluten till internet. \n\nSe till att den är på och ansluten till routern."
+  },
+  {
+    "key": "camera_state_battery_level_critical",
+    "value": "Du behöver byta batterierna."
+  },
+  {
+    "key": "camera_player_plugin_not_installed",
+    "value": "Du måste byta till en nyare version av Adobe Flash Player.  Installera den senaste versionen <a href='http://get.adobe.com/flashplayer/'>här</a>."
+  },
+  {
+    "key": "camera_state_new",
+    "value": "Strömma din nya kamera"
+  },
+  {
+    "key": "library_activity_filter",
+    "value": "Filter"
+  },
+  {
+    "key": "filter_label_types",
+    "value": "Visa följande typer:"
+  },
+  {
+    "key": "filter_label_all",
+    "value": "Alla"
+  },
+  {
+    "key": "filter_label_favorites",
+    "value": "Favoriter"
+  },
+  {
+    "key": "filter_label_non_favorites",
+    "value": "Ej favoriter"
+  },
+  {
+    "key": "filter_label_cameras",
+    "value": "Visa filer från följande kameror:"
+  },
+  {
+    "key": "select_bar_label_favorite",
+    "value": "Lägg till som favorit"
+  },
+  {
+    "key": "select_bar_label_share",
+    "value": "Dela"
+  },
+  {
+    "key": "select_bar_label_download",
+    "value": "Hämta"
+  },
+  {
+    "key": "select_bar_label_delete",
+    "value": "Ta bort"
+  },
+  {
+    "key": "share_email_link",
+    "value": "Skicka länk via e-post"
+  },
+  {
+    "key": "share_email_subject",
+    "value": "Kolla in min Arlo-video!"
+  },
+  {
+    "key": "share_email_body",
+    "value": "Hej!\n\n\n\nKolla in den här videon från min Arlo-kamera.  Klicka på länken om du vill ta en titt.  Obs! Länken gäller endast i {24 hours}.\n\n\n\n{link} {thumbnail}\n\n\n\nMycket nöje!\n\n\n\n{first name}"
+  },
+  {
+    "key": "share_copy_link",
+    "value": "Kopiera länk"
+  },
+  {
+    "key": "settings_label_title",
+    "value": "Inställningar"
+  },
+  {
+    "key": "base_station_settings_label_schedule",
+    "value": "Schema"
+  },
+  {
+    "key": "base_station_settings_label_modes",
+    "value": "Lägen"
+  },
+  {
+    "key": "base_station_settings_label_rules",
+    "value": "Regler"
+  },
+  {
+    "key": "base_station_settings_label_rule",
+    "value": "Regel"
+  },
+  {
+    "key": "base_station_settings_label_settings",
+    "value": "Inställningar för basstationen"
+  },
+  {
+    "key": "account_settings_label_title",
+    "value": "Kontoinställningar"
+  },
+  {
+    "key": "account_settings_label_subscription",
+    "value": "Prenumeration"
+  },
+  {
+    "key": "account_settings_label_personal",
+    "value": "Personliga uppgifter"
+  },
+  {
+    "key": "account_settings_label_friends",
+    "value": "Vänner"
+  },
+  {
+    "key": "system_settings_label_title",
+    "value": "Systeminställningar"
+  },
+  {
+    "key": "system_settings_label_preferences",
+    "value": "Inställningar"
+  },
+  {
+    "key": "system_settings_label_camera_order",
+    "value": "Kameraordning"
+  },
+  {
+    "key": "system_settings_label_about",
+    "value": "Om"
+  },
+  {
+    "key": "base_station_schedule_label_title",
+    "value": "Schema"
+  },
+  {
+    "key": "base_station_schedule_label_start_time",
+    "value": "Starttid"
+  },
+  {
+    "key": "base_station_schedule_label_stop_time",
+    "value": "Sluttid"
+  },
+  {
+    "key": "base_station_modes_label_title",
+    "value": "Lägen"
+  },
+  {
+    "key": "add_mode_label_title",
+    "value": "Lägesdefinition"
+  },
+  {
+    "key": "add_mode_label_title_new",
+    "value": "Nytt läge"
+  },
+  {
+    "key": "add_mode_activity_modes",
+    "value": "Lägen"
+  },
+  {
+    "key": "add_mode_label_name",
+    "value": "Nytt läge"
+  },
+  {
+    "key": "add_mode_label_mode_name",
+    "value": "Namn"
+  },
+  {
+    "key": "add_mode_placeholder_mode_name",
+    "value": "namn på läget"
+  },
+  {
+    "key": "add_mode_label_select_rules",
+    "value": "Välj regler för det här läget"
+  },
+  {
+    "key": "add_mode_label_add_rule",
+    "value": "Lägg till regel"
+  },
+  {
+    "key": "add_rule_label_title",
+    "value": "Ny regel"
+  },
+  {
+    "key": "base_station_rules_label_title",
+    "value": "Regler"
+  },
+  {
+    "key": "rule_label_title",
+    "value": "Regeldefinition"
+  },
+  {
+    "key": "rule_label_name",
+    "value": "Regelnamn"
+  },
+  {
+    "key": "rule_label_rule_name",
+    "value": "Namn"
+  },
+  {
+    "key": "rule_label_rule_placeholder",
+    "value": "regel"
+  },
+  {
+    "key": "rule_label_trigger_title",
+    "value": "OM (IF) följande:"
+  },
+  {
+    "key": "rule_label_motion_detected",
+    "value": "Rörelse upptäcks"
+  },
+  {
+    "key": "rule_label_trigger_on",
+    "value": "På"
+  },
+  {
+    "key": "rule_label_trigger_sensitivity",
+    "value": "Känslighet – start"
+  },
+  {
+    "key": "rule_label_action_title",
+    "value": "SKA (THEN) följande åtgärd utföras:"
+  },
+  {
+    "key": "rule_label_action_record_video",
+    "value": "Spela in video"
+  },
+  {
+    "key": "rule_label_action_take_snapshot",
+    "value": "Ta snapshot"
+  },
+  {
+    "key": "rule_label_action_on",
+    "value": "På {cameraName}"
+  },
+  {
+    "key": "rule_label_action_sensitivity",
+    "value": "Känslighet – slut"
+  },
+  {
+    "key": "rule_label_action_in_hot_zone",
+    "value": "I den här aktiva zonen"
+  },
+  {
+    "key": "rule_label_email_action_title",
+    "value": "OCH (AND) följande åtgärd:"
+  },
+  {
+    "key": "rule_label_send_email_alert",
+    "value": "Skicka e-postavisering"
+  },
+  {
+    "key": "rule_label_send_email_list",
+    "value": "Till den här listan"
+  },
+  {
+    "key": "rule_label_sensitivity_fewer_videos",
+    "value": "Färre videor"
+  },
+  {
+    "key": "rule_label_sensitivity_more_videos",
+    "value": "Fler videor"
+  },
+  {
+    "key": "rule_label_recording_time_shorter_videos",
+    "value": "10 s"
+  },
+  {
+    "key": "rule_label_recording_time_longer_videos",
+    "value": "120 s"
+  },
+  {
+    "key": "rule_label_recording_time_unit_seconds",
+    "value": "{timeInSeconds} sekunder"
+  },
+  {
+    "key": "rule_label_select_camera",
+    "value": "Välj kamera..."
+  },
+  {
+    "key": "rule_trigger_label_title",
+    "value": "Utlös"
+  },
+  {
+    "key": "rule_trigger_label_motion_trigger",
+    "value": "Rörelse upptäcks på"
+  },
+  {
+    "key": "rule_label_action_record_video_on",
+    "value": "Spela in video på"
+  },
+  {
+    "key": "email_alert_list_label_title",
+    "value": "Skicka e-postavisering"
+  },
+  {
+    "key": "push_notification_label_title",
+    "value": "Skicka push-meddelande"
+  },
+  {
+    "key": "base_station_settings_label_title",
+    "value": "Basstation"
+  },
+  {
+    "key": "base_station_settings_label_name",
+    "value": "Namn"
+  },
+  {
+    "key": "base_station_settings_label_placeholder",
+    "value": "basstation"
+  },
+  {
+    "key": "base_station_settings_label_time_zone",
+    "value": "Tidszon"
+  },
+  {
+    "key": "base_station_settings_label_auto_update_firmware",
+    "value": "Automatisk uppdatering av den fasta programvaran"
+  },
+  {
+    "key": "base_station_settings_label_fw_version",
+    "value": "Programvaruversion"
+  },
+  {
+    "key": "base_station_settings_label_hw_version",
+    "value": "Maskinvaruversion"
+  },
+  {
+    "key": "base_station_settings_label_xcloud_id",
+    "value": "xCloudID"
+  },
+  {
+    "key": "base_station_settings_label_auto_select_channel",
+    "value": "Automatiskt val av kanal"
+  },
+  {
+    "key": "base_station_settings_label_channel",
+    "value": "Kanal"
+  },
+  {
+    "key": "base_station_settings_activity_restart",
+    "value": "STARTA OM"
+  },
+  {
+    "key": "base_station_settings_activity_deactivate",
+    "value": "AVAKTIVERA"
+  },
+  {
+    "key": "base_station_settings_confirm_restart",
+    "value": "Är du säker på att du vill starta om basstationen {baseStationName}?"
+  },
+  {
+    "key": "base_station_settings_confirm_deactivate",
+    "value": "Är du säker på att du vill avaktivera basstationen {baseStationName}?"
+  },
+  {
+    "key": "base_station_settings_channel_info",
+    "value": "För den första basstationen bör du välja samma kanal som för Wi-Fi-routern.  Om du har fler basstationer på samma plats eller i samma byggnad bör du placera dem minst sex meter från varandra. De bör också ligga på olika kanaler."
+  },
+  {
+    "key": "base_station_settings_message_rebooting",
+    "value": "Basstationen startas om..."
+  },
+  {
+    "key": "manual_fw_update_label_title",
+    "value": "Programvaruversion"
+  },
+  {
+    "key": "manual_fw_update_confirm_update",
+    "value": "Är du säker på att du vill uppdatera till {fwVersion}?"
+  },
+  {
+    "key": "subscription_label_title",
+    "value": "Prenumeration"
+  },
+  {
+    "key": "subscription_label_service_level_title",
+    "value": "Tjänst"
+  },
+  {
+    "key": "subscription_label_expires",
+    "value": "Upphör"
+  },
+  {
+    "key": "subscription_activity_change_service",
+    "value": "BYT TJÄNST"
+  },
+  {
+    "key": "change_service_activity_change_service",
+    "value": "BYT TJÄNST"
+  },
+  {
+    "key": "change_service_activity_renew_service",
+    "value": "Förnya tjänsten"
+  },
+  {
+    "key": "change_service_activity_cancel_service",
+    "value": "SÄG UPP TJÄNSTEN"
+  },
+  {
+    "key": "change_service_activity_cancel",
+    "value": "SÄG UPP"
+  },
+  {
+    "key": "change_service_activity_dont_cancel",
+    "value": "SÄG INTE UPP"
+  },
+  {
+    "key": "subscription_label_payment_method_title",
+    "value": "Betalningsmetod"
+  },
+  {
+    "key": "subscription_activity_update_payment_method",
+    "value": "Uppdatera"
+  },
+  {
+    "key": "subscription_label_cloud_storage_title",
+    "value": "Molnlagring"
+  },
+  {
+    "key": "subscription_activity_buy_more_cloud_storage",
+    "value": "Köp mer molnlagring"
+  },
+  {
+    "key": "subscription_activity_delete_all_unlocked_files",
+    "value": "TA BORT ALLA FILER"
+  },
+  {
+    "key": "subscription_label_delete_all_unlocked_files_note",
+    "value": "Obs! 'Favoriter' tas inte bort"
+  },
+  {
+    "key": "subscription_label_recycle_bin",
+    "value": "Papperskorgen"
+  },
+  {
+    "key": "subscription_label_cameras_title",
+    "value": "Kameror"
+  },
+  {
+    "key": "subscription_label_cameras_supported",
+    "value": "Stöds"
+  },
+  {
+    "key": "subscription_label_cameras_connected",
+    "value": "Ansluten"
+  },
+  {
+    "key": "subscription_label_cameras_online_retailers",
+    "value": "Återförsäljare online"
+  },
+  {
+    "key": "subscription_activity_buy_more_cameras",
+    "value": "Köp ytterligare..."
+  },
+  {
+    "key": "subscription_label_base_stations_title",
+    "value": "Basstationer"
+  },
+  {
+    "key": "subscription_label_base_stations_supported",
+    "value": "Stöds"
+  },
+  {
+    "key": "subscription_label_base_stations_connected",
+    "value": "Ansluten"
+  },
+  {
+    "key": "subscription_label_base_stations_online_retailers",
+    "value": "Återförsäljare online"
+  },
+  {
+    "key": "subscription_activity_buy_more_base_stations",
+    "value": "Köp ytterligare..."
+  },
+  {
+    "key": "subscription_label_add_base_station",
+    "value": "Lägg till en basstation"
+  },
+  {
+    "key": "buy_cloud_storage_label_title",
+    "value": "Molnlagring"
+  },
+  {
+    "key": "buy_cloud_storage_label_no_extra_cloud_storage",
+    "value": "Ingen extra molnlagring"
+  },
+  {
+    "key": "label_current_plan",
+    "value": "Aktuellt abonnemang"
+  },
+  {
+    "key": "buy_cloud_storage_activity_purchase_storage",
+    "value": "KÖP LAGRING"
+  },
+  {
+    "key": "add_base_station_activity_add_base_station",
+    "value": "LÄGG TILL BASSTATION"
+  },
+  {
+    "key": "recycle_bin_label_title",
+    "value": "Papperskorgen"
+  },
+  {
+    "key": "personal_info_email_confirmed",
+    "value": "Har bekräftats"
+  },
+  {
+    "key": "personal_info_email_not_confirmed",
+    "value": "Har inte bekräftats"
+  },
+  {
+    "key": "personal_info_label_username",
+    "value": "E-post"
+  },
+  {
+    "key": "personal_info_label_retype_username",
+    "value": "Ange e-postadressen igen"
+  },
+  {
+    "key": "personal_info_label_password",
+    "value": "Lösenord"
+  },
+  {
+    "key": "personal_info_label_retype_password",
+    "value": "Skriv lösenordet igen"
+  },
+  {
+    "key": "personal_info_label_remember_me",
+    "value": "Kom ihåg mig"
+  },
+  {
+    "key": "personal_info_label_first_name",
+    "value": "Förnamn"
+  },
+  {
+    "key": "personal_info_label_last_name",
+    "value": "Efternamn"
+  },
+  {
+    "key": "personal_info_autologin",
+    "value": "Automatisk inloggning"
+  },
+  {
+    "key": "personal_info_logout",
+    "value": "Logga ut"
+  },
+  {
+    "key": "personal_info_placeholder_username",
+    "value": "e-post"
+  },
+  {
+    "key": "personal_info_placeholder_username_verify",
+    "value": "bekräfta e-postadress"
+  },
+  {
+    "key": "personal_info_placeholder_password",
+    "value": "lösenord"
+  },
+  {
+    "key": "personal_info_placeholder_password_verify",
+    "value": "bekräfta lösenord"
+  },
+  {
+    "key": "personal_info_placeholder_first_name",
+    "value": "förnamn"
+  },
+  {
+    "key": "personal_info_placeholder_last_name",
+    "value": "efternamn"
+  },
+  {
+    "key": "friends_label_title",
+    "value": "Vänner"
+  },
+  {
+    "key": "friends_label_pending",
+    "value": "Väntar"
+  },
+  {
+    "key": "friends_label_accepted",
+    "value": "Har godkänts"
+  },
+  {
+    "key": "friends_label_expired",
+    "value": "Utgått"
+  },
+  {
+    "key": "edit_friends_label_first_name",
+    "value": "Förnamn"
+  },
+  {
+    "key": "edit_friends_label_last_name",
+    "value": "Efternamn"
+  },
+  {
+    "key": "edit_friends_label_email",
+    "value": "E-post"
+  },
+  {
+    "key": "edit_friends_activity_send_invite",
+    "value": "SKICKA INBJUDAN"
+  },
+  {
+    "key": "edit_friends_activity_resend_invite",
+    "value": "SKICKA OM INBJUDAN"
+  },
+  {
+    "key": "edit_friends_label_camera_access",
+    "value": "Visa kamera och tillhörande bilder"
+  },
+  {
+    "key": "edit_friends_label_camera_adjust_settings",
+    "value": "Ge administratörsrättigheter"
+  },
+  {
+    "key": "edit_friends_label_camera_adjust_settings_help",
+    "value": "Ge vän behörighet att ändra inställningar"
+  },
+  {
+    "key": "edit_friends_activity_delete_friend",
+    "value": "TA BORT VÄN"
+  },
+  {
+    "key": "prefs_label_title",
+    "value": "Inställningar"
+  },
+  {
+    "key": "prefs_label_storage_title",
+    "value": "Lagring"
+  },
+  {
+    "key": "prefs_label_manage_storage",
+    "value": "Hantera lagring"
+  },
+  {
+    "key": "prefs_activity_manage_storage_info",
+    "value": "Olåsta filer som är över 30 dagar gamla tas bort automatiskt."
+  },
+  {
+    "key": "prefs_label_if_storage_full",
+    "value": "Om lagringsgränsen har nåtts"
+  },
+  {
+    "key": "prefs_label_delete_oldest_files",
+    "value": "ta bort de äldsta filerna för att skapa plats"
+  },
+  {
+    "key": "prefs_label_do_not_record",
+    "value": "gör inga nya inspelningar"
+  },
+  {
+    "key": "prefs_label_storage_full_notification",
+    "value": "Meddelande om att lagringsgränsen har nåtts"
+  },
+  {
+    "key": "prefs_label_low_battery_notification",
+    "value": "Meddelande om att batteriet håller på att ta slut"
+  },
+  {
+    "key": "camera_order_label_title",
+    "value": "Kameraordning"
+  },
+  {
+    "key": "camera_order_confirm_delete_camera",
+    "value": "Den här kameran, '{cameraName}', kommer att tas bort från systemet.  Använd synkroniseringsknappen om du vill lägga till kameran igen."
+  },
+  {
+    "key": "about_label_title",
+    "value": "Om"
+  },
+  {
+    "key": "about_label_version",
+    "value": "Version"
+  },
+  {
+    "key": "about_label_released",
+    "value": "Utgiven"
+  },
+  {
+    "key": "about_review_terms_of_service",
+    "value": "Läs igenom användarvillkoren"
+  },
+  {
+    "key": "about_review_privacy_policy",
+    "value": "Läs igenom sekretesspolicyn"
+  },
+  {
+    "key": "camera_settings_label_title",
+    "value": "Kamerainställningar"
+  },
+  {
+    "key": "camera_settings_label_camera_name",
+    "value": "Namn"
+  },
+  {
+    "key": "camera_settings_label_camera_placeholder",
+    "value": "kamera"
+  },
+  {
+    "key": "camera_settings_label_adjust_settings_title",
+    "value": "Justera inställningarna"
+  },
+  {
+    "key": "camera_settings_label_power_management_title",
+    "value": "Strömhantering"
+  },
+  {
+    "key": "camera_settings_label_pan_zoom_title",
+    "value": "Panorera och zooma"
+  },
+  {
+    "key": "camera_settings_label_invert_image",
+    "value": "Invertera bilden"
+  },
+  {
+    "key": "camera_settings_label_motion_detection_test",
+    "value": "Test av rörelsedetektion"
+  },
+  {
+    "key": "camera_settings_label_position_mode",
+    "value": "Läge – position"
+  },
+  {
+    "key": "camera_settings_label_best_video",
+    "value": "Bästa video"
+  },
+  {
+    "key": "camera_settings_label_optimized",
+    "value": "Optimerat"
+  },
+  {
+    "key": "camera_settings_label_best_battery_life",
+    "value": "Bästa batteritid"
+  },
+  {
+    "key": "camera_settings_label_invert_image_description",
+    "value": "Använd för att rotera kamerans bild"
+  },
+  {
+    "key": "camera_settings_label_position_mode_description",
+    "value": "Använd när du riktar kameran"
+  },
+  {
+    "key": "camera_settings_label_motion_detection_test_description",
+    "value": "Lampan blinkar vid upptäckt av rörelse"
+  },
+  {
+    "key": "camera_settings_label_best_video_description",
+    "value": "Kan förkorta batteritiden"
+  },
+  {
+    "key": "camera_settings_label_optimized_description",
+    "value": "Balanserar videokvaliteten och batteritiden"
+  },
+  {
+    "key": "camera_settings_label_best_battery_life_description",
+    "value": "Kan minska videokvaliteten"
+  },
+  {
+    "key": "change_service_label_title",
+    "value": "Byt tjänst"
+  },
+  {
+    "key": "change_service_activity_learn_more",
+    "value": "Läs mer"
+  },
+  {
+    "key": "change_service_activity_purchase_plan",
+    "value": "KÖP ABONNEMANG"
+  },
+  {
+    "key": "confirm_purchase_title",
+    "value": "Bekräfta köp"
+  },
+  {
+    "key": "confirm_purchase_label_charge_info",
+    "value": "Ditt köp av {servicePlanName} från {sellingEntity} debiteras med följande:"
+  },
+  {
+    "key": "confirm_purchase_label_price",
+    "value": "Pris: {amount}"
+  },
+  {
+    "key": "confirm_purchase_label_prorated_credit",
+    "value": "Proportionell kredit: {amount}"
+  },
+  {
+    "key": "confirm_purhcase_label_discount",
+    "value": "Rabatt: {amount}"
+  },
+  {
+    "key": "confirm_purchase_label_taxes",
+    "value": "Moms: {amount}"
+  },
+  {
+    "key": "confirm_purchase_label_total",
+    "value": "TOTALT: {amount}"
+  },
+  {
+    "key": "aria_directpost_error_4006",
+    "value": "Vi erbjuder inte det betalningssättet. För tillfället kan vi ta emot betalning endast via Mastercard och Visa."
+  },
+  {
+    "key": "aria_directpost_error_4007",
+    "value": "Ange kortinnehavarens namn."
+  },
+  {
+    "key": "aria_directpost_error_4008",
+    "value": "Ogiltigt utgångsdatum"
+  },
+  {
+    "key": "aria_directpost_error_4009",
+    "value": "Ogiltigt kreditkortsnummer"
+  },
+  {
+    "key": "aria_directpost_error_6005",
+    "value": "Det saknas uppgifter i din begäran."
+  },
+  {
+    "key": "aria_directpost_error_6006",
+    "value": "Det saknas uppgifter i din begäran."
+  },
+  {
+    "key": "aria_directpost_error_6007",
+    "value": "Ange CVV-nummer.  (CVV-numret är ett tresiffrigt nummer på baksidan av kreditkortet. Kreditkortsföretagen använder det här numret för att motverka bedrägeri.)"
+  },
+  {
+    "key": "aria_directpost_error_6008",
+    "value": "Den här adressen stämmer inte med adressen i databasen.  Kontrollera adressen eller prova med en adress du använt tidigare."
+  },
+  {
+    "key": "aria_directpost_error_6009",
+    "value": "Något gick fel.  Försök igen."
+  },
+  {
+    "key": "aria_directpost_error_6010",
+    "value": "Något gick fel.  Försök igen."
+  },
+  {
+    "key": "aria_directpost_error_6011",
+    "value": "Den här adressen stämmer inte med adressen i databasen.  Kontrollera adressen eller prova med en adress du använt tidigare."
+  },
+  {
+    "key": "aria_directpost_error_6012",
+    "value": "Ange CVV-nummer.  (CVV-numret är ett tresiffrigt nummer på baksidan av kreditkortet. Kreditkortsföretagen använder det här numret för att motverka bedrägeri.)"
+  },
+  {
+    "key": "aria_directpost_error_6013",
+    "value": "Ange CVV-nummer.  (CVV-numret är ett tresiffrigt nummer på baksidan av kreditkortet. Kreditkortsföretagen använder det här numret för att motverka bedrägeri.)"
+  },
+  {
+    "key": "aria_directpost_error_6014",
+    "value": "Ange CVV-nummer.  (CVV-numret är ett tresiffrigt nummer på baksidan av kreditkortet. Kreditkortsföretagen använder det här numret för att motverka bedrägeri.)"
+  },
+  {
+    "key": "aria_directpost_error_6015",
+    "value": "Kreditkortsinformationen stämmer inte med bankens upplysningar.  Ange namn och faktureringsadress för kreditkortets innehavare."
+  },
+  {
+    "key": "aria_directpost_error_6017",
+    "value": "Den här adressen stämmer inte med adressen i databasen.  Kontrollera adressen eller prova med en adress du använt tidigare."
+  },
+  {
+    "key": "aria_directpost_error_6018",
+    "value": "Något gick fel.  Försök igen."
+  },
+  {
+    "key": "aria_directpost_error_6019",
+    "value": "Postnumret stämmer inte med postnumret i vår databas. Ange postnumret igen."
+  },
+  {
+    "key": "aria_directpost_error_6020",
+    "value": "Postnumret stämmer inte med postnumret i vår databas. Ange postnumret igen."
+  },
+  {
+    "key": "aria_directpost_error_6021",
+    "value": "Delstat/provins eller motsvarande stämmer inte med uppgifterna i vår databas.  Ange delstat/provins eller motsvarande igen."
+  },
+  {
+    "key": "aria_directpost_error_6022",
+    "value": "Det saknas uppgifter i din begäran."
+  },
+  {
+    "key": "aria_directpost_error_6023",
+    "value": "Ange upplysningarna för ditt Mastercard- eller Visa-kort."
+  },
+  {
+    "key": "marketing_how_to_sync_camera_header",
+    "value": "Så synkroniserar du en kamera"
+  },
+  {
+    "key": "marketing_how_to_sync_camera_content",
+    "value": "o Sätt i batterier i kameran. Se till att vända polerna rätt\n\no Tryck på synkroniseringsknappen på både kameran och basstationen\n\no En lampa på framsidan av kameran blinkar snabbt i 10 sekunder som bekräftelse på synkroniseringen – och stängs sedan av\n\no Lampan under kameraikonen på basstationen lyser nu grönt"
+  },
+  {
+    "key": "status_brightness_config_success",
+    "value": "Ljusstyrkan har sparats"
+  },
+  {
+    "key": "label_do",
+    "value": "GÖR SÅ HÄR"
+  },
+  {
+    "key": "label_when",
+    "value": "NÄR"
+  },
+  {
+    "key": "activity_label_update_now",
+    "value": "UPPDATERA NU"
+  },
+  {
+    "key": "activity_label_update",
+    "value": "UPPDATERA"
+  },
+  {
+    "key": "activity_label_dont_update",
+    "value": "UPPDATERA INTE"
+  },
+  {
+    "key": "status_base_station_firmware_update_available",
+    "value": "Det finns en uppdatering för basstationen '{baseStationName}'. Vill du uppdatera nu?"
+  },
+  {
+    "key": "activity_always_remind_me",
+    "value": "Påminn mig alltid"
+  },
+  {
+    "key": "status_app_required_update",
+    "value": "Du måste uppdatera Arlo-programmet om du vill fortsätta."
+  },
+  {
+    "key": "status_app_update",
+    "value": "En ny version av Arlo-programmet finns tillgänglig."
+  },
+  {
+    "key": "label_motion_detection_test_description",
+    "value": "{cameraName} körs nu i läget för test av rörelsedetektion.\n\nLampan på kameran blinkar när en rörelse upptäcks."
+  },
+  {
+    "key": "label_send_email_confirmation_to",
+    "value": "Skicka e-postbekräftelse till {emailAddress}?"
+  },
+  {
+    "key": "label_subscriptions",
+    "value": "Prenumerationer"
+  },
+  {
+    "key": "error_unexpected",
+    "value": "Ett oväntat fel har uppstått. Försök igen."
+  },
+  {
+    "key": "label_confirm_delete_rule",
+    "value": "Vill du ta bort regeln {ruleName}?"
+  },
+  {
+    "key": "library_label_confirm_delete_media",
+    "value": "Vill du ta bort de valda filerna?"
+  },
+  {
+    "key": "rule_label_select_motion_device",
+    "value": "Välj enhet för rörelsedetektion"
+  },
+  {
+    "key": "rule_label_select_recording_device",
+    "value": "Välj enhet för inspelning"
+  },
+  {
+    "key": "alert_arlo1",
+    "value": "Rörelse upptäcktes i {cameraName}."
+  },
+  {
+    "key": "alert_arlo2",
+    "value": "Rörelse upptäcktes i {cameraName}. Klicka här om du vill visa inspelningen."
+  },
+  {
+    "key": "educate_label_library_select",
+    "value": "Klicka på 'Välj' uppe till höger om du vill se alternativ för inspelningarna."
+  },
+  {
+    "key": "educate_label_dont_show_again",
+    "value": "Visa inte det här meddelandet igen"
+  },
+  {
+    "key": "educate_label_base_station_modes_rules",
+    "value": "Använd regler för att konfigurera och hantera rörelsedetektion, inspelningar och aviseringar. Lägg en eller flera regler i grupper via lägen.\n\nDu kan sedan styra vilka regler som aktiveras genom att välja eller schemalägga lägen."
+  },
+  {
+    "key": "activity_ok",
+    "value": "OK"
+  },
+  {
+    "key": "error_unsupported_mp4_playback",
+    "value": "HTML5-video i MP4 med H.264 stöds inte i din webbläsare. Använd en annan webbläsare eller hämta videon."
+  },
+  {
+    "key": "activity_delete",
+    "value": "TA BORT"
+  },
+  {
+    "key": "activity_download_and_delete",
+    "value": "HÄMTA OCH TA BORT"
+  },
+  {
+    "key": "recycle_bin_label_empty",
+    "value": "Det finns inga inspelningar i papperskorgen"
+  },
+  {
+    "key": "edit_friends_label_admin_rights",
+    "value": "Har administratörsrättigheter"
+  },
+  {
+    "key": "edit_friends_label_no_admin_rights",
+    "value": "Inga administratörsrättigheter"
+  },
+  {
+    "key": "error_username_exists",
+    "value": "Det finns redan ett konto för den här e-postadressen. Ange lösenordet eller skapa ett nytt konto om du vill slutföra konfigurationen."
+  },
+  {
+    "key": "ios_alert_arlo1",
+    "value": "Rörelse har upptäckts på %@."
+  },
+  {
+    "key": "ios_alert_arlo2",
+    "value": "Rörelse har upptäckts på %@. Klicka här om du vill visa inspelningen."
+  },
+  {
+    "key": "marketing_label_warning_basic_friend_usage",
+    "value": "I det grundläggande abonnemanget kan vännen visa din kamera i högst 30 dagar. Uppgradera tjänsten om du vill ge åtkomst i fler än 30 dagar"
+  },
+  {
+    "key": "marketing_label_enable_friend_feature",
+    "value": "Uppgradera nu om du vill aktivera den här funktionen"
+  },
+  {
+    "key": "marketing_label_upgrade_now",
+    "value": "Uppgradera nu"
+  },
+  {
+    "key": "rule_label_default_value",
+    "value": "Rörelse upptäckt av kamera"
+  },
+  {
+    "key": "error_cannot_share_selection",
+    "value": "De medier du har valt går inte att dela. Välj en annan uppsättning inspelningar och snapshots."
+  },
+  {
+    "key": "base_station_settings_confirm_restart_busy",
+    "value": "Kamerorna är upptagna. Är du säker på att du vill starta om basstationen {baseStationName}?"
+  },
+  {
+    "key": "label_confirm_delete_unlocked_files",
+    "value": "Vill du ta bort alla inspelningar och snapshots som inte har angetts som favoriter?\n\nVARNING: filerna flyttas till Papperskorgen, där de rensas automatiskt efter sju dagar."
+  },
+  {
+    "key": "password_help_label_reset_password",
+    "value": "Återställa lösenordet"
+  },
+  {
+    "key": "activity_send",
+    "value": "SKICKA"
+  },
+  {
+    "key": "activity_reset",
+    "value": "ÅTERSTÄLL"
+  },
+  {
+    "key": "status_device_update_available",
+    "value": "Det finns en tillgänglig uppdatering"
+  },
+  {
+    "key": "status_offline_alternate",
+    "value": "Offline"
+  },
+  {
+    "key": "status_upgrading_alternate",
+    "value": "Uppgraderar..."
+  },
+  {
+    "key": "status_busy_alternate",
+    "value": "Upptagen"
+  },
+  {
+    "key": "status_signing_in",
+    "value": "Loggar in..."
+  },
+  {
+    "key": "status_label_getting_status_short",
+    "value": "Hämtar status"
+  },
+  {
+    "key": "status_label_getting_status_alternate",
+    "value": "Hämtar status..."
+  },
+  {
+    "key": "activity_label_auto_renew",
+    "value": "Förnya automatiskt"
+  },
+  {
+    "key": "activity_label_next_bill",
+    "value": "Nästa faktura"
+  },
+  {
+    "key": "placeholder_password",
+    "value": "lösenord"
+  },
+  {
+    "key": "placeholder_verify_password",
+    "value": "bekräfta lösenord"
+  },
+  {
+    "key": "activity_label_edit_filter",
+    "value": "Redigera filter"
+  },
+  {
+    "key": "status_base_station_added",
+    "value": "Basstationen har lagts till"
+  },
+  {
+    "key": "subscription_status_no_credit_card",
+    "value": "Inget kreditkort finns kopplat till kontot"
+  },
+  {
+    "key": "activity_update_app_ios",
+    "value": "GÅ TILL APP STORE"
+  },
+  {
+    "key": "activity_update_app_android",
+    "value": "GÅ TILL GOOGLE PLAY"
+  },
+  {
+    "key": "activity_update_app_kindle",
+    "value": "GÅ TILL APP STORE"
+  },
+  {
+    "key": "activity_upate_later",
+    "value": "UPPDATERA SENARE"
+  },
+  {
+    "key": "status_getting_information",
+    "value": "Hämtar information"
+  },
+  {
+    "key": "library_activity_reset_filter_alternate",
+    "value": " Återställa"
+  },
+  {
+    "key": "camera_status_upgrading",
+    "value": "Kameran uppgraderas..."
+  },
+  {
+    "key": "status_base_station_update_available",
+    "value": "Det finns en tillgänglig uppdatering"
+  },
+  {
+    "key": "status_getting_user_info",
+    "value": "Hämtar användarinformation..."
+  },
+  {
+    "key": "status_getting_device_info",
+    "value": "Hämtar enhetsinformation..."
+  },
+  {
+    "key": "edit_friends_label_add_friend",
+    "value": "Lägg till vän"
+  },
+  {
+    "key": "confirm_base_station_settings_update",
+    "value": "The upgrade process can take up to five minutes. Make sure your device is uninterrupted during the upgrade process. Do you want to upgrade your {baseStationName} to {version}?"
+  },
+  {
+    "key": "title_accept_tos",
+    "value": "Godkänn användarvillkoren"
+  },
+  {
+    "key": "title_accept_policy",
+    "value": "Godkänn sekretesspolicyn"
+  },
+  {
+    "key": "activity_agree",
+    "value": "JAG GODKÄNNER"
+  },
+  {
+    "key": "activity_disagree",
+    "value": "JAG GODKÄNNER INTE"
+  },
+  {
+    "key": "label_versions",
+    "value": "Versioner"
+  },
+  {
+    "key": "label_hardware",
+    "value": "Maskinvara"
+  },
+  {
+    "key": "label_firmware",
+    "value": "Fast programvara"
+  },
+  {
+    "key": "error_claim_no_base_station",
+    "value": "Vi kan inte lägga till någon basstation just nu, eftersom vi inte kan identifiera din basstation.\n\nSe till att basstationen är på samt ansluten till internet. Se också till att enheten är ansluten till samma WiFi-nätverk som basstationen."
+  },
+  {
+    "key": "status_account_exist",
+    "value": "Det finns redan ett Arlo-konto för den här e-postadressen. Vill du logga in på det här kontot?"
+  },
+  {
+    "key": "activity_go_to_login",
+    "value": "GÅ TILL INLOGGNINGEN"
+  },
+  {
+    "key": "payment_method_label_security_code_short",
+    "value": "Säkerhetskod"
+  },
+  {
+    "key": "prefs_label_notifications_title",
+    "value": "Meddelanden"
+  },
+  {
+    "key": "account_setup_label_security_question",
+    "value": "Fråga"
+  },
+  {
+    "key": "account_setup_label_security_question_placeholder",
+    "value": "fråga"
+  },
+  {
+    "key": "account_setup_label_security_custom_question\"",
+    "value": "Anpassad fråga"
+  },
+  {
+    "key": "account_setup_label_security_custom_question_placeholder",
+    "value": "anpassad fråga"
+  },
+  {
+    "key": "prefs_label_push_notification_title",
+    "value": "Push-meddelande"
+  },
+  {
+    "key": "status_label_active",
+    "value": "Aktiv"
+  },
+  {
+    "key": "status_label_active",
+    "value": "Inaktiv"
+  },
+  {
+    "key": "about_review_ffmpeg_license",
+    "value": "FFmpeg-licens"
+  },
+  {
+    "key": "title_release_notes",
+    "value": "Kommentarer"
+  },
+  {
+    "key": "info_cannot_delete_last_scheduled_mode",
+    "value": "Det här läget kan inte tas bort. Du måste ha minst ett aktivt läge i schemat."
+  },
+  {
+    "key": "base_station_settings_confirm_update_busy",
+    "value": "Kamerorna är upptagna. Uppgraderingen kan ta upp till fem minuter. Se till att enheten körs utan avbrott under uppgraderingen. Vill du uppgradera {baseStationName} till {version}?"
+  },
+  {
+    "key": "base_station_settings_confirm_update",
+    "value": "Uppgraderingen kan ta upp till fem minuter. Se till att enheten körs utan avbrott under uppgraderingen. Vill du uppgradera {baseStationName} till {version}?"
+  },
+  {
+    "key": "title_friend",
+    "value": "Vän"
+  },
+  {
+    "key": "error_unable_to_play_camera",
+    "value": "Kan inte spela upp. Försök igen."
+  },
+  {
+    "key": "status_updating",
+    "value": "Uppdaterar..."
+  },
+  {
+    "key": "error_compose_email_failed",
+    "value": "Det gick inte att skapa e-postmeddelandet. Försök igen."
+  },
+  {
+    "key": "error_cannot_process_billing_information",
+    "value": "Vi kunde inte ta emot kreditkortsupplysningarna. Försök igen."
+  },
+  {
+    "key": "status_getting_media_info",
+    "value": "Hämtar medieinformation..."
+  },
+  {
+    "key": "label_data_not_available",
+    "value": "--"
+  },
+  {
+    "key": "label_credit_card_display",
+    "value": "xxxx-xxxx-xxxx-{last4Digits}"
+  },
+  {
+    "key": "error_media_not_available",
+    "value": "Medier ej tillgängliga."
+  },
+  {
+    "key": "status_timeout_no_response",
+    "value": "Inget svar på %d sekunder"
+  },
+  {
+    "key": "error_unable_to_apply_changes_lost_connection",
+    "value": "Ändringarna har inte genomförts: internetuppkopplingen bröts."
+  },
+  {
+    "key": "status_enabling_auto_update",
+    "value": "Aktiverar automatisk uppdatering..."
+  },
+  {
+    "key": "status_disabling_auto_update",
+    "value": "Avaktiverar automatisk uppdatering..."
+  },
+  {
+    "key": "error_apply_auto_udpate",
+    "value": "The automatic update could not be set {error}. Please try again."
+  },
+  {
+    "key": "status_apply_time_zone",
+    "value": "Ställer in tidszon..."
+  },
+  {
+    "key": "error_apply_time_zone",
+    "value": "Det gick inte att ange tidszon {error}. Försök igen."
+  },
+  {
+    "key": "status_apply_flicker_frequency",
+    "value": "Ställer in flimmerfrekvensen..."
+  },
+  {
+    "key": "error_apply_flicker_frequency",
+    "value": "Det gick inte att ange flimmerfrekvens {error}. Försök igen."
+  },
+  {
+    "key": "status_apply_mode",
+    "value": "Anger aktivt läge..."
+  },
+  {
+    "key": "error_apply_mode",
+    "value": "Det gick inte att ange läge {error}. Försök igen."
+  },
+  {
+    "key": "status_adding_mode",
+    "value": "Lägger till läge..."
+  },
+  {
+    "key": "error_adding_mode",
+    "value": "Det gick inte att lägga till läget {error}. Försök igen."
+  },
+  {
+    "key": "status_updating_mode",
+    "value": "Uppdaterar läget..."
+  },
+  {
+    "key": "error_updating_mode",
+    "value": "Det gick inte att uppdatera läget {error}. Försök igen."
+  },
+  {
+    "key": "status_deleting_mode",
+    "value": "Tar bort läge..."
+  },
+  {
+    "key": "error_deleting_mode",
+    "value": "Det gick inte att ta bort läget {error}. Försök igen."
+  },
+  {
+    "key": "status_adding_rule",
+    "value": "Lägger till regel..."
+  },
+  {
+    "key": "error_adding_rule",
+    "value": "Det gick inte att lägga till regeln {error}. Försök igen."
+  },
+  {
+    "key": "status_update_rule",
+    "value": "Uppdaterar regeln..."
+  },
+  {
+    "key": "error_update_rule",
+    "value": "Det gick inte att uppdatera regeln {error}. Försök igen."
+  },
+  {
+    "key": "status_deleting_rule",
+    "value": "Tar bort regeln..."
+  },
+  {
+    "key": "error_deleting_rule",
+    "value": "Det gick inte att ta bort regeln {error}. Försök igen."
+  },
+  {
+    "key": "status_label_on",
+    "value": "på"
+  },
+  {
+    "key": "status_label_off",
+    "value": "av"
+  },
+  {
+    "key": "status_apply_schedule",
+    "value": "Ställer in schema %@..."
+  },
+  {
+    "key": "status_apply_schedule_on",
+    "value": "Setting schedule on..."
+  },
+  {
+    "key": "status_apply_schedule_off",
+    "value": "Setting schedule off..."
+  },
+  {
+    "key": "error_apply_schedule_on_off",
+    "value": "The schedule could not be set {error}. Please try again."
+  },
+  {
+    "key": "error_apply_schedule",
+    "value": "Det gick inte att ange schema {error}. Försök igen."
+  },
+  {
+    "key": "status_updating_schedule",
+    "value": "Uppdaterar schemat..."
+  },
+  {
+    "key": "error_updating_schedule",
+    "value": "Det gick inte att uppdatera schemat {error}. Försök igen."
+  },
+  {
+    "key": "status_apply_position_mode",
+    "value": "Aktiverar positionsläget..."
+  },
+  {
+    "key": "error_apply_position_mode",
+    "value": "Det gick inte att starta positionsläget {error}. Försök igen."
+  },
+  {
+    "key": "status_apply_motion_sensitivity",
+    "value": "Tillämpar rörelsekänslighet..."
+  },
+  {
+    "key": "error_apply_motion_sensitivity",
+    "value": "Det gick inte att tillämpa rörelsekänslighet {error}. Försök igen."
+  },
+  {
+    "key": "header_label_choose_mode_manually",
+    "value": "VÄLJ MANUELLT"
+  },
+  {
+    "key": "activity_label_purchase_cameras",
+    "value": "KÖP KAMEROR"
+  },
+  {
+    "key": "label_none",
+    "value": "Ingen"
+  },
+  {
+    "key": "label_current_service_level",
+    "value": "Nuvarande tjänst"
+  },
+  {
+    "key": "notify_cannot_delete_active_mode",
+    "value": "Du kan inte ta bort det här läget eftersom det är aktivt. Om du vill ta bort det här läget måste du först byta till ett annat läge."
+  },
+  {
+    "key": "notify_device_removed_successfully",
+    "value": "Enheten har tagits bort från kontot."
+  },
+  {
+    "key": "confirm_delete_camera",
+    "value": "Vill du ta bort kameran?"
+  },
+  {
+    "key": "confirm_remove_friend",
+    "value": "Vill du ta bort den här vännen?"
+  },
+  {
+    "key": "info_select_shareable_cameras",
+    "value": "Välj vilka kameror du vill dela med den här vännen."
+  },
+  {
+    "key": "header_label_cameras",
+    "value": "KAMEROR"
+  },
+  {
+    "key": "confirm_restore_selected_files",
+    "value": "Vill du återställa de markerade filerna?"
+  },
+  {
+    "key": "status_account_max_modes",
+    "value": "Du använder maximalt antal lägen för tjänsten."
+  },
+  {
+    "key": "label_add_email",
+    "value": "Lägg till e-post"
+  },
+  {
+    "key": "label_action",
+    "value": "Åtgärd"
+  },
+  {
+    "key": "header_select_camera",
+    "value": "Välj kamera"
+  },
+  {
+    "key": "error_mode_name_exists",
+    "value": "The name for your mode already exists. Please use a different mode name."
+  },
+  {
+    "key": "error_rule_name_exists",
+    "value": "Namnet du valt för regeln används redan. Använd ett annat namn för regeln."
+  },
+  {
+    "key": "error_rule_email_exists",
+    "value": "E-posten har redan lagts till i regeln."
+  },
+  {
+    "key": "status_label_free",
+    "value": "Kostnadsfritt"
+  },
+  {
+    "key": "status_label_error",
+    "value": "Fel"
+  },
+  {
+    "key": "confirm_delete_non_favorites",
+    "value": "Vill du ta bort de markerade filerna? De filer du har angett som favoriter tas inte bort."
+  },
+  {
+    "key": "confirm_share_no_access",
+    "value": "Vill du dela de markerade filerna? Filer från kameror du inte äger kommer inte att delas."
+  },
+  {
+    "key": "confirm_download_no_access",
+    "value": "Vill du hämta de markerade filerna? Filer från kameror du inte äger kommer inte att hämtas."
+  },
+  {
+    "key": "status_account_exist",
+    "value": "Det finns redan ett Arlo-konto för den här e-postadressen. Vill du logga in på det här kontot?"
+  },
+  {
+    "key": "activity_go_to_login",
+    "value": "GÅ TILL INLOGGNINGEN"
+  },
+  {
+    "key": "info_schedule_zoom_in",
+    "value": "Zooma in om du vill se detaljerad information i schemat."
+  },
+  {
+    "key": "info_schedule_zoom_out",
+    "value": "Zooma ut om du vill se schemat för hela dagen."
+  },
+  {
+    "key": "info_schedule_tap_and_hold",
+    "value": "Tryck och håll ned om du vill lägga till ett läge i schemat."
+  },
+  {
+    "key": "info_schedule_tap",
+    "value": "Tryck om du vill redigera ett läge."
+  },
+  {
+    "key": "info_schedule_rotate_landscape",
+    "value": "Rotera om du vill visa veckovyn."
+  },
+  {
+    "key": "info_schedule_rotate_portrait",
+    "value": "Rotera om du vill visa dagsvyn."
+  },
+  {
+    "key": "bs_settings_label_flicker_adjustment",
+    "value": "Flimmerjustering"
+  },
+  {
+    "key": "info_flicker_adjustment",
+    "value": "Om det flimrar i videoinspelningen kan du anpassa kamerans slutartid till den strömfrekvens som gäller där du bor: 50 eller 60 Hz."
+  },
+  {
+    "key": "label_frequency_auto",
+    "value": "Automatisk ({frequency})"
+  },
+  {
+    "key": "label_frequency_60",
+    "value": "60 Hz"
+  },
+  {
+    "key": "label_frequency_50",
+    "value": "50 Hz"
+  },
+  {
+    "key": "label_frequency_auto",
+    "value": "Auto"
+  },
+  {
+    "key": "help_settings",
+    "value": "Hjälp"
+  },
+  {
+    "key": "help_label_support",
+    "value": "Support"
+  },
+  {
+    "key": "help_label_community",
+    "value": "Gemenskap"
+  },
+  {
+    "key": "status_label_disabled",
+    "value": "Avaktiverad"
+  },
+  {
+    "key": "label_no_updates_available",
+    "value": "Inga uppdateringar tillgängliga."
+  },
+  {
+    "key": "error_login_internet_connection",
+    "value": "Vi kan inte logga in dig p.g.a. internetanslutningsproblem. Vill du försöka igen?"
+  },
+  {
+    "key": "title_add_base_station",
+    "value": "Lägg till basstation"
+  },
+  {
+    "key": "title_add",
+    "value": "Lägg till"
+  },
+  {
+    "key": "title_edit",
+    "value": "Redigera"
+  },
+  {
+    "key": "title_see_another_camera_here",
+    "value": "Se någon annan kamera här"
+  },
+  {
+    "key": "title_active_rules",
+    "value": "AKTIVA REGLER"
+  },
+  {
+    "key": "label_no_active_rules",
+    "value": "Det finns inga aktiva regler för det här läget."
+  },
+  {
+    "key": "setup_sync_cameras_1",
+    "value": "Tryck på knappen Synkronisera på sidan av basstationen . Vänta på synkroniseringsstatus lysdioden att blinka grönt."
+  },
+  {
+    "key": "setup_sync_cameras_2",
+    "value": "Tryck på knappen Synkronisera ovanpå kameran."
+  },
+  {
+    "key": "setup_sync_cameras_3",
+    "value": "En blå lysdiod på kameran blinkar i tio sekunder för att bekräfta . OBS : Ta inte bort batteriet under denna process."
+  },
+  {
+    "key": "setup_base_station_1",
+    "value": "Anslut basstationen till routern"
+  },
+  {
+    "key": "setup_base_station_2",
+    "value": "Koppla in den"
+  },
+  {
+    "key": "setup_base_station_3",
+    "value": "Slå på den"
+  },
+  {
+    "key": "mobile_setup_complete_title",
+    "value": "Setup Complete"
+  },
+  {
+    "key": "mobile_setup_complete_info",
+    "value": "Grattis ! Din Arlo Kameror är nu setup och redo för visning .\nArlo är smart för att automatiskt spara varje video den registrerar in ditt moln lagring konto . Läs mer för att ta reda på hur länge dina molnkontoarkivvarje video , hur många kameror du kan ansluta och vilka abonnemang alternativ du har"
+  },
+  {
+    "key": "activity_learn_more",
+    "value": "Läs mer"
+  },
+  {
+    "key": "activity_skip_to_cameras",
+    "value": "Hoppa till kameror"
+  },
+  {
+    "key": "mobile_subscription_info",
+    "value": "Arlo är smart för att automatiskt spara varje video den registrerar in ditt moln lagring konto . Klicka här för att ta reda på hur länge dina molnkontoarkivvarje video , hur många kameror du kan ansluta och vilka abonnemang alternativ du har."
+  },
+  {
+    "value": "Credit Card information is not valid",
+    "key": "card_error"
+  },
+  {
+    "value": "Payment method is not updated",
+    "key": "billing_timeout_error"
+  },
+  {
+    "key": "timezone_error",
+    "value": "Please check time zone settings for the base station!"
+  }
+]

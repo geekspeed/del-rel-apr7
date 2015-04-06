@@ -1,0 +1,2306 @@
+﻿[
+  {
+    "key": "activity_back",
+    "value": "ZURÜCK"
+  },
+  {
+    "key": "label_required_fields",
+    "value": "Alle Felder sind Pflichtfelder, wenn sie nicht als 'optional' gekennzeichnet sind"
+  },
+  {
+    "key": "activity_continue",
+    "value": "WEITER"
+  },
+  {
+    "key": "activity_done",
+    "value": "FERTIG"
+  },
+  {
+    "key": "activity_submit",
+    "value": "SENDEN"
+  },
+  {
+    "key": "activity_cancel",
+    "value": "KÜNDIGEN"
+  },
+  {
+    "key": "label_optional",
+    "value": "optional"
+  },
+  {
+    "key": "label_optional_mark",
+    "value": "(optional)"
+  },
+  {
+    "key": "label_required_mark",
+    "value": "(erforderlich)"
+  },
+  {
+    "key": "status_label_offline",
+    "value": "Offline"
+  },
+  {
+    "key": "status_label_getting_status",
+    "value": "Status wird abgerufen …"
+  },
+  {
+    "key": "status_label_loading",
+    "value": "Ladevorgang ..."
+  },
+  {
+    "key": "status_label_please_wait",
+    "value": "Bitte warten …"
+  },
+  {
+    "key": "status_label_registering_new_user",
+    "value": "Neuer Benutzer wird registriert ..."
+  },
+  {
+    "key": "status_label_is_required",
+    "value": " ist erforderlich"
+  },
+  {
+    "key": "status_label_busy",
+    "value": "Beschäftigt"
+  },
+  {
+    "key": "navigation_label_mode",
+    "value": "Modus"
+  },
+  {
+    "key": "navigation_label_cameras",
+    "value": "Kameras"
+  },
+  {
+    "key": "navigation_label_library",
+    "value": "Bibliothek"
+  },
+  {
+    "key": "navigation_label_settings",
+    "value": "Einstellungen"
+  },
+  {
+    "key": "activity_first",
+    "value": "1"
+  },
+  {
+    "key": "activity_today",
+    "value": "HEUTE"
+  },
+  {
+    "key": "activity_select",
+    "value": "Auswählen"
+  },
+  {
+    "key": "activity_close",
+    "value": "SCHLIESSEN"
+  },
+  {
+    "key": "activity_yes",
+    "value": "JA"
+  },
+  {
+    "key": "activity_no",
+    "value": "NEIN"
+  },
+  {
+    "key": "activity_save",
+    "value": "SPEICHERN"
+  },
+  {
+    "key": "activity_restore",
+    "value": "Wiederherstellen"
+  },
+  {
+    "key": "activity_select_all",
+    "value": "Alle auswählen"
+  },
+  {
+    "key": "activity_deselect_all",
+    "value": "Gesamte Auswahl aufheben"
+  },
+  {
+    "key": "activity_delete_mode",
+    "value": "MODUS LÖSCHEN"
+  },
+  {
+    "key": "activity_delete_rule",
+    "value": "REGEL LÖSCHEN"
+  },
+  {
+    "key": "activity_add",
+    "value": "Hinzufügen"
+  },
+  {
+    "key": "activity_edit",
+    "value": "Bearbeiten"
+  },
+  {
+    "key": "status_app_upgrade_available",
+    "value": "Eine neue Version von Arlo ist verfügbar.  Führen Sie jetzt eine Aktualisierung durch, um auf Ihr Konto zuzugreifen."
+  },
+  {
+    "key": "status_credit_card_requires_upgrade",
+    "value": "Ihre Kreditkarte läuft in Kürze ab. Bitte aktualisieren Sie sie, um einen unterbrechungsfreien Service zu gewährleisten."
+  },
+  {
+    "key": "status_confirm_email",
+    "value": "Bitte bestätigen Sie die E-Mail-Adresse, um bei Bewegungen alarmiert zu werden"
+  },
+  {
+    "key": "default_mode_armed",
+    "value": "Bewegungserkennung aller Kameras aktiviert"
+  },
+  {
+    "key": "default_mode_disarmed",
+    "value": "Bewegungserkennung aller Kameras deaktiviert"
+  },
+  {
+    "key": "default_rule_name",
+    "value": "{cameraName} zeichnet bei Bewegungserkennung auf"
+  },
+  {
+    "key": "info_registration_base_station_vgn",
+    "value": "Die Basisstation wird Ihrem Konto zugewiesen.  Stellen Sie sicher, dass Sie mit demselben LAN wie die Basisstation verbunden sind, sodass wir die Basisstation für Sie finden können."
+  },
+  {
+    "key": "info_registration_base_station_time_zone",
+    "value": "Wählen Sie die Zeitzone für den Standort aus, in dem die Basisstation installiert wird."
+  },
+  {
+    "key": "info_registration_account_password",
+    "value": "Ihr Passwort muss aus mindestens 6 Zeichen bestehen und einen Großbuchstaben, einen Kleinbuchstaben sowie eine Zahl beinhalten.  Diese Zeichen sind ebenfalls zulässig: !@#$%^&*()"
+  },
+  {
+    "key": "info_registration_account_phone_number",
+    "value": "Sollte Sie uns einmal darum bitten, Sie anzurufen, verwenden wir diese Nummer.  Sie hilft uns auch dabei, Ihr Konto zu finden, wenn Sie den Kundensupport anrufen.  Selbstverständlich ist dies optional."
+  },
+  {
+    "key": "info_settings_renew_subscription",
+    "value": "Wählen Sie diese Option aus, wenn Ihr Abonnement automatisch verlängert werden soll."
+  },
+  {
+    "key": "info_settings_manage_storage",
+    "value": "Dateien (Nicht-Favoriten) werden automatisch nach 7 Tagen für Sie entfernt, um eine effektive Nutzung Ihres Cloud-Speichers zu gewährleisten."
+  },
+  {
+    "key": "info_settings_storage_full_notification",
+    "value": "Wählen Sie diese Option, wenn Sie eine Benachrichtigung erhalten möchten, wenn 80 % Ihres Cloud-Speichers verbraucht sind."
+  },
+  {
+    "key": "info_settings_invert_image",
+    "value": "Falls nötig, können Sie die Kamera verkehrt herum anbringen und dann diese Option auswählen, um das Bild umzukehren."
+  },
+  {
+    "key": "info_settings_position_mode",
+    "value": "Verwenden Sie diese Option, wenn Sie die Kamera platzieren.  Die Verzögerung wird reduziert, sodass Sie nahezu in Echtzeit sehen können, was Ihre Kamera sieht."
+  },
+  {
+    "key": "info_settings_motion_detection_test",
+    "value": "Verwenden Sie diese Option, wenn Sie die Kamera platzieren.  Anstatt ein Video aufzunehmen, wenn Bewegungen erkannt werden, blinkt die Status-LED."
+  },
+  {
+    "key": "info_base_station_rules",
+    "value": "Legen Sie Regeln dazu fest, wie Ihre Videos aufgezeichnet werden, und senden Sie die Aufzeichnungen optional an sich selbst oder an andere."
+  },
+  {
+    "key": "error_no_internet_connection",
+    "value": "Sie sind nicht mit dem Internet verbunden. Überprüfen Sie Ihre Internetverbindung."
+  },
+  {
+    "key": "error_service_unavailable",
+    "value": "Leider ist Arlo derzeit nicht verfügbar. In {time} ist die Funktionsfähigkeit wiederhergestellt."
+  },
+  {
+    "key": "error_setup_requires_wifi",
+    "value": "Ihr Konto kann zurzeit nicht eingerichtet werden, da keine Basisstation erkannt wurde.\n\nStellen Sie sicher, dass Ihre Basisstation eingeschaltet und mit dem Internet verbunden ist. Überprüfen Sie auch, ob Ihr Gerät mit demselben WLAN-Netzwerk wie die Basisstation verbunden ist.  "
+  },
+  {
+    "key": "error_http_500",
+    "value": "Leider ist Arlo derzeit nicht verfügbar.  Versuchen Sie es später erneut."
+  },
+  {
+    "key": "error_http_501",
+    "value": "Leider ist Arlo derzeit nicht verfügbar.  Versuchen Sie es später erneut."
+  },
+  {
+    "key": "error_http_502",
+    "value": "Leider ist Arlo derzeit nicht verfügbar.  Versuchen Sie es später erneut."
+  },
+  {
+    "key": "error_http_503",
+    "value": "Leider ist Arlo derzeit nicht verfügbar.  Versuchen Sie es später erneut."
+  },
+  {
+    "key": "base_station_error_4000",
+    "value": "Leider konnten wir keine mit der Basisstation verbundene Kamera finden.  Bitte synchronisieren Sie Ihre Kamera."
+  },
+  {
+    "key": "base_station_error_4003",
+    "value": "Es tut uns Leid, aber auf die Einstellung kann nicht zugegriffen werden, weil die Kamera offline ist."
+  },
+  {
+    "key": "base_station_error_4006",
+    "value": "Ihre Kamera wird derzeit verwendet.  Bitte warten Sie, bis der laufende Vorgang abgeschlossen ist, um fortzufahren.  Sie können Ihre Kamera auch aus- und wieder einschalten, damit Sie diesen Vorgang ausführen können."
+  },
+  {
+    "key": "base_station_error_4009",
+    "value": "Leider können keine derzeit verwendeten Kameras gelöscht werden.  Schalten Sie die Kamera zuerst offline, um sie zu löschen."
+  },
+  {
+    "key": "base_station_error_4011",
+    "value": "Nur 4 Kameras können gleichzeitig gestreamt werden. Stoppen Sie einen anderen Kamerastream, bevor Sie diesen Kamerastream starten."
+  },
+  {
+    "key": "base_station_error_4013",
+    "value": "Das Rebooting ist nicht zulässig, wenn eine der Kameras besetzt ist."
+  },
+  {
+    "key": "base_station_error_4014",
+    "value": "Diese Funktion wird vom Gerät nicht unterstützt."
+  },
+  {
+    "key": "base_station_error_4015",
+    "value": "Die Kamera löst einen Bewegungsalarm aus. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "base_station_error_4016",
+    "value": "Die Kamera kann nicht gestreamt werden, weil sie offline ist."
+  },
+  {
+    "key": "base_station_error_4017",
+    "value": "Man kann mit der Kamera keinen Snapshot machen, weil sie offline ist."
+  },
+  {
+    "key": "login_label_username",
+    "value": "E-Mail-Adresse"
+  },
+  {
+    "key": "login_label_password",
+    "value": "Passwort"
+  },
+  {
+    "key": "login_activity_login",
+    "value": "Anmeldung"
+  },
+  {
+    "key": "login_label_remember_me",
+    "value": "Anmeldedaten speichern"
+  },
+  {
+    "key": "login_activity_username_password_help",
+    "value": "Hilfe: Passwort"
+  },
+  {
+    "key": "login_logout_conf_dialog_message",
+    "value": "Sind Sie sicher, dass Sie sich abmelden möchten?"
+  },
+  {
+    "key": "login_activity_new_system_setup",
+    "value": "Neues System einrichten"
+  },
+  {
+    "key": "login_error_validation_username",
+    "value": "Der Benutzername oder das Passwort ist falsch."
+  },
+  {
+    "key": "login_activity_create_account",
+    "value": "Konto erstellen"
+  },
+  {
+    "key": "password_help_label_username_help",
+    "value": "Geben Sie Ihre E-Mail-Adresse ein, und wir senden Ihnen einen Link, um Ihr Passwort zurückzusetzen."
+  },
+  {
+    "key": "password_help_label_username",
+    "value": "E-Mail-Adresse"
+  },
+  {
+    "key": "password_help_label_email_sent",
+    "value": "Ein Link zum Zurücksetzen Ihres Passworts wurde Ihnen per E-Mail zugesandt."
+  },
+  {
+    "key": "password_help_error_validation_input_username",
+    "value": "Neue Benutzer-ID muss eine gültige E-Mail-Adresse sein"
+  },
+  {
+    "key": "password_help_error_username_not_found",
+    "value": "Die E-Mail-Adresse, die Sie angegeben haben, wird von keinem anderen Konto verwendet. Stellen Sie sicher, dass Sie die E-Mail-Adresse korrekt eingegeben haben, oder versuchen Sie es mit einer anderen E-Mail-Adresse."
+  },
+  {
+    "key": "getting_started_label_title",
+    "value": "Erste Schritte"
+  },
+  {
+    "key": "getting_started_label_help",
+    "value": "Verbinden des Systems mit dem Internet"
+  },
+  {
+    "key": "system_setup_label_title",
+    "value": "Systemeinrichtung"
+  },
+  {
+    "key": "system_setup_label_select_serial_number",
+    "value": "Seriennummer der Basisstation auswählen"
+  },
+  {
+    "key": "system_setup_label_serial_number",
+    "value": "Seriennummer"
+  },
+  {
+    "key": "system_setup_activity_serial_number_info",
+    "value": "Wenn die Seriennummer nicht automatisch erkannt wird, können Sie sie auf der Rückseite der Basisstation finden."
+  },
+  {
+    "key": "system_setup_label_time_zone",
+    "value": "Wählen Sie eine geeignete Zeitzone für den Standort aus, in dem die Basisstation installiert wird."
+  },
+  {
+    "key": "system_setup_activity_time_zone_info",
+    "value": "Seriennummer der Basisstation (wählen Sie Ihre primäre Basisstation, weitere können Sie später registrieren):"
+  },
+  {
+    "key": "account_setup_label_title",
+    "value": "Konto einrichten"
+  },
+  {
+    "key": "account_setup_label_username",
+    "value": "E-Mail-Adresse"
+  },
+  {
+    "key": "account_setup_label_password",
+    "value": "Passwort"
+  },
+  {
+    "key": "account_setup_label_reenter_password",
+    "value": "Passwort erneut eingeben"
+  },
+  {
+    "key": "account_setup_label_security_question",
+    "value": "Sicherheitsfrage"
+  },
+  {
+    "key": "account_setup_label_security_answer",
+    "value": "Antwort"
+  },
+  {
+    "key": "account_setup_label_phone_number",
+    "value": "Telefonnummer"
+  },
+  {
+    "key": "account_setup_activity_password_info",
+    "value": "Passwörter müssen aus mindestens 6 Zeichen bestehen und dürfen die folgenden Zeichen NICHT enthalten: /, \\, |, <, >, : (Doppelpunkt), ; (Strichpunkt) und die Apostroph-Zeichen \"'\"."
+  },
+  {
+    "key": "account_setup_activity_phone_number_info",
+    "value": "Falls Sie in Zukunft einen Anruf von unserem technischen Support anfordern, ist das die Telefonnummer, die wir verwenden werden."
+  },
+  {
+    "key": "account_setup_label_accept_tos",
+    "value": "Ich akzeptiere die Nutzungsbedingungen"
+  },
+  {
+    "key": "account_setup_label_accept_privacy_policy",
+    "value": "Ich akzeptiere die Datenschutzrichtlinie"
+  },
+  {
+    "key": "error_validation_username",
+    "value": "Verwenden Sie eine gültige E-Mail-Adresse.  Achten Sie darauf, auch das \"@\"-Zeichen und die Domain (z. B. @gmail.com) anzugeben."
+  },
+  {
+    "key": "error_validation_password",
+    "value": "Geben Sie ein neues Passwort ein.  Das Passwort muss aus mindestens 6 Zeichen bestehen, darunter ein Großbuchstabe, ein Kleinbuchstabe sowie eine Zahl. Die folgenden Symbole sind zulässig: ! @ # $ % ^ & * ( ) "
+  },
+  {
+    "key": "error_validation_security_answer",
+    "value": "Bitte geben Sie eine Antwort auf Ihre Sicherheitsfrage an."
+  },
+  {
+    "key": "error_validation_password_mismatch",
+    "value": "Diese Passwörter stimmen nicht überein. Bitte Passwörter erneut eingeben."
+  },
+  {
+    "key": "sync_cameras_label_title",
+    "value": "Synchronisieren der Kameras"
+  },
+  {
+    "key": "sync_cameras_label_help",
+    "value": "Synchronisieren Ihrer Kameras"
+  },
+  {
+    "key": "service_selection_label_title",
+    "value": "Dienstauswahl"
+  },
+  {
+    "key": "service_selection_label_elite",
+    "value": "Elite"
+  },
+  {
+    "key": "service_selection_label_elite_storage",
+    "value": "3-GB-Cloud-Speicher"
+  },
+  {
+    "key": "service_selection_label_elite_push_notifications",
+    "value": "Push-Benachrichtigung"
+  },
+  {
+    "key": "service_selection_label_elite_cameras",
+    "value": "Bis zu 20 Kameras"
+  },
+  {
+    "key": "service_selection_label_premier",
+    "value": "Premier"
+  },
+  {
+    "key": "service_selection_label_premier_storage",
+    "value": "1-GB-Cloud-Speicher"
+  },
+  {
+    "key": "service_selection_label_premier_push_notifications",
+    "value": "Push-Benachrichtigung"
+  },
+  {
+    "key": "service_selection_label_premier_cameras",
+    "value": "Bis zu 10 Kameras"
+  },
+  {
+    "key": "service_selection_label_base_level",
+    "value": "KOSTENLOS"
+  },
+  {
+    "key": "service_selection_label_base_level_storage",
+    "value": "200-MB-Cloud-Speicher"
+  },
+  {
+    "key": "service_selection_label_base_level_cameras",
+    "value": "Bis zu 5 Kameras"
+  },
+  {
+    "key": "service_selection_activity_base_level",
+    "value": "im Lieferumfang Ihres Systems"
+  },
+  {
+    "key": "payment_method_label_title",
+    "value": "Zahlungsmethode"
+  },
+  {
+    "key": "payment_method_label_credit_card",
+    "value": "Kreditkarte"
+  },
+  {
+    "key": "payment_method_label_card_number",
+    "value": "Kartennummer"
+  },
+  {
+    "key": "payment_method_label_card_expiration",
+    "value": "MM/JJJJ"
+  },
+  {
+    "key": "payment_method_label_security_code",
+    "value": "Sicherheitscode (3 oder 4 Ziffern auf der Rückseite)"
+  },
+  {
+    "key": "payment_method_label_billing",
+    "value": "Rechnung"
+  },
+  {
+    "key": "payment_method_label_billing_first_name",
+    "value": "Vorname"
+  },
+  {
+    "key": "payment_method_label_billing_last_name",
+    "value": "Nachname"
+  },
+  {
+    "key": "payment_method_label_billing_company_name",
+    "value": "Name des Unternehmens (optional)"
+  },
+  {
+    "key": "payment_method_label_billing_company_name_short",
+    "value": "Firmenname"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_1",
+    "value": "Straße/Anschrift 1"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_2",
+    "value": "Straße/Anschrift 2 (optional)"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_2_short",
+    "value": "Straße/Anschrift 2"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_3",
+    "value": "Appartement (optional)"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_3_short",
+    "value": "Appartement"
+  },
+  {
+    "key": "payment_method_label_billing_city",
+    "value": "Stadt"
+  },
+  {
+    "key": "payment_method_label_billing_state",
+    "value": "Bundesland"
+  },
+  {
+    "key": "payment_method_label_billing_zip_code",
+    "value": "Postleitzahl"
+  },
+  {
+    "key": "payment_method_label_billing_country",
+    "value": "Land"
+  },
+  {
+    "key": "payment_method_label_billing_vat",
+    "value": "MwSt. (optional)"
+  },
+  {
+    "key": "payment_method_label_renew_service_plan",
+    "value": "Meinen Vertrag automatisch verlängern"
+  },
+  {
+    "key": "error_validation_card_number_unsupported",
+    "value": "Leider unterstützen wir derzeit nur Visa und Mastercard."
+  },
+  {
+    "key": "error_validation_card_number",
+    "value": "Überprüfen Sie die Kreditkartennummer, das Gültigkeitsdatum und den Sicherheitscode."
+  },
+  {
+    "key": "error_validation_expiration",
+    "value": "Überprüfen Sie die Kreditkartennummer, das Gültigkeitsdatum und den Sicherheitscode."
+  },
+  {
+    "key": "error_validation_security_code",
+    "value": "Überprüfen Sie die Kreditkartennummer, das Gültigkeitsdatum und den Sicherheitscode."
+  },
+  {
+    "key": "error_validation_billing_first_name",
+    "value": "Die Kreditkarteninformationen stimmen nicht mit den Unterlagen der Bank überein.  Geben Sie den Namen des Karteninhabers sowie die Rechnungsadresse ein, die mit der Kreditkarte übereinstimmen."
+  },
+  {
+    "key": "error_validation_billing_last_name",
+    "value": "Die Kreditkarteninformationen stimmen nicht mit den Unterlagen der Bank überein.  Geben Sie den Namen des Karteninhabers sowie die Rechnungsadresse ein, die mit der Kreditkarte übereinstimmen."
+  },
+  {
+    "key": "error_validation_billing_company_name",
+    "value": "Name des Unternehmens muss eingegeben werden"
+  },
+  {
+    "key": "error_validation_billing_street_address_1",
+    "value": "Die Kreditkarteninformationen stimmen nicht mit den Unterlagen der Bank überein.  Geben Sie den Namen des Karteninhabers sowie die Rechnungsadresse ein, die mit der Kreditkarte übereinstimmen."
+  },
+  {
+    "key": "error_validation_billing_street_address_2",
+    "value": "Die Kreditkarteninformationen stimmen nicht mit den Unterlagen der Bank überein.  Geben Sie den Namen des Karteninhabers sowie die Rechnungsadresse ein, die mit der Kreditkarte übereinstimmen."
+  },
+  {
+    "key": "error_validation_billing_street_address_3",
+    "value": "Die Kreditkarteninformationen stimmen nicht mit den Unterlagen der Bank überein.  Geben Sie den Namen des Karteninhabers sowie die Rechnungsadresse ein, die mit der Kreditkarte übereinstimmen."
+  },
+  {
+    "key": "error_validation_billing_city",
+    "value": "Die Kreditkarteninformationen stimmen nicht mit den Unterlagen der Bank überein.  Geben Sie den Namen des Karteninhabers sowie die Rechnungsadresse ein, die mit der Kreditkarte übereinstimmen."
+  },
+  {
+    "key": "error_validation_billing_state",
+    "value": "Bundesland/Region muss eingegeben werden"
+  },
+  {
+    "key": "error_validation_billing_zip_code",
+    "value": "Die eingegebene Postleitzahl muss korrekt sein"
+  },
+  {
+    "key": "error_validation_billing_country",
+    "value": "Land muss eingegeben werden"
+  },
+  {
+    "key": "error_validation_billing_vat",
+    "value": "Die USt.-IdNr. wurde nicht erkannt.  Geben Sie eine gültige USt.-IdNr. ein."
+  },
+  {
+    "key": "camera_state_offline",
+    "value": "Die Kamera ist offline."
+  },
+  {
+    "key": "camera_state_gateway_offline",
+    "value": "Ihre Basisstation ist nicht mit dem Internet verbunden. \n\nStellen Sie sicher, dass sie eingeschaltet und mit Ihrem Router verbunden ist."
+  },
+  {
+    "key": "camera_state_battery_level_critical",
+    "value": "Wechseln Sie die Batterien aus."
+  },
+  {
+    "key": "camera_player_plugin_not_installed",
+    "value": "Eine neuere Version des Adobe Flash Player ist erforderlich. Laden Sie die neueste Version <a href='http://get.adobe.com/flashplayer/'>hier</a> herunter, und installieren Sie sie."
+  },
+  {
+    "key": "camera_state_new",
+    "value": "Neue Kamera streamen"
+  },
+  {
+    "key": "library_activity_filter",
+    "value": "Filter"
+  },
+  {
+    "key": "filter_label_types",
+    "value": "Folgende Kameras anzeigen:"
+  },
+  {
+    "key": "filter_label_all",
+    "value": "Alle"
+  },
+  {
+    "key": "filter_label_favorites",
+    "value": "Favoriten"
+  },
+  {
+    "key": "filter_label_non_favorites",
+    "value": "Nicht-Favoriten"
+  },
+  {
+    "key": "filter_label_cameras",
+    "value": "Dateien der Kamera(s) anzeigen:"
+  },
+  {
+    "key": "select_bar_label_favorite",
+    "value": "Favorit"
+  },
+  {
+    "key": "select_bar_label_share",
+    "value": "Teilen"
+  },
+  {
+    "key": "select_bar_label_download",
+    "value": "Download"
+  },
+  {
+    "key": "select_bar_label_delete",
+    "value": "Löschen"
+  },
+  {
+    "key": "share_email_link",
+    "value": "Link per E-Mail senden"
+  },
+  {
+    "key": "share_email_subject",
+    "value": "Sehen Sie sich mein Arlo-Video an!"
+  },
+  {
+    "key": "share_email_body",
+    "value": "Hallo,\n\n\n\nSchauen Sie sich dieses Videos auf meiner Arlo-Kamera an.  Klicken Sie einfach auf den Link, um es sich anzuschauen.  BITTE BEACHTEN SIE: Der Link läuft nach {24 hours} ab.\n\n\n\n{link} {thumbnail}\n\n\n\nViel Spaß!\n\n\n\n{first name}"
+  },
+  {
+    "key": "share_copy_link",
+    "value": "Link kopieren"
+  },
+  {
+    "key": "settings_label_title",
+    "value": "Einstellungen"
+  },
+  {
+    "key": "base_station_settings_label_schedule",
+    "value": "Zeitplan"
+  },
+  {
+    "key": "base_station_settings_label_modes",
+    "value": "Modi"
+  },
+  {
+    "key": "base_station_settings_label_rules",
+    "value": "Regeln"
+  },
+  {
+    "key": "base_station_settings_label_rule",
+    "value": "Regel"
+  },
+  {
+    "key": "base_station_settings_label_settings",
+    "value": "Einstellungen der Basisstation"
+  },
+  {
+    "key": "account_settings_label_title",
+    "value": "Kontoeinstellungen"
+  },
+  {
+    "key": "account_settings_label_subscription",
+    "value": "Abonnement"
+  },
+  {
+    "key": "account_settings_label_personal",
+    "value": "Persönliche Daten"
+  },
+  {
+    "key": "account_settings_label_friends",
+    "value": "Freunde"
+  },
+  {
+    "key": "system_settings_label_title",
+    "value": "System-Einstellungen"
+  },
+  {
+    "key": "system_settings_label_preferences",
+    "value": "Einstellungen"
+  },
+  {
+    "key": "system_settings_label_camera_order",
+    "value": "Kamerareihenfolge"
+  },
+  {
+    "key": "system_settings_label_about",
+    "value": "Info"
+  },
+  {
+    "key": "base_station_schedule_label_title",
+    "value": "Zeitplan"
+  },
+  {
+    "key": "base_station_schedule_label_start_time",
+    "value": "Startzeit"
+  },
+  {
+    "key": "base_station_schedule_label_stop_time",
+    "value": "Endzeit"
+  },
+  {
+    "key": "base_station_modes_label_title",
+    "value": "Modi"
+  },
+  {
+    "key": "add_mode_label_title",
+    "value": "Modus-Definition"
+  },
+  {
+    "key": "add_mode_label_title_new",
+    "value": "Neuer Modus"
+  },
+  {
+    "key": "add_mode_activity_modes",
+    "value": "Modi"
+  },
+  {
+    "key": "add_mode_label_name",
+    "value": "Neuer Modus"
+  },
+  {
+    "key": "add_mode_label_mode_name",
+    "value": "Name"
+  },
+  {
+    "key": "add_mode_placeholder_mode_name",
+    "value": "Modusname"
+  },
+  {
+    "key": "add_mode_label_select_rules",
+    "value": "Regeln für diesen Modus auswählen"
+  },
+  {
+    "key": "add_mode_label_add_rule",
+    "value": "Regel hinzufügen"
+  },
+  {
+    "key": "add_rule_label_title",
+    "value": "Neue Regel"
+  },
+  {
+    "key": "base_station_rules_label_title",
+    "value": "Regeln"
+  },
+  {
+    "key": "rule_label_title",
+    "value": "Regeldefinition"
+  },
+  {
+    "key": "rule_label_name",
+    "value": "Regelname"
+  },
+  {
+    "key": "rule_label_rule_name",
+    "value": "Name"
+  },
+  {
+    "key": "rule_label_rule_placeholder",
+    "value": "Regel"
+  },
+  {
+    "key": "rule_label_trigger_title",
+    "value": "WENN Folgendes zutrifft:"
+  },
+  {
+    "key": "rule_label_motion_detected",
+    "value": "Bewegung erkannt"
+  },
+  {
+    "key": "rule_label_trigger_on",
+    "value": "Ein"
+  },
+  {
+    "key": "rule_label_trigger_sensitivity",
+    "value": "Empfindlichkeit ein"
+  },
+  {
+    "key": "rule_label_action_title",
+    "value": "DANN folgende Aktion ausführen:"
+  },
+  {
+    "key": "rule_label_action_record_video",
+    "value": "Video aufnehmen"
+  },
+  {
+    "key": "rule_label_action_take_snapshot",
+    "value": "Snapshot erstellen"
+  },
+  {
+    "key": "rule_label_action_on",
+    "value": "Auf {cameraName}"
+  },
+  {
+    "key": "rule_label_action_sensitivity",
+    "value": "Empfindlichkeit aus"
+  },
+  {
+    "key": "rule_label_action_in_hot_zone",
+    "value": "In dieser Hot Zone"
+  },
+  {
+    "key": "rule_label_email_action_title",
+    "value": "UND folgendermaßen vorgehen:"
+  },
+  {
+    "key": "rule_label_send_email_alert",
+    "value": "Warnung per E-Mail senden"
+  },
+  {
+    "key": "rule_label_send_email_list",
+    "value": "An diese Liste"
+  },
+  {
+    "key": "rule_label_sensitivity_fewer_videos",
+    "value": "Weniger Videos"
+  },
+  {
+    "key": "rule_label_sensitivity_more_videos",
+    "value": "Mehr Videos"
+  },
+  {
+    "key": "rule_label_recording_time_shorter_videos",
+    "value": "10 Sek."
+  },
+  {
+    "key": "rule_label_recording_time_longer_videos",
+    "value": "120 Sek."
+  },
+  {
+    "key": "rule_label_recording_time_unit_seconds",
+    "value": "{timeInSeconds} Sekunden"
+  },
+  {
+    "key": "rule_label_select_camera",
+    "value": "Kamera auswählen ..."
+  },
+  {
+    "key": "rule_trigger_label_title",
+    "value": "Trigger"
+  },
+  {
+    "key": "rule_trigger_label_motion_trigger",
+    "value": "Bewegung wird erkannt bei"
+  },
+  {
+    "key": "rule_label_action_record_video_on",
+    "value": "Videos aufzeichnen auf"
+  },
+  {
+    "key": "email_alert_list_label_title",
+    "value": "Warnung per E-Mail senden"
+  },
+  {
+    "key": "push_notification_label_title",
+    "value": "Push-Benachrichtigung senden"
+  },
+  {
+    "key": "base_station_settings_label_title",
+    "value": "Basisstation"
+  },
+  {
+    "key": "base_station_settings_label_name",
+    "value": "Name"
+  },
+  {
+    "key": "base_station_settings_label_placeholder",
+    "value": "Basisstation"
+  },
+  {
+    "key": "base_station_settings_label_time_zone",
+    "value": "Zeitzone"
+  },
+  {
+    "key": "base_station_settings_label_auto_update_firmware",
+    "value": "Automatische Aktualisierung FW"
+  },
+  {
+    "key": "base_station_settings_label_fw_version",
+    "value": "FW-Version"
+  },
+  {
+    "key": "base_station_settings_label_hw_version",
+    "value": "HW-Version"
+  },
+  {
+    "key": "base_station_settings_label_xcloud_id",
+    "value": "xCloudID"
+  },
+  {
+    "key": "base_station_settings_label_auto_select_channel",
+    "value": "Automatische Kanalauswahl"
+  },
+  {
+    "key": "base_station_settings_label_channel",
+    "value": "Kanal"
+  },
+  {
+    "key": "base_station_settings_activity_restart",
+    "value": "NEUSTART"
+  },
+  {
+    "key": "base_station_settings_activity_deactivate",
+    "value": "DEAKTIVIEREN"
+  },
+  {
+    "key": "base_station_settings_confirm_restart",
+    "value": "Möchten Sie die Basisstation {baseStationName} wirklich neu starten?"
+  },
+  {
+    "key": "base_station_settings_confirm_deactivate",
+    "value": "Möchten Sie die Basisstation {baseStationName} wirklich deaktivieren?"
+  },
+  {
+    "key": "base_station_settings_channel_info",
+    "value": "Für Ihre erste Basisstation sollten Sie den Kanal, den Ihr WLAN-Router verwendet, auswählen.  Weitere Basisstationen, die am selben Ort/im selben Gebäude installiert werden, sollten mindestens 6 Meter voneinander entfernt sein und auf verschiedene Kanäle konfiguriert werden."
+  },
+  {
+    "key": "base_station_settings_message_rebooting",
+    "value": "Die Basisstation wird neu gestartet ..."
+  },
+  {
+    "key": "manual_fw_update_label_title",
+    "value": "FW-Version"
+  },
+  {
+    "key": "manual_fw_update_confirm_update",
+    "value": "Möchten Sie wirklich auf {fwVersion} aktualisieren?"
+  },
+  {
+    "key": "subscription_label_title",
+    "value": "Abonnement"
+  },
+  {
+    "key": "subscription_label_service_level_title",
+    "value": "Service-Typ"
+  },
+  {
+    "key": "subscription_label_expires",
+    "value": "Läuft ab"
+  },
+  {
+    "key": "subscription_activity_change_service",
+    "value": "ABO ÄNDERN"
+  },
+  {
+    "key": "change_service_activity_change_service",
+    "value": "ABO ÄNDERN"
+  },
+  {
+    "key": "change_service_activity_renew_service",
+    "value": "Abo verlängern"
+  },
+  {
+    "key": "change_service_activity_cancel_service",
+    "value": "ABO KÜNDIGEN"
+  },
+  {
+    "key": "change_service_activity_cancel",
+    "value": "KÜNDIGEN"
+  },
+  {
+    "key": "change_service_activity_dont_cancel",
+    "value": "NICHT KÜNDIGEN"
+  },
+  {
+    "key": "subscription_label_payment_method_title",
+    "value": "Zahlungsmethode"
+  },
+  {
+    "key": "subscription_activity_update_payment_method",
+    "value": "Update"
+  },
+  {
+    "key": "subscription_label_cloud_storage_title",
+    "value": "Cloud-Speicher"
+  },
+  {
+    "key": "subscription_activity_buy_more_cloud_storage",
+    "value": "Größeren Cloud-Speicher kaufen"
+  },
+  {
+    "key": "subscription_activity_delete_all_unlocked_files",
+    "value": "ALLE DATEIEN LÖSCHEN"
+  },
+  {
+    "key": "subscription_label_delete_all_unlocked_files_note",
+    "value": "HINWEIS: Favoriten werden nicht gelöscht"
+  },
+  {
+    "key": "subscription_label_recycle_bin",
+    "value": "Papierkorb"
+  },
+  {
+    "key": "subscription_label_cameras_title",
+    "value": "Kameras"
+  },
+  {
+    "key": "subscription_label_cameras_supported",
+    "value": "Unterstützt"
+  },
+  {
+    "key": "subscription_label_cameras_connected",
+    "value": "Verbunden"
+  },
+  {
+    "key": "subscription_label_cameras_online_retailers",
+    "value": "Online-Händler"
+  },
+  {
+    "key": "subscription_activity_buy_more_cameras",
+    "value": "Mehr kaufen ..."
+  },
+  {
+    "key": "subscription_label_base_stations_title",
+    "value": "Basisstationen"
+  },
+  {
+    "key": "subscription_label_base_stations_supported",
+    "value": "Unterstützt"
+  },
+  {
+    "key": "subscription_label_base_stations_connected",
+    "value": "Verbunden"
+  },
+  {
+    "key": "subscription_label_base_stations_online_retailers",
+    "value": "Online-Händler"
+  },
+  {
+    "key": "subscription_activity_buy_more_base_stations",
+    "value": "Mehr kaufen ..."
+  },
+  {
+    "key": "subscription_label_add_base_station",
+    "value": "Basisstation hinzufügen"
+  },
+  {
+    "key": "buy_cloud_storage_label_title",
+    "value": "Cloud-Speicher"
+  },
+  {
+    "key": "buy_cloud_storage_label_no_extra_cloud_storage",
+    "value": "Kein zusätzlicher Cloud-Speicher"
+  },
+  {
+    "key": "label_current_plan",
+    "value": "Aktuelle Abo-Stufe"
+  },
+  {
+    "key": "buy_cloud_storage_activity_purchase_storage",
+    "value": "SPEICHER KAUFEN"
+  },
+  {
+    "key": "add_base_station_activity_add_base_station",
+    "value": "BASISSTATION HINZUFÜGEN"
+  },
+  {
+    "key": "recycle_bin_label_title",
+    "value": "Papierkorb"
+  },
+  {
+    "key": "personal_info_email_confirmed",
+    "value": "Bestätigt"
+  },
+  {
+    "key": "personal_info_email_not_confirmed",
+    "value": "Nicht bestätigt"
+  },
+  {
+    "key": "personal_info_label_username",
+    "value": "E-Mail-Adresse"
+  },
+  {
+    "key": "personal_info_label_retype_username",
+    "value": "E-Mail-Adresse wiederholen"
+  },
+  {
+    "key": "personal_info_label_password",
+    "value": "Passwort"
+  },
+  {
+    "key": "personal_info_label_retype_password",
+    "value": "Passwort wiederholen"
+  },
+  {
+    "key": "personal_info_label_remember_me",
+    "value": "Anmeldedaten speichern"
+  },
+  {
+    "key": "personal_info_label_first_name",
+    "value": "Vorname"
+  },
+  {
+    "key": "personal_info_label_last_name",
+    "value": "Nachname"
+  },
+  {
+    "key": "personal_info_autologin",
+    "value": "Automatische Anmeldung"
+  },
+  {
+    "key": "personal_info_logout",
+    "value": "Abmelden"
+  },
+  {
+    "key": "personal_info_placeholder_username",
+    "value": "E-Mail-Adresse"
+  },
+  {
+    "key": "personal_info_placeholder_username_verify",
+    "value": "E-Mail-Adresse überprüfen"
+  },
+  {
+    "key": "personal_info_placeholder_password",
+    "value": "Passwort"
+  },
+  {
+    "key": "personal_info_placeholder_password_verify",
+    "value": "Passwort bestätigen"
+  },
+  {
+    "key": "personal_info_placeholder_first_name",
+    "value": "Vorname"
+  },
+  {
+    "key": "personal_info_placeholder_last_name",
+    "value": "Nachname"
+  },
+  {
+    "key": "friends_label_title",
+    "value": "Freunde"
+  },
+  {
+    "key": "friends_label_pending",
+    "value": "Ausstehend"
+  },
+  {
+    "key": "friends_label_accepted",
+    "value": "Angenommen"
+  },
+  {
+    "key": "friends_label_expired",
+    "value": "Abgelaufen"
+  },
+  {
+    "key": "edit_friends_label_first_name",
+    "value": "Vorname"
+  },
+  {
+    "key": "edit_friends_label_last_name",
+    "value": "Nachname"
+  },
+  {
+    "key": "edit_friends_label_email",
+    "value": "E-Mail-Adresse"
+  },
+  {
+    "key": "edit_friends_activity_send_invite",
+    "value": "EINLADUNG SENDEN"
+  },
+  {
+    "key": "edit_friends_activity_resend_invite",
+    "value": "EINLADUNG ERNEUT SENDEN"
+  },
+  {
+    "key": "edit_friends_label_camera_access",
+    "value": "Kamera und zugehörige Bilder anzeigen"
+  },
+  {
+    "key": "edit_friends_label_camera_adjust_settings",
+    "value": "Administratorenrechte gewähren"
+  },
+  {
+    "key": "edit_friends_label_camera_adjust_settings_help",
+    "value": "Freund erlauben, Einstellungen zu ändern"
+  },
+  {
+    "key": "edit_friends_activity_delete_friend",
+    "value": "FREUND LÖSCHEN"
+  },
+  {
+    "key": "prefs_label_title",
+    "value": "Einstellungen"
+  },
+  {
+    "key": "prefs_label_storage_title",
+    "value": "Speicher"
+  },
+  {
+    "key": "prefs_label_manage_storage",
+    "value": "Speicher verwalten"
+  },
+  {
+    "key": "prefs_activity_manage_storage_info",
+    "value": "Nicht gesperrte Dateien, die älter als 30 Tage sind, werden automatisch gelöscht."
+  },
+  {
+    "key": "prefs_label_if_storage_full",
+    "value": "Wenn der Speicher voll ist,"
+  },
+  {
+    "key": "prefs_label_delete_oldest_files",
+    "value": "älteste Dateien löschen, um Platz zu schaffen"
+  },
+  {
+    "key": "prefs_label_do_not_record",
+    "value": "Keine neuen Aufnahmen machen"
+  },
+  {
+    "key": "prefs_label_storage_full_notification",
+    "value": "Benachrichtigung bei vollem Speicher"
+  },
+  {
+    "key": "prefs_label_low_battery_notification",
+    "value": "Benachrichtigung bei niedrigem Batteriestand"
+  },
+  {
+    "key": "camera_order_label_title",
+    "value": "Kamerareihenfolge"
+  },
+  {
+    "key": "camera_order_confirm_delete_camera",
+    "value": "Die Kamera '{cameraName}' wird von Ihrem System entfernt.  Um sie wieder hinzuzufügen, drücken Sie auf die Taste 'Sync'."
+  },
+  {
+    "key": "about_label_title",
+    "value": "Info"
+  },
+  {
+    "key": "about_label_version",
+    "value": "Version"
+  },
+  {
+    "key": "about_label_released",
+    "value": "Erschienen"
+  },
+  {
+    "key": "about_review_terms_of_service",
+    "value": "Lesen Sie die Nutzungsbedingungen"
+  },
+  {
+    "key": "about_review_privacy_policy",
+    "value": "Lesen Sie die Datenschutzrichtlinien"
+  },
+  {
+    "key": "camera_settings_label_title",
+    "value": "Kamera-Einstellungen"
+  },
+  {
+    "key": "camera_settings_label_camera_name",
+    "value": "Name"
+  },
+  {
+    "key": "camera_settings_label_camera_placeholder",
+    "value": "Kamera"
+  },
+  {
+    "key": "camera_settings_label_adjust_settings_title",
+    "value": "Einstellungen anpassen"
+  },
+  {
+    "key": "camera_settings_label_power_management_title",
+    "value": "Energiemanagement"
+  },
+  {
+    "key": "camera_settings_label_pan_zoom_title",
+    "value": "Schwenken und Zoomen"
+  },
+  {
+    "key": "camera_settings_label_invert_image",
+    "value": "Bild umkehren"
+  },
+  {
+    "key": "camera_settings_label_motion_detection_test",
+    "value": "Test zur Bewegungserkennung"
+  },
+  {
+    "key": "camera_settings_label_position_mode",
+    "value": "Positionsmodus"
+  },
+  {
+    "key": "camera_settings_label_best_video",
+    "value": "Höchste Videoqualität"
+  },
+  {
+    "key": "camera_settings_label_optimized",
+    "value": "Optimal"
+  },
+  {
+    "key": "camera_settings_label_best_battery_life",
+    "value": "Höchste Batterielaufzeit"
+  },
+  {
+    "key": "camera_settings_label_invert_image_description",
+    "value": "Kamerabild drehen"
+  },
+  {
+    "key": "camera_settings_label_position_mode_description",
+    "value": "Zur Ausrichtung der Kamera"
+  },
+  {
+    "key": "camera_settings_label_motion_detection_test_description",
+    "value": "Die LED blinkt bei Bewegung"
+  },
+  {
+    "key": "camera_settings_label_best_video_description",
+    "value": "Kann die Betriebsdauer der Batterie verkürzen"
+  },
+  {
+    "key": "camera_settings_label_optimized_description",
+    "value": "Stimmt Videoqualität und Betriebsdauer der Batterie aufeinander ab"
+  },
+  {
+    "key": "camera_settings_label_best_battery_life_description",
+    "value": "Kann die Videoqualität verringern"
+  },
+  {
+    "key": "change_service_label_title",
+    "value": "Abo ändern"
+  },
+  {
+    "key": "change_service_activity_learn_more",
+    "value": "Weitere Informationen"
+  },
+  {
+    "key": "change_service_activity_purchase_plan",
+    "value": "ABO KAUFEN"
+  },
+  {
+    "key": "confirm_purchase_title",
+    "value": "Kauf bestätigen"
+  },
+  {
+    "key": "confirm_purchase_label_charge_info",
+    "value": "Für den Kauf von {servicePlanName} über {sellingEntity} wird Ihnen Folgendes berechnet:"
+  },
+  {
+    "key": "confirm_purchase_label_price",
+    "value": "Preis: {amount}"
+  },
+  {
+    "key": "confirm_purchase_label_prorated_credit",
+    "value": "Anteiliges Guthaben: {amount}"
+  },
+  {
+    "key": "confirm_purhcase_label_discount",
+    "value": "Rabatt: {amount}"
+  },
+  {
+    "key": "confirm_purchase_label_taxes",
+    "value": "Steuern: {amount}"
+  },
+  {
+    "key": "confirm_purchase_label_total",
+    "value": "INSGESAMT: {amount}"
+  },
+  {
+    "key": "aria_directpost_error_4006",
+    "value": "Leider wird diese Zahlungsmethode nicht akzeptiert. Derzeit werden ausschließlich Mastercard und Visa unterstützt."
+  },
+  {
+    "key": "aria_directpost_error_4007",
+    "value": "Geben Sie den Namen des Karteninhabers ein."
+  },
+  {
+    "key": "aria_directpost_error_4008",
+    "value": "Gültigkeitsdatum ungültig"
+  },
+  {
+    "key": "aria_directpost_error_4009",
+    "value": "Ungültige Kreditkartennummer"
+  },
+  {
+    "key": "aria_directpost_error_6005",
+    "value": "In diesem Antrag fehlen Informationen."
+  },
+  {
+    "key": "aria_directpost_error_6006",
+    "value": "In diesem Antrag fehlen Informationen."
+  },
+  {
+    "key": "aria_directpost_error_6007",
+    "value": "Geben Sie die CVV-Nummer ein.  (Die CVV-Nummer ist eine dreistellige Nummer auf der Rückseite Ihrer Kreditkarte. Sie soll dabei helfen, das Betrugsrisiko zu reduzieren.)"
+  },
+  {
+    "key": "aria_directpost_error_6008",
+    "value": "Diese Adresse stimmt nicht mit der gespeicherten Adresse überein.  Überprüfen Sie die Adresse, oder versuchen Sie es mit der vorherigen Adresse."
+  },
+  {
+    "key": "aria_directpost_error_6009",
+    "value": "Es ist ein Fehler aufgetreten.  Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "aria_directpost_error_6010",
+    "value": "Es ist ein Fehler aufgetreten.  Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "aria_directpost_error_6011",
+    "value": "Diese Adresse stimmt nicht mit der gespeicherten Adresse überein.  Überprüfen Sie die Adresse, oder versuchen Sie es mit der vorherigen Adresse."
+  },
+  {
+    "key": "aria_directpost_error_6012",
+    "value": "Geben Sie die CVV-Nummer ein.  (Die CVV-Nummer ist eine dreistellige Nummer auf der Rückseite Ihrer Kreditkarte. Sie soll dabei helfen, das Betrugsrisiko zu reduzieren.)"
+  },
+  {
+    "key": "aria_directpost_error_6013",
+    "value": "Geben Sie die CVV-Nummer ein.  (Die CVV-Nummer ist eine dreistellige Nummer auf der Rückseite Ihrer Kreditkarte. Sie soll dabei helfen, das Betrugsrisiko zu reduzieren.)"
+  },
+  {
+    "key": "aria_directpost_error_6014",
+    "value": "Geben Sie die CVV-Nummer ein.  (Die CVV-Nummer ist eine dreistellige Nummer auf der Rückseite Ihrer Kreditkarte. Sie soll dabei helfen, das Betrugsrisiko zu reduzieren.)"
+  },
+  {
+    "key": "aria_directpost_error_6015",
+    "value": "Die Kreditkarteninformationen stimmen nicht mit den Unterlagen der Bank überein.  Geben Sie den Namen des Karteninhabers sowie die Rechnungsadresse ein, die mit der Kreditkarte übereinstimmen."
+  },
+  {
+    "key": "aria_directpost_error_6017",
+    "value": "Diese Adresse stimmt nicht mit der gespeicherten Adresse überein.  Überprüfen Sie die Adresse, oder versuchen Sie es mit der vorherigen Adresse."
+  },
+  {
+    "key": "aria_directpost_error_6018",
+    "value": "Es ist ein Fehler aufgetreten.  Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "aria_directpost_error_6019",
+    "value": "Die Postleitzahl stimmt nicht mit unseren Aufzeichnungen überein. Bitte geben Sie die Postleitzahl erneut ein."
+  },
+  {
+    "key": "aria_directpost_error_6020",
+    "value": "Die Postleitzahl stimmt nicht mit unseren Aufzeichnungen überein. Bitte geben Sie die Postleitzahl erneut ein."
+  },
+  {
+    "key": "aria_directpost_error_6021",
+    "value": "Das Bundesland/der Kanton stimmt nicht mit unseren Aufzeichnungen überein.  Bitte geben Sie das Bundesland/den Kanton erneut ein."
+  },
+  {
+    "key": "aria_directpost_error_6022",
+    "value": "In diesem Antrag fehlen Informationen."
+  },
+  {
+    "key": "aria_directpost_error_6023",
+    "value": "Geben Sie Ihre Mastercard- oder Visa-Daten ein."
+  },
+  {
+    "key": "marketing_how_to_sync_camera_header",
+    "value": "Kamera synchronisieren"
+  },
+  {
+    "key": "marketing_how_to_sync_camera_content",
+    "value": "o Batterien in die Kamera einlegen. Beachten Sie unbedingt die Angaben zur Polarität.\n\no Drücken Sie die Sync-Taste der Kamera und der Basisstation.\n\no Eine LED vorn an der Kamera blinkt 10 Sekunden lang schnell als Bestätigung für die Synchronisierung und erlischt dann.\n\no Die LED unter dem Kamera-Symbol auf der Basisstation leuchtet grün."
+  },
+  {
+    "key": "status_brightness_config_success",
+    "value": "Helligkeit gespeichert"
+  },
+  {
+    "key": "label_do",
+    "value": "DURCHFÜHREN"
+  },
+  {
+    "key": "label_when",
+    "value": "WANN"
+  },
+  {
+    "key": "activity_label_update_now",
+    "value": "JETZT AKTUALISIEREN"
+  },
+  {
+    "key": "activity_label_update",
+    "value": "AKTUALISIEREN"
+  },
+  {
+    "key": "activity_label_dont_update",
+    "value": "NICHT AKTUALISIEREN"
+  },
+  {
+    "key": "status_base_station_firmware_update_available",
+    "value": "Eine Aktualisierung für Ihre Basisstation ist verfügbar '{baseStationName}'. Möchten Sie die Aktualisierung jetzt durchführen?"
+  },
+  {
+    "key": "activity_always_remind_me",
+    "value": "Immer erinnern"
+  },
+  {
+    "key": "status_app_required_update",
+    "value": "Ihre Arlo-App muss aktualisiert werden, um fortzufahren."
+  },
+  {
+    "key": "status_app_update",
+    "value": "Eine neue Version der Arlo-App ist verfügbar."
+  },
+  {
+    "key": "label_motion_detection_test_description",
+    "value": "{cameraName} ist nun im Bewegungserkennungs-Testmodus.\n\nDie LED an der Kamera blinkt, wenn Bewegungen erkannt werden."
+  },
+  {
+    "key": "label_send_email_confirmation_to",
+    "value": "E-Mail-Bestätigung an {emailAddress} senden?"
+  },
+  {
+    "key": "label_subscriptions",
+    "value": "Abonnements"
+  },
+  {
+    "key": "error_unexpected",
+    "value": "Ein unerwarteter Fehler ist aufgetreten. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "label_confirm_delete_rule",
+    "value": "Sind Sie sicher, dass Sie die ausgewählte Regel {ruleName} löschen möchten?"
+  },
+  {
+    "key": "library_label_confirm_delete_media",
+    "value": "Sind Sie sicher, dass Sie die ausgewählte(n) Datei(ein) löschen wollen?"
+  },
+  {
+    "key": "rule_label_select_motion_device",
+    "value": "Gerät für die Bewegungserkennung auswählen"
+  },
+  {
+    "key": "rule_label_select_recording_device",
+    "value": "Aufnahmegerät auswählen"
+  },
+  {
+    "key": "alert_arlo1",
+    "value": "Arlo hat eine Bewegung auf {cameraName} erkannt."
+  },
+  {
+    "key": "alert_arlo2",
+    "value": "Arlo hat eine Bewegung auf {cameraName} erkannt. Hier klicken, um die Aufnahme anzuschauen."
+  },
+  {
+    "key": "educate_label_library_select",
+    "value": "Klicken Sie auf „Auswählen“ in der oberen rechten Ecke, um zu erfahren, was Sie mit Ihren Aufzeichnungen tun können."
+  },
+  {
+    "key": "educate_label_dont_show_again",
+    "value": "Diese Meldung nicht mehr anzeigen"
+  },
+  {
+    "key": "educate_label_base_station_modes_rules",
+    "value": "Verwenden Sie Regeln zum Einrichten und Verwalten der Bewegungserkennung, Aufzeichnungen und Warnmeldungen. Gruppieren Sie eine oder mehrere Regeln mit Modi.\n\nModi können dann ausgewählt oder geplant werden, um zu bestimmen, welche Regeln aktiviert sind."
+  },
+  {
+    "key": "activity_ok",
+    "value": "OK"
+  },
+  {
+    "key": "error_unsupported_mp4_playback",
+    "value": "Es tut uns Leid, Ihr Browser unterstützt keine HTML5-Videos in MP4 mit H.264. Bitte verwenden Sie einen anderen Browser oder laden Sie das Video herunter."
+  },
+  {
+    "key": "activity_delete",
+    "value": "LÖSCHEN"
+  },
+  {
+    "key": "activity_download_and_delete",
+    "value": "HERUNTERLADEN UND LÖSCHEN"
+  },
+  {
+    "key": "recycle_bin_label_empty",
+    "value": "Es gibt keine Aufzeichnungen im Papierkorb"
+  },
+  {
+    "key": "edit_friends_label_admin_rights",
+    "value": "Administratorrechte Rechte gewährt"
+  },
+  {
+    "key": "edit_friends_label_no_admin_rights",
+    "value": "Keine Administratorrechte"
+  },
+  {
+    "key": "error_username_exists",
+    "value": "Ein Konto mit dieser E- Mail-Adresse vorhanden. Geben Sie Ihr Kennwort ein oder erstellen Sie ein neues Konto, um die Konfiguration abzuschließen."
+  },
+  {
+    "key": "ios_alert_arlo1",
+    "value": "Bewegung wird erkannt bei %@."
+  },
+  {
+    "key": "ios_alert_arlo2",
+    "value": "Bewegung wird erkannt bei %@. Hier klicken, um die Aufnahme anzuschauen."
+  },
+  {
+    "key": "marketing_label_warning_basic_friend_usage",
+    "value": "Ihre Freunde können sich Ihre Kamera für nur 30 Tage unter dem Grundplan anschauen. Jetzt aktualisieren, um den Zugriff über den Zeitraum von 30 Tagen hinaus zu ermöglichen"
+  },
+  {
+    "key": "marketing_label_enable_friend_feature",
+    "value": "Führen Sie ein Upgrade durch, um diese Funktion zu aktivieren"
+  },
+  {
+    "key": "marketing_label_upgrade_now",
+    "value": "Jetzt aktualisieren"
+  },
+  {
+    "key": "rule_label_default_value",
+    "value": "Bewegung auf der Kamera"
+  },
+  {
+    "key": "error_cannot_share_selection",
+    "value": "Es tut uns Leid, Ihre ausgewählten Medien können nicht gemeinsam genutzt werden. Bitte wählen Sie andere Aufzeichnungen und Snapshots aus."
+  },
+  {
+    "key": "base_station_settings_confirm_restart_busy",
+    "value": "Ihre Kamera/Kameras ist/sind zum gegenwärtigen Zeitpunkt besetzt. Möchten Sie die Basisstation {baseStationName} wirklich neu starten?"
+  },
+  {
+    "key": "label_confirm_delete_unlocked_files",
+    "value": "Sind Sie sicher, dass Sie alle nicht favorisierten Aufzeichnungen und Snapshots löschen möchten?\n\nWARNUNG: Die Dateien werden in den Papierkorb verschoben und nach 7 Tagen automatisch gelöscht."
+  },
+  {
+    "key": "password_help_label_reset_password",
+    "value": "Passwort zurücksetzen"
+  },
+  {
+    "key": "activity_send",
+    "value": "SENDEN"
+  },
+  {
+    "key": "activity_reset",
+    "value": "RESET"
+  },
+  {
+    "key": "status_device_update_available",
+    "value": "Aktualisierung verfügbar"
+  },
+  {
+    "key": "status_offline_alternate",
+    "value": "Offline"
+  },
+  {
+    "key": "status_upgrading_alternate",
+    "value": "Upgrade wird durchgeführt..."
+  },
+  {
+    "key": "status_busy_alternate",
+    "value": "Beschäftigt"
+  },
+  {
+    "key": "status_signing_in",
+    "value": "Anmelden..."
+  },
+  {
+    "key": "status_label_getting_status_short",
+    "value": "Status wird abgerufen"
+  },
+  {
+    "key": "status_label_getting_status_alternate",
+    "value": "Status wird abgerufen …"
+  },
+  {
+    "key": "activity_label_auto_renew",
+    "value": "Automatisch verlängern"
+  },
+  {
+    "key": "activity_label_next_bill",
+    "value": "Nächste Rechnung"
+  },
+  {
+    "key": "placeholder_password",
+    "value": "Passwort"
+  },
+  {
+    "key": "placeholder_verify_password",
+    "value": "Passwort bestätigen"
+  },
+  {
+    "key": "activity_label_edit_filter",
+    "value": "Filter bearbeiten"
+  },
+  {
+    "key": "status_base_station_added",
+    "value": "Die Basisstation wurde erfolgreich hinzugefügt"
+  },
+  {
+    "key": "subscription_status_no_credit_card",
+    "value": "Keine Kreditkarte gespeichert"
+  },
+  {
+    "key": "activity_update_app_ios",
+    "value": "ÖFFNEN SIE DEN APP STORE"
+  },
+  {
+    "key": "activity_update_app_android",
+    "value": "ÖFFNEN SIE DEN PLAY STORE"
+  },
+  {
+    "key": "activity_update_app_kindle",
+    "value": "ÖFFNEN SIE DEN APPSTORE"
+  },
+  {
+    "key": "activity_upate_later",
+    "value": "SPÄTER AKTUALISIEREN"
+  },
+  {
+    "key": "status_getting_information",
+    "value": "Abrufen von Informationen"
+  },
+  {
+    "key": "library_activity_reset_filter_alternate",
+    "value": " Zurücksetzen"
+  },
+  {
+    "key": "camera_status_upgrading",
+    "value": "Kamera wird aktualisiert..."
+  },
+  {
+    "key": "status_base_station_update_available",
+    "value": "Aktualisierung verfügbar"
+  },
+  {
+    "key": "status_getting_user_info",
+    "value": "Abrufen der Benutzer-Informationen..."
+  },
+  {
+    "key": "status_getting_device_info",
+    "value": "Abrufen der Geräteinfo..."
+  },
+  {
+    "key": "edit_friends_label_add_friend",
+    "value": "Freund hinzufügen"
+  },
+  {
+    "key": "confirm_base_station_settings_update",
+    "value": "The upgrade process can take up to five minutes. Make sure your device is uninterrupted during the upgrade process. Do you want to upgrade your {baseStationName} to {version}?"
+  },
+  {
+    "key": "title_accept_tos",
+    "value": "Nutzungsbedingungen akzeptieren"
+  },
+  {
+    "key": "title_accept_policy",
+    "value": "Datenschutzrichtlinie akzeptieren"
+  },
+  {
+    "key": "activity_agree",
+    "value": "STIMME ZU"
+  },
+  {
+    "key": "activity_disagree",
+    "value": "STIMME NICHT ZU"
+  },
+  {
+    "key": "label_versions",
+    "value": "Versionen"
+  },
+  {
+    "key": "label_hardware",
+    "value": "Hardware"
+  },
+  {
+    "key": "label_firmware",
+    "value": "Firmware"
+  },
+  {
+    "key": "error_claim_no_base_station",
+    "value": "Wir können derzeit keine Basisstationen hinzufügen, da Ihre Basisstation nicht erkannt wurde.\n\nStellen Sie sicher, dass Ihre Basisstation eingeschaltet und mit dem Internet verbunden ist. Überprüfen Sie auch, ob Ihr Gerät mit demselben WLAN-Netzwerk wie die Basisstation verbunden ist."
+  },
+  {
+    "key": "status_account_exist",
+    "value": "Ein Arlo-Konto mit dieser E-Mail-Adresse vorhanden. Möchten Sie sich mit diesem Konto anmelden?"
+  },
+  {
+    "key": "activity_go_to_login",
+    "value": "SO MELDEN SIE SICH AN"
+  },
+  {
+    "key": "payment_method_label_security_code_short",
+    "value": "Sicherheitscode"
+  },
+  {
+    "key": "prefs_label_notifications_title",
+    "value": "Benachrichtigungen"
+  },
+  {
+    "key": "account_setup_label_security_question",
+    "value": "Frage"
+  },
+  {
+    "key": "account_setup_label_security_question_placeholder",
+    "value": "Frage"
+  },
+  {
+    "key": "account_setup_label_security_custom_question\"",
+    "value": "Benutzerdefinierte Frage"
+  },
+  {
+    "key": "account_setup_label_security_custom_question_placeholder",
+    "value": "Benutzerdefinierte Frage"
+  },
+  {
+    "key": "prefs_label_push_notification_title",
+    "value": "Push-Benachrichtigung"
+  },
+  {
+    "key": "status_label_active",
+    "value": "Aktiv"
+  },
+  {
+    "key": "status_label_active",
+    "value": "Nicht aktiv"
+  },
+  {
+    "key": "about_review_ffmpeg_license",
+    "value": "FFmpeg-Lizenz"
+  },
+  {
+    "key": "title_release_notes",
+    "value": "Hinweise"
+  },
+  {
+    "key": "info_cannot_delete_last_scheduled_mode",
+    "value": "Dieser Modus kann nicht gelöscht werden. Sie benötigen mindestens einen aktiven Modus im Plan."
+  },
+  {
+    "key": "base_station_settings_confirm_update_busy",
+    "value": "Ihre Kamera/Kameras ist/sind zum gegenwärtigen Zeitpunkt besetzt. Die Aktualisierung kann bis zu fünf Minuten dauern. Stellen Sie sicher, dass Ihr Gerät während des Upgrade-Vorgangs nicht unterbrochen wird. Möchten Sie Ihre Basisstation {basestationname} auf {version} aktualisieren?"
+  },
+  {
+    "key": "base_station_settings_confirm_update",
+    "value": "Die Aktualisierung kann bis zu fünf Minuten dauern. Stellen Sie sicher, dass Ihr Gerät während des Upgrade-Vorgangs nicht unterbrochen wird. Möchten Sie Ihre Basisstation {basestationname} auf {version} aktualisieren?"
+  },
+  {
+    "key": "title_friend",
+    "value": "Freunde"
+  },
+  {
+    "key": "error_unable_to_play_camera",
+    "value": "Wiedergabe nicht möglich. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_updating",
+    "value": "Aktualisierung..."
+  },
+  {
+    "key": "error_compose_email_failed",
+    "value": "Die E-Mail-Adresse konnte nicht erstellt werden. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "error_cannot_process_billing_information",
+    "value": "Wir konnten Ihre Kreditkarteninformationen nicht verarbeiten. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_getting_media_info",
+    "value": "Medieninfo wird abgerufen..."
+  },
+  {
+    "key": "label_data_not_available",
+    "value": "--"
+  },
+  {
+    "key": "label_credit_card_display",
+    "value": "xxxx-xxxx-xxxx-{last4Digits}"
+  },
+  {
+    "key": "error_media_not_available",
+    "value": "Medien nicht verfügbar."
+  },
+  {
+    "key": "status_timeout_no_response",
+    "value": "Keine Antwort für %d Sek."
+  },
+  {
+    "key": "error_unable_to_apply_changes_lost_connection",
+    "value": "Änderungen wurden nicht übernommen, da Ihre Internetverbindung unterbrochen wurde."
+  },
+  {
+    "key": "status_enabling_auto_update",
+    "value": "Einstellung „Automatisches Update“ an ..."
+  },
+  {
+    "key": "status_disabling_auto_update",
+    "value": "Einstellung „Automatisches Update“ aus ..."
+  },
+  {
+    "key": "status_apply_time_zone",
+    "value": "Zeitzone einstellen..."
+  },
+  {
+    "key": "error_apply_time_zone",
+    "value": "Die Zeitzone wurde nicht angewendet {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_apply_flicker_frequency",
+    "value": "Flackerfrequenz einstellen..."
+  },
+  {
+    "key": "error_apply_flicker_frequency",
+    "value": "Die Flackerfrequenz wurde nicht angewendet {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_apply_mode",
+    "value": "Aktiven Modus einstellen..."
+  },
+  {
+    "key": "error_apply_mode",
+    "value": "Der Modus wurde nicht angewendet {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_adding_mode",
+    "value": "Modus hinzufügen..."
+  },
+  {
+    "key": "error_adding_mode",
+    "value": "Der Modus konnte nicht hinzugefügt werden {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_updating_mode",
+    "value": "Modus aktualisieren..."
+  },
+  {
+    "key": "error_updating_mode",
+    "value": "Der Modus konnte nicht aktualisiert werden {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_deleting_mode",
+    "value": "Modus löschen..."
+  },
+  {
+    "key": "error_deleting_mode",
+    "value": "Der Modus konnte nicht gelöscht werden {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_adding_rule",
+    "value": "Regel hinzufügen..."
+  },
+  {
+    "key": "error_adding_rule",
+    "value": "Die Regel konnte nicht hinzugefügt werden {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_update_rule",
+    "value": "Regel aktualisieren..."
+  },
+  {
+    "key": "error_update_rule",
+    "value": "Die Regel konnte nicht aktualisiert werden {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_deleting_rule",
+    "value": "Regel löschen..."
+  },
+  {
+    "key": "error_deleting_rule",
+    "value": "Die Regel konnte nicht gelöscht werden {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_label_on",
+    "value": "am"
+  },
+  {
+    "key": "status_label_off",
+    "value": "Aus"
+  },
+  {
+    "key": "status_apply_schedule",
+    "value": "Zeitplan %@ einstellen..."
+  },
+  {
+    "key": "error_apply_schedule",
+    "value": "Der Zeitplan wurde nicht angewendet {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_updating_schedule",
+    "value": "Zeitplan aktualisieren..."
+  },
+  {
+    "key": "error_updating_schedule",
+    "value": "Der Zeitplan konnte nicht aktualisiert werden {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_apply_position_mode",
+    "value": "Positionsmodus aktivieren..."
+  },
+  {
+    "key": "error_apply_position_mode",
+    "value": "Der Positionsmodus konnte nicht gestartet werden {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "status_apply_motion_sensitivity",
+    "value": "Bewegungsempfindlichkeit anwenden..."
+  },
+  {
+    "key": "error_apply_motion_sensitivity",
+    "value": "Die Bewegungsempfindlichkeit wurde nicht angewendet {error}. Versuchen Sie es bitte erneut."
+  },
+  {
+    "key": "header_label_choose_mode_manually",
+    "value": "MANUELL WÄHLEN"
+  },
+  {
+    "key": "activity_label_purchase_cameras",
+    "value": "KAMERAS KAUFEN"
+  },
+  {
+    "key": "label_none",
+    "value": "Kein/e"
+  },
+  {
+    "key": "label_current_service_level",
+    "value": "Aktuelles Dienstlevel"
+  },
+  {
+    "key": "notify_cannot_delete_active_mode",
+    "value": "Dieser Modus ist aktiv und kann daher nicht gelöscht werden. Zum Löschen dieses Modus wechseln Sie zu einem anderen Modus, und versuchen Sie es erneut."
+  },
+  {
+    "key": "notify_device_removed_successfully",
+    "value": "Das Gerät wurde erfolgreich aus Ihrem Konto entfernt."
+  },
+  {
+    "key": "confirm_delete_camera",
+    "value": "Möchten Sie die Kamera löschen?"
+  },
+  {
+    "key": "confirm_remove_friend",
+    "value": "Möchten Sie Ihren Freund entfernen?"
+  },
+  {
+    "key": "info_select_shareable_cameras",
+    "value": "Wählen Sie mindestens eine Kamera für den gemeinsamen Zugriff mit diesem Freund."
+  },
+  {
+    "key": "header_label_cameras",
+    "value": "KAMERAS"
+  },
+  {
+    "key": "confirm_restore_selected_files",
+    "value": "Möchten Sie die ausgewählten Dateien wiederherstellen?"
+  },
+  {
+    "key": "status_account_max_modes",
+    "value": "Sie haben die maximale Anzahl von zulässigen Modi für Ihr Dienstlevel erreicht."
+  },
+  {
+    "key": "label_add_email",
+    "value": "E-Mail-Adresse hinzufügen"
+  },
+  {
+    "key": "label_action",
+    "value": "Aktion"
+  },
+  {
+    "key": "header_select_camera",
+    "value": "Kamera auswählen ..."
+  },
+  {
+    "key": "error_rule_name_exists",
+    "value": "Der Name für Ihre Regel ist bereits vorhanden. Verwenden Sie einen anderen Regelnamen."
+  },
+  {
+    "key": "error_rule_email_exists",
+    "value": "Die E-Mail-Adresse wurde bereits zur Regel hinzugefügt."
+  },
+  {
+    "key": "status_label_free",
+    "value": "Kostenlos"
+  },
+  {
+    "key": "status_label_error",
+    "value": "Fehler"
+  },
+  {
+    "key": "confirm_delete_non_favorites",
+    "value": "Möchten Sie die ausgewählten Dateien löschen? Häufig verwendete Dateien werden nicht gelöscht."
+  },
+  {
+    "key": "confirm_share_no_access",
+    "value": "Möchten Sie die ausgewählten Dateien teilen? Dateien von Kameras, deren Eigentümer nicht Sie sind, werden nicht geteilt."
+  },
+  {
+    "key": "confirm_download_no_access",
+    "value": "Möchten Sie die ausgewählten Dateien herunterladen? Dateien von Kameras, deren Eigentümer nicht Sie sind, werden nicht heruntergeladen."
+  },
+  {
+    "key": "status_account_exist",
+    "value": "Ein Arlo-Konto mit dieser E-Mail-Adresse vorhanden. Möchten Sie sich mit diesem Konto anmelden?"
+  },
+  {
+    "key": "activity_go_to_login",
+    "value": "SO MELDEN SIE SICH AN"
+  },
+  {
+    "key": "info_schedule_zoom_in",
+    "value": "Vergrößern Sie die Ansicht, um Einzelheiten des Zeitplans zu sehen."
+  },
+  {
+    "key": "info_schedule_zoom_out",
+    "value": "Verkleinern Sie die Ansicht, um den Zeitplan des gesamten Tags zu sehen."
+  },
+  {
+    "key": "info_schedule_tap_and_hold",
+    "value": "Tippen Sie auf die Ansicht und halten Sie sie gedrückt, um einen Modus zum Zeitplan hinzuzufügen."
+  },
+  {
+    "key": "info_schedule_tap",
+    "value": "Tippen Sie auf die Ansicht, um einen Modus zu bearbeiten."
+  },
+  {
+    "key": "info_schedule_rotate_landscape",
+    "value": "Drehen Sie die Ansicht, um die Wochenansicht zu sehen."
+  },
+  {
+    "key": "info_schedule_rotate_portrait",
+    "value": "Drehen Sie die Ansicht, um die Tagesansicht zu sehen."
+  },
+  {
+    "key": "bs_settings_label_flicker_adjustment",
+    "value": "Flacker-Anpassung"
+  },
+  {
+    "key": "info_flicker_adjustment",
+    "value": "Wenn Sie ein Flackern im Video bemerken, versuchen Sie die Verschlusszeit der Kamera entsprechend Ihrer lokalen AC-Frequenz anzupassen: 50 oder 60 Hz."
+  },
+  {
+    "key": "label_frequency_auto",
+    "value": "Auto ({frequency})"
+  },
+  {
+    "key": "label_frequency_60",
+    "value": "60 Hz"
+  },
+  {
+    "key": "label_frequency_50",
+    "value": "50 Hz"
+  },
+  {
+    "key": "label_frequency_auto",
+    "value": "Auto"
+  },
+  {
+    "key": "help_settings",
+    "value": "Hilfe"
+  },
+  {
+    "key": "help_label_support",
+    "value": "Support"
+  },
+  {
+    "key": "help_label_community",
+    "value": "Community"
+  },
+  {
+    "key": "status_label_disabled",
+    "value": "Deaktiviert"
+  },
+  {
+    "key": "label_no_updates_available",
+    "value": "Keine Updates verfügbar."
+  },
+  {
+    "key": "error_login_internet_connection",
+    "value": "Die Anmeldung ist aufgrund von Verbindungsproblemen mit dem Internet nicht möglich. Möchten Sie es noch erneut versuchen?"
+  },
+  {
+    "key": "title_add_base_station",
+    "value": "Basisstation hinzufügen"
+  },
+  {
+    "key": "title_add",
+    "value": "Hinzufügen"
+  },
+  {
+    "key": "title_edit",
+    "value": "Bearbeiten"
+  },
+  {
+    "key": "title_see_another_camera_here",
+    "value": "Hier finden Sie eine weitere Kamera"
+  },
+  {
+    "key": "title_active_rules",
+    "value": "AKTIVE REGELN"
+  },
+  {
+    "key": "label_no_active_rules",
+    "value": "Es gibt keine aktiven Regeln für diesen Modus."
+  },
+  {
+    "key": "setup_sync_cameras_1",
+    "value": "Drücken Sie die Sync-Taste auf der Seite der Basisstation. Warten Sie auf den Sync- Status-LED grün zu blinken."
+  },
+  {
+    "key": "setup_sync_cameras_2",
+    "value": "Drücken Sie die Sync-Taste auf der Oberseite der Kamera."
+  },
+  {
+    "key": "setup_sync_cameras_3",
+    "value": "Eine blaue LED an der Kamera blinkt für 10 Sekunden , um zu bestätigen . Hinweis: bei diesem Vorgang nehmen Sie nicht den Akku."
+  },
+  {
+    "key": "setup_base_station_1",
+    "value": "Schließen Sie die Basisstation an den Router"
+  },
+  {
+    "key": "setup_base_station_2",
+    "value": "Schließen Sie es an"
+  },
+  {
+    "key": "setup_base_station_3",
+    "value": "Schalten Sie ihn ein"
+  },
+  {
+    "key": "mobile_setup_complete_title",
+    "value": "Setup abgeschlossen"
+  },
+  {
+    "key": "mobile_setup_complete_info",
+    "value": "Herzlichen Glückwunsch! Ihre Arlo Kameras sind nun eingerichtet und bereit für die Anzeige .\nArlo ist schlau , um jede Video es Aufzeichnungen in Ihre Cloud-Storage- Konto automatisch zu speichern. Erfahren Sie mehr herausfinden, wie lange Ihre Cloud-Konto speichert jedes Video, wie viele Kameras, die Sie eine Verbindung herstellen können und welche Möglichkeiten Sie haben, Bezugs"
+  },
+  {
+    "key": "activity_learn_more",
+    "value": "Mehr Erfahren"
+  },
+  {
+    "key": "activity_skip_to_cameras",
+    "value": "Zum Kameras"
+  },
+  {
+    "key": "mobile_subscription_info",
+    "value": "Arlo ist schlau , um jede Video es Aufzeichnungen in Ihre Cloud-Storage- Konto automatisch zu speichern. Klicken Sie hier , um herauszufinden, wie lange Ihre Cloud-Konto speichert jedes Video, wie viele Kameras, die Sie eine Verbindung herstellen können und welche Möglichkeiten Sie haben, Bezugs."
+  },
+  {
+    "value": "Credit Card information is not valid",
+    "key": "card_error"
+  },
+  {
+    "value": "Payment method is not updated",
+    "key": "billing_timeout_error"
+  },
+  {
+    "key": "timezone_error",
+    "value": "Please check time zone settings for the base station!"
+  }
+]

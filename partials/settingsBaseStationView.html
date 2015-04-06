@@ -1,0 +1,161 @@
+﻿<div ng-init="init()">
+    <div ng-hide="update">
+    <div ng-show="loading || isLoading()" class="billing-loading" ng-include="'partials/loadingView.html'"></div>
+
+    <div ng-hide="update" class="settings-header">
+        <span class="settings-done" ng-click="done()" ng-disabled="cameraNameForm.$invalid || !isChanged()">{{'activity_save' | i18n}}</span>
+        {{'base_station_settings_label_title' | i18n}}
+    </div>
+    <div ng-show="update" class="settings-header">
+        <span class="settings-back" ng-click="back()">{{'activity_back' | i18n}}</span>
+        Base Station Update
+    </div>
+    <div class="settings-container-list">
+        <div ng-hide="update" class="settings-panel settings-bs">
+            <div ng-show="baseStation.state=='synced'" class="settings-list-title arlo-link arlo-cp"
+                 style="text-align: center;" ui-sref="settings.plans">{{'marketing_label_upgrade_now' | i18n}}
+            </div>
+            <div ng-show="isBSRebooting()" class="settings-list-title">{{'base_station_settings_message_rebooting' |
+                i18n}}
+            </div>
+            <div class="settings-list">
+                <div class="settings-items-wrapper">
+                    <div class="settings-list-item">
+                        <div class="list-item-cell settings-bs-label">Name</div>
+                        <div class="list-item-cell settings-bs-value">
+                            <form name="cameraNameForm">
+                                <input type="text" ng-model="baseStation.deviceName" name="name" required
+                                       ng-minlength="1"
+                                       ng-maxlength="32">
+
+                                <div class="error" ng-show="cameraNameForm.$dirty && cameraNameForm.$invalid">
+                                    <div ng-show="cameraNameForm.name.$error.required">Name is required.</div>
+                                    <div ng-show="cameraNameForm.name.$error.pattern">Please provide a valid Name.</div>
+                                    <div ng-show="cameraNameForm.name.$error.minlength">Name is required to be at least
+                                        1 characters.
+                                    </div>
+                                    <div ng-show="cameraNameForm.name.$error.maxlength">Name cannot be longer than 32
+                                        characters.
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div ng-hide="admin || !isBaseStationAvailable()" class="settings-list">
+                <div class="settings-items-wrapper">
+                    <div class="settings-list-item">
+                        <div class="list-item-cell settings-bs-label">{{'base_station_settings_label_time_zone' |
+                            i18n}}
+                        </div>
+                        <div class="list-item-cell settings-bs-value">
+                            <select ng-model="timeZone" required
+                                    ng-options="timeZone.ui for timeZone in timeZones">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-hide="admin || !isBaseStationAvailable()" class="settings-list">
+                <div class="settings-items-wrapper">
+                    <div class="settings-list-item">
+                        <span class="list-item-cell settings-bs-label" style="vertical-align: middle">{{'base_station_settings_label_auto_update_firmware' | i18n}}</span>
+
+                        <div class="list-item-cell settings-bs-value" style="vertical-align: middle">
+                            <div class="settings-schedule-{{baseStation.properties.autoUpdateEnabled ? 'on': 'off'}}"
+                                 ng-disabled="!isBaseStationAvailable()"
+                                 ng-click="!isBaseStationAvailable() || toggleAutoUpdate()">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div ng-if="isAntiFlickerAvailable()" class="settings-list-item">
+                        <div class="list-item-cell settings-bs-label">{{'bs_settings_label_flicker_adjustment' | i18n}}
+                        </div>
+                        <div class="list-item-cell settings-bs-value">
+                            <select ng-model="$parent.AFMode" ng-options="AFMode.value for AFMode in AFModes"></select>
+                        </div>
+                    </div>
+                    <div ng-if="isAntiFlickerAvailable()" class="settings-list-item" style="border-top: none;">
+                        <div class="list-item-cell settings-bs-label">&#160;</div>
+                        <div class="list-item-cell settings-bs-value"
+                             style="white-space: normal; line-height: normal; padding-bottom: 5px">
+                            {{'info_flicker_adjustment' | i18n}}
+                        </div>
+                    </div>
+
+                    <div class="settings-list-item"
+                         ng-class="{'arlo-cp': !baseStation.properties.autoUpdateEnabled && isBaseStationAvailable()}"
+                         ng-click="gotoBSUpdate()">
+                        <div class="list-item-cell settings-bs-label" id="settingsBaseStation_firmwareVersion"
+                             ng-class="{'off': baseStation.properties.autoUpdateEnabled || !isBaseStationAvailable()}">
+                            {{'base_station_settings_label_fw_version' | i18n}}
+                        </div>
+                        <div class="list-item-cell settings-bs-value settings-mode-icon"
+                             ng-class="{'off': baseStation.properties.autoUpdateEnabled || !isBaseStationAvailable()}"
+                             ng-bind="baseStation.properties.swVersion"></div>
+                    </div>
+                    <div class="settings-list-item">
+                        <div class="list-item-cell settings-bs-label" id="settingsBaseStation_hardwareVersion">
+                            {{'base_station_settings_label_hw_version' | i18n}}
+                        </div>
+                        <div class="list-item-cell settings-bs-value" ng-bind="baseStation.properties.hwVersion">
+                        </div>
+                    </div>
+                    <div class="settings-list-item">
+                        <div class="list-item-cell settings-bs-label" id="settingsBaseStation_xcloudId">
+                            {{'base_station_settings_label_xcloud_id' | i18n}}
+                        </div>
+                        <div class="list-item-cell settings-bs-value" ng-bind="baseStation.xCloudId"></div>
+                    </div>
+                </div>
+            </div>
+            <div ng-hide="admin" class="settings-bs-buttons">
+                <button ng-if="isBaseStationAvailable()"
+                        ng-disabled="isBaseStationMotion() || !isBaseStationAvailable()"
+                        ng-click="isBaseStationMotion() || !isBaseStationAvailable() || reboot()">
+                    {{'base_station_settings_activity_restart' | i18n}}
+                </button>
+                <button class="button-delete" ng-click="deactivate()">{{'base_station_settings_activity_deactivate' |
+                    i18n}}
+                </button>
+            </div>
+        </div>
+        <div ng-show="update" class="settings-panel settings-bs">
+            <div ng-show="!getUpdateAvailable()" class="placeholder-loading">No Updates Available</div>
+            <div ng-show="getUpdateAvailable()" class="settings-list">
+                <div class="settings-items-wrapper">
+                    <div class="settings-list-item">
+                        <div class="list-item-cell settings-bs-label">
+                            {{'base_station_settings_label_fw_version' | i18n}}
+                        </div>
+                        <div class="list-item-cell settings-bs-value" ng-bind="getUpdateAvailable().version">
+                        </div>
+                    </div>
+                    <div class="settings-list-item">
+                        <div class="list-item-cell settings-bs-label">
+                            {{'about_label_released' | i18n}}
+                        </div>
+                        <div class="list-item-cell settings-bs-value" ng-bind="(1000*getUpdateAvailable().date) | date">
+                        </div>
+                    </div>
+                    <div class="settings-list-item">
+                        <div class="list-item-cell settings-bs-label">
+                            Notes
+                        </div>
+                        <div class="list-item-cell settings-bs-value" ng-bind-html="getUpdateAvailable().description">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-show="getUpdateAvailable()" class="settings-bs-buttons">
+                <button ng-disabled="isBusy()" ng-click="updateClick()">{{'activity_label_update' | i18n}}</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div ui-view></div>
+</div>

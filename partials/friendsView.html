@@ -1,0 +1,32 @@
+<div ng-init="init()">
+    <div ng-show="loading || isLoading()" class="billing-loading" ng-include="'partials/loadingView.html'"></div>
+    <div ng-if="expired" class="billing-loading">
+        <div class="billing-box"></div>
+        <div style="position: absolute; top:0; left:0; right: 0; bottom: 0;">
+            <div style="height: 25%; background: 0; position: relative;"></div>
+            <div class="settings-list" style="margin: 0 20px;"> Your access to camera sharing feature has expired.
+                <span style="text-align: center;" class="arlo-link arlo-cp arlo-fs17" ui-sref="settings.plans">Upgrade Now</span>
+                to reactive the feature and allow your friend(s) uninterrupted access
+            </div>
+        </div>
+    </div>
+    <div class="settings-header">
+        <span ng-disabled="!isDevices()" class="settings-done" ng-click="isDevices() && add()">Add</span>
+        {{'account_settings_label_friends' | i18n}}
+    </div>
+    <div ng-if="!expired" class="settings-container-list">
+    <div class="settings-panel" ng-show="!loading">
+        <div ng-if="isBasic" style="padding-bottom: 15px;" class="arlo-link arlo-cp arlo-fs17" ui-sref="settings.plans">{{'marketing_label_enable_friend_feature' | i18n}}</div>
+        <div class="settings-list">
+            <div ng-show="!loading && !friends.length" class="settings-list-loading">No friends yet</div>
+            <div class="settings-items-wrapper">
+                <div class="settings-list-item" ng-repeat="friend in friends">
+                    <!--<span class="settings-remove" ng-click="deleteFriend(friend)"></span>-->
+                    <span class="list-item-cell" style="white-space: pre-wrap; line-height: normal; padding:13px 10px 13px 0;">{{friend.firstName + ' ' + friend.lastName}}</span>
+                    <span class="list-item-cell settings-mode settings-mode-icon" ui-sref="settings.editFriend({email:friend.email})" style="float: none; text-align: right; padding-right: 20px">{{friend.status}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

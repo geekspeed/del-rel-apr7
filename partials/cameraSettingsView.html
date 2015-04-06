@@ -1,0 +1,153 @@
+<div ng-init="init()">
+    <div ng-show="loading || isLoading()" class="billing-loading" ng-include="'partials/loadingView.html'"></div>
+    <div class="settings-header">
+        <span class="settings-done" ng-class="{'arlo-disabled': !isCameraAvailable()}"  ng-click="isCameraAvailable() && done()" ng-disabled="!isChanged()">{{'activity_save' | i18n}}</span>
+        {{'camera_settings_label_title' | i18n}}
+    </div>
+    <div class="settings-container-list">
+    <div class="settings-panel">
+        <div class="settings-list">
+            <div class="settings-items-wrapper">
+                <div class="settings-list-item">
+                    <div class="list-item-cell settings-bs-label">{{'camera_settings_label_camera_name' | i18n}}</div>
+                    <div class="list-item-cell settings-bs-value">
+                    <form name="cameraNameForm">
+                        <input type="text" ng-model="camera.deviceName" name="name" required
+                            ng-minlength="1"
+                            ng-maxlength="32">
+                        <div class="error" ng-show="cameraNameForm.$dirty && cameraNameForm.$invalid">
+                            <div ng-show="cameraNameForm.name.$error.required">
+                                Name is required.
+                            </div>
+                            <div ng-show="cameraNameForm.name.$error.pattern">
+                                Please provide a valid Name.
+                            </div>
+                            <div ng-show="cameraNameForm.name.$error.minlength">
+                                Name is required to be at least 1 characters.
+                            </div>
+                            <div ng-show="cameraNameForm.name.$error.maxlength">
+                                Name cannot be longer than 32 characters.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="settings-list-title">Setup</div>
+
+        <div class="settings-list" id="setup">
+            <div class="settings-list-item-2l">
+                <div class="settings-schedule-{{camera.properties.flip ? 'on': 'off'}}" ng-click="toggleInvertMode()">
+                    <div></div>
+                </div>
+                <div class="arlo-fs17">{{'camera_settings_label_invert_image' | i18n}}</div>
+                <div class="settings-list-item-tip">{{'camera_settings_label_invert_image_description' | i18n}}</div>
+            </div>
+            <div ng-hide="motionDetectionMode()" class="settings-list-item-2l arlo-cp" ng-class="{'settings-mode-icon': !isCameraBusy()}" ng-click="togglePositionMode()">
+                <div ng-if="isCameraBusy()" class="camera-busy">({{'status_label_busy' | i18n}})</div>
+                <div class="arlo-fs17">{{'camera_settings_label_position_mode' | i18n}}</div>
+                <div class="settings-list-item-tip">{{'camera_settings_label_position_mode_description' | i18n}}</div>
+            </div>
+
+            <div class="settings-list-item-2l arlo-cp" ng-class="{'settings-mode-icon': !isCameraBusy()}" ng-click="toggleMotionDetectionMode()">
+                <div ng-if="isCameraBusy()" class="camera-busy">({{'status_label_busy' | i18n}})</div>
+                <div class="arlo-fs17">{{'camera_settings_label_motion_detection_test' | i18n}}</div>
+                <div class="settings-list-item-tip">{{'camera_settings_label_motion_detection_test_description' | i18n}}</div>
+            </div>
+
+        </div>
+
+        <div class="settings-list-title">{{'camera_settings_label_power_management_title' | i18n}}</div>
+        <div class="settings-list">
+
+            <div class="settings-list-item-2l settings-power" ng-class="{'settings-power-selected arlo-cp': isSelected(bestVideo),
+                'arlo-cp': !isSelected(bestVideo)}"
+                 id="{{bestVideo}}"
+                 ng-click="selectPowerSaveMode(bestVideo)">
+                <div class="arlo-fs17">{{'camera_settings_label_best_video' | i18n}}</div>
+                <div class="settings-list-item-tip">{{'camera_settings_label_best_video_description' | i18n}}</div>
+            </div>
+
+            <div class="settings-list-item-2l settings-power" ng-class="{'settings-power-selected': isSelected(optimized),
+            'arlo-cp': !isSelected(optimized)}"
+                 id="{{optimized}}"
+                 ng-click="selectPowerSaveMode(optimized)">
+                <div class="arlo-fs17">{{'camera_settings_label_optimized' | i18n}}</div>
+                <div class="settings-list-item-tip">{{'camera_settings_label_optimized_description' | i18n}}</div>
+            </div>
+
+            <div class="settings-list-item-2l settings-power" ng-class="{'settings-power-selected': isSelected(batteryLife),
+            'arlo-cp': !isSelected(batteryLife)}"
+                 id="{{batteryLife}}"
+                 ng-click="selectPowerSaveMode(batteryLife)">
+                <div class="arlo-fs17">{{'camera_settings_label_best_battery_life' | i18n}}</div>
+                <div class="settings-list-item-tip">{{'camera_settings_label_best_battery_life_description' | i18n}}</div>
+            </div>
+        </div>
+
+        <div class="settings-list-title">{{'camera_settings_label_adjust_settings_title' | i18n}}</div>
+
+        <div class="settings-list" id="settings">
+
+            <div class="arlo-fs17 settings-camera-label">
+                <div class="cameras-fullsnapshot cameras-snapshot arlo-cp" ng-disabled="!isCameraIdle() || takingSnapshot" ng-click="isCameraIdle() && !takingSnapshot && takeSnapshot()"></div>
+                {{'camera_settings_label_pan_zoom_title' | i18n}}
+            </div>
+            <div style="position: relative">
+                <progressbar ng-if="takingSnapshot" style="position: absolute; right: 10px; top: 10px;" class="progress-striped active" max="100" value="100">&nbsp;&nbsp;Taking snapshot ...&nbsp;&nbsp;</progressbar>
+                <canvas id="lastImage" zoom-display widget-x="450"
+                        image-url="{{camera.presignedFullFrameSnapshotUrl}}"
+                        tl-x="camera.properties.zoom.topleftx"
+                        tl-y="camera.properties.zoom.toplefty"
+                        br-x="camera.properties.zoom.bottomrightx"
+                        br-y="camera.properties.zoom.bottomrighty"
+                        camera-id="camera.deviceId">
+                </canvas>
+            </div>
+
+            <!--<div class="arlo-fs17 settings-camera-label">Invert Camera (click on image to invert)</div>
+            <div>
+                <canvas invert widget-x="450"
+                        image-url="{{camera.presignedLastImageUrl}}"
+                        flip="camera.properties.flip"
+                        mirror="camera.properties.mirror">
+                </canvas>
+            </div>
+
+            <div class="arlo-fs17 settings-camera-label">Camera Lighting Level: {{camera.properties.brightness}}
+            </div>
+            <div>
+                <input type="range" min="-124" max="124" step="31"
+                       ng-model="camera.properties.brightness">
+
+                <div style="position: relative; font-size: 0; width: 450px;">
+                    <img default-image="/img2/camera_thumb.png" ng-src="{{camera.presignedLastImageUrl}}"
+                        style="max-width: 100%; height: auto;">
+                    <div ng-if="camera.properties.brightness>0" class="settings-camera-light"
+                         ng-style="{opacity: (camera.properties.brightness/200)}"></div>
+                    <div ng-if="camera.properties.brightness<0" class="settings-camera-dark"
+                         ng-style="{opacity: -(camera.properties.brightness/200)}"></div>
+                </div>
+            </div>-->
+
+        </div>
+
+        <div class="settings-list-title ng-binding">{{'label_versions' | i18n}}</div>
+        <div class="settings-list">
+            <div class="settings-items-wrapper">
+                <div class="settings-list-item">
+                    <span class="list-item-cell" style="width: 30%">{{'label_hardware' | i18n}}</span>
+                    <span class="list-item-cell" style="float: right">{{getHW()}}</span>
+                </div>
+                <div class="settings-list-item">
+                    <span class="list-item-cell" style="width: 30%">Software</span>
+                    <span class="list-item-cell" style="float: right">{{getFW()}}</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+</div>

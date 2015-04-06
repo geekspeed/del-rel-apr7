@@ -1,0 +1,78 @@
+[
+    {
+        "code": "AU",
+        "name": "Australia",
+        "language": "Australian English",
+        "currency": "AUD"		
+    },
+    {
+        "code": "AT",
+        "name": "Austria",
+        "language": "German",
+        "currency": "EUR",
+        "vat": "^(AT)?U[0-9]{8}$"
+    },
+    {
+        "code": "BE",
+        "name": "Belgium",
+        "language": "Dutch, French",
+        "currency": "EUR",
+        "vat": "^(BE)?0?[0-9]{9}$"
+    },
+    {
+        "code": "FI",
+        "name": "Finland",
+        "language": "Finnish",
+        "currency": "EUR",
+        "vat": "^(FI)?[0-9]{8}$"
+    },
+    {
+        "code": "FR",
+        "name": "France",
+        "language": "French",
+        "currency": "EUR",
+        "vat": "^(FR)?[0-9A-Z]{2}[0-9]{9}$"
+    },
+    {
+        "code": "DE",
+        "name": "Germany",
+        "language": "German",
+        "currency": "EUR",
+        "vat": "^(DE)?[0-9]{9}$"
+    },
+    {
+        "code": "IE",
+        "name": "Ireland",
+        "language": "British English",
+        "currency": "EUR"
+    },
+    {
+        "code": "NL",
+        "name": "Netherlands",
+        "language": "Dutch",
+        "currency": "EUR",
+        "vat": "^(NL)?[0-9]{9}B[0-9]{2}$"
+    },
+    {
+        "code": "GB",
+        "name": "United Kingdom",
+        "language": "British English",
+        "currency": "GBP",
+        "vat": "^(GB)?([0-9]{9}([0-9]{3})?|[A-Z]{2}[0-9]{3})$",
+		"zip":"^[a-zA-Z]{1,2}[0-9][0-9A-Za-z]{0,1} {0,1}[0-9][A-Za-z]{2}$"
+    },
+    {
+        "code": "US",
+        "name": "United States",
+        "language": "American English",
+        "currency": "USD",
+		"zip": "^\\d{5}-?\\s?(?:\\d{4})?$"
+    },
+	{
+        "code": "CA",
+        "name": "Canada",
+        "language": "English",
+        "currency": "CAD",
+		"zip": "^([A-Z]\\d[A-Z]\\s\\d[A-Z]\\d)$"
+    }
+]

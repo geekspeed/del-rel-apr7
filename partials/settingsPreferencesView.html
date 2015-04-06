@@ -1,0 +1,57 @@
+    <div ng-init="init()">
+    <div class="settings-header">
+        <span class="settings-done" ng-click="done()" ng-disabled="!isChanged()">{{'activity_save' | i18n}}</span>
+        {{'prefs_label_title' | i18n}}
+    </div>
+    <div class="settings-container-list">
+    <div ng-if="loading" class="placeholder-loading">{{'status_label_loading' | i18n}}</div>
+    <div ng-hide="loading" class="settings-panel">
+        <div class="settings-list-title">{{'prefs_label_storage_title' | i18n}}</div>
+        <div class="settings-list">
+            <div class="settings-items-wrapper">
+                <div class="settings-list-item">
+                    <span class="list-item-cell">{{'prefs_label_manage_storage' | i18n}}<span class="settings-info" popover="{{'info_settings_manage_storage' | i18n}}" popover-placement="top" popover-trigger="mouseenter" popover-append-to-body="true"></span></span>
+                    <div class="list-item-cell"><div class="settings-schedule-{{preferences.storage.enabled ? 'on': 'off'}}" ng-click="toggleStorage()"><div></div></div></div>
+                </div>
+                <div class="settings-list-item">
+                    <div class="list-item-cell">{{'prefs_label_if_storage_full' | i18n}}</div>
+                    <div class="list-item-cell"></div>
+                </div>
+                <div class="settings-list-item" style="border-top-color: transparent;">
+                    <div class="list-item-cell settings-power" ng-click="setAutoDelete(true)" ng-class="{'settings-power-selected': preferences.storage.autoDelete, 'arlo-cp': !preferences.storage.autoDelete}">
+                    {{'prefs_label_delete_oldest_files' | i18n}}
+                    </div>
+                </div>
+                <div class="settings-list-item" style="border-top-color: transparent;">
+                    <div class="list-item-cell  settings-power" ng-click="setAutoDelete(false)" ng-class="{'settings-power-selected': !preferences.storage.autoDelete, 'arlo-cp': preferences.storage.autoDelete}">
+                        {{'prefs_label_do_not_record' | i18n}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="settings-list-title">{{'prefs_label_notifications_title' | i18n}}</div>
+        <div class="settings-list">
+            <div class="settings-items-wrapper">
+                <div class="settings-list-item">
+                    <span class="list-item-cell">{{'prefs_label_low_battery_notification' | i18n}}</span>
+                    <div class="list-item-cell">
+                        <div class="settings-schedule-{{preferences.alerts.lowBatteryAlert ? 'on': 'off'}}" ng-click="toggleLowBattery()">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-list-item">
+                    <span class="list-item-cell">{{'prefs_label_storage_full_notification' | i18n}}<span class="settings-info" popover="{{'info_settings_storage_full_notification' | i18n}}" popover-placement="top" popover-trigger="mouseenter" popover-append-to-body="true"></span></span>
+                    <div class="list-item-cell"><div class="settings-schedule-{{preferences.alerts.storageAlert ? 'on': 'off'}}" ng-click="toggleStorageFull()"><div></div></div></div>
+                </div>
+                <div class="settings-list-item">
+                    <div class="list-item-cell">Push Notification</div>
+                    <div ng-if="preferences.alerts.pushNotificationAlert" class="list-item-cell" style="text-align: right;">Active</div>
+                    <div ng-if="!preferences.alerts.pushNotificationAlert" class="list-item-cell arlo-link arlo-cp" style="text-align: right;" ui-sref="settings.plans">Inactive</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

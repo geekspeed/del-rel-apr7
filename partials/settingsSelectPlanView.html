@@ -1,0 +1,54 @@
+﻿<div ng-init="init()">
+    <div ng-show="loading || isBillingInProgress()" class="billing-loading" ng-class="{'arlo-pf': isBillingInProgress()}" ng-include="'partials/loadingView.html'"></div>
+    <div class="settings-header">
+        <span class="settings-back" ng-click="goBack()">{{'activity_back' | i18n}}</span>
+        {{'change_service_label_title' | i18n}}
+    </div>
+    <div class="settings-container-list">
+    <div class="settings-panel">
+        <div ng-hide="isShowDetails">
+            <div class="settings-list-title">{{'label_current_plan' | i18n}}</div>
+            <div class="settings-list">
+                <div class="settings-items-wrapper">
+                    <div class="settings-list-item">
+                        <!-- todo: the following reference to planName is for compatibility in testing, should be removed later -->
+                        <span class="list-item-cell">{{servicePlan ? (servicePlan.groupName || servicePlan.planName) : ('status_label_loading'|i18n) }}</span>
+                        <div class="list-item-cell settings-subscription-value">{{planAmount}}</div>
+                    </div>
+                    <!--<div class="settings-list-item">
+                        <span class="list-item-cell">{{storageServicePlan.planId ? (storageServicePlan.groupName || storageServicePlan.planName) : 'No additional cloud storage'}}</span>
+                        <div class="list-item-cell settings-subscription-value">{{storagePlanAmount}}</div>
+                    </div>  -->
+                </div>
+            </div>
+                <div class="settings-list-title">
+                    <span>Subscriptions</span>
+                    <span class="settings-mode" ng-click="showDetails()" style="">{{'change_service_activity_learn_more' | i18n}}</span>
+                </div>
+            <div class="settings-list" ng-if="servicePlans" >
+                <div class="settings-items-wrapper">
+                    <div class="settings-list-item arlo-cp" ng-repeat="plan in servicePlans track by plan.planId" ng-click="selectPlan(plan)" id="settingsSelectPlan_plan_{{$index}}" name="plan_{{plan.planId}}">
+                        <div class="list-item-cell settings-list-item-p" ng-class="{'settings-list-item-active': selectedPlan.planId == plan.planId }">{{plan.groupName}}</div>
+                        <div class="list-item-cell settings-subscription-value">{{plan | planAmount}}</div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="settings-list-title">{{'subscription_label_cloud_storage_title' | i18n}}</div>
+            <div class="settings-list">
+                <div class="settings-items-wrapper">
+                    <div class="settings-list-item settings-list-item-p arlo-cp" ng-click="selectStorage({planId: 0})" ng-class="{'settings-list-item-active': selectedStorage.planId == 0 }">
+                        <span class="list-item-cell">Included Storage</span>
+                        <div class="list-item-cell settings-subscription-value">{{'service_selection_label_base_level' | i18n}}</div>
+                    </div>
+                    <div class="settings-list-item settings-list-item-p arlo-cp" style="display: block" ng-repeat="plan in storagePlans track by plan.planId" ng-click="selectStorage(plan)" ng-class="{'settings-list-item-active': selectedStorage.planId == plan.planId }">
+                        <span class="list-item-cell">{{plan.groupName}}</span>
+                        <div class="list-item-cell settings-subscription-value">{{plan | planAmount}}</div>
+                    </div>
+                </div>
+            </div> -->
+            <button type="button" ng-disabled="!selectedPlan || isOldPlansSelected()" ng-click="changeService()" style="display: block; margin: 10px auto;">{{'subscription_activity_change_service' | i18n}}</button>
+        </div>
+        <div ng-if="isShowDetails" ng-bind-html="detailsHTML"></div>
+    </div>
+    </div>
+</div>

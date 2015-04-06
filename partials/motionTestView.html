@@ -1,0 +1,34 @@
+<div ng-init="init()">
+    <div class="settings-header">
+        <span class="settings-back" ng-click="back()">{{'activity_back' | i18n}}</span>
+        {{'camera_settings_label_motion_detection_test' | i18n}}
+    </div>
+    <div class="settings-container-list">
+    <div class="settings-panel">
+        <div class="settings-list" style="padding: 20px 15%;">
+            <div class="arlo-fs17" style="font-weight: bold;" ng-bind-html="description">
+            </div>
+            <div class="cameras-motion-2" style="height: 100px;"></div>
+            <div>
+                <div style="display: table; width: 100%; padding: 0; vertical-align: top; margin: 0 auto">
+                    <div style="display: table-cell;position: relative; padding: 22px;">
+                        <div ng-show="percent != startPercent" class="cameras-brightness-cancel arlo-cp" style="margin-top: 12px;" ng-click="percent = startPercent"></div>
+                    </div>
+                    <div style="display: table-cell;width:100%;">
+                    <div style="text-align: center">{{percent}} %</div>
+                    <div ng-click="sliderClick($event, camera.deviceId)" class="cameras-brightness-line arlo-cp">
+                        <div class="cameras-brightness-slider" ng-style="{width: percent + '%'}">
+                        </div>
+                    </div>
+                    <div slider-drag="{{camera.deviceId}}" class="recording-slider-point" style="top: 1px;"
+                         ng-style="{left: percent + '%'}"></div>
+                        </div>
+                    <div style="display: table-cell;position: relative; padding: 22px;">
+                        <div ng-show="percent != startPercent" class="cameras-brightness-apply arlo-cp" style="margin-top: 12px;" ng-click="applySensivity()"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

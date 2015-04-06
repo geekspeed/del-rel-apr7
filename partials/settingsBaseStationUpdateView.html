@@ -1,0 +1,40 @@
+<div ng-init="init()">
+
+    <div class="settings-header">
+        <span class="settings-back" ng-click="back()">{{'activity_back' | i18n}}</span>
+        Base Station Update
+    </div>
+    <div class="settings-container-list">
+    <div class="settings-panel settings-bs">
+        <div ng-show="!getUpdateAvailable()" class="placeholder-loading">No Updates Available</div>
+        <div ng-show="getUpdateAvailable()" class="settings-list">
+            <div class="settings-items-wrapper">
+            <div class="settings-list-item">
+                <div class="list-item-cell settings-bs-label">
+                    {{'base_station_settings_label_fw_version' | i18n}}
+                </div>
+                <div class="list-item-cell settings-bs-value" ng-bind="getUpdateAvailable().version">
+                </div>
+            </div>
+            <div class="settings-list-item">
+                <div class="list-item-cell settings-bs-label">
+                    {{'about_label_released' | i18n}}
+                </div>
+                <div class="list-item-cell settings-bs-value" ng-bind="(1000*getUpdateAvailable().date) | date">
+                </div>
+            </div>
+            <div class="settings-list-item">
+                <div class="list-item-cell settings-bs-label">
+                    Notes
+                </div>
+                <div class="list-item-cell settings-bs-value" ng-bind-html="getUpdateAvailable().description">
+                </div>
+            </div>
+            </div>
+        </div>
+        <div ng-show="getUpdateAvailable()" class="settings-bs-buttons">
+            <button ng-disabled="isBusy()" ng-click="updateClick()">{{'activity_label_update' | i18n}}</button>
+        </div>
+    </div>
+    </div>
+</div>

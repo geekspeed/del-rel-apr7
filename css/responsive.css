@@ -1,0 +1,497 @@
+/*
+* responsive.css
+*
+* Copyright (c) 2014, NETGEAR, Inc.
+* 350 East Plumeria, San Jose California, 95134, U.S.A.
+* All rights reserved.
+*
+*
+* This software is the confidential and proprietary information of
+* NETGEAR, Inc. ("Confidential Information"). You shall not
+* disclose such Confidential Information and shall use it only in
+* accordance with the terms of the license agreement you entered into
+* with NETGEAR.
+*
+* sergey.yakubovsky@netgear.com
+*
+*/
+
+/* Camera */
+.camera {
+    display: inline-block;
+    width: 449px;
+    padding: 8px;
+    text-align: left;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.vlist-preview {
+    width: 170px;
+}
+
+@media only screen and (orientation: landscape) {
+    .login-body {
+        width: 100%;
+        height: 100%;
+        background-image: none !important;
+    }
+
+    .login-body .login-body-inner {
+        width: auto;
+        margin: auto;
+    }
+
+    .login-body .login-form {
+        width: auto;
+    }
+
+    .login-body .login-logo {
+        width: 250px;
+        height: 250px;
+        display: inline-block;
+        margin: 0 100px 0 0;
+    }
+
+    .login-body.resettingPassword .login-logo {
+        margin: 0 50px;
+    }
+
+    .login-body form[name="loginForm"] {
+        display: inline-block;
+        width: 310px;
+    }
+}
+
+
+@media only screen and (orientation: portrait) {
+    .login-body {
+        width: 100%;
+        height: 100%;
+        background-image: none !important;
+    }
+
+    .login-body .login-body-inner {
+        position: relative;
+        width: 260px;
+        display: table;
+        margin: auto;
+        vertical-align: middle;
+        height: 100%;
+
+    }
+
+    .login-body .login-logo {
+        width: 210px;
+        height: 210px;
+        margin: auto auto 50px;
+        display: block;
+    }
+}
+
+
+/* TABLET - PORTRAIT */
+
+@media only screen and (max-width: 1023px) {
+    .camera {
+        width: 49%;
+    }
+
+    .calendar-vlist .vlist-preview {
+        width: 33%;
+    }
+}
+
+/* max-width: 1084px */
+/*@media only screen and (max-width: 920px) {
+    .calendar-date {padding-top: 40px}
+    .recycle-day-wrapper .calendar-date {padding-top: 0}
+    .calendar-date .calendar-option.separator-responsive {width: 100% !important;}
+    .calendar-date .calendar-option.calendar-label-date{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}*/
+/* TABLET - PORTRAIT */
+@media only screen and (max-width: 800px) {
+    .calendar-date {
+        padding-top: 40px
+    }
+
+    .vlist-preview-wrapper {
+        top: 84px !important;
+    }
+
+    .filtered .vlist-preview-wrapper {
+        top: 125px !important;
+    }
+
+    .recycle-day-wrapper .calendar-date {
+        padding-top: 0
+    }
+
+    .calendar-date .calendar-option.separator-responsive {
+        width: 100% !important;
+    }
+
+    .calendar-date .calendar-option.calendar-label-date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .overlay-arrow-icon {
+        display: none
+    }
+
+    .library .overlay-arrow-icon {
+        display: block
+    }
+
+    .alert-window {
+        width: 90%;
+    }
+
+    .library .alert-window {
+        top: 190px
+    }
+
+    .library .overlay-arrow-icon {
+        top: 110px;
+    }
+
+    .cameras-filter-header {
+        width: 70% !important;
+    }
+
+    .calendar-vlist .vlist-preview {
+        width: 50%;
+    }
+
+    .settings-bs-buttons button {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .settings-bs-buttons button:first-child {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .calendar-date .calendar-option button {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .alert-window .footer-button {
+        padding-left: 5px;
+        min-width: 50px
+    }
+
+    .cameras-filter-header {
+        width: 60% !important;
+    }
+}
+
+/* PHONE - PORTRAIT */
+@media only screen and (max-width: 567px) {
+
+    .calendar-date {
+        padding-top: 0px;
+    }
+
+    .library.modal-overlay {
+        display: none
+    }
+
+    .calendar-wrapper {
+        overflow-y: auto !important;
+    }
+
+    .calendar
+    {
+        border-left: #c8c7cc 1px solid;
+    }
+
+    .recycle-day-wrapper,
+    .vlist-preview-wrapper {
+        top: 0 !important;
+        position: relative !important;
+        overflow: visible !important;
+    }
+
+    .filtered .vlist-preview-wrapper {
+        top: 0px !important;
+    }
+
+    .recycle-container {
+        top: 0 !important;
+        position: relative !important
+    }
+
+    .calendar-date .calendar-option.calendar-label-date {
+        height: 60px;
+        line-height: 60px;
+        position: relative;
+        width: auto
+    }
+
+    .camera {
+        width: 100%;
+    }
+
+    body .calendar-vlist {
+        position: static;
+    }
+
+    body .calendar {
+        position: static;
+        margin: 0 auto;
+        width: 285px;
+        box-shadow: none;
+    }
+
+    .calendar-vlist .vlist-preview {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .calendar-date {
+        padding-top: 40px
+    }
+    .calendar-label-date {
+        position: absolute !important;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .camera-fullscreen {
+        width: 100%;
+        width: calc(1.7778 * (100vh - 220px));
+        max-width: 100%;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .camera-fullscreen {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+
+    .login-body.resettingPassword .login-body-inner {
+        width: 360px;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 820px) and (max-height: 768px){
+
+    .login-body.resettingPassword .login-body-inner {
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 660px) and (orientation: portrait) {
+    .login-body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .login-body .login-body-inner {
+        position: relative;
+        width: 260px;
+        display: table;
+        margin: auto;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    .login-body .login-logo {
+        width: 210px;
+        height: 210px;
+        margin: auto auto 50px;
+        display: block;
+    }
+}
+@media only screen and (max-width: 660px) and (orientation: landscape) {
+    .login-body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .login-body .login-body-inner {
+        width: auto;
+    }
+
+    .login-body .login-form {
+        width: auto;
+    }
+
+    .login-body .login-logo {
+        width: 210px;
+        height: 210px;
+        display: inline-block;
+        margin: 0 40px 0 0;
+    }
+
+    .login-body form[name="loginForm"] {
+        display: inline-block;
+        width: 310px;
+    }
+}
+
+@media only screen and (max-width: 560px) and (orientation: portrait) {
+    .login-body {
+        width: 100%;
+        height: 100%;
+        min-height: 100% !important;
+        padding: 0 30px;
+    }
+
+    .login-body .login-body-inner {
+        position: relative;
+        width: 100%;
+        display: table;
+        margin: auto;
+        vertical-align: middle;
+        height: 100%;
+    }
+    .login-body.resettingPassword .login-body-inner {
+        width: 360px;
+    }
+
+    .login-body .login-form {
+        width: 100%;
+    }
+
+    .login-body .login-logo {
+        width: 210px;
+        height: 210px;
+    }
+}
+
+@media only screen and (max-width: 560px) and (orientation: landscape) {
+    .login-body {
+        width: 100%;
+        height: 100%;
+        min-height: 100% !important;
+        padding: 0 30px;
+    }
+
+    .login-body .login-form {
+        width: 100%
+    }
+
+    .login-body .login-body-inner {
+        position: relative;
+        width: 100%;
+        display: table;
+        margin: auto;
+        vertical-align: middle;
+        height: 100%;
+    }
+    .login-body.resettingPassword .login-body-inner {
+        width: 360px !important;;
+     }
+
+    .login-body .login-logo {
+        width: 210px;
+        height: 210px;
+        margin: auto auto 50px;
+        display: block;
+    }
+
+    .login-body form[name="loginForm"] {
+        display: block;
+        width: auto;
+    }
+}
+
+@media only screen and (max-height: 660px) and (orientation: portrait) {
+    .login-body .login-form{
+        padding-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+
+    .register-line {
+        max-width: 310px;
+    }
+}
+
+/* Shared view */
+@media only screen and (max-width: 1000px) {
+    .shared-content {
+        left: 5%;
+        right: 5%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .shared-content {
+        left: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .shared-videobox
+    {
+        width: 100%;
+        padding: 4px;
+    }
+
+    .shared-mediabox
+    {
+        position: relative;
+        width: 100%;
+        padding: 4px;
+    }
+
+    .shared-mediabox > div
+    {
+        position: static;
+    }
+
+    .shared-media-list
+    {
+        position: relative;
+        top: 0;
+        margin-top: 5px;
+        padding: 0 5px;
+    }
+
+    .shared-media-item
+    {
+        border: 0;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .shared-media-list .shared-media-item + .shared-media-item
+    {
+        border-top: solid 1px #e5e5e5;
+    }
+
+    .shared-media-item img
+    {
+        width: 142px;
+        height: 80px;
+    }
+
+    .shared-media-head
+    {
+        border: 0;
+        position: absolute;
+        left: 150px;
+    }
+}

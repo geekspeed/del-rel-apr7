@@ -1,0 +1,44 @@
+﻿<header class="header">
+    <span class="header-logout arlo-cp" ng-controller="FooterCtrl" id="calendar_Logout" ng-click="gotoLogout()">{{'personal_info_logout' | i18n}}</span>
+</header>
+
+<section class="wrapper calendar-wrapper" ng-init="init()">
+    <div class="calendar">
+        <div class="calendar-row">
+            <div class="calendar-prev" ng-class="{'calendar-prev-disable': prevDisable}" ng-click="prev()"></div>
+            <div class="calendar-next" ng-class="{'calendar-next-disable': nextDisable}" ng-click="next()"></div>
+            <div class="calendar-month">{{month | monthText}}</div>
+        </div>
+        <table cellspacing="0" cellpadding="0" style="width: 100%; min-height: 230px;margin-bottom: 10px;">
+            <tbody>
+                <tr class="calendar-wday">
+                    <td ng-repeat="name in names.SHORTDAY" width="14.28571428571429%">{{::name}}</td>
+                </tr>
+
+            <tr ng-if="!loading" ng-repeat="week in weeks">
+                <td ng-repeat="day in week" ng-class="::getCellType(day, $parent.$index)" width="14.28571428571429%">
+                    <div ng-click="gotoDay(day)" ng-class="::getDayType(day)" id="calendar_day_{{::day.dayOfMonth}}">
+                        {{::day.dayOfMonth}}
+                    </div>
+                </td>
+            </tr>
+
+            <tr ng-if="loading || !weeks">
+                <td colspan="7" style="text-align: center;">
+                    {{'status_label_loading' | i18n}}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <button type="button" class="calendar-first" id="calendar_First" ng-click="first()" ng-disabled="firstDisable"><span>{{'activity_first' | i18n}}</span></button>
+        <button type="button" class="calendar-today" id="calendar_Today" ng-click="today()" ng-disabled="todayDisable"><span>{{'activity_today' | i18n}}</span></button>
+        <div class="recycle-link" id="calendar_Recycle" ng-disabled="recycleModeEnable" ng-click="goToRecycle()" recycle-mode-trigger>{{'recycle_bin_label_title' | i18n}}</div>
+
+    </div>
+
+    <div ui-view class="calendar-vlist"></div>
+</section>
+
+
+<div ng-include="'partials/footerView.html'" ng-controller="FooterCtrl" ng-init="init('calendar')"></div>
+

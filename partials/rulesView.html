@@ -1,0 +1,41 @@
+<div ng-init="init()">
+    <div ng-show="loading || isLoading()" class="billing-loading" ng-include="'partials/loadingView.html'"></div>
+
+    <div class="settings-header">
+        <span class="settings-done" ui-sref="settings.addRule({baseStationId: deviceId})">{{'activity_add' | i18n}}</span>
+        {{'base_station_settings_label_rules' | i18n}}
+    </div>
+    <div class="settings-container-list">
+        <div class="settings-panel">
+            <div class="arlo-b" style="padding-bottom: 20px;">{{'info_base_station_rules' | i18n}}</div>
+            <div class="settings-list" align="center" ng-show="!getRules().length && !isLoading()">
+                <div class="settings-list-item">
+                    <span class="list-item-cell">No rules</span>
+                </div>
+            </div>
+            <div class="settings-list" ng-show="getRules().length">
+                <div class="settings-items-wrapper">
+                    <div ng-repeat="rule in getRules()" class="settings-list-item">
+                        <span class="list-item-cell arlo-pre">{{rule.name}}</span>
+                        <span class="list-item-cell settings-edit" ui-sref="settings.editRule({baseStationId:deviceId, ruleId: rule.id})"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-controller="ModalNotifyCtrl" class="modal-overlay" ng-show="isPopupEnable">
+        <div ng-repeat="arrow in getArrows()" ng-style="{'top': arrow.posY}" class="overlay-arrow-icon left-align index{{$index+1}}"></div>
+        <div class="alert-window alert-window-rules">
+            <div class="text-content">
+                <p ng-bind-html="'educate_label_base_station_modes_rules' | i18n"></p>
+                <div class="control-bar">
+                    <input type="checkbox" id="dontshowmsgagain" ng-model="popupDisable"/>
+                    <label for="dontshowmsgagain">{{'educate_label_dont_show_again' | i18n}}</label>
+                </div>
+            </div>
+            <div class="button-row">
+                <div class="ok_button" ng-click="rulesNotifyHide()">{{'activity_ok' | i18n}}</div>
+            </div>
+        </div>
+    </div>
+</div>

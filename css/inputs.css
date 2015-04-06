@@ -1,0 +1,153 @@
+/*
+* inputs.css
+*
+* Copyright (c) 2014, NETGEAR, Inc.
+* 350 East Plumeria, San Jose California, 95134, U.S.A.
+* All rights reserved.
+*
+*
+* This software is the confidential and proprietary information of
+* NETGEAR, Inc. ("Confidential Information"). You shall not
+* disclose such Confidential Information and shall use it only in
+* accordance with the terms of the license agreement you entered into
+* with NETGEAR.
+*
+* sergey.yakubovsky@netgear.com
+*
+*/
+
+input
+{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    height: 44px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], select
+{
+    padding: 1px 34px 1px 5px;
+    border-radius: 4px;
+    box-shadow: inset 0 6px 5px -5px #ccc;
+    border: #cfcdc8 solid 1px;
+    line-height: normal;
+}
+
+select
+{
+    padding: 1px 31px 1px 5px;
+    display: inline-block;
+    font-size: 15px;
+    height: 44px;
+    line-height: 44px;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: #cfcdc8 solid 1px;
+}
+.MSIE select {
+    padding-right: 1px
+}
+.MSIE select::-ms-expand {
+    margin-left: 30px;
+}
+
+::-ms-reveal {display: none; width : 0; height: 0;}
+::-ms-clear {display: none; width : 0; height: 0;}
+
+input[type="text"].ng-valid.ng-dirty,
+input[type="password"].ng-valid.ng-dirty,
+input[type="email"].ng-valid.ng-dirty,
+select.ng-valid.ng-dirty
+{
+    background-image: url('../img2/input_ok.png');
+    background-repeat: no-repeat;
+    background-position: right 6px center;
+}
+
+select.ng-valid.ng-dirty
+{
+    background-position: right 21px center;
+}
+.MSIE input[type='password']:not(.empty) {
+    font-family: Arial, Tahoma, sans-serif !important;
+}
+
+
+.MSIE .ng-valid.ng-dirty {
+    background-position: right 25px center;
+}
+
+input[type="text"].ng-invalid.ng-dirty,
+input[type="password"].ng-invalid.ng-dirty,
+input[type="email"].ng-invalid.ng-dirty,
+select.ng-invalid.ng-dirty
+{
+    border-color: #9b1889;
+    background-image: url('../img2/input_error.png');
+    background-repeat: no-repeat;
+    background-position: right 6px center;
+}
+
+.login-body form[name='loginForm'] input[type="password"],
+.login-body form[name='loginForm'] input[type="email"]
+{
+    border-color: #e5e5e5 !important;
+    background-image: none !important;
+}
+
+select.ng-invalid.ng-dirty
+{
+    background-position: right 21px center;
+}
+.MSIE select.ng-invalid.ng-dirty
+{
+    background-position: right 25px center;
+}
+
+input[type="checkbox"], input[type="radio"]
+{
+    background-color: transparent;
+    vertical-align: middle;
+    height: inherit;
+    margin: 0 !important;
+    width: auto;
+}
+
+input:focus, select:focus, button:focus
+{
+    outline: none;
+}
+
+button
+{
+    padding: 12px 30px;
+    white-space: nowrap;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #06a94e;
+    border: 0;/*solid 2px #385D8A;*/
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 23px;
+}
+
+button:focus, button:hover, button.pressed
+{
+    background-color: #0f6d35;
+}
+
+input[type="text"][disabled="disabled"],
+input[type="email"][disabled="disabled"]
+{
+    color: #888 !important;
+    box-shadow: none;
+}
+
+button[disabled=disabled]
+{
+    background-color: #c2c2c2 !important;
+    cursor: default;
+}

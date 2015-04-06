@@ -1,0 +1,170 @@
+<div ng-init="init()">
+
+    <div ng-show="loading || isLoading()" class="billing-loading" ng-include="'partials/loadingView.html'"></div>
+    <div class="settings-header">
+        <span class="settings-back" ng-click="goBack()">{{'activity_cancel' | i18n}}</span>
+        <span class="settings-done" ng-click="(!isRuleValid() && !isEditAlerts) || done()" ng-disabled="(!isRuleValid() && !isEditAlerts) || !isChanged()">{{'activity_save' | i18n}}</span>
+        {{'rule_label_title' | i18n}}
+    </div>
+    <div class="settings-container-list">
+    <div class="settings-panel" ng-hide="!getRule() || isEditAlerts">
+        <div class="arlo-b" style="padding-bottom: 10px;">{{'info_base_station_rules' | i18n}}</div>
+        <div class="settings-list settings-rule-list">
+            <div class="settings-list-item-edit">
+                <label>{{'rule_label_rule_name' | i18n}}: </label>
+
+                <div class="settings-list-item-wrap">
+                    <form name="ruleNameForm">
+                        <input type="text" ng-model="getRule().name" name="name" required
+                               ng-minlength="1"
+                               ng-maxlength="32">
+                        <div class="error" ng-show="ruleNameForm.$dirty && ruleNameForm.$invalid">
+                            <div ng-show="ruleNameForm.name.$error.required">
+                                Name is required.
+                            </div>
+                            <div ng-show="ruleNameForm.name.$error.pattern">
+                                Please provide a valid Name.
+                            </div>
+                            <div ng-show="ruleNameForm.name.$error.minlength">
+                                Name is required to be at least 1 characters.
+                            </div>
+                            <div ng-show="ruleNameForm.name.$error.maxlength">
+                                Name cannot be longer than 32 characters.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <div class="arlo-fs17">{{'rule_label_trigger_title' | i18n}}</div>
+    <div class="settings-list settings-rule-list">
+        <div style="white-space: nowrap;height: 54px; line-height: 52px;border-bottom: solid 1px #e5e5e5;display: table;width: 100%;">
+                <span style="padding-right: 5px;display: table-cell;">{{'rule_trigger_label_motion_trigger' | i18n}}</span>
+            <div style="display: table-cell;width: 100%;">
+                <select style="width: 100%;" ng-model="getRule().triggers[0].deviceId"  ng-change="triggerChanged(getRule().triggers[0].deviceId)"
+                    ng-options="camera.deviceId as getCName(camera.deviceName) for camera in getCameras()" required>
+                        <option value="">{{'rule_label_select_motion_device' | i18n}}</option>
+                </select>
+            </div>
+        </div>
+
+            <div>
+                <table style="width: 100%;">
+                    <tr>
+                        <td colspan="3" style="text-align: center;">{{detectorSensitivity(getRule().triggers[0].sensitivity)}}%</td>
+                    </tr>
+                    <tr>
+                    <td>{{'rule_label_sensitivity_fewer_videos' | i18n}}</td>
+                    <td style="width: 100%; padding: 0 20px;"><input id="detectionSensitivity" type="range" style="width: 100%; height: auto;" min="1" max="100" step="1"
+                               value="{{getRule().triggers[0].sensitivity}}" ng-model="getRule().triggers[0].sensitivity"></td>
+                    <td>{{'rule_label_sensitivity_more_videos' | i18n}}</td>
+                </tr></table>
+            </div>
+    </div>
+
+        <div class="arlo-fs17">{{'rule_label_action_title' | i18n}}</div>
+        <div class="settings-list settings-rule-list">
+
+                <!---<select ng-model="getRule().actions[0].type"
+                    ng-options="action.type as action.description for action in actions">
+                </select> -->
+
+            <div style="white-space: nowrap; height: 54px; line-height: 52px;border-bottom: solid 1px #e5e5e5;display: table;width: 100%;">
+                <span style="padding-right: 5px;display: table-cell;">{{'rule_label_action_record_video_on' | i18n}} </span>
+                <div style="display: table-cell;width: 100%;">
+                <select style="width: 100%;" ng-model="getRule().actions[0].deviceId" ng-change="deviceChanged(getRule().actions[0].deviceId)"
+                        ng-options="camera.deviceId as getCName(camera.deviceName) for camera in getCameras()" required>
+                    <option value="">{{'rule_label_select_recording_device' | i18n}}</option>
+                </select>
+                </div>
+            </div>
+            <!--<div ng-show="getRule().actions[0].type=='recordVideo'">-->
+            <div>
+                <table style="width: 100%;">
+                    <tr>
+                        <td colspan="3" style="text-align: center;">{{detectorSensitivity(getRule().actions[0].stopCondition.timeout)}} sec</td>
+                    </tr>
+                    <tr>
+                        <td>{{'rule_label_recording_time_shorter_videos' | i18n}}</td>
+                        <td style="width: 100%; padding: 0 20px;"><input id="stopSensitivity" type="range" style="width: 100%; height: auto;" min="10" max="120" step="5"
+                                                                         ng-model="getRule().actions[0].stopCondition.timeout"></td>
+                        <td>{{'rule_label_recording_time_longer_videos' | i18n}}</td>
+                    </tr>
+                </table>
+                <!--<label for="stopSensitivity">Sensitivity</label>
+                <input id="stopSensitivity" type="range" style="width:55%;"
+                       min="1" max="100" step="1"
+                       value="{{getRule().actions[0].stopCondition.sensitivity}}" ng-model="getRule().actions[0].stopCondition.sensitivity">
+                <output for="sensitivity">{{detectorSensitivity(getRule().actions[0].stopCondition.sensitivity)}}%</output>-->
+            </div>
+            <div style="position: relative">
+            <progressbar ng-if="takingSnapshot" style="position: absolute; right: 10px; top: 10px;" class="progress-striped active" max="100" value="100">Taking snapshot ...</progressbar>
+                <!--<canvas zoom-display id="lastImage" image-url="{{getDetector()}}"
+                        tl-x="getRule().actions[0].stopCondition.motionDetectionZone.topleftx"
+                        tl-y="getRule().actions[0].stopCondition.motionDetectionZone.toplefty"
+                        br-x="getRule().actions[0].stopCondition.motionDetectionZone.bottomrightx"
+                        br-y="getRule().actions[0].stopCondition.motionDetectionZone.bottomrighty"
+                        widget-x="400" widget-rule="true">
+                </canvas>-->
+                </div>
+                <!--</div>-->
+
+        </div>
+        <div class="arlo-fs17">{{'rule_label_email_action_title' | i18n}}</div>
+        <div class="settings-list settings-rule-list">
+            <div class="settings-items-wrapper">
+                <div class="settings-list-item">
+                    <div class="list-item-cell">{{'rule_label_send_email_alert' | i18n}}</div>
+                </div>
+                <div class="settings-list-item arlo-cp">
+                    <div class="list-item-cell settings-mode-icon on" ng-click="editAlerts()">
+                    {{'rule_label_send_email_list' | i18n}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="button-delete settings-delete" ng-click="deleteRule()">{{'activity_delete_rule' | i18n}}
+        </button>
+    </div>
+
+    <form name="alertsForm" ng-show="getRule() && isEditAlerts">
+
+        <div class="settings-panel">
+            <div class="settings-list-title"><span class="settings-info-s"></span> {{'rule_label_send_email_alert' | i18n}}</div>
+            <div class="settings-list">
+                <div class="settings-items-wrapper">
+                <div ng-click="select(email)" class="settings-list-item arlo-cp editRule-setting-item" ng-class="{'settings-alerts-selected': isSelected(email)}"
+                     ng-repeat="email in allAlertEmails">
+                    <!-- <span class="settings-remove" ng-click="deleteAlert($index); $event.stopPropagation();"> </span> -->
+                    <div class="list-item-cell">Alert Email {{$index+1}}: {{email == "__OWNER_EMAIL__"? getOwnerEmail(): email}}</div>
+                </div>
+
+                <div class="add-new-alert-input">
+                    <div style="display: table-cell; white-space: nowrap; padding-right: 5px;">
+                        <span>Alert Email {{allAlertEmails.length + 1}}:</span>
+                    </div>
+                    <div style="display: table-cell; width: 100%;padding: 10px 0;">
+                        <input style="width: 100%;" type="email" name="newEmail" ng-model="newEmail"
+                               data-email-arlo
+                               required
+                                />
+
+                        <div class="error"
+                             ng-show="alertsForm.newEmail.$dirty && alertsForm.newEmail.$invalid && (alertsForm.newEmail.$error.email || alertsForm.newEmail.$error.emailArlo)">
+                            <!--Alert email address must be a valid email.-->
+                            Incomplete email.
+                        </div>
+
+                    </div>
+                    <div style="display: table-cell; white-space: nowrap; padding-left: 5px;">
+                        <span ng-click="alertsForm.$invalid || addAlert()" class="settings-add"
+                              ng-disabled="alertsForm.$invalid">+</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+</div>

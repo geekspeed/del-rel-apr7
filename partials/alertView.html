@@ -1,0 +1,10 @@
+<div ng-controller="AlertErrorCtrl" ng-hide="hidden2" ng-click="hide()" class="arlo-fs17 arlo-cp">
+    <div class="alert-body" ng-class="{'alert-settings': getType() == 'settings',
+        'alert-setup': getType() == 'setup',
+        'alert-cameras': getType() == 'cameras',
+        'alert-settings-account': getType() == 'settingsAccount',
+        'alert-body-visible': animation}">
+    <span class="alert-close"></span>
+        <span ng-bind-html="alertMessage"></span>
+    </div>
+</div>

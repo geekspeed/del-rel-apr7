@@ -1,0 +1,239 @@
+﻿﻿﻿﻿<div ng-init="init()">
+
+    <header class="header">
+        <span class="header-logout arlo-cp" ng-controller="FooterCtrl" id="cameras_Logout" ng-click="gotoLogout()">{{'personal_info_logout' | i18n}}</span>
+    </header>
+    <section class="wrapper" ng-class="{'wrapper-fullscreen': maximizeId, 'scrollable': isScrollable}" id="cameraViews">
+
+            <div class="camera" ng-class="{'camera-fullscreen': maximizeId == camera.deviceId, 'camera-hidden': maximizeId && maximizeId != camera.deviceId}"
+                 ng-repeat="camera in getCameras() track by camera.deviceId">
+                <div class="cameras-shadow">
+
+                    <div ng-if="isCameraConnecting(camera) || camera.properties.activityState == 'upgradeInProgress'" class="cameras-header">
+                        <div class="cameras-info">
+                            <div class="cameras-name" id="cameras_deviceName_{{camera.deviceId}}">{{camera.deviceName}}</div>
+                            <div class="cameras-time" id="cameras_deviceTime_{{camera.deviceId}}">{{getLastTime(camera)}}</div>
+                        </div>
+                    </div>
+
+                    <div ng-if="!isCameraConnecting(camera) && !isCameraOnline(camera)" class="cameras-header">
+                        <div class="cameras-info">
+                            <div class="cameras-name">{{camera.deviceName}}</div>
+                            <div class="cameras-time">{{getLastTime(camera)}}</div>
+                        </div>
+                        <div class="cameras-states"></div>
+                    </div>
+
+                    <div ng-if="isCameraOnline(camera) && camera.properties.activityState != 'upgradeInProgress'" class="cameras-header">
+                        <div class="cameras-info">
+                            <div class="cameras-name">{{camera.deviceName}}</div>
+                            <div class="cameras-time">{{getLastTime(camera)}}</div>
+                        </div>
+                        <div style="position: absolute; top:0; right: 15px; bottom: 0; width: 100%;">
+                        <div class="cameras-state cameras-battery-{{camera | batteryLevel}}"></div>
+                        <div class="cameras-state cameras-signal-{{camera | signalLevel}}"></div>
+                        <div class="cameras-state cameras-motion-{{camera | motionLevel}}" ></div>
+                            <div class="cameras-state cameras-record-blink" ng-if="isRecording(camera)"></div>
+                        </div>
+                    </div>
+
+                    <div id="cameras_playbox_{{camera.deviceId}}" class="cameras-player" ng-class="{'cameras-player-played': uiStates[camera.deviceId].play}">
+                        <div record-timer class="cameras-record-time" ng-model="uiStates[camera.deviceId].record" ng-show="uiStates[camera.deviceId].record"></div>
+                        <div ng-if="uiStates[camera.deviceId].play && uiStates[camera.deviceId].brightnessSaved" style="position: absolute; top:0; width: 100%; height: 30px; line-height: 30px; z-index: 6;">
+                            <div style="position: absolute; width: 100%; height: 100%; background-color: #000; opacity: 0.5;"></div>
+                            <div style="position: absolute; width: 100%; height: 100%; color: #fff; text-align: center;" class="arlo-fs17">{{'status_brightness_config_success' | i18n}}</div>
+                        </div>
+                        <img camera-thumbnail ng-src="{{camera.presignedLastImageUrl}}" style="z-index: 1;"/>
+                        <camera id='{{camera.deviceId}}'>
+                        </camera>
+                        <div ng-if="uiStates[camera.deviceId].play && uiStates[camera.deviceId].zoom" camera-zoom="{{camera.deviceId}}" style="position: absolute; width: 100%; top: 0; bottom: 0; z-index: 7;" class="arlo-zoom"></div>
+                        <div ng-if="getCameraState(camera)=='connecting'" class="camera-offline">
+                            <div class="camera-offline-table">
+                            <div>
+                                {{'status_label_getting_status' | i18n}}
+                            </div>
+                            </div>
+                        </div>
+                        <div ng-if="getCameraState(camera)=='offline'" class="camera-offline arlo-red">
+                            <div class="camera-offline-table">
+                            <div>
+                                {{getOfflineMessage(camera)}}
+                            </div>
+                            </div>
+                        </div>
+                        <div ng-show="getCameraState(camera)=='idle'" class="camera-play" ng-click="play(camera.deviceId)" id="cameras_play_idle_{{camera.deviceId}}">
+                        </div>
+                        <div ng-show="getCameraState(camera)=='idle_new'" class="camera-play-new" ng-click="play(camera.deviceId)" id="cameras_play_new_{{camera.deviceId}}">
+                            <div style="position: absolute; bottom: 0; height: 44px; line-height: 44px; width: 100%; color: #fff; background-color: #2FB26A; text-align: center;" class="arlo-fs17">{{'camera_state_new' | i18n}}</div>
+                        </div>
+                        <div ng-show="getCameraState(camera)=='critical'" class="arlo-red camera-critical">
+                            <div class="camera-offline-table">
+                            <div>
+                                {{'camera_state_battery_level_critical' | i18n}}
+                            </div>
+                            </div>
+                        </div>
+                        <div ng-show="getCameraState(camera)=='upgrade'" class="camera-offline  camera-critical">
+                            <div class="camera-offline-table">
+                            <div>
+                                {{'camera_status_upgrading' | i18n}}
+                            </div>
+                            </div>
+                        </div>
+
+                        <div ng-hide="uiStates[camera.deviceId].play" class="camera-files" id="cameras_filterByCameraShortcut_{{camera.deviceId}}" ng-click="filterByCamera(camera)">{{camera.mediaObjectCount || 0}}</div>
+                        <div ng-show="getCameraState(camera)=='loading'" class="camera-loading">
+                            <div class="camera-loading-pad"></div>
+                            <div class="camera-loading-text">{{'status_label_please_wait' | i18n}}</div>
+                        </div>
+                        <div ng-if="getCameraState(camera) == 'start_error'" class="camera-offline arlo-cp" ng-click="clearStartError(camera.deviceId)">
+                            <span class="alert-close"></span>
+                            <div class="camera-offline-table">
+                            <div>
+                            <span class="arlo-red" ng-bind-html="startErrors[camera.deviceId]"></span>
+                            </div>
+                            </div>
+                        </div>
+                        <div ng-if="uiStates[camera.deviceId].showBright" class="cameras-brightness" style="z-index: 12;">
+                            <div class="cameras-brightness-cancel arlo-cp" ng-click="uiStates[camera.deviceId].showBright = !uiStates[camera.deviceId].showBright"></div>
+                            <div style="display: table; margin: 0 auto;">
+                                <div style="display: table-cell; width: 40px; height: 44px;" class="cameras-bright-0"></div>
+                                <div style="display: table-cell; width: 70%; padding: 4px 20px; vertical-align: top;">
+                                    <div ng-click="sliderClick($event, camera.deviceId)" class="cameras-brightness-line arlo-cp">
+                                        <div class="cameras-brightness-slider" ng-style="{width: 25* (uiStates[camera.deviceId].brightness + 2) + '%'}">
+                                        </div>
+                                    </div>
+                                    <div slider-drag="{{camera.deviceId}}" class="recording-slider-point" style="top: 0;"
+                                         ng-style="{left: 25* (uiStates[camera.deviceId].brightness + 2) + '%'}"></div>
+                                </div>
+                                <div style="display: table-cell; width: 40px; height: 44px;" class="cameras-bright-2"></div>
+                            </div>
+                            <div class="cameras-brightness-apply arlo-cp" ng-hide="uiStates[camera.deviceId].brightness == camera.properties.brightness" ng-click="setCameraBright(camera)"></div>
+                            <div ng-show="uiStates[camera.deviceId].brightnessUpdating" style="position: absolute; width: 100%; height: 100%; z-index: 10; line-height: 44px; text-align: center; color: #06a94e;
+                            top: 0px;left: 0;background-color: #fff;" class="arlo-fs17">Updating...</div>
+                        </div>
+
+                    </div>
+                    <div ng-if="!uiStates[camera.deviceId].play" class="cameras-footer">
+                    </div>
+                    <div ng-if="uiStates[camera.deviceId].play" class="cameras-footer">
+                        <div style="display: table; margin: 0 auto; position: relative;">
+                            <div style="display: table;">
+                                <div class="cameras-pause" id="cameras_cameraPause_{{camera.deviceId}}" ng-disabled="uiStates[camera.deviceId].recordRequest || uiStates[camera.deviceId].snapshotRequest" ng-click="stopPlay(camera.deviceId)"></div>
+                                <div ng-hide="isCameraRecording(camera)" ng-disabled="uiStates[camera.deviceId].recordRequest || !canRecord(camera)" ng-click="!canRecord(camera) || uiStates[camera.deviceId].recordRequest || startRecord(camera.deviceId)" class="cameras-record" id="cameras_cameraRecord_{{camera.deviceId}}">
+                                    <div class="cameras-record-circle">
+                                        <div class="cameras-record-point"></div>
+                                    </div>
+                                </div>
+                                <div ng-show="isCameraRecording(camera)" ng-disabled="uiStates[camera.deviceId].recordRequest || !canRecord(camera)" ng-click="!canRecord(camera) || uiStates[camera.deviceId].recordRequest || stopRecord(camera.deviceId)" class="cameras-record-stop" id="cameras_cameraRecordStop_{{camera.deviceId}}">
+                                    <div class="cameras-record-circle">
+                                        <div class="cameras-record-square"></div>
+                                    </div>
+                                </div>
+                                <!--
+                                    commented out as this is phase 2 feature
+                                <div class="cameras-volume" ng-click="alert('This functionality not yet available');"></div>
+                                -->
+                                <div class="cameras-snapshot" id="cameras_cameraSnapshot_{{camera.deviceId}}" ng-disabled="uiStates[camera.deviceId].snapshotRequest || !canTakeSnapshot(camera)" ng-click="uiStates[camera.deviceId].snapshotRequest || !canTakeSnapshot(camera) || takeSnapshot(camera.deviceId)"></div>
+                                <div class="cameras-bright cameras-bright-{{camera | brightLevel}}" id="cameras_cameraBright_{{camera.deviceId}}" ng-click="showBrightness(camera)"></div>
+                            </div>
+                        </div>
+                        <div class="arlo-cp cameras-zoom" ng-class="{'active': uiStates[camera.deviceId].zoom}" ng-click="uiStates[camera.deviceId].zoom=!uiStates[camera.deviceId].zoom" title="Pan/Zoom mode"></div>
+                        <!--<div class="cameras-expand" ng-click="toggleFullscreen(camera)">
+                            <div></div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div ng-if="getSyncedCameras().length && servicePlan && servicePlan.planUpgradeable" ng-repeat="camera in getSyncedCameras() track by camera.deviceId" class="camera" ng-class="{'camera-hidden': maximizeId}">
+                <div class="cameras-shadow">
+                    <div class="cameras-header">
+                        <div class="cameras-info">
+                            <div class="cameras-name">New Camera</div>
+                            <div class="cameras-time">--/--/-- @ --:--pm</div>
+                        </div>
+                        <div class="cameras-states"></div>
+                    </div>
+
+                    <div class="cameras-player cameras-widget">
+                        <p class="cameras-p-synced">We see you've synced a new camera.</p>
+                        <p class="cameras-p-plan">Your service plan supports <b>[ {{servicePlanCameraCount()}} ] cameras</b>.</p>
+                        <div ui-sref="settings.plans" class="cameras-upgrade-plan">Upgrade Your Service Level &gt;</div>
+                        <p class="cameras-p-plan">and start viewing your new camera right away.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div ng-if="getSyncedCameras().length && servicePlan && !servicePlan.planUpgradeable" class="camera" ng-class="{'camera-hidden': maximizeId}">
+                <div class="cameras-shadow">
+                    <div class="cameras-header">
+                        <div class="cameras-info">
+                            <div class="cameras-name">New Camera</div>
+                            <div class="cameras-time">--/--/-- @ --:--pm</div>
+                        </div>
+                        <div class="cameras-states"></div>
+                    </div>
+
+                    <div class="cameras-player cameras-widget">
+                        <p class="cameras-p-synced">We see you've synced a new camera.</p>
+                        <p class="cameras-p-plan">Your service plan supports <b>[ {{servicePlanCameraCount()}} ] cameras</b> per account.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div ng-if="!isNoCameras() && numOwnCameras() < servicePlanCameraCount() && hasServicePlan()" class="camera" ng-class="{'camera-hidden': maximizeId}">
+                <div class="cameras-shadow">
+                    <div class="cameras-header">
+                        <div class="cameras-name arlo-fs17" style="padding-top: 11px; padding-left: 15px;">+ {{"title_see_another_camera_here" | i18n}}</div>
+                    </div>
+
+                    <div class="cameras-player cameras-widget">
+                        <div style="position: absolute; top: 15px; left: 15px; right: 15px;bottom: 15px;margin:0; text-align: center;" class="flex-display flex-direction">
+                        <p class="cameras-p-plan flex-grow-1">Your service plan supports <b>[ {{servicePlanCameraCount() - numOwnCameras() }} ] more cameras</b> <i>at no extra cost</i>.</p>
+                        <div class="cameras-model flex-grow-100">
+                        </div>
+                        <div class="flex-grow-1">
+                        <button style="margin-top: 10px; margin-bottom: 10px;" onclick="window.open('http://arlo.com/addon?utm_source=app_desktop'), '_blank'">Purchase Cameras</button>
+                        <p class="cameras-p-plan">to take advantage of all live streams available to you.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div ng-if="isNoCameras()" class="camera" ng-class="{'camera-hidden': maximizeId}">
+                <div class="cameras-shadow">
+                    <div class="cameras-header">
+                            <div class="cameras-name arlo-fs17" style="padding-top: 11px;padding-left: 15px;">{{'marketing_how_to_sync_camera_header' | i18n}}</div>
+                    </div>
+                    <div class="cameras-player cameras-widget">
+                    <ul style="position: absolute; top: 0; left:0; right: 0; bottom: 0; margin: 0; padding: 8px 10px 8px 30px; overflow-y: auto;">
+                        <li class="cameras-sync-step" ng-repeat="s in syncSteps">{{s}}</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+            <aside id="offer-views" ng-class="{'scrollable': isScrollable(), 'shown': isOfferShown}">
+                <div class="offer-wrapper">
+                    <div class="sticker-wrapper">
+                        <div class="sticker" ng-click="showOfferView()"><ul><li></li><li></li><li></li></ul></div>
+                    </div>
+                    <div class="content-wrapper">
+                        <section class="content">
+                            <iframe class="offer-main" src="./marketing/offer.html" ></iframe>
+                            <footer class="offer-footer">
+                                <div class="offer-footer-item close-button" ng-click="showOfferView()">{{'activity_close' | i18n}}</div>
+                            </footer>
+                        </section>
+                    </div>
+                </div>
+            </aside>
+
+    </section>
+
+    <!--end section. wrapper-->
+
+    <div ng-include="'partials/footerView.html'" ng-controller="FooterCtrl" ng-init="init('cameras')"></div>
+</div>

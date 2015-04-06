@@ -1,0 +1,646 @@
+ol, ul {
+    list-style: none;
+}
+
+h4 {
+    margin: 0 !important;
+}
+
+.cf:after, .cf:before {
+    content: "\0020";
+    display: table;
+    position: static;
+}
+
+.cf:after {
+    clear: both;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 8000;
+    -webkit-transition: background-color 200ms ease;
+    transition: background-color 200ms ease
+}
+
+.on-load-anim #header {
+    opacity: 0
+}
+
+.on-load-anim.wf-active #header.loaded {
+    -webkit-animation: fadeInFromTop 600ms cubic-bezier(1, 0, .5, .1) 500ms forwards;
+    animation: fadeInFromTop 600ms cubic-bezier(1, 0, .5, .1) 500ms forwards
+}
+
+#header.fixed {
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5
+}
+
+#header .wrapper {
+    max-width: 1150px;
+    padding: 0 15px
+}
+
+#header .arlo-logo {
+    position: relative;
+    width: 111px
+}
+
+#header.fixed .arlo-logo {
+    width: 140px
+}
+
+#header .arlo-logo a {
+    display: block;
+    margin-top: 12px;
+    padding: 5px 0;
+    position: relative;
+    width: 100%
+}
+
+#header.fixed .arlo-logo a {
+    margin-top: 0;
+    padding: 20px 0
+}
+
+#header .arlo-logo .svg-fallback img, #header .arlo-logo svg {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+#header .arlo-logo .svg-fallback img.fixed, #header.fixed .arlo-logo .svg-fallback img, .no-svg #header .arlo-logo > a > .icon-arlo, .no-svg #header .arlo-logo > a > .icon-logo {
+    display: none
+}
+
+#header.fixed .arlo-logo .svg-fallback img.fixed {
+    display: block
+}
+
+#header .icon-logo {
+    float: left;
+    height: 0;
+    padding-bottom: 27.62%;
+    position: relative;
+    width: 53.15%
+}
+
+#header .icon-logo svg {
+    fill: #fff
+}
+
+#header.fixed .icon-logo svg {
+    fill: #00a84f
+}
+
+#header .icon-arlo {
+    height: 0;
+    margin-top: -1px;
+    padding-bottom: 21.16%;
+    position: absolute;
+    right: 0;
+    width: 49.55%
+}
+
+#header .icon-arlo svg {
+    fill: #fff
+}
+
+#header.fixed .icon-arlo svg {
+    fill: #000
+}
+
+.ir {
+    font: 0/0 a;
+    text-shadow: none;
+}
+
+#header .toggleNav {
+    height: 16px;
+    margin-top: -8px;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    top: 50%;
+    width: 18px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+#header .toggleNav:after {
+    content: 'm';
+    color: #fff;
+    font-family: arloicons;
+    font-size: 16px;
+    line-height: 16px;
+    -webkit-transition: color 200ms ease, -webkit-transform 300ms ease;
+    transition: color 200ms ease, transform 300ms ease
+}
+
+.menu-open #header .toggleNav:after {
+    content: 'x';
+    -webkit-transform: skew(180deg);
+    -ms-transform: skew(180deg);
+    transform: skew(180deg)
+}
+
+#header.fixed .toggleNav:after {
+    color: #00a84f
+}
+
+body > #menu {
+    background-color: #06a94e;
+    border-left: 1px solid #0f6d35;
+    bottom: 0;
+    opacity: 1;
+    padding-bottom: 40px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 68.75%;
+    z-index: 8010;
+    /*-webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+    -webkit-transition: -webkit-transform 200ms ease, opacity 200ms ease;
+    transition: -ms-transform 200ms ease, opacity 200ms ease;
+    transition: transform 200ms ease, opacity 200ms ease*/
+}
+
+.menu-open > #menu {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+body > #menu > ul {
+    height: 100%;
+    overflow: auto;
+    padding: 29px
+}
+
+body > #menu h4 {
+    border-bottom: 1px solid #40b973;
+    position: relative;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body > #menu .cta.active {
+    border: 0
+}
+
+body > #menu .cta:after {
+    color: #0f6d35;
+    content: '+';
+    font-family: arloicons;
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-top: -8px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    width: 16px;
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: transform 300ms ease
+}
+
+body > #menu .cta.active:after {
+    content: '-';
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg)
+}
+
+body > #menu h4 a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+body > #menu .dropdown {
+    border-bottom: 1px solid #40b973;
+    padding-bottom: 10px
+}
+
+body > #menu .dropdown a {
+    color: #0f6d35;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.25;
+    padding: .43em 0
+}
+
+body > #menu .btn {
+    margin-top: 19px
+}
+
+body > #menu .sep {
+    margin: 0;
+    padding: 0;
+    position: static
+}
+
+body > #menu .sep:after {
+    border: 0
+}
+
+#header #menu {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    -webkit-transition: top 200ms ease;
+    transition: top 200ms ease
+}
+
+#header #menu > ul > li {
+    float: left;
+    margin-left: 30px;
+    padding-top: 16px;
+    position: relative;
+    -webkit-transition: padding 200ms ease-in-out;
+    transition: padding 200ms ease-in-out
+}
+
+#header #menu > ul > li:first-child {
+    margin: 0
+}
+
+#header #menu li.sep {
+    margin-left: 11px;
+    margin-top: 0;
+    padding-left: 12px;
+    position: relative;
+}
+
+#header #menu li.sep:after {
+    background-color: #4d4d4d;
+    content: '';
+    height: 24px;
+    left: 0;
+    margin-top: 5px;
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    z-index: 1
+}
+
+#header #menu .section {
+    padding-top: 0
+}
+
+#header #menu .section a {
+    color:#4d4d4d;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    /*font-size: 1.8rem;*/
+    line-height: 1;
+    font-weight: 600;
+    padding: 30px 0;
+    -webkit-transition: color 200ms ease-in-out, padding 200ms ease-in-out;
+    transition: color 200ms ease-in-out, padding 200ms ease-in-out
+}
+
+#header #menu .section:before {
+    color: #fff;
+    content: 's';
+    font-family: arloicons;
+    font-size: 10px;
+    /*font-size: 1rem;*/
+    left: 50%;
+    margin-left: -16px;
+    position: absolute;
+    text-align: center;
+    top: -11px;
+    width: 32px;
+    -webkit-transition: color 200ms ease, top 200ms ease, opacity 200ms ease;
+    transition: color 200ms ease, top 200ms ease, opacity 200ms ease
+}
+
+#header #menu .section.active:before, #header #menu .section:hover:before {
+    top: -1px
+}
+
+#header #menu .section.active:before {
+    opacity: .5
+}
+
+#header #menu .section.active:hover:before {
+    opacity: 1
+}
+
+#header.fixed #menu .section:before {
+    color: #06a94e
+}
+
+#header.fixed #menu .section h4 a {
+    color: #4d4d4d
+}
+
+#header #menu .dropdown {
+    left: 50%;
+    margin-left: -78px;
+    opacity: 0;
+    padding-top: 9px;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    width: 155px;
+    -webkit-transition: visibility 0s linear 200ms, opacity 200ms linear;
+    transition: visibility 0s linear 200ms, opacity 200ms linear
+}
+
+#header #menu .has-dd:hover .dropdown {
+    opacity: .9;
+    visibility: visible;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s
+}
+
+#header #menu .dropdown ul {
+    background-color: #036e32;
+    border-radius: 8px;
+    padding: 8px 8px 12px;
+    position: relative
+}
+
+#header #menu .dropdown ul:before {
+    border-color: transparent transparent #036e31;
+    content: '';
+    height: 0;
+    border-style: solid;
+    border-width: 0 11px 8px;
+    left: 50%;
+    margin-left: -11px;
+    position: absolute;
+    top: -7px;
+    width: 0
+}
+
+#header #menu .dropdown a {
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    /*font-size: 1.3rem;*/
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 5px 0;
+    text-align: center
+}
+
+#header #menu .dropdown a:hover {
+    text-shadow: 0 0 5px rgba(255, 255, 255, .5)
+}
+
+#header #menu .reg {
+    display: block;
+    font-size: 12px;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    padding: 17px 0px 15px !important;
+    text-transform: none !important;
+    color: #4d4d4d !important;
+    text-decoration: none;
+}
+
+#header #menu .reg:hover {
+    text-shadow: 0 0 5px rgba(255, 255, 255, .5)
+}
+
+#header #menu li.sep:after {
+    background-color: #4d4d4d;
+    content: '';
+    height: 24px;
+    left: 0;
+    margin-top: 5px;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: background-color 200ms ease-in-out,margin 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out,margin 200ms ease-in-out;
+    width: 1px;
+    z-index: 1;
+    margin-top: -3px;
+}
+
+#header #menu .account {
+    padding-top: 17px;
+}
+
+body #menu a {
+    text-decoration: none;
+}
+
+.close-nav {
+    cursor: pointer;
+    height: 16px;
+    position: fixed;
+    right: 10px;
+    text-align: center;
+    top: 10px;
+    width: 18px;
+    z-index: 8010;
+}
+
+.close-nav:after {
+    color: #fff;
+    content: 'x';
+    -webkit-transform: skew(180deg);
+    -ms-transform: skew(180deg);
+    transform: skew(180deg);
+    font-family: arloicons;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+body>#menu .sep .reg {
+    right: 29px;
+}
+body>#menu .reg {
+    bottom: 20px;
+    color: #0f6d35;
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    text-transform: uppercase;
+}
+body>#menu .last {
+    float: none;
+}
+
+.dropdown ul {
+    padding: 0;
+    margin: 0;
+}
+
+.account-alt {
+    margin-top: 19px;
+    border-top: solid 1px #40b973;
+}
+
+@media screen and (min-width: 749px) {
+    #header .toggleNav {
+        display: none;
+    }
+}
+@media screen and (max-width: 749px) {
+    #header #menu {
+        display: none;
+    }
+}
+/*
+@media screen and (min-width: 40.0625em) {
+    #header .arlo-logo {
+        max-width: 220px;
+        min-width: 140px;
+        width: 17.1875%
+    }
+
+    #header.fixed .arlo-logo {
+        width: 140px
+    }
+}
+
+@media screen and (min-width: 56.25em) {
+    #header .arlo-logo a {
+        margin-top: 25px
+    }
+
+    #header.fixed .arlo-logo a {
+        margin-top: 0;
+        padding: 20px 0
+    }
+
+    #header.fixed #menu > ul > li {
+        padding-top: 16px
+    }
+
+    #header.fixed #menu .section {
+        padding-top: 0
+    }
+
+    #header.fixed #menu h4 a {
+        padding: 30px 0
+    }
+
+    .desktop #header .toggleNav {
+        display: none
+    }
+}
+*/
+.first {
+    float: left;
+}
+.last {
+    float: right;
+}
+
+.btn {
+    border-radius: 23px;
+    display: inline-block;
+    font-size: 15px;
+    /*font-size: 1.5rem;*/
+    font-weight: 600;
+    line-height: 1;
+    padding: 13px 25px 15px;
+    position: relative;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out
+}
+
+.btn:after {
+    content: '→';
+    overflow: hidden;
+    position: absolute;
+    right: 16px;
+    width: 0;
+    -webkit-transition: width 200ms ease-in-out;
+    transition: width 200ms ease-in-out
+}
+
+.btn:hover {
+    padding-left: 17px;
+    padding-right: 33px
+}
+
+.btn:hover:after {
+    padding-left: 5px;
+    width: 16px
+}
+
+.btn.t1 {
+    background-color: #0f6d35;
+    color: #fff
+}
+
+.btn:hover .icn {
+    display: inline-block
+}
+
+.btn.t1:hover {
+    background-color: #fff;
+    color: #0f6d35
+}
+
+.btn.t2 {
+    background-color: #fff;
+    color: #06a94e
+}
+
+.btn.t2:hover {
+    background-color: #0f6d35;
+    color: #fff
+}
+
+.btn.t3 {
+    background-color: #06a94e;
+    color: #fff
+}
+
+.btn.t3:hover {
+    background-color: #fff;
+    color: #06a94e
+}
+
+#header.fixed .btn.t1, .btn.t4 {
+    background-color: #06a94e;
+    color: #fff
+}
+
+#header.fixed .btn.t1:hover, .btn.t4:hover {
+    background-color: #0f6d35
+}
+
+.btn.t5 {
+    background-color: #e5e5e5;
+    color: #8a8a8a
+}
+
+.btn.t5:hover {
+    background-color: #06a94e;
+    color: #fff
+}
+
+body > #menu .btn {
+    margin-top: 19px
+}
+
+@media screen and (min-width: 40.0625em) {
+    .btn {
+        font-size: 16px;
+        /*font-size: 1.6rem*/
+    }
+}

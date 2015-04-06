@@ -1,0 +1,20 @@
+﻿<div class="setup-steps">
+    <div style="padding: 10px 0;" class="arlo-fs17">
+        <span class="arlo-b" id="syncHardware_title">{{'sync_cameras_label_title' | i18n}}</span>
+    </div>
+    <div style="background-color: #e5e4e2;">
+        <div class="setup-progress" style="width: 90%;"></div>
+    </div>
+</div>
+<section class="sync-wrap">
+
+    <div class="arlo-fs17">Before proceeding, make sure your camera is synced with blue flashing light</div>
+
+    <img class="sync-image" src="img2/prev.png" style="max-width:100%;height:auto;" />
+
+    <button class="button-100" id="syncHardware_Continue" ng-hide="isFriendUser()" ng-click="continue()">{{'activity_continue' | i18n}}</button>
+
+</section>
+
+
+

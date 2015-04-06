@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Payment</title>
+    <script src="../js/formOfPayment.js"></script>
+    <script src="../lib/underscore.js"></script>
+</head>
+<body>
+<form class="payment-form" id="formOfPaymentForm" name="formOfPaymentForm" method="post">
+    <input id="client_no" type="hidden" name="client_no"/>
+    <input id="mode" type="hidden" name="mode"/>
+    <input id="inSessionID" name="inSessionID" type="hidden"/>
+    <input type="hidden" name="formOfPayment" id="formOfPayment" value="CreditCard"/>
+    <input type="text" id="cc_no" name="cc_no"/>
+    <input id="cc_exp_mm" name="cc_exp_mm"/>
+    <input type="text" id="cc_exp_yyyy" name="cc_exp_yyyy"/>
+    <input id="cvv" type="text" name="cvv"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,708 @@
+﻿/*
+* images.css
+*
+* Copyright (c) 2014, NETGEAR, Inc.
+* 350 East Plumeria, San Jose California, 95134, U.S.A.
+* All rights reserved.
+*
+*
+* This software is the confidential and proprietary information of
+* NETGEAR, Inc. ("Confidential Information"). You shall not
+* disclose such Confidential Information and shall use it only in
+* accordance with the terms of the license agreement you entered into
+* with NETGEAR.
+*
+* sergey.yakubovsky@netgear.com
+*
+*/
+
+.header
+{
+    height: 60px;
+    background: #ffffff url("../img2/logo_0@2x.png") no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+    /*box-shadow: 0px 0px 6px #333;*/
+    border-bottom: #c8c7cc 1px solid;
+}
+
+.login-logo
+{
+    height: 60px;
+    background: transparent url('../img2/logo_0@2x.png') no-repeat center 0;
+}
+
+.camera-play,
+.camera-play-new
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img2/play_button.png') no-repeat center center;
+    cursor: pointer;
+    z-index: 2;
+}
+.camera-play-new
+{
+    background-image: url('../img2/hand.png');
+    background-color: #fff;
+    background-size: contain;
+    background-position: center -25px;
+}
+
+.cameras-battery-0
+{
+    background: url('../img2/battery_0.png') no-repeat center;
+}
+
+.cameras-battery-1
+{
+    background: url('../img2/battery_1.png') no-repeat center;
+}
+
+.cameras-battery-2
+{
+    background: url('../img2/battery_2.png') no-repeat center;
+}
+
+.cameras-battery-3
+{
+    background: url('../img2/battery_3.png') no-repeat center;
+}
+
+.cameras-signal-0
+{
+    background: url('../img2/signal_strength_0.png') no-repeat center;
+}
+
+.cameras-signal-1
+{
+    background: url('../img2/signal_strength_1.png') no-repeat center;
+}
+
+.cameras-signal-2
+{
+    background: url('../img2/signal_strength_2.png') no-repeat center;
+}
+
+.cameras-signal-3
+{
+    background: url('../img2/signal_strength_3.png') no-repeat center;
+}
+
+.cameras-signal-4
+{
+    background: url('../img2/signal_strength_4.png') no-repeat center;
+}
+
+.cameras-motion-0
+{
+    background: url('../img2/motion_0.png') no-repeat center;
+}
+
+.cameras-motion-1
+{
+    background: url('../img2/motion_1.png') no-repeat center;
+}
+
+.cameras-motion-2
+{
+    background: url('../img2/motion_2.png') no-repeat center;
+}
+
+.cameras-pause
+{
+    background: url('../img2/icon_pause.png') no-repeat center;
+}
+
+.cameras-pause[disabled=disabled]
+{
+    opacity: 0.3;
+    background: url('../img2/icon_pause_0.png') no-repeat center;
+    cursor: default;
+}
+
+.cameras-volume
+{
+    background: url('../img2/mic_0.png') no-repeat center;
+}
+
+.cameras-snapshot
+{
+    background: url('../img2/snapshot_1.png') no-repeat center;
+}
+
+.cameras-snapshot[disabled=disabled]
+{
+    /*background: url('../img2/snapshot_0.png') no-repeat center;*/
+    opacity: 0.3;
+    cursor: default;
+}
+
+.cameras-bright-0
+{
+    background: url('../img2/brightness_2.png') no-repeat center;
+}
+
+.cameras-bright-1
+{
+    background: url('../img2/brightness_0.png') no-repeat center;
+}
+
+.cameras-bright-2
+{
+    background: url('../img2/brightness_1.png') no-repeat center;
+}
+
+.cameras-states
+{
+    background: url('../img2/camera_states.png') no-repeat center;
+}
+
+.modeIcon
+{
+    background: url("../img2/mode_1.png") no-repeat center 8px;
+}
+.footer-button:hover .modeIcon
+{
+    background: url("../img2/mode_2.png") no-repeat center 8px;
+}
+
+.footer-button-active .modeIcon
+{
+    background-image: url("../img2/mode_0.png");
+}
+
+.camerasIcon
+{
+    background: url("../img2/camera_1.png") no-repeat center 8px;
+}
+.footer-button:hover .camerasIcon
+{
+    background: url("../img2/camera_2.png") no-repeat center 8px;
+}
+
+.footer-button-active .camerasIcon
+{
+    background-image: url("../img2/camera_0.png");
+}
+
+.libraryIcon
+{
+    background: url("../img2/library-1.png") no-repeat center 8px;
+}
+.footer-button:hover .libraryIcon
+{
+    background: url("../img2/library-2.png") no-repeat center 8px;
+}
+
+.footer-button-active .libraryIcon
+{
+    background-image: url("../img2/library-0.png");
+}
+
+.settingsIcon
+{
+    background: url("../img2/settings_1.png") no-repeat center 8px;
+}
+.footer-button:hover .settingsIcon
+{
+    background: url("../img2/settings_2.png") no-repeat center 8px;
+}
+
+.footer-button-active .settingsIcon
+{
+    background-image: url("../img2/settings_0.png");
+}
+
+/* Calendar */
+.calendar-prev
+{
+    background: url("../img2/calendar_back_0.png") no-repeat center center;
+}
+.calendar-prev:hover
+{
+    background: url("../img2/calendar_back_2.png") no-repeat center center;
+}
+
+.calendar-prev-disable
+{
+    background: url("../img2/calendar_back_1.png") no-repeat center center !important;
+}
+
+.calendar-next
+{
+    background: url("../img2/calendar_next_0.png") no-repeat center center;
+}
+.calendar-next:hover
+{
+    background: url("../img2/calendar_next_2.png") no-repeat center center;
+}
+
+.calendar-next-disable
+{
+    background: url("../img2/calendar_next_1.png") no-repeat center center !important;
+}
+
+/* Recording */
+.recording-prev
+{
+    background: url("../img2/button_previous_1.png") no-repeat center center;
+}
+
+.recording-prev[disabled=disabled]
+{
+    background: url("../img2/button_previous_0.png") no-repeat center center;
+    cursor: default;
+}
+
+.recording-rewind
+{
+    background: url("../img2/button_rewind_1.png") no-repeat center center;
+}
+
+.recording-rewind[disabled=disabled]
+{
+    background: url("../img2/button_rewind_0.png") no-repeat center center;
+    cursor: default;
+}
+
+.recording-rewind-slow
+{
+    background: url("../img2/button_rewind_slow_1.png") no-repeat center center;
+}
+
+.recording-rewind-slow[disabled=disabled]
+{
+    background: url("../img2/button_rewind_slow_0.png") no-repeat center center;
+    cursor: default;
+}
+
+.recording-pause
+{
+    background: url("../img2/icon_pause.png") no-repeat center center;
+}
+
+.recording-play
+{
+    background: url("../img2/icon_play.png") no-repeat center center;
+}
+
+.recording-forward-slow
+{
+    background: url("../img2/button_forward_slow_1.png") no-repeat center center;
+}
+
+.recording-forward-slow[disabled=disabled]
+{
+    background: url("../img2/button_forward_slow_0.png") no-repeat center center;
+    cursor: default;
+}
+
+.recording-forward
+{
+    background: url("../img2/button_forward_1.png") no-repeat center center;
+}
+
+.recording-forward[disabled=disabled]
+{
+    background: url("../img2/button_forward_0.png") no-repeat center center;
+    cursor: default;
+}
+
+.recording-next
+{
+    background: url("../img2/button_next_1.png") no-repeat center center;
+}
+
+.recording-next[disabled=disabled]
+{
+    background: url("../img2/button_next_0.png") no-repeat center center;
+    cursor: default;
+}
+
+.recording-volume
+{
+    /*float: right;*/
+    position: absolute;
+    right: 0;
+    background: url("../img2/mic_2.png") no-repeat center center;
+}
+
+.recording-prev-slide
+{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../img2/recording_prev.png") no-repeat right center;
+}
+
+.recording-next-slide
+{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../img2/recording_next.png") no-repeat 0 center;
+}
+
+.recording-back
+{
+    float: left;
+    cursor: pointer;
+    padding-left: 20px;
+    text-transform: none;
+    font-weight: normal;
+    background: url("../img2/title-back.png") no-repeat 0 center;
+}
+
+.calendar-filter-back
+{
+    position: absolute;
+    left: 15px;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    color: #06a94e;
+    background-color: #fff;
+    z-index: 1010;
+    cursor: pointer;
+    padding-left: 20px;
+    text-transform: none;
+    font-weight: normal;
+    background: url("../img2/title_back_1.png") no-repeat 0 center;
+}
+
+.setup-back
+{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: #06a94e;
+    background-color: #fff;
+    z-index: 1010;
+    cursor: pointer;
+    padding-left: 20px;
+    background: url("../img2/title_back_1.png") no-repeat 0 center;
+}
+
+.fav-icon
+{
+    color: #fff;
+    background: url("../img2/favorite_1.png") no-repeat center 6px;
+}
+
+[disabled=disabled] .fav-icon {
+    color: #fff !important;
+    background: url("../img2/favorite_1.png") no-repeat center 6px !important;
+}
+
+.footer-button:hover .fav-icon {
+    color: #06a94e;
+    background: url("../img2/favorite_3.png") no-repeat center 6px;
+}
+
+.footer-button:hover .fav-icon-a
+{
+    color: #06a94e;
+}
+
+.fav-icon-a,
+.footer-button[disabled=disabled]:hover .fav-icon-a
+{
+    color: #fff;
+    background: url("../img2/favorite_2.png") no-repeat center 6px;
+}
+
+.footer-button[disabled=disabled]
+{
+    cursor: default;
+    opacity: .3;
+}
+
+.share-icon
+{
+    color: #fff;
+    background: url("../img2/share_1.png") no-repeat center 6px;
+}
+[disabled=disabled] .share-icon {
+    color: #fff !important;
+    background: url("../img2/share_1.png") no-repeat center 6px !important;
+}
+.footer-button:hover .share-icon {
+    color: #06a94e;
+    background: url("../img2/share_2.png") no-repeat center 6px;
+}
+
+.download-icon
+{
+    color: #fff;
+    background: url("../img2/download_1.png") no-repeat center 6px;
+}
+[disabled=disabled] .download-icon {
+    color: #fff !important;
+    background: url("../img2/download_1.png") no-repeat center 6px !important;
+}
+
+.footer-button:hover .download-icon {
+    color: #06a94e;
+    background: url("../img2/download_2.png") no-repeat center 6px;
+}
+
+.delete-icon
+{
+    color: #fff;
+    background: url("../img2/delete_1.png") no-repeat center 6px;
+}
+[disabled=disabled] .delete-icon {
+    color: #fff !important;
+    background: url("../img2/delete_1.png") no-repeat center 6px !important;
+}
+.footer-button:hover .delete-icon {
+    color: #06a94e;
+    background: url("../img2/delete_2.png") no-repeat center 6px;
+}
+
+.record-favorite
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 32px;
+    height: 32px;
+    background: url("../img2/favorite_2.png") no-repeat center center;
+}
+
+
+.record-video
+{
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    width: 32px;
+    height: 32px;
+    background: url("../img2/play_button_0.png") no-repeat center center;
+}
+/*
+.calendar-filter-remove:before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    right:3px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: url("../img2/remove.png") no-repeat right center;
+}
+
+.calendar-filter-remove:hover:before
+{
+    background-image: url("../img2/remove_1.png");
+}*/
+
+.subscription-camera-on,
+.subscription-camera-off
+{
+    width: 28px;
+    height: 44px;
+    float: right;
+    background: url("../img2/camera_1.png") no-repeat center;
+}
+
+.subscription-camera-off
+{
+    background-image: url("../img2/camera_0.png");
+}
+
+.subscription-bs-on,
+.subscription-bs-off
+{
+    width: 44px;
+    height: 44px;
+    float: right;
+    margin-left: 5px;
+    background: url("../img2/base_station_1.png") no-repeat center;
+    background-size: contain;
+}
+
+.subscription-bs-off
+{
+    background-image: url("../img2/base_station_0.png");
+}
+
+.camera-order-item
+{
+    background: url("../img2/drag_header.png") no-repeat right center;
+}
+
+.market-android
+{
+    background: url("../img2/android_market.png") no-repeat 0 0;
+	background-size: 100% !important;
+    width: 135px;
+    height: 50px;
+}
+
+.market-apple
+{
+    background: url("../img2/apple_market.png") no-repeat 0 0;
+	background-size: 100% !important;
+    width: 135px;
+    height: 50px;
+}
+
+.market-fireos
+{
+    background: url("../img2/fireos_market.png") no-repeat 0 0;
+	background-size: contain !important;
+    width: 135px;
+    height: 50px;
+}
+
+.cameras-model
+{
+    background: url('../img2/vmc3030-front.png') no-repeat center;
+    background-size: contain;
+}
+
+.recycle-link {
+    background: url('../img2/settings_item_0.png') no-repeat 15px center;
+}
+.recycle-link:hover {
+    background-image: url('../img2/settings_item_2.png');
+}
+.recycle-link[disabled] {
+    background-image: url('../img2/settings_item_1.png');
+}
+
+.overlay-arrow-icon {
+    background: url("../img2/overlay_decor_arrows.png") no-repeat;
+}
+
+.settings-mode-icon {background: #fff url('../img2/settings_item_0.png') no-repeat right center;}
+.settings-mode-icon.off {background: none}
+
+@keyframes loading
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    100%
+    {
+        background-position: 0 -120px;
+    }
+}
+
+@-webkit-keyframes loading
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    100%
+    {
+        background-position: 0 -120px;
+    }
+}
+
+.loading-logo
+{
+    width: 104px;
+    height: 40px;
+    background-image: url('../img2/logo_sprite.png');
+    background-repeat: no-repeat;
+    animation: loading 1s infinite steps(3);
+    -webkit-animation: loading 1s infinite steps(3);
+}
+
+.settings-alert
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 2px;
+    width: 28px;
+    background: #fff url('../img2/svg/alert.svg') no-repeat center;
+    background-size: 22px;
+}
+
+@keyframes blink
+{
+    from
+    {
+        visibility: hidden;
+    }
+    to
+    {
+        visibility: visible;
+    }
+}
+@-moz-keyframes blink
+{
+    from
+    {
+        visibility: hidden;
+    }
+    to
+    {
+        visibility: visible;
+    }
+}
+
+@-webkit-keyframes blink
+{
+    from
+    {
+        visibility: hidden;
+    }
+    to
+    {
+        visibility: visible;
+    }
+}
+
+.cameras-record-blink
+{
+    background: url('../img2/svg/sensor_recording.svg') no-repeat center;
+    background-size: 24px;
+    animation: blink 1s steps(2) infinite;
+    -webkit-animation: blink 1s infinite steps(2);
+}
+.cameras-settings
+{
+    float: right;
+    background: url('../img2/svg/settings.svg') no-repeat center;
+}
+.cameras-zoom
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
+    background: url('../img2/svg/zoom_in_0.svg') no-repeat center;
+    background-size: 24px;
+}
+
+.cameras-settings,.cameras-zoom {
+    width: 44px;
+    height: 44px;
+    background-size: 24px;
+}
+
+.cameras-zoom.active
+{
+    background-image: url('../img2/svg/zoom_in_1.svg')
+}

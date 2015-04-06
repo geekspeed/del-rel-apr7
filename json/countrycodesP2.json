@@ -1,0 +1,21 @@
+[
+    {"code":"US", "name":"United States", "language": "American English", "currency":"USD"},
+    {"code":"NL", "name":"Netherlands", "language": "Dutch", "currency":"EUR"},
+    {"code":"DE", "name":"Germany", "language": "German", "currency":"EUR"},
+    {"code":"FR", "name":"France", "language": "French", "currency":"EUR"},
+    {"code":"BE", "name":"Belgium", "language": "Dutch, French", "currency":"EUR"},
+    {"code":"GB", "name":"United Kingdom", "language": "British English", "currency":"GBP"},
+    {"code":"AT", "name":"Austria", "language": "German", "currency":"EUR"},
+    {"code":"FI", "name":"Finland", "language": "Finnish", "currency":"EUR"},
+    {"code":"IE", "name":"Ireland", "language": "British English", "currency":"EUR"},
+    {"code":"AU", "name":"Australia", "language": "Australian English", "currency":"AUD"},
+    {"code":"RU", "name":"Russia", "language": "Russian", "currency":"RUB"},
+    {"code":"IT", "name":"Italy", "language": "Italian", "currency":"EUR"},
+    {"code":"SE", "name":"Sweden", "language": "Swedish", "currency":"SEK"},
+    {"code":"CA", "name":"Canada", "language": "British English, Canadian French", "currency":"CAD"},
+    {"code":"NO", "name":"Norway", "language": "Norwegian", "currency":"NOK"},
+    {"code":"DK", "name":"Denmark", "language": "Danish", "currency":"DKK"},
+    {"code":"CH", "name":"Switzerland", "language": "German", "currency":"CHF"},
+    {"code":"SG", "name":"Singapore", "language": "Mandarin, British English, Malay", "currency":"SGD"},
+    {"code":"NZ", "name":"New Zealand", "language": "Australian English", "currency":"NZD"}
+]

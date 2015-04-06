@@ -1,0 +1,54 @@
+<div ng-init="init()">
+    <div ng-show="loading" class="billing-loading" ng-include="'partials/loadingView.html'"></div>
+    <div class="settings-header recycle-header">
+        <span class="settings-back" ng-click="gotoCalendarView()">{{'activity_back' | i18n}}</span>
+        <span class="settings-done" ng-click="restore()" ng-disabled="!getSelectedCount()">{{('activity_restore') | i18n}}</span>
+        Recycled
+    </div>
+    <!-- class="vidClip" -->
+    <div ng-if="!loading && !dates.length">
+        <p style="margin: 20px auto; display: table">{{('recycle_bin_label_empty') | i18n}}</p>
+    </div>
+
+    <div class="recycle-container">
+        <div class="recycle-day-wrapper" ng-if="!loading" ng-class="{'expanded' : expanded}" ng-repeat="recycledDate in dates" ng-init="init(recycledDate, !$index)" ng-controller="RecycledDateCtrl" unselect-all-recycle-recordings select-all-recycle-recordings>
+            <div class="calendar-date">
+                <div class="expand-option" ng-click="expand()">
+                    <div class="expand-icon"></div>
+                </div>
+                <div class="calendar-selectall" ng-init="init(recycledDate)" ng-hide="!expanded">
+                    <a class="calendar-recycle-select" ng-click="toggleRecycleSelectAll(recycledDate)" >{{(selectedAllRecycleRecordings ? 'activity_deselect_all':'activity_select_all') | i18n}}</a>
+                </div>
+                <div class="recycle-date-label">{{recycledDate | dayText}}</div>
+            </div>
+            <div ng-if="loading" class="settings-list" style="margin: 10px;">
+                <div class="settings-list-loading">{{('status_label_loading') | i18n}}</div>
+            </div>
+            <div class="recycle-day-container" style="padding: 4px;"  ng-hide="!expanded">
+                <div class="vlist-preview" ng-repeat="recording in getRecordings()" >
+                    <div class="vlist-preview-shadow" select-recording ng-class="{'vlist-preview-selected': recording.selected}">
+                        <div style="padding: 5px; font-size: 12px; overflow: hidden; white-space: nowrap;">
+                            <div style="display: table-cell" ng-bind="recording.utcCreatedDate | toBSTime:recording.timeZone | date : 'shortDate'"></div>
+                            <div style="display: table-cell;width: 100%;text-align: right;" ng-bind="recording.utcCreatedDate | toBSTime:recording.timeZone | date : 'shortTime'"></div>
+                        </div>
+                        <a ng-href="" class="vlist-content" ng-class="{'vlist-content-alpha': isFriendRecording(recording)}">
+                            <img camera-thumbnail ng-src="{{recording.presignedThumbnailUrl}}"/>
+                            <div ng-if="isVideo(recording)" class="record-video"></div>
+                        </a>
+                        <div class="vlist-preview-overlay"></div>
+                        <div class="vlist-preview-check">
+                            <span>Selected: {{getSelectedCount()}}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div ng-if="pageCount > 1" class="recycled-pager">
+                    <button ng-show="currentPage != 1" type="button" ng-click="nextPage(-1)">Previous</button>
+                    <button ng-show="currentPage != pageCount" type="button" ng-click="nextPage(1)">Next</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

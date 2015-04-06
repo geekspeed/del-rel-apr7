@@ -1,0 +1,79 @@
+﻿<div ng-init="init()" scroll-top>
+
+    <div ng-if="libraryMode && isRecords()" class="calendar-date" ng-class="{'header-select': isSelectMode()}">
+        <div class="calendar-option calendar-filter">
+            <button type="button" ng-click="showFilter()" id="day_ShowFilter" ng-disabled="!!isSelectMode()">{{'library_activity_filter' | i18n}}</button>
+        </div>
+        <div class="calendar-option calendar-label-date" id="day_dayDisplay">
+            <p>{{getDayDisplay(day)}}</p>
+        </div>
+        <div class="calendar-option separator-responsive"></div>
+        <div class="calendar-option calendar-selectall" ng-controller="SelectAllCtrl" ng-hide="!isSelectMode()">
+            <button type="button" ng-click="toggleSelectAll()" id="day_SelectAll">{{(selectAllMode ? 'activity_deselect_all':'activity_select_all') | i18n}}</button>
+        </div>
+        <div class="calendar-option calendar-select" ng-hide="!isRecords()">
+            <button type="button" ng-click="toggleSelectMode()" id="day_ToggleSelectMode">{{(selectMode ? 'activity_done':'activity_select') | i18n}}</button>
+        </div>
+    </div>
+
+    <div ng-if="isFiltered()" class="cameras-filter-active">
+        <p class="cameras-filter-header">Filtered by:&#160;<span ng-repeat="camera in getCameras() track by camera.deviceId"><span>{{camera.deviceName}}<span ng-if="!$last">,&#160;</span></span></span></p>
+        <button type="button" ng-click="removeFilter()" class="calendar-filter-remove" id="day_RemoveFilter">Remove<span class="settings-remove"></span></button>
+    </div>
+
+    <div ng-if="libraryMode" style="padding: 4px;" ng-class="{'filtered' : isFiltered()}">
+        <div class="vlist-preview-wrapper">
+            <div id="day_record_{{$index}}" class="vlist-preview" ng-repeat="recording in getRecordings()">
+                <div class="vlist-preview-shadow" select-recording ng-class="{'vlist-preview-selected': recording.selected}">
+                    <div style="padding: 5px; font-size: 12px; overflow: hidden; white-space: nowrap;">
+                        <div style="display: table-cell" ng-bind="::recording.utcCreatedDate | toBSTime:recording.timeZone | date : 'shortDate'"></div>
+                        <div style="display: table-cell;width: 100%;text-align: right;" ng-bind="::recording.utcCreatedDate | toBSTime:recording.timeZone | date : 'shortTime'"></div>
+                    </div>
+                    <a class="vlist-content" ng-class="::{'vlist-content-alpha': isSelectMode() && isFriendRecording(recording)}">
+                        <img camera-thumbnail ng-src="{{::recording.presignedThumbnailUrl}}"/>
+                        <div ng-if="isFavorite(recording)" class="record-favorite"></div>
+                        <div ng-if="::isVideo(recording)" class="record-video"></div>
+                    </a>
+                    <div class="vlist-preview-overlay"></div>
+                    <div class="vlist-preview-check">
+                        <span>Selected: {{getSelectedCount()}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div ng-if="libraryMode && isRecords()" ng-controller="ModalNotifyCtrl" class="modal-overlay library" ng-show="isPopupEnable">
+            <div class="overlay-arrow-icon top-align"></div>
+            <div class="alert-window">
+                <div class="text-content">
+                    <p ng-bind-html="'educate_label_library_select' | i18n"></p>
+                    <div style="margin: 24px auto auto; display: table; height: 100%; background: #333" data-footer-buttons data-select-bar>
+                        <div class="footer-button">
+                            <div class="footer-button-c fav-icon">{{"select_bar_label_favorite" | i18n}}</div>
+                        </div>
+                        <div class="footer-button">
+                            <div class="footer-button-c share-icon">{{"select_bar_label_share" | i18n}}</div>
+                        </div>
+                        <div class="footer-button">
+                            <div class="footer-button-c download-icon">{{"select_bar_label_download" | i18n}}</div>
+                        </div>
+                        <div class="footer-button">
+                            <div class="footer-button-c delete-icon">{{"select_bar_label_delete" | i18n}}</div>
+                        </div>
+                    </div>
+                    <div class="control-bar">
+                        <input type="checkbox" id="dontshowmsgagain" ng-model="popupDisable"/>
+                        <label for="dontshowmsgagain">{{'educate_label_dont_show_again' | i18n}}</label>
+                    </div>
+                </div>
+                <div class="button-row">
+                    <div id="day_ok" class="ok_button" ng-click="rulesNotifyHide()">{{'activity_ok' | i18n}}</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

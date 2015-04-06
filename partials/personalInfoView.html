@@ -1,0 +1,199 @@
+<div ng-init="init()">
+    <div ng-show="loading || isLoading()" class="billing-loading" ng-include="'partials/loadingView.html'"></div>
+<div class="settings-header">
+    <span class="settings-done" ng-click="personalInfoForm.$invalid || done()" ng-disabled="loading || !isChanged() || personalInfoForm.$invalid">{{'activity_save' | i18n}}</span>
+    {{'account_settings_label_personal' | i18n}}
+</div>
+    <div class="settings-container-list">
+<div ng-hide="loading" class="settings-panel">
+    <form name="personalInfoForm" autocomplete="off" novalidate class="settings-personal-form">
+        <div class="settings-list settings-personal-list">
+            <div class="settings-personal-block">
+                <div class="" style="display: table-row">
+                    <div class="settings-personal-label">User ID:</div>
+                    <div class="settings-personal-value">
+                        <input type="email" id="userId" name="userId" required placeholder="User ID"
+                               ng-model="userId"
+                               ng-minlength=6
+                               ng-maxlength=128
+                               data-email-used="{{oldUserId}}" data-email-arlo no-space>
+
+                        <div class="error"
+                             ng-show="personalInfoForm.userId.$dirty && personalInfoForm.userId.$invalid">
+                        <span
+                                ng-show="personalInfoForm.userId.$error.email || personalInfoForm.userId.$error.emailArlo">
+                            User ID must be a valid email address.
+                        </span>
+
+                        <span
+                                ng-show="personalInfoForm.userId.$error.minlength">
+                            User ID is required to be at least 6 characters.
+                        </span>
+                        <span
+                                ng-show="personalInfoForm.userId.$error.maxlength">
+                            User ID cannot be longer than 128 characters.
+                        </span>
+
+                        <span
+                                ng-show="personalInfoForm.userId.$error.used">
+                            User ID already used.
+                        </span>
+                        </div>
+                        <div ng-show="!validEmail" ng-click="confirmEmail()" class="error arlo-cp" style="margin-top: 5px; text-decoration: underline;">{{'status_confirm_email' | i18n}}</div>
+                        <div ng-show="validEmail" class="footer-mode-active" style="margin-top: 5px;"><span class="settings-info-s"></span> {{'personal_info_email_confirmed' | i18n}}</div>
+                    </div>
+                </div>
+                <div style="display: table-row">
+                    <div class="settings-personal-label">Current Password:</div>
+                    <div class="settings-personal-value">
+                        <input type="password"
+                               name="password"
+                               ng-model="password"
+                               placeholder="Password"
+                               value="{{password}}"
+                               ng-required="personalInfoForm.newPassword.$dirty || personalInfoForm.confirmPassword.$dirty || personalInfoForm.userId.$dirty"
+                               ng-minlength=6
+                               ng-maxlength=128
+                               ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*()]*$/"
+                               empty>
+                        <div class="error"
+                             ng-show="personalInfoForm.password.$invalid">
+
+                        <span ng-show="personalInfoForm.password.$error.required">
+                            Current password is required.
+                        </span>
+                        <span ng-show="personalInfoForm.password.$error.pattern">
+                            Password must be at least 6 characters including 1 uppercase letter, 1 lowercase letter, 1 number. The supported special characters are !@#$%^&*().
+                        </span>
+
+                        <span ng-show="personalInfoForm.password.$error.minlength">
+                            Password is required to be at least 6 characters.
+                        </span>
+                        <span ng-show="personalInfoForm.password.$error.maxlength">
+                            Password cannot be longer than 128 characters.
+                        </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="settings-list settings-personal-list">
+            <div class="settings-personal-block">
+                <div style="display: table-row">
+                    <div class="settings-personal-label">New Password:</div>
+                    <div class="settings-personal-value">
+                        <input type="password" placeholder="New Password" name="newPassword"
+                               ng-model="newPassword" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*()]*$/"
+                               ng-minlength=6
+                               ng-maxlength=128
+                               empty
+                               >
+
+                        <div class="error"
+                             ng-show="personalInfoForm.newPassword.$dirty && personalInfoForm.newPassword.$invalid">
+
+                        <span ng-show="personalInfoForm.newPassword.$error.pattern">
+                            {{'info_registration_account_password' | i18n}}
+                        </span>
+
+                        <span ng-show="personalInfoForm.newPassword.$error.minlength">
+                            Password is required to be at least 6 characters.
+                        </span>
+                        <span ng-show="personalInfoForm.newPassword.$error.maxlength">
+                            Password cannot be longer than 128 characters.
+                        </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div style="display: table-row">
+                    <div class="settings-personal-label">Confirm Password:</div>
+                    <div class="settings-personal-value">
+                        <input type="password"
+                               placeholder="Confirm Password"
+                               name="confirmPassword"
+                               ng-model="newPasswordVerify"
+                               ng-minlength=6
+                               ng-maxlength=128
+                               data-password-verify="newPassword"
+                               empty>
+
+                        <div class="error"
+                             ng-show="personalInfoForm.confirmPassword.$dirty && personalInfoForm.confirmPassword.$error.newPasswordVerify">
+                        <span ng-show="personalInfoForm.confirmPassword.$error.newPasswordVerify">
+                            {{'error_validation_password_mismatch' | i18n}}
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="settings-list settings-personal-list">
+            <div class="settings-personal-block">
+                <div style="display: table-row">
+                    <div class="settings-personal-label">{{'personal_info_label_first_name' | i18n}}:</div>
+                    <div class="settings-personal-value">
+                        <input type="text"
+                               value="{{firstName}}"
+                               name="firstName"
+                               placeholder="{{'personal_info_label_first_name' | i18n}}"
+                               ng-model="firstName"
+                               ng-minlength=1
+                               ng-maxlength=64
+                               ng-trim="false"
+                               no-space
+                               required>
+
+                        <div class="error"
+                             ng-show="personalInfoForm.firstName.$dirty && personalInfoForm.firstName.$invalid">
+                        <span
+                                ng-show="personalInfoForm.firstName.$error.minlength">
+                            Your first name is required to be at least 1 characters.
+                        </span>
+                        <span
+                                ng-show="personalInfoForm.firstName.$error.maxlength">
+                            Your first name cannot be longer than 64 characters.
+                        </span>
+                        <span ng-show="personalInfoForm.firstName.$error.pattern">
+                            Name cannot contain special characters.
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: table-row">
+                    <div class="settings-personal-label">{{'personal_info_label_last_name' | i18n}}:</div>
+                    <div class="settings-personal-value">
+                        <input type="text"
+                               ng-model="lastName"
+                               name="lastName"
+                               placeholder="{{'personal_info_label_last_name' | i18n}}"
+                               ng-minlength=1
+                               ng-maxlength=64
+                               ng-trim="false"
+                               no-space
+                               required>
+
+                        <div class="error"
+                             ng-show="personalInfoForm.lastName.$dirty && personalInfoForm.lastName.$invalid">
+                        <span ng-show="personalInfoForm.lastName.$error.minlength">
+                            Your last name is required to be at least 1 characters.
+                        </span>
+                        <span ng-show="personalInfoForm.lastName.$error.maxlength">
+                            Your last name cannot be longer than 64 characters.
+                        </span>
+                        <span ng-show="personalInfoForm.lastName.$error.pattern">
+                            Name cannot contain special characters.
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- stretch or phase two feature
+    <button class="button-delete settings-delete" ng-click="deleteAccount()">Delete Account</button>
+    -->
+</div>
+        </div>
+</div>

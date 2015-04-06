@@ -1,0 +1,78 @@
+﻿<div ng-init="init()">
+    <div ng-show="loading || isLoading()" class="billing-loading" ng-include="'partials/loadingView.html'"></div>
+    <header class="header">
+        <span class="header-logout arlo-cp" ng-controller="FooterCtrl" ng-click="gotoLogout()">{{'personal_info_logout' | i18n}}</span>
+    </header>
+    <section class="wrapper" style="background-color: transparent;">
+    <div ng-show="devices.length">
+        <div class="arlo-fs17 modes-schedule" style="text-align: center;">Select Base Station</div>
+        <div ng-repeat="bs in devices" ng-click="selectBS(bs)"
+             class="modes-device-item arlo-fs17 arlo-pre"
+             ng-class="{'modes-border-top': $index == 0,
+             'arlo-gray': bs.properties && bs.properties.connectionState == 'unavailable',
+             'arlo-cp': bs.properties && bs.properties.connectionState == 'available'}">
+            {{bs.deviceName}} <span>{{bs.properties && bs.properties.connectionState == 'unavailable'? '('+('status_label_offline' | i18n) + ')':''}}</span>
+            <span ng-if="isStateUnavailable(bs)">{{'status_label_getting_status' | i18n }}</span>
+        </div>
+    </div>
+    <div ng-show="deviceId" >
+        <!-- <div class="arlo-fs17" style="padding: 10px; text-align: center; background-color: #fff;margin-bottom: 10px; position: relative;">
+            {{baseStation.deviceName}}
+        </div> -->
+        <div class="modes-schedule arlo-fs17"
+             ng-hide="!baseStation.properties || !baseStation.properties['connectionState'] || baseStation.properties['connectionState'] != 'available'">
+                {{'base_station_settings_label_schedule' | i18n}}
+            <div ng-if="isScheduleAvailable()" style="position: absolute; right: 10px; top: 6px;"
+                 class="arlo-cp settings-schedule-{{baseStation.scheduleOn ? 'on': 'off'}}"
+                 ng-click="toggleScheduleOn(); $event.stopPropagation();">
+                <div></div>
+            </div>
+            <div ng-if="!isScheduleAvailable()" style="position: absolute; right: 10px; top: 10px;" class="arlo-link arlo-cp arlo-fs17" ui-sref="settings.plans">{{'marketing_label_upgrade_now' | i18n}}</div>
+        </div>
+        <div ng-show="!baseStation.scheduleOn || !isScheduleAvailable()">
+        <div class="modes-item arlo-fs17 arlo-cp arlo-pre" ng-repeat="mode in modes | orderBy:'name'" ng-click="selectMode(mode)"
+             ng-class="{'modes-item-selected': getActiveMode().id == mode.id,
+              'modes-border-top': $index == 0}">
+            {{mode.name}}
+        </div>
+
+        <div ng-if="(!devices || !devices.length) && isBaseStationOffline()" class="modes-device-item modes-border-top arlo-fs17 arlo-gray arlo-pre">
+            {{baseStation.deviceName}} <span>({{'status_label_offline' | i18n}})</span>
+        </div>
+        </div>
+        <div ng-show="baseStation.scheduleOn && isScheduleAvailable()">
+            <div ng-hide="!getDaySchedule()">
+                <div ng-show="getDaySchedule()" class="flex-display flex-direction" style="position: absolute; top: 65px;bottom: 3px; left: 16px; right: 16px;">
+                    <div style="padding-bottom: 15px;" class="flex-grow-1">Drag and drop these buttons to the calendar to add a new mode to the schedule. Move the black separator bars to adjust the schedule.</div>
+                    <div style="padding: 10px 70px 10px 16px; background-color: #fff; position: relative;width: 100%;border-top-left-radius: 5px; border-top-right-radius:5px;" class="flex-grow-1">
+                        <div ng-repeat="mode in modes" draggable="true" mode mode-id="{{mode.id}}"
+                             class="modes-mode arlo-pre"
+                             ng-style="setColor($index)" >{{mode.name}}</div>
+                        <div ng-show="baseStation.scheduleOn && isScheduleChanged()" ng-click="saveSchedule()" class="arlo-cp arlo-fs17" style="position: absolute; top: 8px; right: 10px; color: #06a94e;">{{'activity_save' | i18n}}</div>
+                    </div>
+
+                    <div id="schedule" class="flex-display flex-direction flex-grow-100" style="width: 100%; background-color: #fff;">
+                        <div id="headings" class="flex-display flex-grow-1 flex-justify" style="width:100%;text-align:center;">
+                            <div style="width:70px;">Time</div>
+                            <div class="modes-wday flex-grow-1" ng-repeat="name in names.DAY">{{name}}</div>
+                        </div>
+<div class="flex-display flex-grow-100 flex-justify" style="width:100%;">
+    <div style="border: 1px solid #000000; width: 70px; position: relative;">
+        <canvas schedule-hours id="hours" width="70" style="position: absolute; width:100%; height: 100%;">
+        </canvas>
+    </div>
+    <div ng-repeat="schedule in getDaySchedule()" class="flex-grow-1" style="border: 1px solid #000000; position: relative;">
+    <canvas class="day" day-schedule="schedule" modes="modes"
+            droppable="true" style="position: absolute; width:100%; height: 100%;">
+    </canvas>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div ng-include="'partials/footerView.html'" ng-controller="FooterCtrl" ng-init="init('modes')"></div>
+
+</div>

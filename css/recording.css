@@ -1,0 +1,251 @@
+﻿/*
+* recording.css
+*
+* Copyright (c) 2014, NETGEAR, Inc.
+* 350 East Plumeria, San Jose California, 95134, U.S.A.
+* All rights reserved.
+*
+*
+* This software is the confidential and proprietary information of
+* NETGEAR, Inc. ("Confidential Information"). You shall not
+* disclose such Confidential Information and shall use it only in
+* accordance with the terms of the license agreement you entered into
+* with NETGEAR.
+*
+* sergey.yakubovsky@netgear.com
+*
+*/
+
+.recording-height-100
+{
+    height: 100%;
+}
+
+.recording-container
+{
+    overflow: hidden;
+}
+
+.recording-title-date
+{
+    background-color: #06a94e;
+    color: #ffffff;
+    padding: 0 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    line-height: 50px;
+}
+
+.recording-prev,
+.recording-rewind,
+.recording-rewind-slow,
+.recording-pause,
+.recording-play,
+.recording-forward-slow,
+.recording-forward,
+.recording-next,
+.recording-volume
+{
+    width: 44px;
+    height: 44px;
+    display: table-cell;
+    cursor: pointer;
+}
+
+.recording-slide-outer
+{
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    top: 110px;
+}
+
+.recording-slide-inner
+{
+    position: relative;
+    left: -50%;
+    height: 100%;
+}
+
+.recording-slide
+{
+    height: 100%;
+    width: 100%;
+}
+
+.recording-slide-cell
+{
+    padding: 8px 0;
+    display: table-cell;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.recording-slide-cell-center
+{
+    padding: 8px;
+    display: table-cell;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.recording-preview
+{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0px 0px 4px #888;
+    background: #fff;
+    opacity: 0.5;
+    padding-bottom: 44px;
+}
+
+.recording-play-box
+{
+    position: relative;
+    overflow: hidden;
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.recording-loading
+{
+    text-align: center;
+    padding-top: 20%;
+}
+
+.recording-video,
+.recording-image-wrap,
+.recording-play-wrap,
+.recording-pause-wrap
+{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+}
+
+.recording-play-wrap,
+.recording-pause-wrap
+{
+    z-index: 1;
+}
+.recording-play-wrap,
+.recording-video
+{
+    background: url('../img2/play_button.png') no-repeat center center;
+}
+
+.recording-preview-image
+{
+    width: 100%;
+}
+
+.recording-center-outer
+{
+    height: 100%;
+    position: relative;
+    box-shadow: 0px 0px 4px #888;
+    background: #fff;
+    padding-bottom: 44px;
+    overflow: hidden;
+}
+
+.recording-header
+{
+    height: 44px;
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.recording-slider-box
+{
+    position: absolute;
+    bottom: 0px;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    padding: 0 15px;
+    color: #333;
+}
+
+.recording-slider
+{
+    height: 6px;
+    background-color: #d7d7d7;
+    position: relative;
+    top: 20px;
+    border-radius: 3px;
+}
+
+.recording-slider-played
+{
+    height: 6px;
+    background-color: #06a94e;
+    border-radius: 3px;
+}
+
+.recording-slider-point
+{
+    width: 22px;
+    height: 22px;
+    margin-left: -11px;
+    border-radius: 11px;
+    background-color: #fff;
+    position: relative;
+    top: 5px;
+    box-shadow: 0px 0px 3px #888;
+    z-index: 1;
+}
+
+.recording-slider-table-cell
+{
+    display: table-cell;
+    width: 100%;
+    padding: 0 18px;
+}
+
+.recording-table-cell
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.recording-slide-center
+{
+    height: 100%;
+    min-width: 200px;
+}
+
+.recording-date
+{
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.recording-time
+{
+    position: absolute;
+    top: 14px;
+    right: 15px;
+}
+
+.recording-fullscreen
+{
+    width: 20px;
+    height: 44px;
+    margin-left: 8px;
+    background: url('../img2/fullscreen.png') no-repeat center;
+}
+.recording-pad0
+{
+    padding-bottom: 0 !important;
+}

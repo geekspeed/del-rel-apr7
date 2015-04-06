@@ -1,0 +1,277 @@
+﻿<div ng-if="setupPending" class="setup-steps">
+    <div style="padding: 10px 0;" class="arlo-fs17">
+        <span class="setup-back" ui-sref="servicePlan" id="billingInformation_Back">{{'activity_back' | i18n}}</span>
+        <span class="arlo-b" id="billingInformation_title">{{'payment_method_label_title' | i18n}}</span>
+    </div>
+    <div style="background-color: #e5e4e2;">
+        <div class="setup-progress" style="width: 75%;"></div>
+    </div>
+</div>
+<div ng-if="!setupPending" class="settings-header" id="billingInformation_title">
+    <span class="settings-back" ui-sref="settings.subscription" id="billingInformation_Back">{{'activity_back' | i18n}}</span>
+    {{'payment_method_label_title' | i18n}}
+</div>
+
+<div ng-show="loading || isBillingInProgress()" class="billing-loading" ng-include="'partials/loadingView.html'"></div>
+<div class="setup-container" ng-class="{'settings-container-list': !setupPending}">
+<div class="setup-body" ng-init="init()">
+<form class="billing-form" name="cardInformationForm" id="cardInformationForm">
+    <div class="arlo-fs17">{{'payment_method_label_credit_card' | i18n}}</div>
+    <div class="error arlo-fs17" ng-if="errorMessage" ng-bind="errorMessage"></div>
+    <input type="text" id="cc_no" name="cc_no" placeholder="{{'payment_method_label_card_number' | i18n}}" ng-model="creditCard.cardNumber" required
+           card-number ng-pattern="/^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13})$/"/>
+
+    <div class="error"
+         ng-show="cardInformationForm.$dirty && cardInformationForm.cc_no.$invalid">
+        <div ng-show="cardInformationForm.cc_no.$error.required">
+            Card Number is required.
+        </div>
+        <div ng-show="cardInformationForm.cc_no.$error.cardNumber">
+            Please provide a valid Card Number.
+        </div>
+        <div ng-show="!cardInformationForm.cc_no.$error.cardNumber && cardInformationForm.cc_no.$error.pattern">
+            {{'error_validation_card_number_unsupported' | i18n}}
+        </div>
+    </div>
+    <select id="cc_exp_mm" name="cc_exp_mm" class="billing-date" ng-model="creditCard.expirationMonth" required style="text-transform: capitalize;"
+            ng-options="months.indexOf(month).toString() as month for month in months">
+        <!--<option value="">Month</option>-->
+    </select>
+    <!--<input type="text" class="billing-date" ng-model="creditCard.expirationYear" id="cc_exp_yyyy" name="cc_exp_yyyy"
+           placeholder="Expiration Year"
+           data-month-verify="creditCard.expirationMonth" card-expiration required />-->
+
+    <select id="cc_exp_yyyy" name="cc_exp_yyyy" class="billing-date years-dropdown" ng-model="creditCard.expirationYear" placeholder="Expiration Year" data-month-verify="creditCard.expirationMonth" card-expiration required
+            ng-options="year as year for year in years">
+    </select>
+
+    <div class="error"
+         ng-show="cardInformationForm.$dirty && (cardInformationForm.cc_exp_mm.$invalid || cardInformationForm.cc_exp_yyyy.$invalid)">
+        <div ng-show="cardInformationForm.cc_exp_mm.$error.required || cardInformationForm.cc_exp_yyyy.$error.required">
+            Expiration Date is required.
+        </div>
+        <div ng-show="cardInformationForm.cc_exp_yyyy.$error.cardExpiration">
+            Please provide a valid Expiration Date.
+        </div>
+    </div>
+
+    <input id="cvv" type="text" name="cvv" ng-model="creditCard.cvv"
+           placeholder="{{'payment_method_label_security_code' | i18n}}" card-cvv
+           required />
+
+    <div class="error"
+         ng-show="cardInformationForm.$dirty && cardInformationForm.cvv.$invalid">
+        <div ng-show="cardInformationForm.cvv.$error.required">
+            Security Code is required.
+        </div>
+        <div ng-show="cardInformationForm.cvv.$error.cardCvv">
+            Please provide a valid Security Code.
+        </div>
+    </div>
+
+</form>
+
+<iframe src="/iframe/formOfPayment.html" style="display: none;" id="formOfPayment" name="formOfPayment"></iframe>
+
+<form class="billing-form" name="billingInformationForm" id="billingInformationForm">
+    <div class="arlo-fs17">{{'payment_method_label_billing' | i18n}}</div>
+    <div ng-if="billingError" class="error" ng-bind="billingError"></div>
+    <input type="text" value="{{billingInfo.firstName}}" name="firstName" placeholder="{{'payment_method_label_billing_first_name' | i18n}}"
+           ng-model="billingInfo.firstName"
+           ng-minlength=1
+           ng-maxlength=64
+           required>
+
+    <div class="error"
+         ng-show="billingInformationForm.firstName.$dirty && billingInformationForm.firstName.$invalid">
+        <small ng-show="billingInformationForm.firstName.$error.required">
+            First Name is required.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.firstName.$error.minlength">
+            Billing first name is required to be at least 1 characters.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.firstName.$error.maxlength">
+            Billing first name cannot be longer than 64 characters.
+        </small>
+    </div>
+
+    <input type="text" ng-model="billingInfo.lastName" name="lastName" placeholder="{{'payment_method_label_billing_last_name' | i18n}}"
+           ng-minlength=1
+           ng-maxlength=64
+           required>
+
+    <div class="error"
+         ng-show="billingInformationForm.lastName.$dirty && billingInformationForm.lastName.$invalid">
+        <small ng-show="billingInformationForm.lastName.$error.required">
+            Last Name is required.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.lastName.$error.minlength">
+            Billing last name is required to be at least 1 characters.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.lastName.$error.maxlength">
+            Billing last name cannot be longer than 64 characters.
+        </small>
+    </div>
+
+    <input type="text" ng-model="billingInfo.companyName" name="companyName" placeholder="{{(vatRequired() && vatNumber)? 'payment_method_label_billing_company_name_short' : 'payment_method_label_billing_company_name' | i18n}}"
+           ng-minlength=1
+           ng-maxlength=64 ng-required="vatRequired() && vatNumber">
+
+    <div class="error"
+         ng-show="billingInformationForm.companyName.$dirty && billingInformationForm.companyName.$invalid">
+        <small class="error"
+               ng-show="billingInformationForm.companyName.$error.minlength">
+            Company name is required to be at least 1 characters.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.companyName.$error.maxlength">
+            Company name cannot be longer than 64 characters.
+        </small>
+    </div>
+
+    <input type="text" ng-model="billingInfo.address1" name="address1" placeholder="{{'payment_method_label_billing_street_address_1' | i18n}}"
+           ng-minlength=1
+           ng-maxlength=64
+           required>
+
+    <div class="error"
+         ng-show="billingInformationForm.address1.$dirty && billingInformationForm.address1.$invalid">
+        <small ng-show="billingInformationForm.address1.$error.required">
+            Street Address 1 is required.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.address1.$error.minlength">
+            Street address is required to be at least 1 characters.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.address1.$error.maxlength">
+            Street address cannot be longer than 64 characters.
+        </small>
+    </div>
+
+    <input type="text" ng-model="billingInfo.address2" name="address2" placeholder="{{'payment_method_label_billing_street_address_2' | i18n}}"
+           ng-minlength=1
+           ng-maxlength=64>
+
+    <div class="error"
+         ng-show="billingInformationForm.address2.$dirty && billingInformationForm.address2.$invalid">
+        <small class="error"
+               ng-show="billingInformationForm.address2.$error.minlength">
+            Street address is required to be at least 1 characters.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.address2.$error.maxlength">
+            Street address cannot be longer than 64 characters.
+        </small>
+    </div>
+
+    <input type="text" ng-model="billingInfo.address3" name="address3" placeholder="{{'payment_method_label_billing_street_address_3' | i18n}}"
+           ng-minlength=1
+           ng-maxlength=64>
+
+    <div class="error"
+         ng-show="billingInformationForm.address3.$dirty && billingInformationForm.address3.$invalid">
+        <small class="error"
+               ng-show="billingInformationForm.address3.$error.minlength">
+            Apartment or Suite is required to be at least 1 characters.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.address3.$error.maxlength">
+            Apartment or Suite cannot be longer than 64 characters.
+        </small>
+    </div>
+
+    <input type="text" ng-model="billingInfo.city" name="town" placeholder="{{'payment_method_label_billing_city' | i18n}}"
+           ng-minlength=1
+           ng-maxlength=64
+           required>
+
+    <div class="error"
+         ng-show="billingInformationForm.town.$dirty && billingInformationForm.town.$invalid">
+        <small ng-show="billingInformationForm.town.$error.required">
+            Town / City is required.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.town.$error.minlength">
+            Town / city name is required to be at least 1 characters.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.town.$error.maxlength">
+            Town / city name cannot be longer than 64 characters.
+        </small>
+    </div>
+
+    <select ng-show="isStates" ng-model="state" ng-required="isStates"
+            name="state"
+            ng-options="state.name for state in countryStates | orderBy:'name'">
+        <option value="">{{'payment_method_label_billing_state' | i18n}}</option>
+    </select>
+    <div class="error"
+         ng-show="(country.states && billingInformationForm.state.$invalid && billingInformationForm.state.$dirty)">
+        <small ng-show="billingInformationForm.state.$error.required">
+            State is required.
+        </small>
+    </div>
+
+    <input type="text" ng-model="billingInfo.postalCode" name="postalCode"
+           placeholder="{{'payment_method_label_billing_zip_code' | i18n}}{{(country.code != 'US' && country.code != 'GB') ? ' (optional)' : ''}}"
+           ng-minlength=1
+           ng-maxlength=64
+           ng-pattern="zipPattern"
+           ng-required="country.code == 'US' || country.code == 'GB'">
+
+    <div class="error"
+         ng-show="billingInformationForm.postalCode.$dirty && billingInformationForm.postalCode.$invalid">
+        <small ng-show="billingInformationForm.postalCode.$error.required">
+            Zip Code is required.
+        </small>
+        <small ng-show="billingInformationForm.postalCode.$error.pattern">
+            {{'error_validation_billing_zip_code' | i18n}}
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.postalCode.$error.minlength">
+            Zip code is required to be at least 1 characters.
+        </small>
+        <small class="error"
+               ng-show="billingInformationForm.postalCode.$error.maxlength">
+            Zip code cannot be longer than 64 characters.
+        </small>
+    </div>
+
+    <input type="text" value="{{getCountry()}}" name="country" placeholder="{{'payment_method_label_billing_country' | i18n}}" readonly>
+    <!--ng-change="setVatPattern()">-->
+    </input>
+
+    <input ng-if="vatRequired()" ng-class="{'arlo-red': vatError}" type="text" ng-model="$parent.vatNumber" name="vatNumber" placeholder="{{'payment_method_label_billing_vat' | i18n}}"
+           ng-pattern="vatRegExp" ng-change="vatChange()">
+
+    <div class="error" ng-show="billingInformationForm.vatNumber.$dirty && billingInformationForm.vatNumber.$invalid">
+        <div ng-show="billingInformationForm.vatNumber.$error.pattern">{{'error_validation_billing_vat' | i18n}}</div>
+        <div ng-show="billingInformationForm.vatNumber.$error.invalidvat" class="error" ng-bind="vatError"></div>
+    </div>
+
+    <div ng-if="setupPending || showRenew" class="billing-check">
+        <input type="checkbox" ng-model="$parent.autoRenew" name="automaticRenewal" id="automaticRenewal">
+        <label for="automaticRenewal" class="right">{{'payment_method_label_renew_service_plan' | i18n}}</label>
+        <span class="settings-info" popover-placement="top" popover-trigger="mouseenter"
+              popover="{{'info_settings_renew_subscription' | i18n}}"></span>
+    </div>
+    <required-tip></required-tip>
+</form>
+
+<button class="billing-check" id="billingInformation_Continue"
+        ng-click="continue()"
+        ng-disabled="(setupPending &&(cardInformationForm.$invalid || billingInformationForm.$invalid)) || (!cardInformationForm.$dirty && !billingInformationForm.$dirty)
+        || (cardInformationForm.$dirty && cardInformationForm.$invalid)
+        || (billingInformationForm.$dirty && billingInformationForm.$invalid)
+        || loading || isBillingInProgress()"
+        />
+{{'activity_continue' | i18n}}
+</button>
+
+</div>
+</div>

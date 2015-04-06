@@ -1,0 +1,2302 @@
+﻿[
+  {
+    "key": "activity_back",
+    "value": "戻る"
+  },
+  {
+    "key": "label_required_fields",
+    "value": "「オプション」と記載のある欄以外はすべて必須項目です"
+  },
+  {
+    "key": "activity_continue",
+    "value": "続ける"
+  },
+  {
+    "key": "activity_done",
+    "value": "完了"
+  },
+  {
+    "key": "activity_submit",
+    "value": "送信"
+  },
+  {
+    "key": "activity_cancel",
+    "value": "キャンセル"
+  },
+  {
+    "key": "label_optional",
+    "value": "オプション"
+  },
+  {
+    "key": "label_optional_mark",
+    "value": "（オプション）"
+  },
+  {
+    "key": "label_required_mark",
+    "value": "（必須項目）"
+  },
+  {
+    "key": "status_label_offline",
+    "value": "オフライン"
+  },
+  {
+    "key": "status_label_getting_status",
+    "value": "ステータス情報取得中・・・"
+  },
+  {
+    "key": "status_label_loading",
+    "value": "読み込み中・・・"
+  },
+  {
+    "key": "status_label_please_wait",
+    "value": "お待ちください・・・"
+  },
+  {
+    "key": "status_label_registering_new_user",
+    "value": "新しいユーザーを登録中・・・"
+  },
+  {
+    "key": "status_label_is_required",
+    "value": "は必須項目です"
+  },
+  {
+    "key": "status_label_busy",
+    "value": "ビジー"
+  },
+  {
+    "key": "navigation_label_mode",
+    "value": "モード"
+  },
+  {
+    "key": "navigation_label_cameras",
+    "value": "カメラ"
+  },
+  {
+    "key": "navigation_label_library",
+    "value": "ライブラリ"
+  },
+  {
+    "key": "navigation_label_settings",
+    "value": "設定"
+  },
+  {
+    "key": "activity_first",
+    "value": "最初"
+  },
+  {
+    "key": "activity_today",
+    "value": "本日"
+  },
+  {
+    "key": "activity_select",
+    "value": "選択"
+  },
+  {
+    "key": "activity_close",
+    "value": "閉じる"
+  },
+  {
+    "key": "activity_yes",
+    "value": "はい"
+  },
+  {
+    "key": "activity_no",
+    "value": "いいえ"
+  },
+  {
+    "key": "activity_save",
+    "value": "保存"
+  },
+  {
+    "key": "activity_restore",
+    "value": "復元"
+  },
+  {
+    "key": "activity_select_all",
+    "value": "すべて選択"
+  },
+  {
+    "key": "activity_deselect_all",
+    "value": "すべて選択解除"
+  },
+  {
+    "key": "activity_delete_mode",
+    "value": "モードを削除"
+  },
+  {
+    "key": "activity_delete_rule",
+    "value": "ルールを削除"
+  },
+  {
+    "key": "activity_add",
+    "value": "追加"
+  },
+  {
+    "key": "activity_edit",
+    "value": "編集"
+  },
+  {
+    "key": "status_app_upgrade_available",
+    "value": "新しいバージョンの Arlo が利用可能です。お使いのアカウントにアクセスするには、今すぐアップデートしてください。"
+  },
+  {
+    "key": "status_credit_card_requires_upgrade",
+    "value": "クレジットカードの有効期限がまもなく切れます、サービスを中断させずに使い続けるには、すぐにアップデートしてください。"
+  },
+  {
+    "key": "status_confirm_email",
+    "value": "動作検知時のアラートを受け取るには、メールアドレスを確認してください。"
+  },
+  {
+    "key": "default_mode_armed",
+    "value": "すべての動作 オン"
+  },
+  {
+    "key": "default_mode_disarmed",
+    "value": "すべての動作 オフ"
+  },
+  {
+    "key": "default_rule_name",
+    "value": "{cameraName} の動作を録画"
+  },
+  {
+    "key": "info_registration_base_station_vgn",
+    "value": "アカウントにベースステーションが割り当てられます。ベースステーションを検出するため、ベースステーションと同じネットワークに接続してください。"
+  },
+  {
+    "key": "info_registration_base_station_time_zone",
+    "value": "ベースステーションの設置場所によりタイムゾーンを選択してください。"
+  },
+  {
+    "key": "info_registration_account_password",
+    "value": "パスワードは 6 文字以上で、大文字、小文字、数字をそれぞれ 1 文字以上含んでいるようにしてください。次の記号も使用できます：!@#$%^&*()"
+  },
+  {
+    "key": "info_registration_account_phone_number",
+    "value": "ネットギアからの電話を受けるように登録した場合は、この番号が使われます。また、カスタマーサポートに問い合わせ時にアカウントが見つけやすくなります。この項目はオプションです。"
+  },
+  {
+    "key": "info_settings_renew_subscription",
+    "value": "サービスプランを自動更新をする場合にこれを選択します。"
+  },
+  {
+    "key": "info_settings_manage_storage",
+    "value": "クラウドストレージを有効に使うために、 7 日後に自動的に（お気に入りでない）ファイルを削除します。"
+  },
+  {
+    "key": "info_settings_storage_full_notification",
+    "value": "クラウドストレージの 80% を使用した場合に通知を受けるにはこの項目を選択します。"
+  },
+  {
+    "key": "info_settings_invert_image",
+    "value": "必要に応じてカメラを上下逆に設置した場合は、このオプションを選択して画像の上下が正しく表示されるようにします。"
+  },
+  {
+    "key": "info_settings_position_mode",
+    "value": "カメラを設置する場合にこれを選択します。遅延を制限してカメラの映像がよりリアルタイムに見えるようにします。"
+  },
+  {
+    "key": "info_settings_motion_detection_test",
+    "value": "カメラ設置時にこれを使います。動作を検知したときに録画する代わりにステータス LED を点滅させます。"
+  },
+  {
+    "key": "info_base_station_rules",
+    "value": "ビデオがどのように録画されるか、オプションで録画をユーザーや別のユーザーに送信するかをカスタマイズするルールを設定します。"
+  },
+  {
+    "key": "error_no_internet_connection",
+    "value": "インターネットに接続されていません。接続を確認してください。"
+  },
+  {
+    "key": "error_service_unavailable",
+    "value": "Arlo は現在使用できません。 {time} で使用可能になります。"
+  },
+  {
+    "key": "error_setup_requires_wifi",
+    "value": "ベースステーションを検出できなかったため、アカウントの設定ができませんでした。\n\nベースステーションの電源が入っており、インターネットに接続されていることを確認してください、機器がベースステーションと同じ無線LANネットワークに接続されていることを確認してください。"
+  },
+  {
+    "key": "error_http_500",
+    "value": "Arlo は現在使用できません。 後でもう一度試してみてください。"
+  },
+  {
+    "key": "error_http_501",
+    "value": "Arlo は現在使用できません。 後でもう一度試してみてください。"
+  },
+  {
+    "key": "error_http_502",
+    "value": "Arlo は現在使用できません。 後でもう一度試してみてください。"
+  },
+  {
+    "key": "error_http_503",
+    "value": "Arlo は現在使用できません。 後でもう一度試してみてください。"
+  },
+  {
+    "key": "base_station_error_4000",
+    "value": "ベースステーションに接続されたカメラを検出できませんでした。カメラを同期させてください。"
+  },
+  {
+    "key": "base_station_error_4003",
+    "value": "カメラがオフラインのため設定にアクセスできません。"
+  },
+  {
+    "key": "base_station_error_4006",
+    "value": "カメラは現在使用中です。続けるには、進行中のアクションが完了するまでお待ちください。カメラの電源をいったんオフにして再度オンにすることでもこの操作を行うことができます。"
+  },
+  {
+    "key": "base_station_error_4009",
+    "value": "使用中のカメラは削除されません。このカメラを削除するには、最初にオフラインにしてください。"
+  },
+  {
+    "key": "base_station_error_4011",
+    "value": "同時にストリーミングできるカメラは4台までです。このカメラのストリーミングを始める前に、別のカメラのストリーミングを停止してください。"
+  },
+  {
+    "key": "base_station_error_4013",
+    "value": "Rebooting is not allowed if any camera is busy."
+  },
+  {
+    "key": "base_station_error_4014",
+    "value": "This feature is not supported by the device."
+  },
+  {
+    "key": "base_station_error_4015",
+    "value": "The camera is starting a motion alert. Please try again."
+  },
+  {
+    "key": "base_station_error_4016",
+    "value": "The camera cannot be streamed because it is offline."
+  },
+  {
+    "key": "base_station_error_4017",
+    "value": "The camera cannot take a snapshot because it is offline."
+  },
+  {
+    "key": "login_label_username",
+    "value": "メールアドレス"
+  },
+  {
+    "key": "login_label_password",
+    "value": "パスワード"
+  },
+  {
+    "key": "login_activity_login",
+    "value": "ログイン"
+  },
+  {
+    "key": "login_label_remember_me",
+    "value": "記録する"
+  },
+  {
+    "key": "login_activity_username_password_help",
+    "value": "パスワードヘルプ"
+  },
+  {
+    "key": "login_logout_conf_dialog_message",
+    "value": "ログアウトしてよろしいですか？"
+  },
+  {
+    "key": "login_activity_new_system_setup",
+    "value": "新規セットアップ"
+  },
+  {
+    "key": "login_error_validation_username",
+    "value": "ユーザー名またはパスワードが正しくありません。"
+  },
+  {
+    "key": "login_activity_create_account",
+    "value": "アカウントを作成する"
+  },
+  {
+    "key": "password_help_label_username_help",
+    "value": "メールアドレスを入力してください、パスワードをリセットするリンクを送ります。"
+  },
+  {
+    "key": "password_help_label_username",
+    "value": "メールアドレス"
+  },
+  {
+    "key": "password_help_label_email_sent",
+    "value": "パスワードリセットのリンクがメールで送信されました。"
+  },
+  {
+    "key": "password_help_error_validation_input_username",
+    "value": "新しいユーザー ID は有効なメールアドレスである必要があります。"
+  },
+  {
+    "key": "password_help_error_username_not_found",
+    "value": "入力したメールアドレスはどのアカウントでも使用されていません。メールアドレスを正しく入力したか確認するか、別のメールアドレスを入力してください。"
+  },
+  {
+    "key": "getting_started_label_title",
+    "value": "はじめに"
+  },
+  {
+    "key": "getting_started_label_help",
+    "value": "ベースステーションをインターネットに接続します"
+  },
+  {
+    "key": "system_setup_label_title",
+    "value": "システムセットアップ"
+  },
+  {
+    "key": "system_setup_label_select_serial_number",
+    "value": "ベースステーションのシリアル番号を選択してください"
+  },
+  {
+    "key": "system_setup_label_serial_number",
+    "value": "シリアル番号"
+  },
+  {
+    "key": "system_setup_activity_serial_number_info",
+    "value": "シリアル番号が自動的に検出されない場合は、ベースステーションの背面に記載されているものを参照してください。"
+  },
+  {
+    "key": "system_setup_label_time_zone",
+    "value": "ベースステーションが配置されている場所のタイムゾーンを選択してください。"
+  },
+  {
+    "key": "system_setup_activity_time_zone_info",
+    "value": "ベースステーションシリアル番号（プライマリベースステーションを選択してください、他は後で登録できます）："
+  },
+  {
+    "key": "account_setup_label_title",
+    "value": "アカウントセットアップ"
+  },
+  {
+    "key": "account_setup_label_username",
+    "value": "メールアドレス"
+  },
+  {
+    "key": "account_setup_label_password",
+    "value": "パスワード"
+  },
+  {
+    "key": "account_setup_label_reenter_password",
+    "value": "パスワードの再入力"
+  },
+  {
+    "key": "account_setup_label_security_question",
+    "value": "セキュリティに関する質問"
+  },
+  {
+    "key": "account_setup_label_security_answer",
+    "value": "答え"
+  },
+  {
+    "key": "account_setup_label_phone_number",
+    "value": "電話番号"
+  },
+  {
+    "key": "account_setup_activity_password_info",
+    "value": "パスワードは 6 文字以上で、次の記号を含みません： /、\\、|、<、>、:（コロン）、;（セミコロン）、'（アポストロフィ）。"
+  },
+  {
+    "key": "account_setup_activity_phone_number_info",
+    "value": "ネットギアからの電話を受けるように登録した場合は、この番号が使われます。"
+  },
+  {
+    "key": "account_setup_label_accept_tos",
+    "value": "サービスの使用条件に同意します"
+  },
+  {
+    "key": "account_setup_label_accept_privacy_policy",
+    "value": "プライバシーポリシーに同意します"
+  },
+  {
+    "key": "error_validation_username",
+    "value": "有効なメールアドレスを入力してください。 \"@\" とドメインを入力してください。（例：@gmail.com）"
+  },
+  {
+    "key": "error_validation_password",
+    "value": "新しいパスワードを入力してください。パスワードは 6 文字以上で、大文字、小文字、数字をそれぞれ 1 文字以上含んでいるようにしてください。次の記号も使用できます：! @ # $ % ^ & * ( )"
+  },
+  {
+    "key": "error_validation_security_answer",
+    "value": "セキュリティに関する質問の答えを入力してください。"
+  },
+  {
+    "key": "error_validation_password_mismatch",
+    "value": "パスワードが一致しません。パスワードを再入力してください。"
+  },
+  {
+    "key": "sync_cameras_label_title",
+    "value": "カメラの同期"
+  },
+  {
+    "key": "sync_cameras_label_help",
+    "value": "お使いのカメラの同期"
+  },
+  {
+    "key": "service_selection_label_title",
+    "value": "サービスの選択"
+  },
+  {
+    "key": "service_selection_label_elite",
+    "value": "Elite"
+  },
+  {
+    "key": "service_selection_label_elite_storage",
+    "value": "3 GB クラウド DVR"
+  },
+  {
+    "key": "service_selection_label_elite_push_notifications",
+    "value": "プッシュ通知"
+  },
+  {
+    "key": "service_selection_label_elite_cameras",
+    "value": "最大 20 台のカメラ"
+  },
+  {
+    "key": "service_selection_label_premier",
+    "value": "Premier"
+  },
+  {
+    "key": "service_selection_label_premier_storage",
+    "value": "1 GB クラウド DVR"
+  },
+  {
+    "key": "service_selection_label_premier_push_notifications",
+    "value": "プッシュ通知"
+  },
+  {
+    "key": "service_selection_label_premier_cameras",
+    "value": "最大 10 台のカメラ"
+  },
+  {
+    "key": "service_selection_label_base_level",
+    "value": "無料"
+  },
+  {
+    "key": "service_selection_label_base_level_storage",
+    "value": "200 MB クラウド DVR"
+  },
+  {
+    "key": "service_selection_label_base_level_cameras",
+    "value": "最大 5 台のカメラ"
+  },
+  {
+    "key": "service_selection_activity_base_level",
+    "value": "システムに含まれています"
+  },
+  {
+    "key": "payment_method_label_title",
+    "value": "支払い方法"
+  },
+  {
+    "key": "payment_method_label_credit_card",
+    "value": "クレジットカード"
+  },
+  {
+    "key": "payment_method_label_card_number",
+    "value": "カード番号"
+  },
+  {
+    "key": "payment_method_label_card_expiration",
+    "value": "MM/YYYY"
+  },
+  {
+    "key": "payment_method_label_security_code",
+    "value": "セキュリティコード（裏面の 3 桁または 4 桁の数字）"
+  },
+  {
+    "key": "payment_method_label_billing",
+    "value": "課金情報"
+  },
+  {
+    "key": "payment_method_label_billing_first_name",
+    "value": "名"
+  },
+  {
+    "key": "payment_method_label_billing_last_name",
+    "value": "姓"
+  },
+  {
+    "key": "payment_method_label_billing_company_name",
+    "value": "会社名（オプション）"
+  },
+  {
+    "key": "payment_method_label_billing_company_name_short",
+    "value": "Company Name"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_1",
+    "value": "市町村以下の住所 1"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_2",
+    "value": "市町村以下の住所 2 （オプション）"
+  },
+  {
+    "key": "payment_method_label_billing_street_address_3",
+    "value": "アパート、マンション名（オプション）"
+  },
+  {
+    "key": "payment_method_label_billing_city",
+    "value": "市町村"
+  },
+  {
+    "key": "payment_method_label_billing_state",
+    "value": "都道府県"
+  },
+  {
+    "key": "payment_method_label_billing_zip_code",
+    "value": "郵便番号"
+  },
+  {
+    "key": "payment_method_label_billing_country",
+    "value": "国"
+  },
+  {
+    "key": "payment_method_label_billing_vat",
+    "value": "VAT (optional)"
+  },
+  {
+    "key": "payment_method_label_renew_service_plan",
+    "value": "サービスプランを自動的に更新"
+  },
+  {
+    "key": "error_validation_card_number_unsupported",
+    "value": "申し訳ありませんが、Visa と Mastercard のみ対応しています。"
+  },
+  {
+    "key": "error_validation_card_number",
+    "value": "クレジットカード番号、有効期限、セキュリティコードを確認してください。"
+  },
+  {
+    "key": "error_validation_expiration",
+    "value": "クレジットカード番号、有効期限、セキュリティコードを確認してください。"
+  },
+  {
+    "key": "error_validation_security_code",
+    "value": "クレジットカード番号、有効期限、セキュリティコードを確認してください。"
+  },
+  {
+    "key": "error_validation_billing_first_name",
+    "value": "クレジットカード情報が銀行の記録と一致しません。クレジットカードに登録されたカード所有者の名前と住所を入力してください。"
+  },
+  {
+    "key": "error_validation_billing_last_name",
+    "value": "クレジットカード情報が銀行の記録と一致しません。クレジットカードに登録されたカード所有者の名前と住所を入力してください。"
+  },
+  {
+    "key": "error_validation_billing_company_name",
+    "value": "会社情報を入力してください"
+  },
+  {
+    "key": "error_validation_billing_street_address_1",
+    "value": "クレジットカード情報が銀行の記録と一致しません。クレジットカードに登録されたカード所有者の名前と住所を入力してください。"
+  },
+  {
+    "key": "error_validation_billing_street_address_2",
+    "value": "クレジットカード情報が銀行の記録と一致しません。クレジットカードに登録されたカード所有者の名前と住所を入力してください。"
+  },
+  {
+    "key": "error_validation_billing_street_address_3",
+    "value": "クレジットカード情報が銀行の記録と一致しません。クレジットカードに登録されたカード所有者の名前と住所を入力してください。"
+  },
+  {
+    "key": "error_validation_billing_city",
+    "value": "クレジットカード情報が銀行の記録と一致しません。クレジットカードに登録されたカード所有者の名前と住所を入力してください。"
+  },
+  {
+    "key": "error_validation_billing_state",
+    "value": "都道府県を入力してください"
+  },
+  {
+    "key": "error_validation_billing_zip_code",
+    "value": "郵便番号を正しく入力してください"
+  },
+  {
+    "key": "error_validation_billing_country",
+    "value": "国を入力してください"
+  },
+  {
+    "key": "error_validation_billing_vat",
+    "value": "入力された VAT 番号が認識できません。有効な VAT 番号を入力してください。"
+  },
+  {
+    "key": "camera_state_offline",
+    "value": "カメラがオフラインです。"
+  },
+  {
+    "key": "camera_state_gateway_offline",
+    "value": "ベースステーションがインターネットに接続されていません。\n\n電源が入っており、ルーターに接続されていることを確認してください。"
+  },
+  {
+    "key": "camera_state_battery_level_critical",
+    "value": "電池を交換してください。"
+  },
+  {
+    "key": "camera_player_plugin_not_installed",
+    "value": "新しいバージョンの Adobe Flash Player が必要です。<a href='http://get.adobe.com/flashplayer/'>こちら</a>から最新のバージョンをインストールしてください。"
+  },
+  {
+    "key": "camera_state_new",
+    "value": "新しいカメラのストリーミング"
+  },
+  {
+    "key": "library_activity_filter",
+    "value": "フィルター"
+  },
+  {
+    "key": "filter_label_types",
+    "value": "これらのタイプを表示"
+  },
+  {
+    "key": "filter_label_all",
+    "value": "すべて"
+  },
+  {
+    "key": "filter_label_favorites",
+    "value": "お気に入り"
+  },
+  {
+    "key": "filter_label_non_favorites",
+    "value": "お気に入りでない"
+  },
+  {
+    "key": "filter_label_cameras",
+    "value": "カメラからファイルを表示："
+  },
+  {
+    "key": "select_bar_label_favorite",
+    "value": "お気に入り"
+  },
+  {
+    "key": "select_bar_label_share",
+    "value": "共有"
+  },
+  {
+    "key": "select_bar_label_download",
+    "value": "ダウンロード"
+  },
+  {
+    "key": "select_bar_label_delete",
+    "value": "削除"
+  },
+  {
+    "key": "share_email_link",
+    "value": "メールリンク"
+  },
+  {
+    "key": "share_email_subject",
+    "value": "Arlo ビデオを見る"
+  },
+  {
+    "key": "share_email_body",
+    "value": "Arlo カメラからビデオをチェックアウトしました。リンクをクリックするだけでビデオを見ることができます。注意：このリンクは {24 hours} 後に有効期限切れになります。\n\n\n\n{link} {thumbnail}\n\n\n\nお楽しみください！\n\n\n\n{first name}"
+  },
+  {
+    "key": "share_copy_link",
+    "value": "リンクをコピー"
+  },
+  {
+    "key": "settings_label_title",
+    "value": "設定"
+  },
+  {
+    "key": "base_station_settings_label_schedule",
+    "value": "スケジュール"
+  },
+  {
+    "key": "base_station_settings_label_modes",
+    "value": "モード"
+  },
+  {
+    "key": "base_station_settings_label_rules",
+    "value": "ルール"
+  },
+  {
+    "key": "base_station_settings_label_rule",
+    "value": "ルール"
+  },
+  {
+    "key": "base_station_settings_label_settings",
+    "value": "ベースステーションの設定"
+  },
+  {
+    "key": "account_settings_label_title",
+    "value": "アカウントの設定"
+  },
+  {
+    "key": "account_settings_label_subscription",
+    "value": "サービスプラン"
+  },
+  {
+    "key": "account_settings_label_personal",
+    "value": "個人情報"
+  },
+  {
+    "key": "account_settings_label_friends",
+    "value": "友人"
+  },
+  {
+    "key": "system_settings_label_title",
+    "value": "システム設定"
+  },
+  {
+    "key": "system_settings_label_preferences",
+    "value": "プリファレンス"
+  },
+  {
+    "key": "system_settings_label_camera_order",
+    "value": "カメラの順番"
+  },
+  {
+    "key": "system_settings_label_about",
+    "value": "情報"
+  },
+  {
+    "key": "base_station_schedule_label_title",
+    "value": "スケジュール"
+  },
+  {
+    "key": "base_station_schedule_label_start_time",
+    "value": "開始時間"
+  },
+  {
+    "key": "base_station_schedule_label_stop_time",
+    "value": "停止時間"
+  },
+  {
+    "key": "base_station_modes_label_title",
+    "value": "モード"
+  },
+  {
+    "key": "add_mode_label_title",
+    "value": "モードの定義"
+  },
+  {
+    "key": "add_mode_label_title_new",
+    "value": "新しいモード"
+  },
+  {
+    "key": "add_mode_activity_modes",
+    "value": "モード"
+  },
+  {
+    "key": "add_mode_label_name",
+    "value": "新しいモード"
+  },
+  {
+    "key": "add_mode_label_mode_name",
+    "value": "名前"
+  },
+  {
+    "key": "add_mode_placeholder_mode_name",
+    "value": "モード名"
+  },
+  {
+    "key": "add_mode_label_select_rules",
+    "value": "このモードのルールを選択"
+  },
+  {
+    "key": "add_mode_label_add_rule",
+    "value": "ルールを追加"
+  },
+  {
+    "key": "add_rule_label_title",
+    "value": "新しいルール"
+  },
+  {
+    "key": "base_station_rules_label_title",
+    "value": "ルール"
+  },
+  {
+    "key": "rule_label_title",
+    "value": "ルールの定義"
+  },
+  {
+    "key": "rule_label_name",
+    "value": "ルール名"
+  },
+  {
+    "key": "rule_label_rule_name",
+    "value": "名前"
+  },
+  {
+    "key": "rule_label_rule_placeholder",
+    "value": "ルール"
+  },
+  {
+    "key": "rule_label_trigger_title",
+    "value": "次の場合："
+  },
+  {
+    "key": "rule_label_motion_detected",
+    "value": "動作が検知された"
+  },
+  {
+    "key": "rule_label_trigger_on",
+    "value": "オン"
+  },
+  {
+    "key": "rule_label_trigger_sensitivity",
+    "value": "検出開始"
+  },
+  {
+    "key": "rule_label_action_title",
+    "value": "次のことをします："
+  },
+  {
+    "key": "rule_label_action_record_video",
+    "value": "ビデオの録画"
+  },
+  {
+    "key": "rule_label_action_take_snapshot",
+    "value": "スナップショットの撮影"
+  },
+  {
+    "key": "rule_label_action_on",
+    "value": "オン {cameraName}"
+  },
+  {
+    "key": "rule_label_action_sensitivity",
+    "value": "検出終了"
+  },
+  {
+    "key": "rule_label_action_in_hot_zone",
+    "value": "Hot Zone 内"
+  },
+  {
+    "key": "rule_label_email_action_title",
+    "value": "また、次のことをします："
+  },
+  {
+    "key": "rule_label_send_email_alert",
+    "value": "メールアラートを送信"
+  },
+  {
+    "key": "rule_label_send_email_list",
+    "value": "このリストへ"
+  },
+  {
+    "key": "rule_label_sensitivity_fewer_videos",
+    "value": "少ないビデオ"
+  },
+  {
+    "key": "rule_label_sensitivity_more_videos",
+    "value": "より多くのビデオ"
+  },
+  {
+    "key": "rule_label_recording_time_shorter_videos",
+    "value": "10 秒"
+  },
+  {
+    "key": "rule_label_recording_time_longer_videos",
+    "value": "120 秒"
+  },
+  {
+    "key": "rule_label_recording_time_unit_seconds",
+    "value": "{timeInSeconds} 秒"
+  },
+  {
+    "key": "rule_label_select_camera",
+    "value": "カメラの選択・・・"
+  },
+  {
+    "key": "rule_trigger_label_title",
+    "value": "トリガー"
+  },
+  {
+    "key": "rule_trigger_label_motion_trigger",
+    "value": "動作を検知しました："
+  },
+  {
+    "key": "rule_label_action_record_video_on",
+    "value": "ビデオを録画しました："
+  },
+  {
+    "key": "email_alert_list_label_title",
+    "value": "メールアラートを送信"
+  },
+  {
+    "key": "push_notification_label_title",
+    "value": "プッシュ通知を送信"
+  },
+  {
+    "key": "base_station_settings_label_title",
+    "value": "ベースステーション"
+  },
+  {
+    "key": "base_station_settings_label_name",
+    "value": "名前"
+  },
+  {
+    "key": "base_station_settings_label_placeholder",
+    "value": "ベースステーション"
+  },
+  {
+    "key": "base_station_settings_label_time_zone",
+    "value": "タイムーゾーン"
+  },
+  {
+    "key": "base_station_settings_label_auto_update_firmware",
+    "value": "ファームウェアの自動アップデート"
+  },
+  {
+    "key": "base_station_settings_label_fw_version",
+    "value": "ファームウェアバージョン"
+  },
+  {
+    "key": "base_station_settings_label_hw_version",
+    "value": "ハードウェアバージョン"
+  },
+  {
+    "key": "base_station_settings_label_xcloud_id",
+    "value": "xCloudID"
+  },
+  {
+    "key": "base_station_settings_label_auto_select_channel",
+    "value": "自動チャンネル選択"
+  },
+  {
+    "key": "base_station_settings_label_channel",
+    "value": "チャンなる"
+  },
+  {
+    "key": "base_station_settings_activity_restart",
+    "value": "再起動"
+  },
+  {
+    "key": "base_station_settings_activity_deactivate",
+    "value": "非アクティブ化"
+  },
+  {
+    "key": "base_station_settings_confirm_restart",
+    "value": "次のベースステーションを再起動してよろしいですか？：{baseStationName}"
+  },
+  {
+    "key": "base_station_settings_confirm_deactivate",
+    "value": "次のベースステーションを非アクティブにしてよろしいですか？：{baseStationName}"
+  },
+  {
+    "key": "base_station_settings_channel_info",
+    "value": "最初のベースステーションでは、お持ちの無線 LAN ルーターと同じチャンネルを選択する必要があります。同じ場所/ビルに設置する追加のベースステーションは物理的に 6 メートル以上離し、異なるチャンネルにする必要があります。"
+  },
+  {
+    "key": "base_station_settings_message_rebooting",
+    "value": "ベースステーションは再起動中です・・・"
+  },
+  {
+    "key": "manual_fw_update_label_title",
+    "value": "ファームウェアバージョン"
+  },
+  {
+    "key": "manual_fw_update_confirm_update",
+    "value": "{fwVersion} をアップデートしてよろしいですか？"
+  },
+  {
+    "key": "subscription_label_title",
+    "value": "サービスプラン"
+  },
+  {
+    "key": "subscription_label_service_level_title",
+    "value": "サービスラベル"
+  },
+  {
+    "key": "subscription_label_expires",
+    "value": "有効期限"
+  },
+  {
+    "key": "subscription_activity_change_service",
+    "value": "サービスの変更"
+  },
+  {
+    "key": "change_service_activity_change_service",
+    "value": "サービスの変更"
+  },
+  {
+    "key": "change_service_activity_renew_service",
+    "value": "サービスの更新"
+  },
+  {
+    "key": "change_service_activity_cancel_service",
+    "value": "サービスのキャンセル"
+  },
+  {
+    "key": "change_service_activity_cancel",
+    "value": "キャンセル"
+  },
+  {
+    "key": "change_service_activity_dont_cancel",
+    "value": "キャンセルしない"
+  },
+  {
+    "key": "subscription_label_payment_method_title",
+    "value": "支払い方法"
+  },
+  {
+    "key": "subscription_activity_update_payment_method",
+    "value": "アップデート"
+  },
+  {
+    "key": "subscription_label_cloud_storage_title",
+    "value": "クラウドストレージ"
+  },
+  {
+    "key": "subscription_activity_buy_more_cloud_storage",
+    "value": "もっとたくさんクラウドストレージを購入する"
+  },
+  {
+    "key": "subscription_activity_delete_all_unlocked_files",
+    "value": "すべてのファイルを削除"
+  },
+  {
+    "key": "subscription_label_delete_all_unlocked_files_note",
+    "value": "メモ：「お気に入り」は削除されません"
+  },
+  {
+    "key": "subscription_label_recycle_bin",
+    "value": "ごみ箱"
+  },
+  {
+    "key": "subscription_label_cameras_title",
+    "value": "カメラ"
+  },
+  {
+    "key": "subscription_label_cameras_supported",
+    "value": "サポートされています"
+  },
+  {
+    "key": "subscription_label_cameras_supported",
+    "value": "接続されています"
+  },
+  {
+    "key": "subscription_label_cameras_online_retailers",
+    "value": "EC"
+  },
+  {
+    "key": "subscription_activity_buy_more_cameras",
+    "value": "もっと購入する・・・"
+  },
+  {
+    "key": "subscription_label_base_stations_title",
+    "value": "ベースステーション"
+  },
+  {
+    "key": "subscription_label_base_stations_supported",
+    "value": "サポートされています"
+  },
+  {
+    "key": "subscription_label_base_stations_connected",
+    "value": "接続されています"
+  },
+  {
+    "key": "subscription_label_base_stations_online_retailers",
+    "value": "EC"
+  },
+  {
+    "key": "subscription_activity_buy_more_base_stations",
+    "value": "もっと購入する・・・"
+  },
+  {
+    "key": "subscription_label_add_base_station",
+    "value": "ベースステーションの追加"
+  },
+  {
+    "key": "buy_cloud_storage_label_title",
+    "value": "クラウドストレージ"
+  },
+  {
+    "key": "buy_cloud_storage_label_no_extra_cloud_storage",
+    "value": "追加のクラウドストレージなし"
+  },
+  {
+    "key": "label_current_plan",
+    "value": "現在のプラン"
+  },
+  {
+    "key": "buy_cloud_storage_activity_purchase_storage",
+    "value": "ストレージの購入"
+  },
+  {
+    "key": "",
+    "value": "無線 LAN パスワード"
+  },
+  {
+    "key": "add_base_station_activity_add_base_station",
+    "value": "ベースステーションの追加"
+  },
+  {
+    "key": "recycle_bin_label_title",
+    "value": "ごみ箱"
+  },
+  {
+    "key": "personal_info_email_confirmed",
+    "value": "確認済み"
+  },
+  {
+    "key": "personal_info_email_not_confirmed",
+    "value": "未確認"
+  },
+  {
+    "key": "personal_info_label_username",
+    "value": "メールアドレス"
+  },
+  {
+    "key": "personal_info_label_password",
+    "value": "パスワード"
+  },
+  {
+    "key": "personal_info_label_retype_password",
+    "value": "パスワードの確認"
+  },
+  {
+    "key": "personal_info_label_remember_me",
+    "value": "記録する"
+  },
+  {
+    "key": "personal_info_label_first_name",
+    "value": "名"
+  },
+  {
+    "key": "personal_info_label_last_name",
+    "value": "姓"
+  },
+  {
+    "key": "personal_info_autologin",
+    "value": "自動ログイン"
+  },
+  {
+    "key": "personal_info_logout",
+    "value": "ログアウト"
+  },
+  {
+    "key": "personal_info_placeholder_username",
+    "value": "メールアドレス"
+  },
+  {
+    "key": "personal_info_placeholder_password",
+    "value": "パスワード"
+  },
+  {
+    "key": "personal_info_placeholder_password_verify",
+    "value": "パスワードの確認"
+  },
+  {
+    "key": "personal_info_placeholder_first_name",
+    "value": "名"
+  },
+  {
+    "key": "personal_info_placeholder_last_name",
+    "value": "姓"
+  },
+  {
+    "key": "friends_label_title",
+    "value": "友人"
+  },
+  {
+    "key": "friends_label_pending",
+    "value": "保留"
+  },
+  {
+    "key": "friends_label_accepted",
+    "value": "承認済み"
+  },
+  {
+    "key": "friends_label_expired",
+    "value": "期限切れ"
+  },
+  {
+    "key": "edit_friends_label_first_name",
+    "value": "名"
+  },
+  {
+    "key": "edit_friends_label_last_name",
+    "value": "姓"
+  },
+  {
+    "key": "edit_friends_label_email",
+    "value": "メールアドレス"
+  },
+  {
+    "key": "edit_friends_activity_send_invite",
+    "value": "招待を送る"
+  },
+  {
+    "key": "edit_friends_activity_resend_invite",
+    "value": "招待を再送"
+  },
+  {
+    "key": "edit_friends_label_camera_access",
+    "value": "カメラと関連イメージを表示"
+  },
+  {
+    "key": "edit_friends_label_camera_adjust_settings",
+    "value": "管理者権限を与える"
+  },
+  {
+    "key": "edit_friends_label_camera_adjust_settings_help",
+    "value": "友人に設定の変更を許可"
+  },
+  {
+    "key": "edit_friends_activity_delete_friend",
+    "value": "友人を削除"
+  },
+  {
+    "key": "prefs_label_title",
+    "value": "プリファレンス"
+  },
+  {
+    "key": "prefs_label_storage_title",
+    "value": "ストレージ"
+  },
+  {
+    "key": "prefs_label_manage_storage",
+    "value": "ストレージの管理"
+  },
+  {
+    "key": "prefs_activity_manage_storage_info",
+    "value": "ロックされていないファイルは 30 日経過すると自動的に削除されます。"
+  },
+  {
+    "key": "prefs_label_if_storage_full",
+    "value": "ストレージがいっぱいの場合"
+  },
+  {
+    "key": "prefs_label_delete_oldest_files",
+    "value": "容量確保のため最も古いファイルを削除"
+  },
+  {
+    "key": "prefs_label_do_not_record",
+    "value": "新しい録画を行わない"
+  },
+  {
+    "key": "prefs_label_storage_full_notification",
+    "value": "ストレージがいっぱいの場合に通知"
+  },
+  {
+    "key": "prefs_label_low_battery_notification",
+    "value": "電池残量が少ない場合に通知"
+  },
+  {
+    "key": "camera_order_label_title",
+    "value": "カメラの順番"
+  },
+  {
+    "key": "camera_order_confirm_delete_camera",
+    "value": "このカメラ '{cameraName}' はベースステーションから削除されます。再度追加するには、'sync' ボタンを使います。 "
+  },
+  {
+    "key": "about_label_title",
+    "value": "情報"
+  },
+  {
+    "key": "about_label_version",
+    "value": "バージョン"
+  },
+  {
+    "key": "about_label_released",
+    "value": "リリース済み"
+  },
+  {
+    "key": "about_review_terms_of_service",
+    "value": "サービスの使用条件を確認"
+  },
+  {
+    "key": "about_review_privacy_policy",
+    "value": "プライバシーポリシーを確認"
+  },
+  {
+    "key": "camera_settings_label_title",
+    "value": "カメラ設定"
+  },
+  {
+    "key": "camera_settings_label_camera_name",
+    "value": "名前"
+  },
+  {
+    "key": "camera_settings_label_camera_placeholder",
+    "value": "カメラ"
+  },
+  {
+    "key": "camera_settings_label_adjust_settings_title",
+    "value": "設定の調整"
+  },
+  {
+    "key": "camera_settings_label_power_management_title",
+    "value": "電源管理"
+  },
+  {
+    "key": "camera_settings_label_pan_zoom_title",
+    "value": "パン & ズーム"
+  },
+  {
+    "key": "camera_settings_label_invert_image",
+    "value": "画像反転"
+  },
+  {
+    "key": "camera_settings_label_motion_detection_test",
+    "value": "動作の検知テスト"
+  },
+  {
+    "key": "camera_settings_label_position_mode",
+    "value": "配置モード"
+  },
+  {
+    "key": "camera_settings_label_best_video",
+    "value": "ベストビデオ"
+  },
+  {
+    "key": "camera_settings_label_optimized",
+    "value": "最適化"
+  },
+  {
+    "key": "camera_settings_label_best_battery_life",
+    "value": "最適な電池寿命"
+  },
+  {
+    "key": "camera_settings_label_invert_image_description",
+    "value": "カメライメージを反転する場合に使用"
+  },
+  {
+    "key": "camera_settings_label_position_mode_description",
+    "value": "カメラの照準を合わせる場合に使用"
+  },
+  {
+    "key": "camera_settings_label_motion_detection_test_description",
+    "value": "動作がどこで検知されたかを示すためにLEDが点滅します"
+  },
+  {
+    "key": "camera_settings_label_best_video_description",
+    "value": "電池寿命が短くなる場合があります"
+  },
+  {
+    "key": "camera_settings_label_optimized_description",
+    "value": "ビデオの品質と電池寿命のバランスを最適化"
+  },
+  {
+    "key": "camera_settings_label_best_battery_life_description",
+    "value": "ビデオ品質が低下する場合があります"
+  },
+  {
+    "key": "change_service_label_title",
+    "value": "サービスの変更"
+  },
+  {
+    "key": "change_service_activity_learn_more",
+    "value": "詳しくはこちら"
+  },
+  {
+    "key": "change_service_activity_purchase_plan",
+    "value": "購入プラン"
+  },
+  {
+    "key": "confirm_purchase_title",
+    "value": "購入を確認"
+  },
+  {
+    "key": "confirm_purchase_label_charge_info",
+    "value": "{sellingEntity} からの {servicePlanName} の購入は次の課金がされます："
+  },
+  {
+    "key": "confirm_purchase_label_price",
+    "value": "価格： {amount}"
+  },
+  {
+    "key": "confirm_purchase_label_prorated_credit",
+    "value": "日割り額： {amount}"
+  },
+  {
+    "key": "confirm_purhcase_label_discount",
+    "value": "値引き： {amount}"
+  },
+  {
+    "key": "confirm_purchase_label_taxes",
+    "value": "税金： {amount}"
+  },
+  {
+    "key": "confirm_purchase_label_total",
+    "value": "合計： {amount}"
+  },
+  {
+    "key": "",
+    "value": "エラー"
+  },
+  {
+    "key": "aria_directpost_error_4006",
+    "value": "申し訳ありませんが、この支払い方法はできません、Mastercard と Visa のみお使いいただけます。"
+  },
+  {
+    "key": "aria_directpost_error_4007",
+    "value": "カード所有者の名前を入力してください。"
+  },
+  {
+    "key": "aria_directpost_error_4008",
+    "value": "無効な有効期限"
+  },
+  {
+    "key": "aria_directpost_error_4009",
+    "value": "無効なクレジットカード番号"
+  },
+  {
+    "key": "aria_directpost_error_6005",
+    "value": "リクエストに十分な情報がありません。"
+  },
+  {
+    "key": "aria_directpost_error_6006",
+    "value": "リクエストに十分な情報がありません。"
+  },
+  {
+    "key": "aria_directpost_error_6007",
+    "value": "CVV 番号を入力してください。（CVV はクレジットカード裏面の 3 桁の番号で、クレジットカード会社が詐欺行為のリスクを減らすために使われます。）"
+  },
+  {
+    "key": "aria_directpost_error_6008",
+    "value": "この住所はファイル上の住所と一致しません。住所を確認するか、以前に使用した住所を試してみてください。"
+  },
+  {
+    "key": "aria_directpost_error_6009",
+    "value": "申し訳ありませんが、不具合が発生しました。もう一度試してみてください。"
+  },
+  {
+    "key": "aria_directpost_error_6010",
+    "value": "申し訳ありませんが、不具合が発生しました。もう一度試してみてください。"
+  },
+  {
+    "key": "aria_directpost_error_6011",
+    "value": "この住所はファイル上の住所と一致しません。住所を確認するか、以前に使用した住所を試してみてください。"
+  },
+  {
+    "key": "aria_directpost_error_6012",
+    "value": "CVV 番号を入力してください。（CVV はクレジットカード裏面の 3 桁の番号で、クレジットカード会社が詐欺行為のリスクを減らすために使われます。）"
+  },
+  {
+    "key": "aria_directpost_error_6013",
+    "value": "CVV 番号を入力してください。（CVV はクレジットカード裏面の 3 桁の番号で、クレジットカード会社が詐欺行為のリスクを減らすために使われます。）"
+  },
+  {
+    "key": "aria_directpost_error_6014",
+    "value": "CVV 番号を入力してください。（CVV はクレジットカード裏面の 3 桁の番号で、クレジットカード会社が詐欺行為のリスクを減らすために使われます。）"
+  },
+  {
+    "key": "aria_directpost_error_6015",
+    "value": "クレジットカード情報が銀行の記録と一致しません。クレジットカードに登録されたカード所有者の名前と住所を入力してください。"
+  },
+  {
+    "key": "aria_directpost_error_6017",
+    "value": "この住所はファイル上の住所と一致しません。住所を確認するか、以前に使用した住所を試してみてください。"
+  },
+  {
+    "key": "aria_directpost_error_6018",
+    "value": "申し訳ありませんが、不具合が発生しました。もう一度試してみてください。"
+  },
+  {
+    "key": "aria_directpost_error_6019",
+    "value": "郵便番号が記録と一致しません。郵便番号をもう一度入力してください。"
+  },
+  {
+    "key": "aria_directpost_error_6020",
+    "value": "郵便番号が記録と一致しません。郵便番号をもう一度入力してください。"
+  },
+  {
+    "key": "aria_directpost_error_6021",
+    "value": "都道府県が記録と一致しません。都道府県をもう一度入力してください。"
+  },
+  {
+    "key": "aria_directpost_error_6022",
+    "value": "リクエストに十分な情報がありません。"
+  },
+  {
+    "key": "aria_directpost_error_6023",
+    "value": "Mastercard または Visa の情報を入力してください。"
+  },
+  {
+    "key": "marketing_how_to_sync_camera_header",
+    "value": "カメラの同期方法"
+  },
+  {
+    "key": "marketing_how_to_sync_camera_content",
+    "value": "o \nカメラに電池を入れてください。電池の極性にご注意ください\n\no カメラとベースステーションの 'sync' ボタンを押します\n\no カメラ前面の LED が高速で10秒点滅し、同期を確認します。その後ボタンを離します\n\no ベースステーション上のカメラアイコンの下の LED が緑に点灯します"
+  },
+  {
+    "key": "status_brightness_config_success",
+    "value": "明るさ調整による節電"
+  },
+  {
+    "key": "label_do",
+    "value": "行う"
+  },
+  {
+    "key": "label_when",
+    "value": "次の場合："
+  },
+  {
+    "key": "activity_label_update_now",
+    "value": "今すぐアップデート"
+  },
+  {
+    "key": "activity_label_update",
+    "value": "アップデート"
+  },
+  {
+    "key": "activity_label_dont_update",
+    "value": "アップデートしない"
+  },
+  {
+    "key": "status_base_station_firmware_update_available",
+    "value": "ベースステーション '{baseStationName}' のアップデートが利用可能です。今すぐアップデートしますか？"
+  },
+  {
+    "key": "activity_always_remind_me",
+    "value": "常に知らせる"
+  },
+  {
+    "key": "status_app_required_update",
+    "value": "続けるには Arlo アプリのアップデートが必要です。"
+  },
+  {
+    "key": "status_app_update",
+    "value": "新しいバージョンの Arlo アプリが利用可能です。"
+  },
+  {
+    "key": "label_motion_detection_test_description",
+    "value": "{cameraName} は現在動作の検知テストモードです。\n\n動作の検知を開始するとカメラの LED が点滅します。"
+  },
+  {
+    "key": "label_send_email_confirmation_to",
+    "value": "{emailAddress} にメール確認を送信しますか？"
+  },
+  {
+    "key": "label_subscriptions",
+    "value": "サービスプラン"
+  },
+  {
+    "key": "error_unexpected",
+    "value": "予期しないエラーが発生しました。もう一度試してみてください。"
+  },
+  {
+    "key": "label_confirm_delete_rule",
+    "value": "ルール {ruleName} を本当に削除してよろしいですか？"
+  },
+  {
+    "key": "library_label_confirm_delete_media",
+    "value": "選択したファイルを本当に削除してよろしいですか？"
+  },
+  {
+    "key": "rule_label_select_motion_device",
+    "value": "動作の検知デバイスを選択"
+  },
+  {
+    "key": "rule_label_select_recording_device",
+    "value": "録画デバイスを選択"
+  },
+  {
+    "key": "alert_arlo1",
+    "value": "Arlo は {cameraName} で動作を検知しました。"
+  },
+  {
+    "key": "alert_arlo2",
+    "value": "Arlo は {cameraName} で動作を検知しました。録画を表示するにはここをクリックします。"
+  },
+  {
+    "key": "educate_label_library_select",
+    "value": "右上の「選択」をクリックすると録画に対してできることが表示されます。"
+  },
+  {
+    "key": "educate_label_dont_show_again",
+    "value": "このメッセージを今後表示しない"
+  },
+  {
+    "key": "educate_label_base_station_modes_rules",
+    "value": "ルールを使って動作の検知、録画、アラートのセットアップや管理ができます。モードを使った1つ以上のルールをグループ化します。\n\nモードは選択するかスケジュール化してどのルールを有効にするかを決定できます。"
+  },
+  {
+    "key": "activity_ok",
+    "value": "OK"
+  },
+  {
+    "key": "error_unsupported_mp4_playback",
+    "value": "お使いのブラウザーは HTML5 ビデオを MP4 (H.264) でサポートしません。別のブラウザーを使うか、ビデオをダウンロードしてください。"
+  },
+  {
+    "key": "activity_delete",
+    "value": "削除"
+  },
+  {
+    "key": "activity_download_and_delete",
+    "value": "ダウンロードと削除"
+  },
+  {
+    "key": "recycle_bin_label_empty",
+    "value": "ごみ箱に録画がありません"
+  },
+  {
+    "key": "edit_friends_label_admin_rights",
+    "value": "管理者権限を付与しました"
+  },
+  {
+    "key": "edit_friends_label_no_admin_rights",
+    "value": "管理者権限がありません"
+  },
+  {
+    "key": "error_username_exists",
+    "value": "このメールアドレスにアカウントが存在します。パスワードを入力するか、新しいアカウントを作成してセットアップを完了してください。"
+  },
+  {
+    "key": "ios_alert_arlo1",
+    "value": "%@ で動作が検知されました。"
+  },
+  {
+    "key": "ios_alert_arlo2",
+    "value": "%@ で動作が検知されました。録画を表示するにはここをクリックしてください。"
+  },
+  {
+    "key": "marketing_label_warning_basic_friend_usage",
+    "value": "ベーシックプランでは、30 日間のみ友人がカメラの映像を見ることができます。30 日を越えてアクセスを許可するには、今すぐアップグレードしてください"
+  },
+  {
+    "key": "marketing_label_enable_friend_feature",
+    "value": "この機能を有効にするには今すぐアップグレードします"
+  },
+  {
+    "key": "marketing_label_upgrade_now",
+    "value": "今すぐアップグレード"
+  },
+  {
+    "key": "rule_label_default_value",
+    "value": "カメラの動作"
+  },
+  {
+    "key": "error_cannot_share_selection",
+    "value": "選択したメディアは共有できません。別の録画とスナップショットを選択してください。"
+  },
+  {
+    "key": "base_station_settings_confirm_restart_busy",
+    "value": "カメラは現在ビジーです。ベースステーション： {baseStationName} を再起動してよろしいですか？"
+  },
+  {
+    "key": "label_confirm_delete_unlocked_files",
+    "value": "すべてのお気に入りでない録画とスナップショットを削除してよろしいですか？\n\n警告：ファイルはごみ箱へ移動され、7 日後に完全に削除されます。"
+  },
+  {
+    "key": "password_help_label_reset_password",
+    "value": "パスワードのリセット"
+  },
+  {
+    "key": "activity_send",
+    "value": "送信"
+  },
+  {
+    "key": "activity_reset",
+    "value": "リセット"
+  },
+  {
+    "key": "status_device_update_available",
+    "value": "アップデートが利用可能"
+  },
+  {
+    "key": "status_offline_alternate",
+    "value": "オフライン"
+  },
+  {
+    "key": "status_upgrading_alternate",
+    "value": "アップグレード中・・・"
+  },
+  {
+    "key": "status_busy_alternate",
+    "value": "ビジー"
+  },
+  {
+    "key": "status_signing_in",
+    "value": "サインイン・・・"
+  },
+  {
+    "key": "status_label_getting_status_short",
+    "value": "ステータス取得中"
+  },
+  {
+    "key": "status_label_getting_status_alternate",
+    "value": "ステータス取得中・・・"
+  },
+  {
+    "key": "activity_label_auto_renew",
+    "value": "自動更新"
+  },
+  {
+    "key": "activity_label_next_bill",
+    "value": "次の課金"
+  },
+  {
+    "key": "placeholder_password",
+    "value": "パスワード"
+  },
+  {
+    "key": "placeholder_verify_password",
+    "value": "パスワードの確認"
+  },
+  {
+    "key": "activity_label_edit_filter",
+    "value": "フィルターの編集"
+  },
+  {
+    "key": "status_base_station_added",
+    "value": "ベースステーションが追加されました"
+  },
+  {
+    "key": "subscription_status_no_credit_card",
+    "value": "ファイルにクレジットカードがありません"
+  },
+  {
+    "key": "activity_update_app_ios",
+    "value": "App ストアに移動"
+  },
+  {
+    "key": "activity_update_app_android",
+    "value": "プレイストアに移動"
+  },
+  {
+    "key": "activity_update_app_kindle",
+    "value": "App ストアに移動"
+  },
+  {
+    "key": "activity_upate_later",
+    "value": "後でアップデート"
+  },
+  {
+    "key": "status_getting_information",
+    "value": "情報を取得"
+  },
+  {
+    "key": "library_activity_reset_filter_alternate",
+    "value": "リセット"
+  },
+  {
+    "key": "camera_status_upgrading",
+    "value": "カメラはアップデート中です・・・"
+  },
+  {
+    "key": "status_base_station_update_available",
+    "value": "アップデートが利用可能"
+  },
+  {
+    "key": "status_getting_user_info",
+    "value": "ユーザー情報取得中・・・"
+  },
+  {
+    "key": "status_getting_device_info",
+    "value": "デバイス情報取得中・・・"
+  },
+  {
+    "key": "edit_friends_label_add_friend",
+    "value": "友人を追加"
+  },
+  {
+    "key": "confirm_base_station_settings_update",
+    "value": "アップグレードには最大で 5 分ほどかかります。アップグレードの間は機器を操作しないでください。{baseStationName} を {version} にアップグレードしますか？"
+  },
+  {
+    "key": "title_accept_tos",
+    "value": "サービスの使用条件に同意"
+  },
+  {
+    "key": "title_accept_policy",
+    "value": "プライバシーポリシーに同意"
+  },
+  {
+    "key": "activity_agree",
+    "value": "同意する"
+  },
+  {
+    "key": "activity_disagree",
+    "value": "同意しない"
+  },
+  {
+    "key": "label_versions",
+    "value": "バージョン"
+  },
+  {
+    "key": "label_hardware",
+    "value": "ハードウェア"
+  },
+  {
+    "key": "label_firmware",
+    "value": "ファームウェア"
+  },
+  {
+    "key": "error_claim_no_base_station",
+    "value": "ベースステーションが検出できなかったため、ベースステーションの追加ができません。\n\nベースステーションの電源が入っており、インターネットに接続されていることを確認してください、デバイスがベースステーションと同じ無線LANネットワークに接続されていることを確認してください。"
+  },
+  {
+    "key": "status_account_exist",
+    "value": "このメールアドレスに Arlo アカウントが存在します。このアカウントでログインしますか？"
+  },
+  {
+    "key": "activity_go_to_login",
+    "value": "ログインする"
+  },
+  {
+    "key": "payment_method_label_security_code_short",
+    "value": "セキュリティコード"
+  },
+  {
+    "key": "prefs_label_notifications_title",
+    "value": "通知"
+  },
+  {
+    "key": "account_setup_label_security_question",
+    "value": "質問"
+  },
+  {
+    "key": "account_setup_label_security_question_placeholder",
+    "value": "質問"
+  },
+  {
+    "key": "account_setup_label_security_custom_question",
+    "value": "カスタム質問"
+  },
+  {
+    "key": "account_setup_label_security_custom_question_placeholder",
+    "value": "カスタム質問"
+  },
+  {
+    "key": "prefs_label_push_notification_title",
+    "value": "プッシュ通知"
+  },
+  {
+    "key": "status_label_active",
+    "value": "アクティブ"
+  },
+  {
+    "key": "status_label_inactive",
+    "value": "非アクティブ"
+  },
+  {
+    "key": "about_review_ffmpeg_license",
+    "value": "FFmpeg ライセンス"
+  },
+  {
+    "key": "title_release_notes",
+    "value": "通知"
+  },
+  {
+    "key": "info_cannot_delete_last_scheduled_mode",
+    "value": "このモードは削除できません。スケジュール中で少なくとも一つのモードをアクティブにする必要があります。"
+  },
+  {
+    "key": "base_station_settings_confirm_update_busy",
+    "value": "カメラは現在ビジーです。アップデートには最大で 5 分ほどかかります。アップデート中はデバイスの接続が切断されないようにしてください。 {baseStationName} を {version} にアップデートしますか？"
+  },
+  {
+    "key": "base_station_settings_confirm_update",
+    "value": "アップデートには最大で 5 分ほどかかります。アップデート中はデバイスの接続が切断されないようにしてください。 {baseStationName} を {version} にアップデートしますか？"
+  },
+  {
+    "key": "title_friend",
+    "value": "友人"
+  },
+  {
+    "key": "error_unable_to_play_camera",
+    "value": "再生できません。もう一度試してみてください。"
+  },
+  {
+    "key": "status_updating",
+    "value": "アップデート中・・・"
+  },
+  {
+    "key": "error_compose_email_failed",
+    "value": "E メールが作成できません。もう一度試してみてください。"
+  },
+  {
+    "key": "error_cannot_process_billing_information",
+    "value": "クレジットカード情報を処理できません。もう一度試してみてください。"
+  },
+  {
+    "key": "status_getting_media_info",
+    "value": "メディア情報取得中・・・"
+  },
+  {
+    "key": "label_data_not_available",
+    "value": "--"
+  },
+  {
+    "key": "label_credit_card_display",
+    "value": "xxxx-xxxx-xxxx-{last4Digits}"
+  },
+  {
+    "key": "error_media_not_available",
+    "value": "メディアが利用できません。"
+  },
+  {
+    "key": "status_timeout_no_response",
+    "value": " %d 秒応答がありません"
+  },
+  {
+    "key": "error_unable_to_apply_changes_lost_connection",
+    "value": "インターネット接続が切断されたため、変更が反映されませんでした。"
+  },
+  {
+    "key": "status_enabling_auto_update",
+    "value": "自動アップデートを有効にしています..."
+  },
+  {
+    "key": "status_disabling_auto_update",
+    "value": "自動アップデートを無効にしています..."
+  },
+  {
+    "key": "status_apply_time_zone",
+    "value": "タイムゾーンの設定中..."
+  },
+  {
+    "key": "error_apply_time_zone",
+    "value": "タイムゾーンを適用できませんでした {error}。もう一度試してみてください。"
+  },
+  {
+    "key": "status_apply_flicker_frequency",
+    "value": "点滅の頻度を設定しています..."
+  },
+  {
+    "key": "error_apply_flicker_frequency",
+    "value": "点滅の頻度を設定できませんでした {error}。もう一度試してみてください。"
+  },
+  {
+    "key": "status_apply_mode",
+    "value": "アクティブモード設定中..."
+  },
+  {
+    "key": "error_apply_mode",
+    "value": "モードを適用できませんでした {error}。もう一度試してみてください。"
+  },
+  {
+    "key": "status_adding_mode",
+    "value": "モードを追加しています..."
+  },
+  {
+    "key": "error_adding_mode",
+    "value": "モードを追加できませんでした {error}。もう一度試してみてください。"
+  },
+  {
+    "key": "status_updating_mode",
+    "value": "モードをアップデートしています..."
+  },
+  {
+    "key": "error_updating_mode",
+    "value": "モードをアップデートできませんでした{error}。もう一度試してみてください。"
+  },
+  {
+    "key": "status_deleting_mode",
+    "value": "モードを削除しています..."
+  },
+  {
+    "key": "error_deleting_mode",
+    "value": "モードを削除できませんでした {error}。もう一度試してみてください。"
+  },
+  {
+    "key": "status_adding_rule",
+    "value": "ルールを追加しています..."
+  },
+  {
+    "key": "error_adding_rule",
+    "value": "ルールを追加できませんでした {error}。もう一度試してみてください。"
+  },
+  {
+    "key": "status_update_rule",
+    "value": "ルールをアップデートしています..."
+  },
+  {
+    "key": "error_update_rule",
+    "value": "ルールをアップデートできませんでした{error}。もう一度試してみてください。"
+  },
+  {
+    "key": "status_deleting_rule",
+    "value": "ルールを削除しています..."
+  },
+  {
+    "key": "error_deleting_rule",
+    "value": "ルールを削除できませんでいた {error}。もう一度試してみてください。"
+  },
+  {
+    "key": "status_label_on",
+    "value": "オン"
+  },
+  {
+    "key": "status_label_off",
+    "value": "オフ"
+  },
+  {
+    "key": "status_apply_schedule",
+    "value": "スケジュール {scheduleState} を設定しています..."
+  },
+  {
+    "key": "error_apply_schedule",
+    "value": "スケジュールを設定できませんでした {error}。もう一度試してみてください。"
+  },
+  {
+    "key": "status_updating_schedule",
+    "value": "スケジュールをアップデートしています..."
+  },
+  {
+    "key": "error_updating_schedule",
+    "value": "スケジュールをアップデートできませんでした{error}。もう一度試してみてください。"
+  },
+  {
+    "key": "status_apply_position_mode",
+    "value": "配置モードを有効にしています..."
+  },
+  {
+    "key": "error_apply_position_mode",
+    "value": "配置モードを開始できませんでした {error}。もう一度試してみてください。"
+  },
+  {
+    "key": "status_apply_motion_sensitivity",
+    "value": "動作感度を適用しています..."
+  },
+  {
+    "key": "error_apply_motion_sensitivity",
+    "value": "動作感度を適用できませんでした {error}。もう一度試してみてください。"
+  },
+  {
+    "key": "header_label_choose_mode_manually",
+    "value": "手動選択"
+  },
+  {
+    "key": "activity_label_purchase_cameras",
+    "value": "カメラの購入"
+  },
+  {
+    "key": "label_none",
+    "value": "なし"
+  },
+  {
+    "key": "label_current_service_level",
+    "value": "現在のサービスレベル"
+  },
+  {
+    "key": "notify_cannot_delete_active_mode",
+    "value": "このモードはアクティブなため削除できません。このモードを削除するには、モードを変更してもう一度試してみてください。"
+  },
+  {
+    "key": "notify_device_removed_successfully",
+    "value": "デバイスはアカウントから削除されました。"
+  },
+  {
+    "key": "confirm_delete_camera",
+    "value": "カメラを削除しますか？"
+  },
+  {
+    "key": "confirm_remove_friend",
+    "value": "友人を削除しますか？"
+  },
+  {
+    "key": "label_select_shareable_cameras",
+    "value": "友人と共有するには少なくとも 1 台のカメラを選択してください。"
+  },
+  {
+    "key": "header_label_cameras",
+    "value": "カメラ"
+  },
+  {
+    "key": "confirm_restore_selected_files",
+    "value": "選択したファイルを復元しますか？"
+  },
+  {
+    "key": "status_account_max_modes",
+    "value": "お使いのサービスレベルで許可されたモードの最大数に達しました。"
+  },
+  {
+    "key": "label_add_email",
+    "value": "E メールの追加"
+  },
+  {
+    "key": "label_action",
+    "value": "アクション"
+  },
+  {
+    "key": "header_select_camera",
+    "value": "カメラの選択"
+  },
+  {
+    "key": "error_rule_name_exists",
+    "value": "ルールの名前は既に存在します。違うルール名を使用してください。"
+  },
+  {
+    "key": "error_rule_email_exists",
+    "value": "E メールは既にルールに追加されています。"
+  },
+  {
+    "key": "status_label_free",
+    "value": "Free"
+  },
+  {
+    "key": "status_label_error",
+    "value": "エラー"
+  },
+  {
+    "key": "confirm_delete_non_favorites",
+    "value": "選択したファイルを削除しますか？お気に入りのファイルは削除されません。"
+  },
+  {
+    "key": "confirm_share_no_access",
+    "value": "選択したファイルを共有しますか？所有していないカメラのファイルは共有されません。"
+  },
+  {
+    "key": "confirm_download_no_access",
+    "value": "選択したファイルをダウンロードしますか？所有していないカメラのファイルはダウンロードされません。"
+  },
+  {
+    "key": "status_account_exist",
+    "value": "この E メールアドレスに Arlo アカウントが存在します。このアカウントでログインしますか？"
+  },
+  {
+    "key": "activity_go_to_login",
+    "value": "ログインに移動"
+  },
+  {
+    "key": "info_schedule_zoom_in",
+    "value": "ズームインしてスケジュールの詳細を見る。"
+  },
+  {
+    "key": "info_schedule_zoom_out",
+    "value": "ズームアウトして全日のスケジュールを見る。"
+  },
+  {
+    "key": "info_schedule_tap_and_hold",
+    "value": "タップした状態のまま押し続けてスケジュールにモードを追加する"
+  },
+  {
+    "key": "info_schedule_tap",
+    "value": "タップしてモードを編集する。"
+  },
+  {
+    "key": "info_schedule_rotate_landscape",
+    "value": "回転させて週を参照する。"
+  },
+  {
+    "key": "info_schedule_rotate_portrait",
+    "value": "回転させて日を参照する。"
+  },
+  {
+    "key": "bs_settings_label_flicker_adjustment",
+    "value": "ちらつきの調整"
+  },
+  {
+    "key": "info_flicker_adjustment",
+    "value": "ビデオがちらつくようであれば、カメラのシャッタースピードをお使いの場所の電源周波数に合うように調整してください：50 または 60 Hz。"
+  },
+  {
+    "key": "label_frequency_auto",
+    "value": "自動 ({frequency})"
+  },
+  {
+    "key": "label_frequency_60",
+    "value": "60 Hz"
+  },
+  {
+    "key": "label_frequency_50",
+    "value": "50 Hz"
+  },
+  {
+    "key": "label_frequency_auto_value",
+    "value": "自動"
+  },
+  {
+    "key": "help_settings",
+    "value": "ヘルプ"
+  },
+  {
+    "key": "help_label_support",
+    "value": "サポート"
+  },
+  {
+    "key": "help_label_community",
+    "value": "コミュニティ"
+  },
+  {
+    "key": "status_label_disabled",
+    "value": "無効"
+  },
+  {
+    "key": "label_no_updates_available",
+    "value": "利用可能なアップデートがありません。"
+  },
+  {
+    "key": "error_login_internet_connection",
+    "value": "インターネット接続に問題がありサインインできません。もう一度試してみますか？"
+  },
+  {
+    "key": "error_login_internet_connection",
+    "value": "インターネット接続に問題がありサインインできません。もう一度試してみますか？"
+  },
+  {
+    "key": "title_add_base_station",
+    "value": "ベースステーションの追加"
+  },
+  {
+    "key": "title_add",
+    "value": "追加"
+  },
+  {
+    "key": "title_edit",
+    "value": "編集"
+  },
+  {
+    "key": "title_see_another_camera_here",
+    "value": "ここで別のカメラを見る"
+  },
+  {
+    "key": "title_active_rules",
+    "value": "アクティブなルール"
+  },
+  {
+    "key": "label_no_active_rules",
+    "value": "このモードにアクティブなルールがありません。"
+  },
+  {
+    "key": "setup_sync_cameras_1",
+    "value": "基地局側の同期]ボタンを押します。緑色に点滅するLEDの同期状態を待ちます。"
+  },
+  {
+    "key": "setup_sync_cameras_2",
+    "value": "カメラの上に同期]ボタンを押します。"
+  },
+  {
+    "key": "setup_sync_cameras_3",
+    "value": "10秒を確認するためにカメラ上の青色のLEDが点滅します。注：このプロセスの間にバッテリーをはずしてはいけません。"
+  },
+  {
+    "key": "setup_base_station_1",
+    "value": "あなたのルータにベースステーションを接続して"
+  },
+  {
+    "key": "setup_base_station_2",
+    "value": "それをプラグイン"
+  },
+  {
+    "key": "setup_base_station_3",
+    "value": "それをオン"
+  },
+  {
+    "key": "mobile_setup_complete_title",
+    "value": "完全セットアップ"
+  },
+  {
+    "key": "mobile_setup_complete_info",
+    "value": "おめでとう！あなたのアーロ·カメラは、今セットアップと表示するための準備ができている。\nアーロは、自動的にあなたのクラウドストレージアカウントにそれが記録され、各ビデオを保存することがスマートです。どのくらいあなたのクラウドアカウントを格納し、接続することができ、どのようなサブスクリプションのオプションあなたが持っているどのように多くのカメラそれぞれの映像を、見つけるためには、こちらをご覧ください。"
+  },
+  {
+    "key": "activity_learn_more",
+    "value": "もっと詳しく知る"
+  },
+  {
+    "key": "activity_skip_to_cameras",
+    "value": "カメラにスキップ"
+  },
+  {
+    "key": "mobile_subscription_info",
+    "value": "アーロは、自動的にあなたのクラウドストレージアカウントにそれが記録され、各ビデオを保存することがスマートです。どのくらいあなたのクラウドアカウントを格納し、接続することができ、どのようなサブスクリプションのオプションあなたが持っているどのように多くのカメラそれぞれの映像を、お知りになりたい方はこちら。"
+  },
+  {
+    "value": "Credit Card information is not valid",
+    "key": "card_error"
+  },
+  {
+    "value": "Payment method is not updated",
+    "key": "billing_timeout_error"
+  },
+  {
+    "key": "timezone_error",
+    "value": "Please check time zone settings for the base station!"
+  }
+]

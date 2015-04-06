@@ -1,0 +1,105 @@
+﻿<div ng-init="init()">
+    <div class="settings-header">
+        <span class="settings-back" ui-sref="settings.friends">{{'activity_cancel' | i18n}}</span>
+        <span ng-if="editMode" class="settings-done" ng-click="editFriendForm.$invalid || !deviceSelected() || loading || done()"
+              ng-disabled="loading || !isChanged() || editFriendForm.$invalid">{{'activity_save' | i18n}}</span>
+        {{'activity_edit' | i18n}}
+    </div>
+    <div class="settings-container-list">
+    <form name="editFriendForm">
+        <div class="settings-panel">
+            <div class="settings-list" >
+                <div class="settings-list-item settings-list-item-edit">
+                    <div class="settings-list-item-label list-item-cell" style="float: none">{{'edit_friends_label_first_name' | i18n}}:</div>
+                    <div class="settings-list-item-value list-item-cell">
+                        <input type="text" name="firstName" placeholder="{{'edit_friends_label_first_name' | i18n}}"
+                               ng-model="friend.firstName"
+                               ng-minlength=2
+                               ng-maxlength=20 required>
+
+                        <div class="error" ng-show="editFriendForm.firstName.$dirty && editFriendForm.firstName.$invalid">
+                            <small class="error" ng-show="editFriendForm.firstName.$error.minlength">Friend first name is required to be at least 2 characters.</small>
+                            <small class="error" ng-show="editFriendForm.firstName.$error.maxlength">Friend first name cannot be longer than 20 characters.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-list-item settings-list-item-edit">
+                    <div class="settings-list-item-label list-item-cell" style="float: none">{{'edit_friends_label_last_name' | i18n}}:</div>
+                    <div class="settings-list-item-value list-item-cell">
+                        <input type="text" name="lastName" placeholder="{{'edit_friends_label_last_name' | i18n}}"
+                               ng-model="friend.lastName"
+                               ng-minlength=2
+                               ng-maxlength=60 required>
+
+                        <div class="error" ng-show="editFriendForm.lastName.$dirty && editFriendForm.lastName.$invalid">
+                            <small class="error" ng-show="editFriendForm.lastName.$error.minlength">Friend last name is required to be at least 2 characters.</small>
+                            <small class="error" ng-show="editFriendForm.lastName.$error.maxlength">Friend last name cannot be longer than 60 characters.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-list-item settings-list-item-edit">
+                    <div class="settings-list-item-label list-item-cell">{{'edit_friends_label_email' | i18n}}:</div>
+                    <div class="settings-list-item-value list-item-cell">
+                        <input type="email" id="email" name="email" value="{{friend.email}}" required placeholder="{{'edit_friends_label_email' | i18n}}"
+                               ng-model="friend.email"
+                               ng-minlength=6
+                               ng-maxlength=128  data-email-arlo
+                               ng-change="emailUnique(friend.email)"
+                               ng-disabled="friend.status.toLowerCase()=='accepted'">
+
+                        <div class="error"
+                             ng-show="editFriendForm.email.$dirty && editFriendForm.email.$invalid">
+                            <small class="error" ng-show="editFriendForm.email.$error.email || editFriendForm.email.$error.emailArlo">Friend email must be a valid email address.</small>
+                            <small class="error" ng-show="editFriendForm.email.$error.unique">Friend email already used.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: table; margin: 10px auto;">
+                <button ng-if="!editMode" ng-disabled="loading || !deviceSelected() || editFriendForm.$invalid || !editFriendForm.email.$dirty" ng-click="done()">{{'edit_friends_activity_send_invite' | i18n}}</button>
+                <button ng-if="editMode && friend.status.toLowerCase()!='accepted'" ng-disabled="loading || !deviceSelected() || editFriendForm.$invalid || !editFriendForm.email.$dirty" ng-click="done(true)">{{'edit_friends_activity_resend_invite' | i18n}}</button>
+            </div>
+            <div class="settings-list-title">{{'edit_friends_label_camera_access' | i18n}}</div>
+            <div ng-if="noCameras" ng-init="noCamerasAlert()"></div>
+            <div ng-if="cameras.length" class="settings-list">
+                <div class="settings-items-wrapper">
+                    <!--<label ng-repeat="camera in cameras | orderBy:'deviceName'"
+                           for="checkbox_{{$index}}" id="checkbox_{{$index}}">
+                        <input name="checkbox_{{$index}}"
+                               ng-model='selection.ids[camera.deviceId]'
+                               type="checkbox" >
+                        {{camera.deviceName}}
+                    </label>-->
+                    <div class="settings-list-item settings-friends-cameras settings-friends"
+                         ng-class="{'settings-friends-selected': selection.ids[camera.deviceId]}"
+                         ng-repeat="camera in cameras | orderBy:'deviceName'"
+                         ng-click="toggleCamera(camera)"
+                         style="display: block">
+                         <span class="list-item-cell">{{camera.deviceName}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-list-title">{{'edit_friends_label_camera_adjust_settings_help' | i18n}}</div>
+            <div class="settings-list">
+                <!--<label for="adminUser" >
+                    <input id="adminUser"
+                           ng-model='friend.adminUser'
+                           type="checkbox" >
+                    Adjust Settings on Camera and Library?
+                </label>-->
+                <div class="settings-items-wrapper">
+                    <div class="list-item-cell settings-list-item settings-friends-cameras settings-friends"
+                         ng-class="{'settings-friends-selected': friend.adminUser}"
+                         ng-click="toggleAdminUser()"
+                         style="display: block; float: none">
+                         <span class="list-item-cell">{{'edit_friends_label_camera_adjust_settings' | i18n}}</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <button ng-if="editMode" class="button-delete settings-delete" ng-click="deleteFriend()">{{'edit_friends_activity_delete_friend' | i18n}}</button>
+    </div>
+</div>

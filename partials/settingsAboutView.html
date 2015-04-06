@@ -1,0 +1,23 @@
+﻿<div ng-init="init()">
+    <div class="settings-header">
+        {{'about_label_title' | i18n}}
+    </div>
+    <div class="settings-container-list">
+    <div class="settings-panel">
+        <div class="settings-list">
+            <div class="settings-items-wrapper">
+                <div class="settings-list-item">
+                    <div id="settingsAbout_versionAbout" class="list-item-cell settings-about-text">{{'about_label_version' | i18n}}</div>
+                    <div class="list-item-cell settings-about-value">BUILD</div>
+                </div>
+                <div class="settings-list-item">
+                    <div id="settingsAbout_dateReleased" class="list-item-cell settings-about-text">{{'about_label_released' | i18n}}</div>
+                    <div class="list-item-cell settings-about-value">BUILD_DATE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="settings-about-terms" ng-click="displayTos()">{{'about_review_terms_of_service' | i18n}}</div>
+    </div>
+</div>

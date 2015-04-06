@@ -1,0 +1,13 @@
+[
+{"code":4000,"message":"The resource specified in the resource field is not present on the system."},
+{"code":4001,"message":"There was an error in the message that prevented it from being parsed correctly."},
+{"code":4002,"message":"Some properties are read-only. Any attempt to write to them is an error."},
+{"code":4003,"message":"If an external resource such as a camera is currently offline but an attempt is made to do something which requires access to it this error is reported."},
+{"code":4004,"message":"Some resources are protected by the system as canonical values. For example, the last mode cannot be deleted."},
+{"code":4005,"message":"Since the schedule takes priority over manually set modes, attempting to set the mode while the schedule is still active is an error."},
+{"code":4006,"message":"If an attempt is made to set the activity state of a camera in an invalid way, it is an error."},
+{"code":4007,"message":"If an attempt is made to create a tunnel with an invalid auth token. This error is returned."},
+{"code":4008,"message":"If an attempt is made to upload a log that fails. This error is reported."},
+{"code":4009,"message":"If an attempt is made to delete a camera that is currently active, this will be the response."},
+{"code":4010,"message":"The value of a setting is invalid"}
+]

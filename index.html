@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" lang="en" ng-app="arloApp">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="title" content="Arlo Web Portal|Smart Home Security|NETGEAR"/>
+    <meta name="description" content="View and record live HD videos from anywhere. Get motion alerts and clips, schedule smart home rules, and share cameras with friends and family. "/>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+
+	<!-- Release information -->
+	<meta name="Version" content="BUILD"/>
+    <meta name="Released" content="BUILD_DATE"/>
+	
+    <link rel="icon" type="image/x-icon" href="favicon32x32.ico?v=VERSION" sizes="32x32">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=VERSION" sizes="16x16">
+
+    <!-- Use the .min version of bootstrap files in production -->
+    <link rel="stylesheet" type="text/css" href="css/index.min.css?v=VERSION"/>
+
+    <title>Arlo Web Portal|Smart Home Security|NETGEAR</title>
+	<script>
+		var _prum = [['id', '5400e3e5abe53df40f150c25'],['mark', 'firstbyte', (new Date()).getTime()]];
+		(function() {
+			var s = document.getElementsByTagName('script')[0], p = document.createElement('script');
+			p.async = 'async';
+			p.src = '//rum-static.pingdom.net/prum.min.js';
+			s.parentNode.insertBefore(p, s);
+		})();
+	</script>
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'GA_ACCOUNT', 'auto');
+        //ga('send', 'pageview');
+    </script>
+	<script src="lib/modernizr-latest.min.js"></script>
+    <script type="text/javascript" src="flowplayer/flowplayer-3.2.13.min.js"></script>
+
+</head>
+
+<body body-events>
+
+<div ui-view class="ui-view2"></div>
+<div ng-include="'partials/alertView.html'" style="position: fixed;z-index: 1;"></div>
+
+<!-- In production use min versions -->
+<!-- angular stuff -->
+<script src="lib/libs.min.js?v=VERSION"></script>
+
+<script type="text/javascript">
+    if(!window["EventSource"]) {
+        document.write('<script src="lib\/eventsource.min.js"><\/script>');
+    }
+</script>
+
+<!-- client app -->
+<script src="js/partials.min.js?v=VERSION"></script>
+<script src="js/index.min.js?v=VERSION"></script>
+<div style="visibility: hidden; height: 0px; overflow: hidden;">
+    <object data="flowplayer/flowplayer.commercial-3.2.18.swf" type="application/x-shockwave-flash"></object>
+    <object data="flowplayer/flowplayer.securestreaming-3.2.9.swf" type="application/x-shockwave-flash"></object>
+    <object data="flowplayer/flowplayer.controls-3.2.16.swf" type="application/x-shockwave-flash"></object>
+    <object data="flowplayer/flowplayer.rtmp-3.2.13.swf" type="application/x-shockwave-flash"></object>
+    <img src="img2/camera_thumb.png" />
+</div>
+</body>
+</html>
+

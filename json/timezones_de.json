@@ -1,0 +1,157 @@
+[
+  {
+    "ui": "GMT -11:00 (Apia, Samoa)",
+    "location": "Pacific/Apia",
+    "id": "WST11"
+  },
+  {
+    "ui": "GMT -10:00 (Honolulu, Hawaii)",
+    "location": "Pacific/Honolulu",
+    "id": "HST10"
+  },
+  {
+    "ui": "GMT -9:00 (Anchorage, Alaska)",
+    "location": "America/Anchorage",
+    "id": "AKST9AKDT,M3.2.0,M11.1.0"
+  },
+  {
+    "ui": "GMT -8:00 (Los Angeles, Kalifornien)",
+    "location": "America/Los_Angeles",
+    "id": "PST8PDT,M3.2.0,M11.1.0"
+  },
+  {
+    "ui": "GMT -7:00 (Phoenix, Arizona)",
+    "location": "America/Phoenix",
+    "id": "MST7"
+  },
+  {
+    "ui": "GMT -6:00 (Chicago, Illinois)",
+    "location": "America/Chicago",
+    "id": "CST6CDT,M3.2.0,M11.1.0"
+  },
+  {
+    "ui": "GMT -5:00 (New York City, New York)",
+    "location": "America/New_York",
+    "id": "EST5EDT,M3.2.0,M11.1.0"
+  },
+  {
+    "ui": "GMT -4:30 (Caracas, Venezuela)",
+    "location": "America/Caracas",
+    "id": "VET4:30"
+  },
+  {
+    "ui": "GMT -4:00 (Santiago, Chile)",
+    "location": "America/Santiago",
+    "id": "CLT"
+  },
+  {
+    "ui": "GMT -3:30 (St. John's, Neufundland und Labrador)",
+    "location": "America/St_Johns",
+    "id": "NST3:30NDT,M3.2.0/0:01,M11.1.0/0:01"
+  },
+  {
+    "ui": "GMT -3:00 (São Paulo, Brasilien)",
+    "location": "America/Sao_Paulo",
+    "id": "BRT3BRST,M10.3.0/0,M2.3.0/0"
+  },
+  {
+    "ui": "GMT -1:00 (Praia, Kap Verde)",
+    "location": "Atlantic/Cape_Verde",
+    "id": "CVT1"
+  },
+  {
+    "ui": "GMT +0:00 (London, Großbritannien)",
+    "location": "Europe/London",
+    "id": "GMT0BST,M3.5.0/1,M10.5.0"
+  },
+  {
+    "ui": "GMT +1:00 (Berlin, Amsterdam, Rom, Paris, Wien)",
+    "location": "Europe/Paris",
+    "id": "CET-1CEST,M3.5.0,M10.5.0/3"
+  },
+  {
+    "ui": "GMT +2:00 (Athen, Griechenland)",
+    "location": "Europe/Athens",
+    "id": "EET-2EEST,M3.5.0/3,M10.5.0/4"
+  },
+  {
+    "ui": "GMT +3:00 (Moskau, Russland)",
+    "location": "Europe/Moscow",
+    "id": "MSK-4"
+  },
+  {
+    "ui": "GMT +3:30 (Teheran, Iran)",
+    "location": "Asia/Tehran",
+    "id": "IRST"
+  },
+  {
+    "ui": "GMT +4:00 (Dubai, Vereinigte Arabische Emirate)",
+    "location": "Asia/Dubai",
+    "id": "GST-4"
+  },
+  {
+    "ui": "GMT +4:30 (Kabul, Afghanistan)",
+    "location": "Asia/Kabul",
+    "id": "AFT-4:30"
+  },
+  {
+    "ui": "GMT +5:00 (Karatschi, Pakistan)",
+    "location": "Asia/Karachi",
+    "id": "PKT-5"
+  },
+  {
+    "ui": "GMT +5:30 (Mumbai, Indien)",
+    "location": "Asia/Kolkata",
+    "id": "IST-5:30"
+  },
+  {
+    "ui": "GMT +6:00 (Dhaka, Bangladesch)",
+    "location": "Asia/Dhaka",
+    "id": "BDT-6"
+  },
+  {
+    "ui": "GMT +6:30 (Yangon, Myanmar)",
+    "location": "Asia/Rangoon",
+    "id": "MMT-6:30"
+  },
+  {
+    "ui": "GMT +7:00 (Jakarta, Indonesien)",
+    "location": "Asia/Jakarta",
+    "id": "WIT-7"
+  },
+  {
+    "ui": "GMT +8:00 (Shanghai, China)",
+    "location": "Asia/Shanghai",
+    "id": "CST-8"
+  },
+  {
+    "ui": "GMT +9:00 (Tokio, Japan)",
+    "location": "Asia/Tokyo",
+    "id": "JST-9"
+  },
+  {
+    "ui": "GMT +9:30 (Adelaide, Australien)",
+    "location": "Australia/Adelaide",
+    "id": "CST-9:30CST,M10.1.0,M4.1.0/3"
+  },
+  {
+    "ui": "GMT +10:00 (Sydney, Australien)",
+    "location": "Australia/Sydney",
+    "id": "EST-10EST,M10.1.0,M4.1.0/3"
+  },
+  {
+    "ui": "GMT +11:00 (Nouméa, Neukaledonien)",
+    "location": "Pacific/Noumea",
+    "id": "NCT-11"
+  },
+  {
+    "ui": "GMT +12:00 (Auckland, Neuseeland)",
+    "location": "Pacific/Auckland",
+    "id": "NZST-12NZDT,M9.5.0,M4.1.0/3"
+  },
+  {
+    "ui": "GMT +13:00 (Nuku'alofa, Tonga)",
+    "location": "Pacific/Tongatapu",
+    "id": "TOT-13"
+  }
+]

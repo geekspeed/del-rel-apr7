@@ -1,0 +1,94 @@
+﻿<div ng-controller="RecordingCtrl" ng-init="init()" class="recording-height-100">
+    <header class="header">
+        <span class="header-logout arlo-cp" ng-controller="FooterCtrl" ng-click="gotoLogout()">{{'personal_info_logout' | i18n}}</span>
+    </header>
+    <div class="recording-title-date">
+        <div class="recording-back" ng-click="gotoCalendarView()" id="recording_Back">{{'activity_back' | i18n}}</div>
+        {{videoDate}}
+    </div>
+    <div class="recording-slide-outer" id="recordingBlock">
+        <div class="recording-slide-inner">
+            <div class="recording-container">
+                <div class="recording-slide-cell"
+                     ng-style="{visibility: recordingPrev.recordingNumber == recordingNumber ? 'hidden':'visible'}">
+                    <div class="recording-preview" ng-class="{'recording-pad0': isIE10}">
+                        <div class="recording-header">
+                            <div class="recording-date" ng-bind="recordingPrev.utcCreatedDate | toBSTime:recordingPrev.timeZone | date : 'shortDate'"></div>
+                            <div class="recording-time" ng-bind="recordingPrev.utcCreatedDate | toBSTime:recordingPrev.timeZone | date : 'shortTime'"></div>
+                        </div>
+                        <div class="recording-play-box" recording-box>
+                            <img ng-src="{{recordingPrev.presignedThumbnailUrl}}" class="recording-preview-image"/>
+                        </div>
+                        <div ng-click="prevContent()" class="recording-prev-slide"></div>
+                    </div>
+                </div>
+                <div class="recording-slide-cell-center">
+                    <div ng-show="isVideo()" class="recording-center-outer" ng-class="{'recording-pad0': isIE10}">
+                        <div class="recording-header">
+                            <div class="recording-date" ng-hide="!recordload" ng-bind="recording.utcCreatedDate | toBSTime:recordingPrev.timeZone | date : 'shortDate'"></div>
+                            <div class="recording-time" ng-hide="!recordload" ng-bind="recording.utcCreatedDate | toBSTime:recordingPrev.timeZone | date : 'shortTime'"></div>
+                        </div>
+                        <div class="recording-play-box" recording-box>
+                        <div ng-if="isIE10" recording-video id="recordedVideo2" style="height: 100%;"></div>
+                        <video preload="none" recording-video camera-zoom="recordedVideo" ng-hide="isIE10 || !loaded || isLoadingVideo" id="recordedVideo" class="recording-video arlo-zoom">
+                        </video>
+                        <div ng-show="isLoadingVideo" class="recording-loading">
+                            {{'status_label_loading' | i18n}}
+                        </div>
+                        <div ng-hide="loaded || oldBrowser || playing" class="recording-image-wrap" ng-click="play()">
+                            <img ng-src="{{recordingImageUrl}}" class="recording-preview-image"/>
+                        </div>
+
+                        <div ng-show="!loaded && !oldBrowser && !isLoadingVideo" class="recording-play-wrap" ng-click="play()">
+                        </div>
+                            <div ng-show="oldBrowser" class="camera-offline-table arlo-red arlo-fs17" style="white-space: normal;padding: 5%;">
+                                <div>
+                                {{'error_unsupported_mp4_playback' | i18n}}
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-if="!isIE10" class="recording-slider-box">
+                            <div class="recording-table-cell">{{time | secToString}}</div>
+                            <div class="recording-slider-table-cell">
+                                <div ng-click="sliderClick($event)" class="recording-slider">
+                                    <div class="recording-slider-played" ng-style="{width: timePercent + '%'}"></div>
+                                </div>
+                                <div slider-drag class="recording-slider-point"
+                                     ng-style="{left: timePercent + '%'}"></div>
+                            </div>
+                            <div class="recording-table-cell">{{recording.mediaDuration || getRecordingDuration()}}</div>
+                            <div class="recording-table-cell" ng-click="fullScreen()" ng-show="playing && screenfull.enabled">
+                                <div class="recording-fullscreen arlo-cp"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div ng-hide="isVideo()"
+                         class="recording-center-outer" ng-class="{'recording-pad0': isIE10}">
+                        <div class="recording-header">
+                            <div class="recording-date" ng-bind="recording.utcCreatedDate | toBSTime:recordingPrev.timeZone | date : 'shortDate'"></div>
+                            <div class="recording-time" ng-bind="recording.utcCreatedDate | toBSTime:recordingPrev.timeZone | date : 'shortTime'"></div>
+                        </div>
+                        <div class="recording-play-box" recording-box>
+                            <img ng-src="{{recordingImageUrl}}" class="recording-preview-image"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="recording-slide-cell"
+                     ng-style="{visibility: recordingNext.recordingNumber == recordingNumber ? 'hidden':'visible'}">
+                    <div class="recording-preview" ng-class="{'recording-pad0': isIE10}">
+                        <div class="recording-header">
+                            <div class="recording-date" ng-bind="recordingNext.utcCreatedDate | toBSTime:recordingNext.timeZone | date : 'shortDate'"></div>
+                            <div class="recording-time" ng-bind="recordingNext.utcCreatedDate | toBSTime:recordingNext.timeZone | date : 'shortTime'"></div>
+                        </div>
+                        <div class="recording-play-box" recording-box>
+                            <img ng-src="{{recordingNext.presignedThumbnailUrl}}" class="recording-preview-image"/>
+                        </div>
+                        <div ng-click="nextContent()" class="recording-next-slide"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-include="'partials/footerView.html'" ng-controller="FooterCtrl" ng-init="init('recording')"></div>
+</div>

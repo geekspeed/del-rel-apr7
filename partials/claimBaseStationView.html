@@ -1,0 +1,53 @@
+﻿<!--<header>
+    <div style="margin-left:10%;margin-right:10%;padding:5%">
+
+        <div style="float:none;text-align:center;font-size:2.5em">Claim Base Station</div>
+    </div>
+</header>-->
+<div ng-if="setupPending" class="setup-steps">
+    <div style="padding: 10px 0;" class="arlo-fs17">
+        <span class="setup-back" id="back" ui-sref="gettingStarted">{{'activity_back' | i18n}}</span>
+        <span class="arlo-b" id="title">{{'system_setup_label_title' | i18n}}</span>
+    </div>
+    <div style="background-color: #e5e4e2;">
+        <div class="setup-progress" style="width: 20%;"></div>
+    </div>
+</div>
+<section class="setup-body clearfix" ng-init="init()">
+    <section class="claim-form">
+        <form name="claimBaseStationForm" auto-fill-fix ng-submit="continue()">
+            <div style="margin-top: 10px; position: relative;">
+                    <span class="settings-info register-info" popover-placement="top" popover-trigger="mouseenter"
+                          popover="{{'info_registration_base_station_vgn' | i18n}}" popover-append-to-body="true"></span>
+                    <select class="ng-dirty" id="device" ng-model="device"
+                           required ng-class="{'arlo-lgray': !device}">
+                        <option value="" default ng-selected="dev.hardwareId != device" style="display: none;">{{'system_setup_label_serial_number' | i18n}}</option>
+                        <option ng-selected="dev.hardwareId == device" ng-repeat="dev in devices" value="{{dev.hardwareId}}" class="arlo-black">{{dev.hardwareId}}</option>
+                    </select>
+
+            <div class="error" ng-show="claimBaseStationForm.$error.required" style="margin-right: 42px;">
+                Base Station Serial Number is required.
+            </div>
+            </div>
+
+            <div style="margin-top: 10px; position: relative;">
+                    <span class="settings-info register-info" popover-placement="top" popover-trigger="mouseenter"
+                          popover="{{'info_registration_base_station_time_zone' | i18n}}" popover-append-to-body="true"></span>
+                    <select ng-model="timeZone" id="timeZone" required
+                            ng-options="timeZone.ui for timeZone in timeZones">
+                    </select>
+            </div>
+                <required-tip ng-if="hasPaymentId"></required-tip>
+
+                <section class="buttons-bottom">
+                    <button type="button" id="cancel" class="button-fixed button-cancel" ng-click="cancel()"style="margin-right:15px;">
+                        {{'activity_cancel' | i18n}}
+                    </button>
+                    <button ng-disabled="claimBaseStationForm.$invalid || claimInProgress" type="submit" id="continue" class="button-fixed">
+                        {{'activity_continue' | i18n}}
+                    </button>
+                </section>
+
+        </form>
+    </section>
+</section>
